@@ -4,44 +4,31 @@
 
 @layer base {
   :root {
-    /* California desert-luxury palette mapped to shadcn HSL tokens.
-       Source hex values are also exposed directly in tailwind.config.js. */
-    --background: 40 53% 96%;          /* #FAF6EE cream */
-    --foreground: 30 12% 9%;           /* near-black warm ink */
-
+    --background: 40 53% 96%;
+    --foreground: 30 12% 9%;
     --card: 0 0% 100%;
     --card-foreground: 30 12% 9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 30 12% 9%;
-
-    --primary: 151 31% 18%;            /* #1F3A2E deep palm green */
+    --primary: 151 31% 18%;
     --primary-foreground: 40 53% 96%;
-
-    --secondary: 40 41% 84%;           /* #E8DCC4 warm sand */
+    --secondary: 40 41% 84%;
     --secondary-foreground: 151 31% 18%;
-
     --muted: 40 35% 90%;
     --muted-foreground: 30 10% 38%;
-
-    --accent: 42 53% 54%;              /* #C8A24A gold */
+    --accent: 42 53% 54%;
     --accent-foreground: 30 12% 9%;
-
-    --destructive: 15 49% 47%;         /* #B45D3C terracotta as alert */
+    --destructive: 15 49% 47%;
     --destructive-foreground: 40 53% 96%;
-
     --border: 40 25% 82%;
     --input: 40 25% 82%;
     --ring: 151 31% 18%;
-
     --chart-1: 15 49% 47%;
     --chart-2: 151 31% 28%;
     --chart-3: 42 53% 54%;
     --chart-4: 0 36% 66%;
     --chart-5: 40 41% 70%;
-
     --radius: 0.5rem;
-
     --sidebar-background: 40 53% 96%;
     --sidebar-foreground: 30 12% 9%;
     --sidebar-primary: 151 31% 18%;
@@ -51,7 +38,6 @@
     --sidebar-border: 40 25% 82%;
     --sidebar-ring: 42 53% 54%;
   }
-
   .dark {
     --background: 30 12% 8%;
     --foreground: 40 53% 96%;
@@ -89,34 +75,26 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-  }
-  body {
-    @apply bg-background text-foreground font-sans;
-    font-feature-settings: 'ss01', 'cv11';
-  }
-  h1, h2, h3, h4, h5 {
-    @apply font-serif tracking-tight;
-  }
+  * { @apply border-border; }
+  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+  body { @apply bg-background text-foreground font-sans; font-feature-settings: 'ss01', 'cv11'; }
+  h1, h2, h3, h4, h5 { @apply font-serif tracking-tight; }
 }
 
 @layer components {
-  .editorial-eyebrow {
-    @apply text-xs uppercase tracking-[0.22em] text-terracotta font-medium;
-  }
-  .editorial-rule {
-    @apply h-px w-12 bg-gold/70 inline-block align-middle mr-3;
-  }
-  .hero-overlay {
-    background: linear-gradient(180deg, rgba(26,23,20,0.25) 0%, rgba(26,23,20,0.55) 60%, rgba(26,23,20,0.85) 100%);
-  }
-  .text-balance {
-    text-wrap: balance;
-  }
+  .editorial-eyebrow { @apply text-xs uppercase tracking-[0.22em] text-terracotta font-medium; }
+  .editorial-rule { @apply h-px w-12 bg-gold/70 inline-block align-middle mr-3; }
+  .hero-overlay { background: linear-gradient(180deg, rgba(26,23,20,0.25) 0%, rgba(26,23,20,0.55) 60%, rgba(26,23,20,0.85) 100%); }
+  .text-balance { text-wrap: balance; }
+
+  /* Long-form blog/guide article styling. Applied via .prose-editorial wrapper. */
+  .prose-editorial > * + * { margin-top: 1.25rem; }
+  .prose-editorial p { @apply text-foreground/85 leading-[1.75]; }
+  .prose-editorial h2 { @apply font-serif text-3xl text-palm mt-12 mb-4 leading-tight; }
+  .prose-editorial h3 { @apply font-serif text-2xl text-palm mt-8 mb-3 leading-tight; }
+  .prose-editorial ul { @apply list-disc pl-6 space-y-2; }
+  .prose-editorial ol { @apply list-decimal pl-6 space-y-2; }
+  .prose-editorial a  { @apply text-terracotta hover:text-palm underline underline-offset-2; }
+  .prose-editorial blockquote { @apply border-l-2 border-gold pl-6 my-8 font-serif text-xl text-palm italic; }
+  .prose-editorial strong { @apply text-palm font-semibold; }
 }
