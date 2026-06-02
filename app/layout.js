@@ -1,0 +1,66 @@
+import './globals.css';
+import { Playfair_Display, Inter } from 'next/font/google';
+import { Providers } from './providers';
+import SiteHeader from '@/components/site-header';
+import SiteFooter from '@/components/site-footer';
+import { site } from '@/lib/site-config';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-playfair',
+  weight: ['400', '500', '600', '700'],
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700'],
+});
+
+export const metadata = {
+  metadataBase: new URL(site.url),
+  title: {
+    default: `${site.name} — ${site.tagline}`,
+    template: `%s · ${site.name}`,
+  },
+  description: site.description,
+  applicationName: site.name,
+  authors: [{ name: 'Brandi Jo Newman' }],
+  creator: 'Brandi Jo Newman',
+  publisher: site.name,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: site.url,
+    siteName: site.name,
+    title: site.name,
+    description: site.description,
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: site.url },
+};
+
+export const viewport = {
+  themeColor: '#FAF6EE',
+  width: 'device-width',
+  initialScale: 1,
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{__html:'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);'}} />
+      </head>
+      <body className="min-h-screen flex flex-col bg-background text-foreground">
+        <Providers>
+          <SiteHeader />
+          <main className="flex-1">{children}</main>
+          <SiteFooter />
+        </Providers>
+      </body>
+    </html>
+  );
+}
