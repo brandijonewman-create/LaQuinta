@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { NAV_FOOTER, site, owner, EDITORIAL_DISCLAIMER } from '@/lib/site-config';
+import { NAV_FOOTER, site, owner, MARKET_DISCLAIMER } from '@/lib/site-config';
 
 export default function SiteFooter() {
   const year = new Date().getFullYear();
@@ -10,13 +10,13 @@ export default function SiteFooter() {
           <div className="lg:col-span-4">
             <div className="font-serif text-2xl leading-tight">{site.name}</div>
             <div className="text-xs uppercase tracking-[0.28em] text-gold/90 mt-2">
-              Editorial · Independent
+              Independent · La Quinta, CA
             </div>
             <p className="text-sm text-sand-50/75 mt-6 max-w-sm leading-relaxed">
               {site.tagline}
             </p>
             <p className="text-xs text-sand-50/55 mt-6 leading-relaxed">
-              An independent editorial publication. {owner.name}, {owner.title}.
+              An independent guide. {owner.name}, {owner.title}.
             </p>
           </div>
 
@@ -46,9 +46,9 @@ export default function SiteFooter() {
         <div className="mt-14 pt-8 border-t border-sand-50/15">
           <p className="text-[11px] leading-relaxed text-sand-50/55 max-w-4xl">
             <span className="text-gold/90 uppercase tracking-[0.22em] mr-2">Disclosure</span>
-            {site.name} is an editorial publication. We do not list, broker, or sell real estate.
-            Any community, club, or market figure referenced is editorial in nature.{' '}
-            {EDITORIAL_DISCLAIMER}
+            {site.name} is an independent guide. We do not list, broker, or sell real estate.
+            Any community, club, or market figure referenced is informational only.{' '}
+            {MARKET_DISCLAIMER}
           </p>
           <div className="mt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
             <div className="text-[11px] text-sand-50/50">

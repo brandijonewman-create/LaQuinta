@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
       <img
         src="https://images.pexels.com/photos/10831185/pexels-photo-10831185.jpeg"
-        alt="Coachella Valley fairway framed by the Santa Rosa mountains at golden hour"
+        alt="La Quinta fairway framed by the Santa Rosa mountains at golden hour"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 hero-overlay" />
@@ -16,18 +16,19 @@ export default function Hero() {
           <div className="flex items-center mb-6">
             <span className="editorial-rule" />
             <span className="text-xs uppercase tracking-[0.32em] text-gold">
-              The Coachella Valley · Editorial
+              La Quinta, California
             </span>
           </div>
 
           <h1 className="font-serif text-white text-balance text-5xl md:text-6xl lg:text-7xl leading-[1.03] font-medium">
-            Golf homes, private clubs, and the desert lifestyle of California.
+            Golf homes, private clubs, and the desert lifestyle of La Quinta.
           </h1>
 
           <p className="text-sand-50/85 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">
-            An independent editorial guide to the signature golf communities of La Quinta,
-            Indian Wells, Rancho Mirage, and Palm Desert — from the architects who shaped
-            their fairways to the way these places are lived in.
+            An independent guide to La Quinta&apos;s seven private golf communities &mdash;
+            PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, The Quarry,
+            and La Quinta Country Club &mdash; the architects behind their fairways, and
+            what it actually feels like to live here.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">

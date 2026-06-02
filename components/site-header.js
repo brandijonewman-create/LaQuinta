@@ -98,8 +98,8 @@ function Wordmark({ scrolled }) {
   const color = scrolled ? 'text-palm' : 'text-white';
   return (
     <div className={`flex flex-col leading-none ${color} transition-colors`}>
-      <span className="font-serif text-[15px] md:text-[17px] tracking-[0.04em]">
-        California Desert
+      <span className="font-serif text-[17px] md:text-[19px] tracking-[0.04em]">
+        La Quinta
       </span>
       <span className="text-[10px] md:text-[11px] uppercase tracking-[0.32em] opacity-80">
         Golf · Lifestyle

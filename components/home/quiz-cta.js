@@ -13,11 +13,11 @@ export default function QuizCta() {
               Find Your Community
             </div>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              Twenty-two private clubs. Six cities. One quiz to narrow the field.
+              Seven private clubs. One city. One quiz to narrow the field.
             </h2>
             <p className="text-sand-50/75 mt-6 max-w-2xl text-base md:text-lg leading-relaxed">
-              Eight questions — architecture, scale, social scene, price band, and
-              membership style — and we’ll match you to the three Coachella Valley
+              Eight questions &mdash; architecture, scale, social scene, price band,
+              and membership style &mdash; and we&rsquo;ll match you to the La Quinta
               communities most aligned with how you actually want to live.
             </p>
           </div>

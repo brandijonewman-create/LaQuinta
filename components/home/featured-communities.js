@@ -5,56 +5,50 @@ const featured = [
   {
     slug: 'the-madison-club',
     name: 'The Madison Club',
-    city: 'La Quinta',
     architect: 'Tom Fazio',
     image: 'https://images.pexels.com/photos/14869685/pexels-photo-14869685.jpeg',
     blurb:
-      'A private Fazio routing widely regarded as the valley’s most discreet luxury enclave.',
+      'A private Fazio routing widely regarded as La Quinta\u2019s most discreet luxury enclave.',
   },
   {
     slug: 'pga-west',
     name: 'PGA West',
-    city: 'La Quinta',
     architect: 'Dye · Nicklaus · Norman · Weiskopf',
     image: 'https://images.pexels.com/photos/8334036/pexels-photo-8334036.jpeg',
     blurb:
       'Six championship courses, a long PGA Tour history, and a deep bench of homes and condos at every price band.',
   },
   {
-    slug: 'bighorn-golf-club',
-    name: 'BIGHORN Golf Club',
-    city: 'Palm Desert',
-    architect: 'Fazio · Arthur Hills',
+    slug: 'the-hideaway',
+    name: 'The Hideaway',
+    architect: 'Pete Dye & Clive Clark',
     image: 'https://images.unsplash.com/photo-1621881806763-1b8128f374a7',
     blurb:
-      'Hillside fairways pressed into the Santa Rosas — Mountains and Canyons — and architecture that follows the contour.',
+      'Two distinct courses behind a single gate &mdash; one of La Quinta\u2019s most architecturally cohesive private communities.',
   },
   {
-    slug: 'stone-eagle',
-    name: 'Stone Eagle',
-    city: 'Palm Desert',
-    architect: 'Tom Doak',
+    slug: 'andalusia-country-club',
+    name: 'Andalusia Country Club',
+    architect: 'Rees Jones',
     image: 'https://images.pexels.com/photos/8065818/pexels-photo-8065818.jpeg',
     blurb:
-      'A minimalist Doak design on a dramatic Palm Desert hillside, with one of the smallest, most private memberships in the valley.',
+      'A newer Rees Jones design at the southern edge of La Quinta &mdash; modern Spanish architecture and big mountain views.',
   },
   {
-    slug: 'indian-wells-country-club',
-    name: 'Indian Wells Country Club',
-    city: 'Indian Wells',
-    architect: 'Eddie Susalla (historic)',
+    slug: 'the-tradition-golf-club',
+    name: 'The Tradition Golf Club',
+    architect: 'Arnold Palmer',
     image: 'https://images.unsplash.com/photo-1590912550141-1448da2bd5da',
     blurb:
-      'Walk-of-Champions heritage, mature landscaping, and a deep mid-century footprint just off El Paseo.',
+      'Palmer\u2019s only Coachella Valley design, set against the cove with quiet, mature streets and tight membership.',
   },
   {
-    slug: 'mission-hills-country-club',
-    name: 'Mission Hills Country Club',
-    city: 'Rancho Mirage',
-    architect: 'Pete Dye · Ted Robinson Sr.',
+    slug: 'la-quinta-country-club',
+    name: 'La Quinta Country Club',
+    architect: 'Lawrence Hughes (historic)',
     image: 'https://images.pexels.com/photos/10831185/pexels-photo-10831185.jpeg',
     blurb:
-      'Home of the former Dinah Shore / ANA Inspiration major and a sprawling, multi-club community across the valley floor.',
+      'The original La Quinta club &mdash; founded 1959, walking distance to the La Quinta Resort and the Cove.',
   },
 ];
 
@@ -65,15 +59,15 @@ export default function FeaturedCommunities() {
         <div className="max-w-2xl">
           <div className="editorial-eyebrow mb-4">
             <span className="editorial-rule" />
-            Signature Communities
+            Private Clubs
           </div>
           <h2 className="font-serif text-4xl md:text-5xl text-palm leading-[1.05]">
-            The clubs that define the desert.
+            The clubs that define La Quinta.
           </h2>
           <p className="text-foreground/70 mt-5 text-base md:text-lg leading-relaxed">
-            Deep editorial profiles of the Coachella Valley’s most influential private
-            golf communities — their architects, their character, and what it actually
-            feels like to live there.
+            An honest look at La Quinta&apos;s seven private golf communities &mdash;
+            their architects, their character, and what it actually feels like to
+            live there.
           </p>
         </div>
         <Link
@@ -99,7 +93,7 @@ export default function FeaturedCommunities() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
               <div className="absolute top-4 left-4 text-[10px] uppercase tracking-[0.28em] text-gold bg-ink/40 backdrop-blur-sm px-3 py-1.5">
-                {c.city}
+                La Quinta
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="font-serif text-2xl text-white">{c.name}</div>
@@ -108,7 +102,10 @@ export default function FeaturedCommunities() {
                 </div>
               </div>
             </div>
-            <p className="text-sm text-foreground/70 leading-relaxed mt-4">{c.blurb}</p>
+            <p
+              className="text-sm text-foreground/70 leading-relaxed mt-4"
+              dangerouslySetInnerHTML={{ __html: c.blurb }}
+            />
             <div className="mt-3 inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.22em] text-terracotta group-hover:text-palm transition-colors">
               Read profile <ArrowUpRight size={13} />
             </div>
