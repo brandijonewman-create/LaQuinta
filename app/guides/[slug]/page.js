@@ -6,6 +6,7 @@ import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
 import { getGuide, getGuideSlugs } from '@/lib/blog';
 import { mdxComponents } from '@/components/mdx-components';
+import { JsonLd, articleSchema, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
 
 export function generateStaticParams() {
   return getGuideSlugs().map((slug) => ({ slug }));
@@ -18,6 +19,13 @@ export function generateMetadata({ params }) {
     title: guide.frontmatter.title,
     description: guide.frontmatter.excerpt,
     alternates: { canonical: `/guides/${params.slug}` },
+    openGraph: {
+      title: guide.frontmatter.title,
+      description: guide.frontmatter.excerpt,
+      images: guide.frontmatter.cover ? [guide.frontmatter.cover] : [],
+      type: 'article',
+      publishedTime: guide.frontmatter.date,
+    },
   };
 }
 
@@ -25,8 +33,21 @@ export default function GuidePage({ params }) {
   const guide = getGuide(params.slug);
   if (!guide) notFound();
   const fm = guide.frontmatter;
+
+  const articleData = articleSchema(guide, 'guides');
+  const faqData = faqSchema(fm.faq);
+  const crumbData = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Guides', url: '/guides' },
+    { name: fm.title, url: `/guides/${guide.slug}` },
+  ]);
+
   return (
     <>
+      <JsonLd data={articleData} />
+      <JsonLd data={faqData} />
+      <JsonLd data={crumbData} />
+
       <PageHero variant="image" image={fm.cover} eyebrow={fm.category} title={fm.title} subtitle={fm.excerpt} />
       <section className="container py-16 lg:py-24 max-w-3xl">
         <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: fm.title }]} />

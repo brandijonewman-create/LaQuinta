@@ -3,7 +3,9 @@ import { Playfair_Display, Inter } from 'next/font/google';
 import { Providers } from './providers';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
-import { site } from '@/lib/site-config';
+import GAScripts from '@/components/analytics/ga-scripts';
+import { site, owner } from '@/lib/site-config';
+import { organizationSchema, websiteSchema, JsonLd } from '@/lib/json-ld';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -27,8 +29,8 @@ export const metadata = {
   },
   description: site.description,
   applicationName: site.name,
-  authors: [{ name: 'Brandi Jo Newman' }],
-  creator: 'Brandi Jo Newman',
+  authors: [{ name: owner.name }],
+  creator: owner.name,
   publisher: site.name,
   openGraph: {
     type: 'website',
@@ -38,6 +40,10 @@ export const metadata = {
     title: site.name,
     description: site.description,
   },
+  // Hard rule: suppress Next's auto-emitted twitter:* tags. Setting twitter to
+  // null tells Next 14's metadata resolver to skip the entire twitter card
+  // block; we never want a twitter card on this property.
+  twitter: null,
   robots: { index: true, follow: true },
   alternates: { canonical: site.url },
 };
@@ -53,6 +59,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{__html:'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);'}} />
+        <JsonLd data={organizationSchema()} />
+        <JsonLd data={websiteSchema()} />
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground">
         <Providers>
@@ -60,6 +68,7 @@ export default function RootLayout({ children }) {
           <main className="flex-1">{children}</main>
           <SiteFooter />
         </Providers>
+        <GAScripts />
       </body>
     </html>
   );

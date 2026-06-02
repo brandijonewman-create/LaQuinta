@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { communities, architects } from '@/lib/site-config';
 import { getCommunityContent } from '@/lib/content/community-content';
 import { ArrowUpRight } from 'lucide-react';
+import { JsonLd, placeSchema, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
 
 export function generateStaticParams() {
   return communities.map((c) => ({ slug: c.slug }));
@@ -20,6 +21,12 @@ export function generateMetadata({ params }) {
     title: community.name,
     description: content.tagline,
     alternates: { canonical: `/communities/${params.slug}` },
+    openGraph: {
+      title: community.name,
+      description: content.tagline,
+      images: content.image ? [content.image] : [],
+      type: 'article',
+    },
   };
 }
 
@@ -32,8 +39,20 @@ export default function CommunityDetailPage({ params }) {
     (community.architect || '').toLowerCase().includes(a.name.toLowerCase().split(' ')[0])
   );
 
+  const placeData = placeSchema({ ...community, tagline: content.tagline });
+  const faqData = faqSchema(content.faqs);
+  const crumbData = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Communities', url: '/communities' },
+    { name: community.name, url: `/communities/${community.slug}` },
+  ]);
+
   return (
     <>
+      <JsonLd data={placeData} />
+      <JsonLd data={faqData} />
+      <JsonLd data={crumbData} />
+
       <PageHero
         variant="image"
         image={content.image}
@@ -43,12 +62,7 @@ export default function CommunityDetailPage({ params }) {
       />
 
       <section className="container py-16 lg:py-24">
-        <Breadcrumbs
-          items={[
-            { label: 'Communities', href: '/communities' },
-            { label: community.name },
-          ]}
-        />
+        <Breadcrumbs items={[{ label: 'Communities', href: '/communities' }, { label: community.name }]} />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-10">
           <article className="lg:col-span-8 space-y-12">
@@ -65,6 +79,20 @@ export default function CommunityDetailPage({ params }) {
             ))}
 
             <Disclaimer />
+
+            {Array.isArray(content.faqs) && content.faqs.length > 0 && (
+              <div className="border-t border-border pt-10">
+                <h2 className="font-serif text-3xl text-palm mb-6">Frequently asked</h2>
+                <dl className="space-y-6">
+                  {content.faqs.map((q, i) => (
+                    <div key={i} className="border-b border-border pb-6">
+                      <dt className="font-serif text-xl text-palm">{q.q}</dt>
+                      <dd className="text-foreground/75 leading-relaxed mt-2">{q.a}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
           </article>
 
           <aside className="lg:col-span-4 space-y-8">

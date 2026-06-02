@@ -2,9 +2,9 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
-import { architects, communities } from '@/lib/site-config';
+import { architects, communities, site } from '@/lib/site-config';
 import { getArchitectContent } from '@/lib/content/architect-content';
-import { getCommunityContent } from '@/lib/content/community-content';
+import { JsonLd, breadcrumbSchema } from '@/lib/json-ld';
 
 export function generateStaticParams() {
   return architects.map((a) => ({ slug: a.slug }));
@@ -24,17 +24,30 @@ export default function ArchitectDetailPage({ params }) {
   const architect = architects.find((a) => a.slug === params.slug);
   if (!architect) notFound();
   const content = getArchitectContent(params.slug);
-
   const firstName = architect.name.split(' ')[0].toLowerCase();
   const linkedCommunities = communities.filter((c) => (c.architect || '').toLowerCase().includes(firstName));
 
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: architect.name,
+    jobTitle: 'Golf course architect',
+    description: content.summary,
+    knowsAbout: architect.signatureCourses,
+    url: `${site.url}/architects/${architect.slug}`,
+  };
+  const crumbData = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Architects', url: '/architects' },
+    { name: architect.name, url: `/architects/${architect.slug}` },
+  ]);
+
   return (
     <>
-      <PageHero
-        eyebrow="Course Architect"
-        title={architect.name}
-        subtitle={content.summary}
-      />
+      <JsonLd data={personSchema} />
+      <JsonLd data={crumbData} />
+
+      <PageHero eyebrow="Course Architect" title={architect.name} subtitle={content.summary} />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Architects', href: '/architects' }, { label: architect.name }]} />
 
@@ -55,7 +68,7 @@ export default function ArchitectDetailPage({ params }) {
               <h2 className="font-serif text-3xl text-palm mb-4">Career &amp; La Quinta work</h2>
               <p className="text-foreground/80 leading-relaxed text-lg">{content.summary}</p>
               <p className="text-foreground/65 italic text-sm mt-6">
-                Full long-form profile in development. Verified course-by-course breakdowns ship in the full profile.
+                Full long-form profile in development. Verified course-by-course breakdowns coming soon.
               </p>
             </div>
           </article>

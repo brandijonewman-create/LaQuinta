@@ -6,6 +6,7 @@ import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
 import { getPost, getPostSlugs } from '@/lib/blog';
 import { mdxComponents } from '@/components/mdx-components';
+import { JsonLd, articleSchema, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
 
 export function generateStaticParams() {
   return getPostSlugs().map((slug) => ({ slug }));
@@ -22,6 +23,8 @@ export function generateMetadata({ params }) {
       title: post.frontmatter.title,
       description: post.frontmatter.excerpt,
       images: post.frontmatter.cover ? [post.frontmatter.cover] : [],
+      type: 'article',
+      publishedTime: post.frontmatter.date,
     },
   };
 }
@@ -30,15 +33,22 @@ export default function BlogPostPage({ params }) {
   const post = getPost(params.slug);
   if (!post) notFound();
   const fm = post.frontmatter;
+
+  const articleData = articleSchema(post, 'blog');
+  const faqData = faqSchema(fm.faq);
+  const crumbData = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Blog', url: '/blog' },
+    { name: fm.title, url: `/blog/${post.slug}` },
+  ]);
+
   return (
     <>
-      <PageHero
-        variant="image"
-        image={fm.cover}
-        eyebrow={fm.category}
-        title={fm.title}
-        subtitle={fm.excerpt}
-      />
+      <JsonLd data={articleData} />
+      <JsonLd data={faqData} />
+      <JsonLd data={crumbData} />
+
+      <PageHero variant="image" image={fm.cover} eyebrow={fm.category} title={fm.title} subtitle={fm.excerpt} />
       <section className="container py-16 lg:py-24 max-w-3xl">
         <Breadcrumbs items={[{ label: 'Blog', href: '/blog' }, { label: fm.title }]} />
 
@@ -52,11 +62,7 @@ export default function BlogPostPage({ params }) {
         )}
 
         <article className="prose-editorial mt-10">
-          <MDXRemote
-            source={post.content}
-            components={mdxComponents}
-            options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
-          />
+          <MDXRemote source={post.content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
         </article>
 
         {Array.isArray(fm.faq) && fm.faq.length > 0 && (
@@ -74,9 +80,7 @@ export default function BlogPostPage({ params }) {
         )}
 
         <div className="mt-14">
-          <Link href="/blog" className="text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm">
-            ← All posts
-          </Link>
+          <Link href="/blog" className="text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm">← All posts</Link>
         </div>
       </section>
     </>
