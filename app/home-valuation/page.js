@@ -1,10 +1,12 @@
 import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
-import ComingSoon from '@/components/shared/coming-soon';
+import ValuationForm from '@/components/forms/valuation-form';
+import Disclaimer from '@/components/shared/disclaimer';
 
 export const metadata = {
   title: 'La Quinta Home Valuation',
-  description: 'Request a no-cost honest range valuation for a La Quinta golf home. Powered by a partner licensed California agent.',
+  description: 'Request an honest range valuation for a La Quinta golf home. Delivered by a California-licensed partner agent. No automated AVM.',
+  alternates: { canonical: '/home-valuation' },
 };
 
 export default function ValuationPage() {
@@ -17,11 +19,8 @@ export default function ValuationPage() {
       />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Home Valuation' }]} />
-        <div className="mt-10 max-w-3xl">
-          <ComingSoon
-            note="The valuation request form goes live alongside the licensed-agent partnership. We will not publish an automated valuation that could be misleading."
-          />
-        </div>
+        <div className="max-w-2xl mt-8 mb-10"><Disclaimer /></div>
+        <ValuationForm />
       </section>
     </>
   );
