@@ -4,7 +4,9 @@ import { Providers } from './providers';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
 import GAScripts from '@/components/analytics/ga-scripts';
+import AdSenseLoader from '@/components/analytics/adsense-loader';
 import { site, owner } from '@/lib/site-config';
+import { ADSENSE_PUB_ID } from '@/lib/analytics';
 import { organizationSchema, websiteSchema, JsonLd } from '@/lib/json-ld';
 
 const playfair = Playfair_Display({
@@ -20,6 +22,10 @@ const inter = Inter({
   variable: '--font-inter',
   weight: ['300', '400', '500', '600', '700'],
 });
+
+const otherMeta = ADSENSE_PUB_ID
+  ? { 'google-adsense-account': ADSENSE_PUB_ID }
+  : undefined;
 
 export const metadata = {
   metadataBase: new URL(site.url),
@@ -40,12 +46,11 @@ export const metadata = {
     title: site.name,
     description: site.description,
   },
-  // Hard rule: suppress Next's auto-emitted twitter:* tags. Setting twitter to
-  // null tells Next 14's metadata resolver to skip the entire twitter card
-  // block; we never want a twitter card on this property.
+  // Hard rule: suppress Next's auto-emitted twitter:* tags.
   twitter: null,
   robots: { index: true, follow: true },
   alternates: { canonical: site.url },
+  other: otherMeta,
 };
 
 export const viewport = {
@@ -69,6 +74,7 @@ export default function RootLayout({ children }) {
           <SiteFooter />
         </Providers>
         <GAScripts />
+        <AdSenseLoader />
       </body>
     </html>
   );
