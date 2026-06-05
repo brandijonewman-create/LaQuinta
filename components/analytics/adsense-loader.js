@@ -9,20 +9,19 @@
 'use client';
 
 import Script from 'next/script';
-import { usePathname } from 'next/navigation';
 import { ADSENSE_PUB_ID } from '@/lib/analytics';
 
 export default function AdSenseLoader() {
-  const pathname = usePathname();
   if (!ADSENSE_PUB_ID) return null;
-  if (pathname?.startsWith('/downloads')) return null;
-
+  // Loaded in <head> via beforeInteractive per AdSense verification crawl
+  // requirement. The AdSense bot reads ads.txt + the loader script during
+  // verification and prefers head placement.
   return (
     <Script
       id="adsense-loader"
       async
       crossOrigin="anonymous"
-      strategy="afterInteractive"
+      strategy="beforeInteractive"
       src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}`}
     />
   );
