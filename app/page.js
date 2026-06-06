@@ -1,22 +1,25 @@
 import Hero from '@/components/home/hero';
-import { StatsRow, ResourcesRow, FeaturedRealtorSlot } from '@/components/home/homepage-blocks';
+import IntroBlock, { ArchitectsPreview } from '@/components/home/editorial-intro';
+import { FeaturedRealtorSlot } from '@/components/home/homepage-blocks';
 import FeaturedCommunities from '@/components/home/featured-communities';
-import EditorialIntro from '@/components/home/editorial-intro';
 import LifestylePreview from '@/components/home/lifestyle-preview';
 import QuizCta from '@/components/home/quiz-cta';
 import LatestJournal from '@/components/home/latest-journal';
 
+// Homepage section order mirrors the Golf Lifestyle network reference site
+// (Palm Beach Golf Lifestyle) for consistency across all 14 markets:
+//   Hero → Intro → Communities → Featured Realtor → Quiz CTA → Architects →
+//   Lifestyle → Latest articles
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <StatsRow />
+      <IntroBlock />
       <FeaturedCommunities />
-      <EditorialIntro />
-      <ResourcesRow />
-      <LifestylePreview />
-      <QuizCta />
       <FeaturedRealtorSlot />
+      <QuizCta />
+      <ArchitectsPreview />
+      <LifestylePreview />
       <LatestJournal />
     </>
   );
