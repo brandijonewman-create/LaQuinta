@@ -6,7 +6,7 @@ const featured = [
     slug: 'the-madison-club',
     name: 'The Madison Club',
     architect: 'Tom Fazio',
-    image: 'https://images.pexels.com/photos/14869685/pexels-photo-14869685.jpeg',
+    image: 'https://images.pexels.com/photos/14869677/pexels-photo-14869677.jpeg',
     blurb:
       'A private Fazio routing widely regarded as La Quinta\u2019s most discreet luxury enclave.',
   },
