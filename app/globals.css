@@ -84,7 +84,7 @@
 @layer components {
   .editorial-eyebrow { @apply text-xs uppercase tracking-[0.22em] text-terracotta font-medium; }
   .editorial-rule { @apply h-px w-12 bg-gold/70 inline-block align-middle mr-3; }
-  .hero-overlay { background: linear-gradient(180deg, rgba(26,23,20,0.25) 0%, rgba(26,23,20,0.55) 60%, rgba(26,23,20,0.85) 100%); }
+  .hero-overlay { background: linear-gradient(180deg, rgba(26,23,20,0.05) 0%, rgba(26,23,20,0.25) 55%, rgba(26,23,20,0.65) 100%); }
   .text-balance { text-wrap: balance; }
 
   /* Long-form blog/guide article styling. Applied via .prose-editorial wrapper. */

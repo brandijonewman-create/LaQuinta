@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
       <img
-        src="https://images.pexels.com/photos/9173341/pexels-photo-9173341.jpeg"
-        alt="A La Quinta patio with pool, palm trees, and the Santa Rosa mountains beyond"
+        src="https://images.pexels.com/photos/6794794/pexels-photo-6794794.jpeg"
+        alt="A La Quinta desert valley at golden hour with palm trees and the Santa Rosa mountains aglow"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 hero-overlay" />
