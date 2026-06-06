@@ -4,7 +4,6 @@ import { Providers } from './providers';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
 import GAScripts from '@/components/analytics/ga-scripts';
-import AdSenseLoader from '@/components/analytics/adsense-loader';
 import { site, owner } from '@/lib/site-config';
 import { ADSENSE_PUB_ID } from '@/lib/analytics';
 import { organizationSchema, websiteSchema, JsonLd } from '@/lib/json-ld';
@@ -66,7 +65,13 @@ export default function RootLayout({ children }) {
         <script dangerouslySetInnerHTML={{__html:'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);'}} />
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
-        <AdSenseLoader />
+        {ADSENSE_PUB_ID ? (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}`}
+            crossOrigin="anonymous"
+          />
+        ) : null}
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground">
         <Providers>
