@@ -4,7 +4,7 @@ import { owner, site } from '@/lib/site-config';
 
 export const metadata = {
   title: 'About',
-  description: `About ${site.name} — an independent guide to La Quinta golf real estate. ${owner.name}, ${owner.title}.`,
+  description: `About ${site.name} — an independent guide to La Quinta golf real estate. Owned and operated by ${owner.name}.`,
   alternates: { canonical: '/about' },
 };
 
@@ -22,17 +22,17 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-10">
           <div className="lg:col-span-7 space-y-6 text-foreground/80 leading-relaxed">
-            <h2 className="font-serif text-3xl text-palm">The owner and creator</h2>
+            <h2 className="font-serif text-3xl text-palm">Owned and operated by 7671 Enterprises LLC</h2>
             <p>
-              <strong className="text-palm">{owner.name}</strong> is the owner and creator of {site.name}. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each one independent, each one written for the buyer who wants the editorial story before the sales pitch.
+              {site.name} is owned and operated by <strong className="text-palm">{owner.name}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each one independent, each one written for the buyer who wants the real story before the sales pitch.
             </p>
             <p>
-              The network exists because the desert golf market is consistently misrepresented online. Most coverage is either listing-portal noise or thinly disguised marketing for a specific brokerage. The independent-publication slot &mdash; honest editorial, no agent affiliation, no fake testimonials, no fabricated stats &mdash; was empty. We&rsquo;re filling it, one city at a time.
+              The network exists because the desert golf market is consistently misrepresented online. Most coverage is either listing-portal noise or thinly disguised marketing for a specific brokerage. The independent-publication slot &mdash; honest coverage, no agent affiliation, no fake testimonials, no fabricated stats &mdash; was empty. We&rsquo;re filling it, one city at a time.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-6">What we publish</h2>
             <p>
-              Profiles of all seven La Quinta private golf communities. Dedicated pages for the seven architects whose work defines them. Long-form buyer guides &mdash; starting with the 2026 La Quinta Golf Buyer&rsquo;s Guide. An honest market report for the 92253 ZIP. An interactive lifestyle map. And a regular blog covering the things buyers actually want to know about, written like a normal human.
+              Profiles of all seven La Quinta private golf communities. Dedicated pages for the architects whose work defines them. Long-form buyer guides &mdash; starting with the 2026 La Quinta Golf Buyer&rsquo;s Guide. An honest market report for the 92253 ZIP. An interactive lifestyle map. And a regular blog covering the things buyers actually want to know about, written like a normal human.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-6">What we don&rsquo;t do</h2>
@@ -46,15 +46,15 @@ export default function AboutPage() {
 
             <h2 className="font-serif text-3xl text-palm pt-6">How we make money</h2>
             <p>
-              Display advertising via Google AdSense. That&rsquo;s it &mdash; no affiliate placements in the editorial, no paid community placement in the quiz results, no listing fees, no brokerage relationships.
+              Display advertising via Google AdSense and partnership arrangements with one vetted Featured Realtor. No affiliate placements in the articles, no paid community placement in the quiz results, no listing fees.
             </p>
           </div>
 
           <aside className="lg:col-span-5">
             <div className="bg-sand-50 border border-border p-6 lg:p-8">
-              <div className="editorial-eyebrow mb-4"><span className="editorial-rule" />Get in touch</div>
+              <div className="text-xs uppercase tracking-[0.22em] text-terracotta mb-4">Get in touch</div>
               <p className="text-sm text-foreground/70 leading-relaxed">
-                Reach out via the community quiz or the home-valuation form. Brandi answers personally.
+                Reach out via the community quiz or the home-valuation form. Inquiries are answered directly by the team at {owner.name}.
               </p>
               <p className="text-sm text-foreground/70 mt-4">
                 Press inquiries, corrections, or community partnership questions: please use the contact form on the relevant page.
@@ -63,7 +63,7 @@ export default function AboutPage() {
             <div className="bg-palm text-sand-50 p-6 lg:p-8 mt-6">
               <div className="text-xs uppercase tracking-[0.28em] text-gold mb-3">The Network</div>
               <p className="text-sm text-sand-50/85 leading-relaxed">
-                {site.name} is one of four planned single-city desert publications. Sister sites cover Rancho Mirage, Palm Desert, Indian Wells, and Palm Springs.
+                {site.name} is one of four planned single-city desert publications operated by {owner.name}. Sister sites cover Rancho Mirage, Palm Desert, Indian Wells, and Palm Springs.
               </p>
             </div>
           </aside>

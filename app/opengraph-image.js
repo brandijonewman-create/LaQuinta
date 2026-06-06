@@ -90,7 +90,7 @@ export default async function Image() {
               opacity: 0.9,
             }}
           >
-            Brandi Jo Newman · Owner and Creator
+            7671 Enterprises LLC · Owner &amp; Operator
           </div>
           <div style={{ fontSize: 18, color: '#FAF6EE', opacity: 0.7 }}>
             {site.domain}

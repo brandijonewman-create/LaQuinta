@@ -4,8 +4,8 @@ import CollaboratorHeadshot from '@/components/collaborators/collaborator-headsh
 import { collaborators } from '@/lib/collaborators';
 
 export const metadata = {
-  title: 'Editorial Collaborators',
-  description: 'Specialists who contribute editorial perspective to La Quinta Golf Lifestyle — financial, legal, design, and retirement experts who work the desert market.',
+  title: 'Collaborators',
+  description: 'Specialists who contribute subject-matter expertise to La Quinta Golf Lifestyle — financial, legal, design, and retirement experts who work the desert market.',
   alternates: { canonical: '/collaborators' },
 };
 
@@ -23,9 +23,9 @@ export default function CollaboratorsIndexPage() {
   return (
     <>
       <PageHero
-        eyebrow="Editorial Collaborators"
+        eyebrow="Collaborators"
         title="Specialists we trust."
-        subtitle="A small bench of subject-matter experts who contribute editorial perspective on retirement, real estate, and the financial life around La Quinta."
+        subtitle="A small bench of subject-matter experts who contribute expertise on retirement, real estate, and the financial life around La Quinta."
       />
       <section className="container py-16 lg:py-24 max-w-5xl">
         {pageGroups.length === 0 ? (
@@ -42,7 +42,7 @@ export default function CollaboratorsIndexPage() {
                   <CollaboratorHeadshot person={lead} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
-                  <div className="text-[11px] uppercase tracking-[0.22em] text-terracotta mb-2">{lead.affiliation || 'Editorial Collaborator'}</div>
+                  <div className="text-[11px] uppercase tracking-[0.22em] text-terracotta mb-2">{lead.affiliation || 'Collaborator'}</div>
                   <h2 className="font-serif text-2xl text-palm leading-tight">{lead.name}</h2>
                   <div className="text-sm text-foreground/65 mt-1">{lead.jobTitle}</div>
                   <p className="text-sm text-foreground/75 mt-3 line-clamp-3 leading-relaxed">{lead.bio}</p>
@@ -53,7 +53,7 @@ export default function CollaboratorsIndexPage() {
         )}
 
         <div className="mt-16 border-t border-border pt-8 text-sm text-foreground/60 max-w-2xl">
-          Editorial collaborators contribute subject-matter expertise within their licensed and professional scope. Their participation is editorial — not a referral arrangement.
+          Collaborators contribute subject-matter expertise within their licensed and professional scope. Their participation is contributor-based — not a referral arrangement.
         </div>
       </section>
     </>

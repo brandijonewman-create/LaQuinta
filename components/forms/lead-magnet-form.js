@@ -38,7 +38,7 @@ export default function LeadMagnetForm({ magnetSlug, magnetLabel }) {
         <CheckCircle2 size={36} className="text-palm mx-auto" />
         <h2 className="font-serif text-3xl text-palm mt-5">Thanks — you&rsquo;re on the list.</h2>
         <p className="text-foreground/75 mt-4 leading-relaxed max-w-md mx-auto">
-          Brandi will email <strong className="text-palm">{magnetLabel}</strong> to you directly
+          We will email <strong className="text-palm">{magnetLabel}</strong> to you directly
           once it is ready. We do not send automated marketing emails.
         </p>
       </div>
@@ -61,7 +61,7 @@ export default function LeadMagnetForm({ magnetSlug, magnetLabel }) {
           {submitting ? 'Submitting…' : `Get “${magnetLabel}”`}
         </Button>
         <p className="text-[11px] text-foreground/55 leading-relaxed">
-          We will not send automated marketing emails. Brandi may reach out directly.
+          We will not send automated marketing emails. A member of our team may reach out directly.
         </p>
       </div>
     </form>

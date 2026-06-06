@@ -73,7 +73,7 @@ export default function CollaborateForm() {
       <div className="py-6">
         <div className="font-serif text-2xl text-palm mb-3">Application received.</div>
         <p className="text-sm text-foreground/80 leading-relaxed">
-          Thanks for applying. We review every collaborator application personally and will respond within 5 business days at the email you provided. — Brandi Jo Newman, owner and creator.
+          Thanks for applying. We review every partner application personally and will respond within 5 business days at the email you provided. — The team at 7671 Enterprises LLC.
         </p>
       </div>
     );

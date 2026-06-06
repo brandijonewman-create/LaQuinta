@@ -43,7 +43,7 @@ export default function ValuationForm() {
         <CheckCircle2 size={36} className="text-palm mx-auto" />
         <h2 className="font-serif text-3xl text-palm mt-5">Thanks — we have your request.</h2>
         <p className="text-foreground/75 mt-4 leading-relaxed">
-          Your information is recorded. Brandi will follow up directly with a
+          Your information is recorded. Our team will follow up directly with a
           California-licensed agent partner who can produce an honest range
           valuation. We do not send automated emails or sell your information.
         </p>
@@ -99,7 +99,7 @@ export default function ValuationForm() {
           {submitting ? 'Submitting…' : 'Request honest range valuation'}
         </Button>
         <p className="text-[11px] text-foreground/55 mt-4 leading-relaxed">
-          By submitting you consent to Brandi or a California-licensed partner agent contacting you directly. We do not sell or share your information.
+          By submitting you consent to A California-licensed partner agent contacting you directly. We do not sell or share your information.
         </p>
       </div>
 

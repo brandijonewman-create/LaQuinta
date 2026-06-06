@@ -124,7 +124,7 @@ export default function QuizFlow() {
         <p className="text-foreground/70 mt-3 leading-relaxed">
           Optional. Drop your name and email and we&rsquo;ll keep your top-three matches on file
           so you can revisit them. We do not sell or share your information. We do not send
-          automated emails. Brandi may reach out directly.
+          automated emails. A member of our team may reach out directly.
         </p>
 
         <div className="mt-8 space-y-4">

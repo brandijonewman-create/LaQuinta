@@ -16,7 +16,7 @@ export default function EditorialIntro() {
             unlike anywhere else in the American West.&rdquo;
           </p>
           <div className="mt-8 text-xs uppercase tracking-[0.28em] text-foreground/60">
-            Brandi Jo Newman · Owner and Creator
+            7671 Enterprises LLC &middot; Owner &amp; Operator
           </div>
         </div>
       </div>

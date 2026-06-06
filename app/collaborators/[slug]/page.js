@@ -20,11 +20,11 @@ export function generateMetadata({ params }) {
   const lead = people[0];
   const pageName = lead.affiliation || lead.name;
   return {
-    title: `${pageName} — Editorial Collaborator`,
-    description: `${lead.name}, ${lead.jobTitle}${lead.affiliation ? ` at ${lead.affiliation}` : ''} — editorial collaborator on La Quinta Golf Lifestyle.`,
+    title: `${pageName} — Collaborator`,
+    description: `${lead.name}, ${lead.jobTitle}${lead.affiliation ? ` at ${lead.affiliation}` : ''} — contributing collaborator on La Quinta Golf Lifestyle.`,
     alternates: { canonical: `/collaborators/${params.slug}` },
     openGraph: {
-      title: `${pageName} — Editorial Collaborator`,
+      title: `${pageName} — Collaborator`,
       description: lead.bio,
       images: lead.headshot ? [lead.headshot] : [],
       type: 'profile',
@@ -52,9 +52,9 @@ export default function CollaboratorPage({ params }) {
       ))}
 
       <PageHero
-        eyebrow="Editorial Collaborator"
+        eyebrow="Collaborator"
         title={pageName}
-        subtitle={`${lead.name}, ${lead.jobTitle}— contributing editorial perspective on retirement, real estate, and the financial life around La Quinta.`}
+        subtitle={`${lead.name}, ${lead.jobTitle}— contributing subject-matter perspective on retirement, real estate, and the financial life around La Quinta.`}
       />
 
       <section className="container py-16 lg:py-24 max-w-4xl">
@@ -107,7 +107,7 @@ export default function CollaboratorPage({ params }) {
         <div className="mt-20 border-t border-border pt-10">
           <p className="text-xs uppercase tracking-[0.22em] text-foreground/50 mb-4">A note on collaborators</p>
           <p className="text-sm text-foreground/70 leading-relaxed max-w-2xl">
-            Editorial collaborators on {site.name} contribute subject-matter expertise within their licensed and professional scope. Their contributions are clearly bylined and attributed. Their participation is editorial — not a referral arrangement, a brokerage relationship, or a guarantee of any outcome. — {`Brandi Jo Newman, owner and creator`}
+            Collaborators on {site.name} contribute subject-matter expertise within their licensed and professional scope. Their contributions are clearly bylined and attributed. Their participation is contributor-based — not a referral arrangement, a brokerage relationship, or a guarantee of any outcome. — The team at {owner.name}
           </p>
         </div>
 
