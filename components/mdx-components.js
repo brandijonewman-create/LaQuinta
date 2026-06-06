@@ -1,7 +1,10 @@
 // Shared MDX component overrides for blog + guides.
 import Link from 'next/link';
+import Placeholder from '@/components/mdx/placeholder';
 
 export const mdxComponents = {
+  // Custom block elements available inside MDX content
+  Placeholder,
   h1: (props) => <h1 className="font-serif text-4xl text-palm mt-12 mb-4 leading-tight" {...props} />,
   h2: (props) => <h2 className="font-serif text-3xl text-palm mt-12 mb-4 leading-tight" {...props} />,
   h3: (props) => <h3 className="font-serif text-2xl text-palm mt-8 mb-3 leading-tight" {...props} />,
