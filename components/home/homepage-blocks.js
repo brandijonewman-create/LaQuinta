@@ -2,10 +2,9 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 const stats = [
-  { value: '7', label: 'Private golf clubs' },
-  { value: '12', label: 'Championship courses' },
+  { value: '14', label: 'Golf communities' },
+  { value: '22', label: 'Golf courses' },
   { value: '5', label: 'Course architects' },
-  { value: '92253', label: 'La Quinta ZIP code' },
 ];
 
 const resources = [
@@ -33,7 +32,7 @@ export function StatsRow() {
   return (
     <section className="border-y border-border bg-sand-50">
       <div className="container py-10 md:py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6 text-center">
+        <div className="grid grid-cols-3 gap-y-8 gap-x-6 text-center max-w-3xl mx-auto">
           {stats.map((s) => (
             <div key={s.label}>
               <div className="font-serif text-4xl md:text-5xl text-palm leading-none">{s.value}</div>

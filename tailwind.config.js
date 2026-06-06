@@ -74,20 +74,26 @@ module.exports = {
             border: 'hsl(var(--sidebar-border))',
             ring: 'hsl(var(--sidebar-ring))'
           },
-          // California desert-luxury named palette (use directly in components)
+          // Scottsdale-aligned brand palette (Scottsdale Golf Lifestyle parity)
           sand:       '#E8DCC4', // warm sand
-          'sand-50':  '#FAF6EE', // cream background
+          'sand-50':  '#FBF8F2', // cream background (Scottsdale exact)
           'sand-100': '#F1E8D6',
           'sand-200': '#E8DCC4',
-          terracotta: '#B45D3C',
-          'terracotta-dark': '#8E4429',
+          terracotta: '#BA9273', // warm mocha accent (Scottsdale exact)
+          'terracotta-dark': '#9B7757',
           rose:       '#C98A8A', // dusty rose
-          palm:       '#1F3A2E', // deep palm green
-          'palm-700': '#2D5142',
-          'palm-500': '#4F7A66',
-          gold:       '#C8A24A',
-          'gold-dark':'#A1822F',
-          ink:        '#1A1714', // editorial deep brown-black
+          palm:       '#062840', // deep navy (Scottsdale exact)
+          'palm-700': '#0a3a55', // hover navy (Scottsdale exact)
+          'palm-500': '#1a5a78', // lighter navy
+          gold:       '#D4A437', // warm amber
+          'gold-dark':'#B68B2D',
+          ink:        '#062840', // editorial dark — matched to navy
+          emerald: {
+            50: '#F0F5F1',
+            700: '#0F5B3F',
+            800: '#0B4A33',
+            900: '#062840',
+          },
         },
         borderRadius: {
           lg: 'var(--radius)',
