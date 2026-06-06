@@ -56,6 +56,29 @@ export default function HomesForSaleIndex() {
             <Link href="/community-quiz">Take the Community Quiz Instead</Link>
           </Button>
         </div>
+
+        <div className="mt-20 border-t border-border pt-14">
+          <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center bg-palm text-sand-50 p-8 md:p-12">
+            <div>
+              <div className="text-[11px] uppercase tracking-[0.28em] text-gold mb-4">For Licensed Real Estate Professionals</div>
+              <h3 className="font-serif text-3xl md:text-4xl leading-[1.1] mb-4">Are you a La Quinta realtor?</h3>
+              <p className="text-sm md:text-base text-sand-50/85 leading-relaxed max-w-xl">
+                We work with a small, vetted bench of California-licensed agents who actually know La Quinta&rsquo;s seven private clubs &mdash; PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, La Quinta Country Club, and The Quarry. If that&rsquo;s you, apply to become a featured collaborator and receive direct introductions to qualified leads from our Community Quiz funnel.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-stretch">
+              <Button asChild className="rounded-none bg-gold text-palm hover:bg-gold/90 font-semibold tracking-[0.15em] uppercase text-xs py-6">
+                <Link href="/collaborate">Apply to Collaborate</Link>
+              </Button>
+              <Link
+                href="/collaborate"
+                className="text-[11px] uppercase tracking-[0.22em] text-sand-50/70 hover:text-gold transition-colors text-center lg:text-left"
+              >
+                Read who we&rsquo;re looking for &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

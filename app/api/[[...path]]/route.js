@@ -3,7 +3,7 @@ import { randomUUID } from 'crypto';
 import { quizCollection, valuationCollection, leadCollection } from '@/lib/mongodb';
 import { scoreQuiz } from '@/lib/quiz-matcher';
 import { getMagnet } from '@/lib/lead-magnets';
-import { sendQuizLeadOwnerEmail, sendQuizLeadConfirmationEmail } from '@/lib/email';
+import { sendQuizLeadOwnerEmail, sendQuizLeadConfirmationEmail, sendCollaboratorApplicationEmail } from '@/lib/email';
 
 const PASSPHRASE = process.env.LEAD_RETRIEVAL_PASSPHRASE || '';
 const CSV_KEY = process.env.LEADS_ACCESS_KEY || '';
@@ -24,6 +24,46 @@ async function clientMeta(request) {
     userAgent: request.headers.get('user-agent') || null,
     referer:   request.headers.get('referer') || null,
   };
+}
+
+// ---- POST /api/collaborate — realtor collaborator application ----
+async function handleCollaborate(request) {
+  const body = await readJson(request);
+  const name = cleanString(body?.name, 160);
+  const email = cleanString(body?.email, 200);
+  const phone = cleanString(body?.phone, 50);
+  const brokerage = cleanString(body?.brokerage, 200);
+  const dreLicense = cleanString(body?.dreLicense, 60);
+  const yearsActive = cleanString(body?.yearsActive, 30);
+  const website = cleanString(body?.website, 300);
+  const notes = cleanString(body?.notes, 4000);
+  const specialties = Array.isArray(body?.specialties)
+    ? body.specialties.filter((s) => typeof s === 'string').slice(0, 12).map((s) => cleanString(s, 80))
+    : [];
+  const agree = !!body?.agree;
+
+  if (!name || !email || !brokerage || !dreLicense) return err('Name, email, brokerage, and DRE license number are required.');
+  if (!isEmail(email)) return err('Invalid email.');
+  if (!agree) return err('Please confirm California licensure.');
+
+  const doc = {
+    id: randomUUID(),
+    type: 'collaborator',
+    source: 'collaborate-page',
+    createdAt: new Date().toISOString(),
+    payload: { name, email, phone, brokerage, dreLicense, yearsActive, website, specialties, notes },
+    meta: await clientMeta(request),
+  };
+  try { await (await leadCollection()).insertOne(doc); } catch { return err('Database error.', 500); }
+
+  // Fire-and-forget owner notification (fails soft if Resend not configured)
+  try {
+    await sendCollaboratorApplicationEmail({
+      name, email, phone, brokerage, dreLicense, yearsActive, website, specialties, notes,
+    });
+  } catch (_) { /* fail soft */ }
+
+  return json({ ok: true, id: doc.id });
 }
 
 // ---- POST /api/quiz/score — score-only, no persistence ----
@@ -196,6 +236,7 @@ export async function POST(request, { params }) {
     case 'valuation':     return handleValuation(request);
     case 'leads':         return handleLeadCapture(request);
     case 'leads/magnet':  return handleLeadsMagnet(request);
+    case 'collaborate':   return handleCollaborate(request);
     default:              return err(`POST /api/${path} not implemented.`, 404);
   }
 }
