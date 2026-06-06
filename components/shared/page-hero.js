@@ -12,10 +12,10 @@ export default function PageHero({
 }) {
   if (variant === 'image' && image) {
     return (
-      <section className="relative h-[64svh] min-h-[460px] w-full overflow-hidden">
+      <section className="relative h-[68svh] min-h-[560px] w-full overflow-hidden">
         <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 hero-overlay" />
-        <div className="relative h-full container flex flex-col justify-end pb-14 lg:pb-20">
+        <div className="relative h-full container flex flex-col justify-end pt-28 pb-14 lg:pb-20">
           <div className={`max-w-3xl ${align === 'center' ? 'mx-auto text-center' : ''}`}>
             {eyebrow && (
               <div className="flex items-center mb-5">
@@ -23,7 +23,7 @@ export default function PageHero({
                 <span className="text-xs uppercase tracking-[0.32em] text-gold">{eyebrow}</span>
               </div>
             )}
-            <h1 className="font-serif text-white text-balance text-4xl md:text-5xl lg:text-6xl leading-[1.05] font-medium">
+            <h1 className="font-serif text-white text-balance text-3xl md:text-4xl lg:text-5xl leading-[1.05] font-medium">
               {title}
             </h1>
             {subtitle && (
@@ -47,7 +47,7 @@ export default function PageHero({
               {eyebrow}
             </div>
           )}
-          <h1 className="font-serif text-palm text-balance text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
+          <h1 className="font-serif text-palm text-balance text-3xl md:text-4xl lg:text-5xl leading-[1.05]">
             {title}
           </h1>
           {subtitle && (
