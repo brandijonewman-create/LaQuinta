@@ -79,12 +79,18 @@ export function FeaturedRealtorSlot() {
               <p>La Quinta Golf Lifestyle is an independent guide — we don’t list homes ourselves. We route every qualified buyer lead generated through this site to a small, hand-picked bench of California-licensed realtors who actually work inside the seven private clubs.</p>
               <p>If you’re a licensed California realtor who specializes in PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, La Quinta Country Club, or The Quarry — and you want to be the name buyers see when they reach out for showings, off-market intel, and club introductions — we want to talk.</p>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/collaborate"
                 className="inline-flex items-center gap-2 bg-gold text-palm font-semibold tracking-[0.18em] uppercase text-xs px-7 py-4 hover:bg-gold/90 transition-colors"
               >
                 Apply for the Featured Realtor Slot <ArrowUpRight size={15} />
+              </Link>
+              <Link
+                href="/property-spotlight/sample"
+                className="inline-flex items-center gap-2 border border-gold/60 text-gold tracking-[0.18em] uppercase text-xs px-7 py-4 hover:bg-gold/15 transition-colors"
+              >
+                See a Sample Property Spotlight <ArrowUpRight size={15} />
               </Link>
             </div>
           </div>
