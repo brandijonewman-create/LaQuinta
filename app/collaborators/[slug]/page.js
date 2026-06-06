@@ -8,7 +8,7 @@ import {
   getCollaboratorsByPage,
   getCollaboratorPageSlugs,
 } from '@/lib/collaborators';
-import { site } from '@/lib/site-config';
+import { site, owner } from '@/lib/site-config';
 
 export function generateStaticParams() {
   return getCollaboratorPageSlugs().map((slug) => ({ slug }));
