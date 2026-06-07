@@ -4,7 +4,7 @@ import QuizClient from './QuizClient';
 
 export const metadata = {
   title: 'Find Your La Quinta Community',
-  description: 'A five-question match: tell us how you want to live, and we will point you to the La Quinta private golf community that fits best. Free downloadable guide included.',
+  description: 'A five-question match: tell us how you want to live, and we will point you to the La Quinta private golf community that fits best. Includes a printable guide on the matched community.',
   alternates: { canonical: '/community-quiz' },
 };
 

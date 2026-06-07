@@ -41,7 +41,7 @@ export default function GuidesIndexPage() {
                     </div>
                   )}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <div className="text-[10px] uppercase tracking-[0.28em] text-gold mb-2">{g.frontmatter.category} {g.frontmatter.gated ? '· Free Access' : ''}</div>
+                    <div className="text-[10px] uppercase tracking-[0.28em] text-gold mb-2">{g.frontmatter.category}{g.frontmatter.gated ? ' · By Request' : ''}</div>
                     <h3 className="font-serif text-xl lg:text-2xl leading-[1.15]">{g.frontmatter.title}</h3>
                   </div>
                 </div>

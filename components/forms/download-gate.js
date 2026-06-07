@@ -62,7 +62,7 @@ export default function DownloadGate({ slug, label, community, requirePhone }) {
     <form onSubmit={submit} className="border border-border bg-sand-50 p-6 lg:p-8">
       <div className="editorial-eyebrow mb-3"><span className="editorial-rule" />Get the guide</div>
       <p className="text-sm text-foreground/70 leading-relaxed mb-5">
-        Free. The {label} downloads instantly and we email you a copy.
+        The {label} will be delivered to you on submission and emailed for your records.
       </p>
       <div className="space-y-4">
         <label className="block">

@@ -54,7 +54,7 @@ export default function DownloadPage({ params }) {
               An honest walkthrough of {community?.name || m.label.replace(' Guide','')}— the course, the membership structure, the real-estate character, and the practical questions to ask before you commit.
             </p>
             <p className="text-foreground/65 italic text-sm">
-              How it works: fill the form, the guide downloads instantly, and we email you a copy with a re-download link. We do not send automated marketing emails. No spam.
+              How it works: complete the form, the guide is delivered on submission, and we email you a copy for your records.
             </p>
           </div>
           <div className="lg:col-span-5">

@@ -166,7 +166,7 @@ export default function QuizClient() {
         <form onSubmit={submit} className="mt-10 border border-border bg-sand-50 p-6 lg:p-8">
           <div className="text-xs uppercase tracking-[0.22em] text-terracotta mb-3"><span className="editorial-rule" />Get the printable guide</div>
           <p className="text-foreground/75 leading-relaxed mb-5 text-sm">
-            A printable {match.top.name} guide — the course, the club, the real estate, the questions to ask. Free.
+            A printable {match.top.name} guide — the course, the club, the real estate, the questions to ask.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <label className="block">

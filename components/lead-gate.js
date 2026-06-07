@@ -69,14 +69,14 @@ export default function LeadGate({ assetSlug, assetTitle, downloadUrl, children 
           <Lock size={16} />
         </div>
         <div className="text-[11px] uppercase tracking-[0.28em] text-terracotta">
-          Free · No Spam · Instant Access
+          By Request
         </div>
       </div>
       <h2 className="font-serif text-2xl md:text-3xl text-palm leading-[1.15] mb-3">
-        Get instant access to {assetTitle}.
+        Continue to {assetTitle}.
       </h2>
       <p className="text-sm text-foreground/70 leading-relaxed mb-6">
-        Enter your name, email, and phone number and we&rsquo;ll unlock the full content immediately{downloadUrl ? ' and email you the PDF copy' : ''}. We share your information with our partner California-licensed real estate professional in La Quinta.
+        Please share your name, email, and phone number to continue. We will share your details with our partner California-licensed real estate professional in La Quinta{downloadUrl ? ', and email you a PDF copy of the document' : ''}.
       </p>
 
       <form onSubmit={onSubmit} className="space-y-4">
@@ -100,15 +100,15 @@ export default function LeadGate({ assetSlug, assetTitle, downloadUrl, children 
         ) : null}
 
         <Button type="submit" disabled={status === 'submitting'} className="rounded-none w-full bg-palm text-sand-50 hover:bg-palm-700 disabled:opacity-60 py-6">
-          {status === 'submitting' ? 'Unlocking…' : downloadUrl ? (
-            <span className="inline-flex items-center gap-2"><Download size={16} /> Unlock &amp; Download</span>
+          {status === 'submitting' ? 'One moment…' : downloadUrl ? (
+            <span className="inline-flex items-center gap-2"><Download size={16} /> Continue &amp; Download</span>
           ) : (
-            <span className="inline-flex items-center gap-2">Unlock Full Content <ArrowRight size={16} /></span>
+            <span className="inline-flex items-center gap-2">Continue Reading <ArrowRight size={16} /></span>
           )}
         </Button>
 
         <p className="text-[10px] uppercase tracking-[0.18em] text-foreground/45 text-center pt-2">
-          Your information is used only to deliver this asset and connect you with our partner realtor.
+          Your details are used only to deliver this document and to introduce you to our partner realtor.
         </p>
       </form>
     </div>
