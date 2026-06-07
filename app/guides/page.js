@@ -28,18 +28,28 @@ export default function GuidesIndexPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
             {guides.map((g) => (
-              <Link key={g.slug} href={`/guides/${g.slug}`} className="group block">
-                <div className="relative aspect-[16/10] overflow-hidden bg-sand-100">
-                  <img src={g.frontmatter.cover} alt={g.frontmatter.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
+              <Link key={g.slug} href={`/guides/${g.slug}`} className="group block border border-palm/10 bg-white rounded-xl overflow-hidden hover:shadow-xl transition-shadow">
+                <div className="relative aspect-[16/10] overflow-hidden bg-palm">
+                  {g.frontmatter.cover ? (
+                    <>
+                      <img src={g.frontmatter.cover} alt={g.frontmatter.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
+                    </>
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center p-8 bg-gradient-to-br from-palm to-palm-700">
+                      <div className="w-12 h-px bg-gold mx-auto mb-4" />
+                    </div>
+                  )}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <div className="text-[10px] uppercase tracking-[0.28em] text-gold mb-2">{g.frontmatter.category}</div>
-                    <h3 className="font-serif text-2xl lg:text-3xl leading-[1.15]">{g.frontmatter.title}</h3>
+                    <div className="text-[10px] uppercase tracking-[0.28em] text-gold mb-2">{g.frontmatter.category} {g.frontmatter.gated ? '· Free Access' : ''}</div>
+                    <h3 className="font-serif text-xl lg:text-2xl leading-[1.15]">{g.frontmatter.title}</h3>
                   </div>
                 </div>
-                <p className="text-sm text-foreground/70 mt-4 leading-relaxed">{g.frontmatter.excerpt}</p>
-                <div className="mt-3 inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.22em] text-terracotta">
-                  Read guide <ArrowUpRight size={13} />
+                <div className="p-6">
+                  <p className="text-sm text-foreground/70 leading-relaxed">{g.frontmatter.excerpt}</p>
+                  <div className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.22em] text-terracotta group-hover:text-palm transition-colors">
+                    Read guide <ArrowUpRight size={13} />
+                  </div>
                 </div>
               </Link>
             ))}

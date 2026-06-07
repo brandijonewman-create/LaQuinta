@@ -73,12 +73,10 @@ export default function DownloadGate({ slug, label, community, requirePhone }) {
           <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">Email <span className="text-terracotta">*</span></span>
           <input required type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full border border-border bg-white px-4 py-3" placeholder="you@example.com" />
         </label>
-        {requirePhone && (
-          <label className="block">
-            <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">Phone <span className="text-terracotta">*</span></span>
-            <input required type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full border border-border bg-white px-4 py-3" placeholder="(760) 555-0100" />
-          </label>
-        )}
+        <label className="block">
+          <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">Phone <span className="text-terracotta">*</span></span>
+          <input required type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full border border-border bg-white px-4 py-3" placeholder="(760) 555-0100" />
+        </label>
         {error && <p className="text-sm text-destructive">{error}</p>}
         <Button type="submit" disabled={submitting} className="rounded-none bg-palm text-sand-50 hover:bg-palm-700 w-full h-12 text-sm uppercase tracking-[0.18em]">
           {submitting ? 'Sending…' : 'Send me the guide'}

@@ -4,6 +4,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
+import LeadGate from '@/components/lead-gate';
 import { getGuide, getGuideSlugs } from '@/lib/blog';
 import { mdxComponents } from '@/components/mdx-components';
 import { JsonLd, articleSchema, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
@@ -52,6 +53,14 @@ export default function GuidePage({ params }) {
       <section className="container py-16 lg:py-24 max-w-3xl">
         <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: fm.title }]} />
 
+        {/* Lead gate wraps the entire body when frontmatter `gated: true`. The
+            gate requires name/email/phone before content is shown. Per-asset:
+            unlock state lives in component memory only, not in a cookie. */}
+        <LeadGate
+          assetSlug={`guide:${guide.slug}`}
+          assetTitle={fm.title}
+          downloadUrl={fm.downloadUrl}
+        >
         {Array.isArray(fm.tldr) && fm.tldr.length > 0 && (
           <div className="mt-10 bg-sand-50 border border-border p-6">
             <div className="editorial-eyebrow mb-3"><span className="editorial-rule" />TL;DR</div>
@@ -78,6 +87,7 @@ export default function GuidePage({ params }) {
             </dl>
           </div>
         )}
+        </LeadGate>
 
         <div className="mt-14">
           <Link href="/guides" className="text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm">← All guides</Link>

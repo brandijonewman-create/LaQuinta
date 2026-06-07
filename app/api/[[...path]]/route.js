@@ -26,6 +26,32 @@ async function clientMeta(request) {
   };
 }
 
+// ---- POST /api/leads/gate — universal per-asset lead gate ----
+async function handleLeadsGate(request) {
+  const body = await readJson(request);
+  const name = cleanString(body?.name, 160);
+  const email = cleanString(body?.email, 200);
+  const phone = cleanString(body?.phone, 50);
+  const assetSlug = cleanString(body?.assetSlug, 200);
+  const assetTitle = cleanString(body?.assetTitle, 300);
+  const downloadUrl = cleanString(body?.downloadUrl, 500);
+
+  if (!name || !email || !phone) return err('Name, email, and phone are required.');
+  if (!isEmail(email)) return err('Invalid email.');
+
+  const doc = {
+    id: randomUUID(),
+    type: 'gated-asset',
+    source: assetSlug || 'unknown',
+    createdAt: new Date().toISOString(),
+    payload: { name, email, phone, assetSlug, assetTitle, downloadUrl },
+    meta: await clientMeta(request),
+  };
+  try { await (await leadCollection()).insertOne(doc); } catch { return err('Database error.', 500); }
+
+  return json({ ok: true, id: doc.id });
+}
+
 // ---- POST /api/collaborate — realtor collaborator application ----
 async function handleCollaborate(request) {
   const body = await readJson(request);
@@ -142,7 +168,7 @@ async function handleLeadsMagnet(request) {
   if (!magnet)        return err('Unknown magnet.');
   if (!name)          return err('Missing name.');
   if (!isEmail(email))return err('Invalid email.');
-  if (magnet.requirePhone && !phone) return err('Missing phone.');
+  if (!phone) return err('Missing phone.');
 
   const submission = {
     id: randomUUID(),
@@ -236,6 +262,7 @@ export async function POST(request, { params }) {
     case 'valuation':     return handleValuation(request);
     case 'leads':         return handleLeadCapture(request);
     case 'leads/magnet':  return handleLeadsMagnet(request);
+    case 'leads/gate':    return handleLeadsGate(request);
     case 'collaborate':   return handleCollaborate(request);
     default:              return err(`POST /api/${path} not implemented.`, 404);
   }
