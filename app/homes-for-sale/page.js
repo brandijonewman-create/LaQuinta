@@ -34,7 +34,7 @@ export default function HomesForSaleIndex() {
 
         <div className="mt-10 max-w-2xl">
           <Disclaimer>
-            This site is an independent guide. We do not list, broker, or sell real estate. When the IDX feed goes live it will be powered by California-licensed partners only.
+            This site is the definitive guide. Listings are powered by our California-licensed realtor partners. The live IDX feed goes online when the CARETS/CRMLS data is in place.
           </Disclaimer>
         </div>
 

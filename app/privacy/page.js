@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         <Breadcrumbs items={[{ label: 'Privacy' }]} />
         <div className="prose-editorial mt-10 space-y-6 text-foreground/80 leading-relaxed">
           <p>
-            {site.name} is an independent guide. We collect only the information you voluntarily submit through site forms (community quiz, valuation request, lead-magnet downloads). That information is stored in our database and is used solely to follow up on your request.
+            {site.name} is an editorial site about La Quinta golf real estate. We collect only the information you voluntarily submit through site forms (community quiz, valuation request, lead-magnet downloads). That information is stored in our database and is used solely to follow up on your request.
           </p>
           <p>
             We use Google Analytics 4 to understand site traffic in aggregate. We do not sell your information.

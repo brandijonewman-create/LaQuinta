@@ -24,7 +24,7 @@ const NETWORK_MARKETS = [
 
 export const metadata = {
   title: 'About',
-  description: `About ${site.name} — an independent guide to La Quinta golf real estate. Owned and operated by ${owner.name}.`,
+  description: `About ${site.name} — the definitive guide to La Quinta golf real estate. Owned and operated by ${owner.name}.`,
   alternates: { canonical: '/about' },
 };
 
@@ -33,8 +33,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="An independent guide to La Quinta."
-        subtitle={`${site.name} covers the seven private golf communities of La Quinta, California, the architects who built them, and the lifestyle they sit inside. Independent. Not a brokerage.`}
+        title="The definitive guide to La Quinta."
+        subtitle={`${site.name} covers the seven private golf communities of La Quinta, California, the architects who built them, and the lifestyle they sit inside. `}
       />
 
       <section className="container py-16 lg:py-24">
@@ -44,10 +44,10 @@ export default function AboutPage() {
           <div className="lg:col-span-7 space-y-6 text-foreground/80 leading-relaxed">
             <h2 className="font-serif text-3xl text-palm">Owned and operated by 7671 Enterprises LLC</h2>
             <p>
-              {site.name} is owned and operated by <strong className="text-palm">{owner.name}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each one independent, each one written for the buyer who wants the real story before the sales pitch.
+              {site.name} is owned and operated by <strong className="text-palm">{owner.name}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each one written for the buyer who wants the real story before the sales pitch.
             </p>
             <p>
-              The network exists because the desert golf market is consistently misrepresented online. Most coverage is either listing-portal noise or thinly disguised marketing for a specific brokerage. The independent-publication slot &mdash; honest coverage, no agent affiliation, no fake testimonials, no fabricated stats &mdash; was empty. We&rsquo;re filling it, one city at a time.
+              The network exists because the desert golf market is consistently misrepresented online. Most coverage is either listing-portal noise or thinly disguised marketing for a single brokerage. The trusted-resource slot &mdash; honest coverage, no fake testimonials, no fabricated stats, built in partnership with realtors who actually work the market &mdash; was empty. We&rsquo;re filling it, one city at a time.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-6">What we publish</h2>
@@ -57,7 +57,6 @@ export default function AboutPage() {
 
             <h2 className="font-serif text-3xl text-palm pt-6">What we don&rsquo;t do</h2>
             <ul className="list-disc pl-5 space-y-2">
-              <li>We do not list, broker, or sell real estate.</li>
               <li>We do not publish fabricated testimonials or quotes.</li>
               <li>We do not publish unverified market figures, initiation fees, or transaction prices.</li>
               <li>We do not publish celebrity or homeowner addresses.</li>

@@ -25,7 +25,7 @@ export default function CollaboratePage() {
             <div className="editorial-eyebrow mb-5"><span className="editorial-rule" />Who we’re looking for</div>
             <h2 className="font-serif text-3xl text-palm leading-[1.1] mb-6">A small bench. Real expertise. La Quinta only.</h2>
             <div className="prose prose-sm text-foreground/80 max-w-none space-y-4">
-              <p>This is an independent guide to La Quinta, California — not a brokerage. We don’t list, broker, or sell real estate ourselves. Instead, when a reader is ready to actually transact, we hand them off to a small, hand-picked group of California-licensed real estate professionals who specialize in La Quinta’s private clubs.</p>
+              <p>This is the definitive guide to La Quinta, California — built in partnership with California-licensed realtors. We don’t list, broker, or sell real estate ourselves. Instead, when a reader is ready to actually transact, we hand them off to a small, hand-picked group of California-licensed real estate professionals who specialize in La Quinta’s private clubs.</p>
               <p>If your business is built around <strong>PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, La Quinta Country Club, or The Quarry</strong> — and you can speak honestly about what it’s actually like to own and live inside them — we’d like to hear from you.</p>
               <p>What collaborators get:</p>
               <ul>

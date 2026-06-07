@@ -76,7 +76,7 @@ export function FeaturedRealtorSlot() {
             <div className="text-[11px] uppercase tracking-[0.28em] text-gold mb-4">Featured Realtor Slot — Open</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] mb-6">This space is reserved <span className="text-gold">for one La Quinta realtor.</span></h2>
             <div className="space-y-4 text-sand-50/85 text-base leading-relaxed max-w-xl">
-              <p>La Quinta Golf Lifestyle is an independent guide — we don’t list homes ourselves. We route every qualified buyer lead generated through this site to a small, hand-picked bench of California-licensed realtors who actually work inside the seven private clubs.</p>
+              <p>La Quinta Golf Lifestyle is the definitive guide — we don’t list homes ourselves. We route every qualified buyer lead generated through this site to a small, hand-picked bench of California-licensed realtors who actually work inside the seven private clubs.</p>
               <p>If you’re a licensed California realtor who specializes in PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, La Quinta Country Club, or The Quarry — and you want to be the name buyers see when they reach out for showings, off-market intel, and club introductions — we want to talk.</p>
             </div>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">

@@ -10,13 +10,13 @@ export default function SiteFooter() {
           <div className="lg:col-span-4">
             <div className="font-serif text-2xl leading-tight">{site.name}</div>
             <div className="text-xs uppercase tracking-[0.28em] text-gold/90 mt-2">
-              Independent · La Quinta, CA
+              La Quinta, CA · Built with local realtors, CA
             </div>
             <p className="text-sm text-sand-50/75 mt-6 max-w-sm leading-relaxed">
               {site.tagline}
             </p>
             <p className="text-xs text-sand-50/55 mt-6 leading-relaxed">
-              An independent guide. {owner.name}, {owner.title}.
+              The definitive guide. {owner.name}, {owner.title}.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function SiteFooter() {
         <div className="mt-14 pt-8 border-t border-sand-50/15">
           <p className="text-[11px] leading-relaxed text-sand-50/55 max-w-4xl">
             <span className="text-gold/90 uppercase tracking-[0.22em] mr-2">Disclosure</span>
-            {site.name} is an independent guide. We do not list, broker, or sell real estate.
+            {site.name} works in partnership with California-licensed real estate professionals.
             Any community, club, or market figure referenced is informational only.{' '}
             {MARKET_DISCLAIMER}
           </p>
