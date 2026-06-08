@@ -88,15 +88,48 @@ export default function CollaboratorPage({ params }) {
                     {p.bio}
                   </div>
 
-                  {p.url ? (
-                    <a
-                      href={p.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-6 inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm transition-colors"
-                    >
-                      Visit {p.affiliation || p.name} →
-                    </a>
+                  {Array.isArray(p.services) && p.services.length > 0 ? (
+                    <div className="mt-8">
+                      <div className="text-[11px] uppercase tracking-[0.22em] text-terracotta mb-3">Services</div>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-foreground/80">
+                        {p.services.map((s) => (
+                          <li key={s} className="border-l border-gold/40 pl-3">{s}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+
+                  {Array.isArray(p.brokeragePartners) && p.brokeragePartners.length > 0 ? (
+                    <div className="mt-8">
+                      <div className="text-[11px] uppercase tracking-[0.22em] text-terracotta mb-3">Brokerage Partners</div>
+                      <div className="flex flex-wrap gap-2">
+                        {p.brokeragePartners.map((b) => (
+                          <span key={b} className="inline-block text-xs px-3 py-1.5 bg-sand-50 border border-border text-foreground/80">
+                            {b}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+
+                  {(p.phone || p.url) ? (
+                    <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+                      {p.phone ? (
+                        <a href={`tel:${p.phone.replace(/[^0-9+]/g, '')}`} className="text-palm hover:text-terracotta">
+                          {p.phone}
+                        </a>
+                      ) : null}
+                      {p.url ? (
+                        <a
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm transition-colors"
+                        >
+                          Visit {p.affiliation || p.name} →
+                        </a>
+                      ) : null}
+                    </div>
                   ) : null}
                 </div>
               </div>
