@@ -29,10 +29,10 @@ const otherMeta = ADSENSE_PUB_ID
 export const metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: site.seoTitle,
     template: `%s · ${site.name}`,
   },
-  description: site.description,
+  description: site.seoDescription,
   applicationName: site.name,
   authors: [{ name: owner.name }],
   creator: owner.name,
@@ -42,8 +42,8 @@ export const metadata = {
     locale: 'en_US',
     url: site.url,
     siteName: site.name,
-    title: site.name,
-    description: site.description,
+    title: site.seoTitle,
+    description: site.seoDescription,
   },
   // Hard rule: suppress Next's auto-emitted twitter:* tags.
   twitter: null,

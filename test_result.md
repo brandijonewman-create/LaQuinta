@@ -424,16 +424,156 @@ frontend:
   # Frontend UI not under test in this round.
 
 metadata:
-  created_by: "main_agent"
-  version: "1.0"
-  test_sequence: 2
-  run_ui: false
+  test_sequence: 3
+  run_ui: true
 
 test_plan:
   current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
+
+new_frontend_tasks:
+  - task: "Homepage SEO title length ≤ 60 chars"
+    implemented: true
+    working: true
+    file: "app/layout.js, lib/site-config.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: "NA"
+        -agent: "main"
+        -comment: |
+          Previously homepage <title> was `${site.name} — ${site.tagline}` = 105 chars.
+          Now uses new `site.seoTitle` = "La Quinta Golf Homes, Private Clubs & Desert Lifestyle" (54 chars).
+          Verify: navigate to homepage `/`, read `document.title`, assert length is between 40 and 65 chars
+          and does NOT contain a trailing em-dash + long tagline. Also check that og:title / og:description
+          match the new short strings.
+        -working: true
+        -agent: "testing"
+        -comment: |
+          ✅ ALL SEO TITLE TESTS PASSED (6/6):
+          [1.1] Homepage document.title: "La Quinta Golf Homes, Private Clubs & Desert Lifestyle"
+          [1.2] Title length: 54 characters (within 40-65 range) ✓
+          [1.3] Title exactly matches expected value ✓
+          [1.4] Title does NOT contain old substring "The guide to golf homes, private clubs, and the desert lifestyle of La Quinta" ✓
+          [1.5] Meta description exists and is 158 chars (≤165 limit) ✓
+          [1.6] og:title exists and is 54 chars (≤65 limit) ✓
+          [1.7] og:description tag exists ✓
+          [1.8] Spot-check: /blog page title follows template pattern "Blog · La Quinta Golf Lifestyle" ✓
+          
+          SEO metadata is correctly optimized for Google SERPs. All OpenGraph tags properly configured.
+
+  - task: "Homepage 'From the Blog' section shows real published posts (no 'Coming soon')"
+    implemented: true
+    working: true
+    file: "components/home/latest-journal.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: "NA"
+        -agent: "main"
+        -comment: |
+          Previous version was 3 hard-coded placeholder cards linking to `/blog` (index) and displaying
+          the text "Coming soon". Now dynamically loads the 3 most-recent posts from /content/blog via
+          getAllPosts() and links to /blog/{slug}. There are currently 11 published MDX posts so the
+          section should always render.
+          Verify:
+            1. On the homepage `/`, scroll to the "From the Blog" section (H2: "Long-form reading.").
+            2. Exactly 3 article cards render.
+            3. None of the cards contain the text "Coming soon".
+            4. Each card's title link href matches /blog/{slug} where {slug} is one of the real MDX slugs
+               in /content/blog (not /blog).
+            5. Clicking a card navigates to the corresponding blog article page and returns HTTP 200.
+            6. An "All articles" link exists in the section header and goes to /blog.
+        -working: true
+        -agent: "testing"
+        -comment: |
+          ✅ ALL BLOG SECTION TESTS PASSED (9/9):
+          [2.1] Section with H2 "Long-form reading" found on homepage ✓
+          [2.2] Exactly 3 article cards render (not placeholder cards) ✓
+          [2.3] NONE of the cards contain "Coming soon" text ✓
+          [2.4] All 3 article links follow correct pattern /blog/[slug]:
+            • /blog/golf-course-community-living-what-buyers-need-to-know
+            • /blog/club-membership-styles
+            • /blog/dye-vs-fazio-la-quinta
+          [2.5] All 3 link hrefs are distinct (no duplicates) ✓
+          [2.6] "All articles" link exists and navigates to /blog ✓
+          [2.7] Article page navigation test:
+            • Clicked first article: "Golf Course Community Living: What Buyers Need to Know"
+            • HTTP 200 response ✓
+            • Article page has proper H1 with real title ✓
+            • Article page title follows template pattern: "Golf Course Community Living: What Buyers Need to Know · La Quinta Golf Lifestyle" ✓
+          
+          Real MDX posts are now properly displayed on homepage. No placeholder content. All navigation working correctly.
+
+agent_communication:
+    -agent: "main"
+    -message: |
+      SEO bug fixes ready for browser verification. Base URL: http://localhost:3000 (from container),
+      or use the preview URL from NEXT_PUBLIC_BASE_URL in /app/.env if testing externally.
+
+      Two fixes applied:
+        1) Homepage <title> shortened from 105 chars → 54 chars via new `site.seoTitle` field.
+           Files: /app/lib/site-config.js, /app/app/layout.js.
+        2) Replaced placeholder "Coming soon" journal cards on the homepage with a real MDX-driven
+           latest-3 list linking to real /blog/{slug} URLs.
+           File: /app/components/home/latest-journal.js.
+
+      Real MDX slugs available in /content/blog for verification:
+        inside-the-madison-club, pga-west-demystified, dye-vs-fazio-la-quinta,
+        club-membership-styles, equity-vs-non-equity-club-membership-in-la-quinta-a-practical-breakdown,
+        golf-course-community-living-what-buyers-need-to-know, la-quinta-isnt-a-tax-move,
+        prop-13-for-la-quinta-buyers, the-cove-and-old-town, water-rights-honestly,
+        welcome-to-la-quinta-golf-lifestyle.
+
+      Specific assertions to run:
+        - document.title.length is between 40 and 65 characters
+        - document.title does NOT contain "The guide to golf homes, private clubs, and the desert lifestyle of La Quinta"
+        - `<meta name="description">` content length ≤ 165 chars
+        - `<meta property="og:title">` content length ≤ 65 chars
+        - Homepage renders a section with H2 containing "Long-form reading" (case-insensitive, or accept "From the Blog" eyebrow) and exactly 3 article <article> cards
+        - None of those 3 cards contain the string "Coming soon"
+        - Every card link href starts with "/blog/" and has additional path segments (i.e., NOT just "/blog")
+        - Clicking one of the cards navigates to a page that returns 200 and is not a 404
+
+      No credentials needed. No form submissions required. Purely visual + DOM assertions.
+    -agent: "testing"
+    -message: |
+      ✅ SEO BUG FIX VERIFICATION COMPLETE - ALL TESTS PASSED (15/15)
+      
+      Tested both SEO fixes at https://la-quinta-living.preview.emergentagent.com:
+      
+      **Fix 1: Homepage SEO Title (6/6 tests passed)**
+      • Homepage <title> successfully shortened from 105 → 54 characters
+      • Title: "La Quinta Golf Homes, Private Clubs & Desert Lifestyle"
+      • Meta description: 158 chars (within 165 limit)
+      • og:title: 54 chars (within 65 limit)
+      • og:description tag present
+      • Template pattern verified on /blog page
+      
+      **Fix 2: Homepage Blog Section (9/9 tests passed)**
+      • "From the Blog" section with H2 "Long-form reading" found
+      • Exactly 3 real article cards render (no placeholders)
+      • NO "Coming soon" text anywhere
+      • All 3 links follow pattern /blog/[slug]:
+        - golf-course-community-living-what-buyers-need-to-know
+        - club-membership-styles
+        - dye-vs-fazio-la-quinta
+      • All hrefs are distinct
+      • "All articles" link navigates to /blog
+      • Article page navigation works (HTTP 200)
+      • Article pages have proper H1 and follow title template pattern
+      
+      Both SEO fixes are working correctly. Homepage is now optimized for Google SERPs with proper title length and real blog content instead of placeholders.
+
+# --- Original phase-4 tail below (preserved) ---
+
+original_phase4_test_plan:
+  test_sequence: 2
+  run_ui: false
 
 agent_communication:
     -agent: "main"
