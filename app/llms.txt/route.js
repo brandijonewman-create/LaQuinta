@@ -17,6 +17,7 @@
 import { site, owner, communities, architects, market } from '@/lib/site-config';
 import { getAllPosts, getAllGuides } from '@/lib/blog';
 import { collaborators, getCollaboratorPageSlugs, getCollaborator } from '@/lib/collaborators';
+import { partner } from '@/lib/exclusive-partner';
 
 // Force this route to be rendered on every request so newly-added posts,
 // guides and collaborators appear in /llms.txt immediately.
@@ -135,20 +136,21 @@ function build() {
   out.push(line('/golf-clubs', 'Golf clubs directory', 'Directory of La Quinta private golf clubs.'));
   out.push('');
 
-  // ---- Collaborators & partnerships --------------------------------------
-  out.push('## Editorial Collaborators & Partnerships');
+  // ---- Exclusive Market Partner & collaborators --------------------------
+  out.push('## Exclusive Market Partner & Editorial Collaborators');
   out.push('');
+  out.push(line('/#meet-kathy', `Meet ${partner.displayName}`, `${partner.brokerage.name} \u00b7 CA DRE #${partner.dreLicense} \u2014 the site\u2019s Exclusive Market Partner for La Quinta.`));
   out.push(line('/collaborators', 'Editorial collaborators', 'Vetted professionals who contribute editorial expertise to the site.'));
   for (const pageSlug of collabPages) {
     // Represent each page by its first collaborator.
     const first = collaborators.find((c) => (c.page || c.slug) === pageSlug);
     if (!first) continue;
     const note = first.jobTitle
-      ? `${first.jobTitle}${first.affiliation ? ` — ${first.affiliation}` : ''}.`
+      ? `${first.jobTitle}${first.affiliation ? ` \u2014 ${first.affiliation}` : ''}.`
       : undefined;
     out.push(line(`/collaborators/${pageSlug}`, first.name, note));
   }
-  out.push(line('/collaborate', 'Apply for the Featured Realtor slot', 'How California-licensed agents can partner with the site as its Featured Realtor.'));
+  out.push(line('/collaborate', 'Exclusive Market Partner program', 'How California-licensed agents can lease a city site in the Golf Lifestyle Network portfolio (La Quinta is filled; other cities open).'));
   out.push(line('/property-spotlight/sample', 'Sample property spotlight', 'Reference format for the site\u2019s property-spotlight editorial slot.'));
   out.push('');
 

@@ -65,7 +65,7 @@ export default function AboutPage() {
 
             <h2 className="font-serif text-3xl text-palm pt-6">How we make money</h2>
             <p>
-              Display advertising via Google AdSense and partnership arrangements with one vetted Featured Realtor. No affiliate placements in the articles, no paid community placement in the quiz results, no listing fees.
+              Display advertising via Google AdSense and an annual Exclusive Market Partner subscription with Kathy Schowe, our California-licensed real estate professional for La Quinta. No affiliate placements in the articles, no paid community placement in the quiz results, no listing fees.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-10">The Golf Lifestyle network</h2>

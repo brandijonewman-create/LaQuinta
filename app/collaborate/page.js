@@ -2,10 +2,12 @@ import CollaborateForm from './CollaborateForm';
 import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
 import Disclaimer from '@/components/shared/disclaimer';
+import Link from 'next/link';
+import { partner } from '@/lib/exclusive-partner';
 
 export const metadata = {
-  title: 'Realtor Collaborators — Apply to Partner',
-  description: 'Licensed California real estate professionals: apply to become a featured collaborator on La Quinta Golf Lifestyle. We work with a small, vetted bench of agents who actually know La Quinta’s private clubs.',
+  title: 'Exclusive Market Partner — La Quinta slot filled',
+  description: 'The La Quinta Exclusive Market Partner slot is filled by Kathy Schowe. Licensed California realtors interested in the same annual partnership in another California city can apply here.',
   alternates: { canonical: '/collaborate' },
 };
 
@@ -14,26 +16,40 @@ export default function CollaboratePage() {
     <>
       <PageHero
         eyebrow="For Licensed Real Estate Professionals"
-        title="Apply to become a collaborator."
-        subtitle="We work with a small, vetted bench of California-licensed agents who actually live and sell inside La Quinta’s private clubs. If that’s you, tell us about your practice and we’ll be in touch."
+        title="La Quinta is filled. Another California city?"
+        subtitle="Exactly one realtor per city — an Exclusive Market Partnership. La Quinta belongs to Kathy Schowe. If you want the same arrangement in Palm Desert, Rancho Mirage, Bermuda Dunes, Indian Wells, or another California golf market, tell us about your practice."
       />
       <section className="container py-16 lg:py-24">
-        <Breadcrumbs items={[{ label: 'Homes for Sale', href: '/homes-for-sale' }, { label: 'Collaborate' }]} />
+        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Exclusive Market Partner' }]} />
 
         <div className="grid lg:grid-cols-[1.1fr_1fr] gap-14 mt-10">
           <div>
-            <div className="editorial-eyebrow mb-5"><span className="editorial-rule" />Who we’re looking for</div>
-            <h2 className="font-serif text-3xl text-palm leading-[1.1] mb-6">A small bench. Real expertise. La Quinta only.</h2>
+            <div className="editorial-eyebrow mb-5"><span className="editorial-rule" />La Quinta slot</div>
+            <div className="bg-sand-50 border border-border p-6 mb-10">
+              <div className="text-[11px] uppercase tracking-[0.22em] text-terracotta mb-2">Filled — La Quinta, CA</div>
+              <div className="font-serif text-2xl text-palm">{partner.displayName}</div>
+              <div className="text-sm text-foreground/70 mt-1">{partner.brokerage.name} · CA DRE #{partner.dreLicense}</div>
+              <Link href="/#meet-kathy" className="mt-3 inline-block text-sm text-palm underline decoration-terracotta underline-offset-2 hover:text-terracotta">
+                Meet Kathy →
+              </Link>
+            </div>
+
+            <div className="editorial-eyebrow mb-5"><span className="editorial-rule" />How the partnership works</div>
+            <h2 className="font-serif text-3xl text-palm leading-[1.1] mb-6">One realtor. One city. Annual subscription.</h2>
             <div className="prose prose-sm text-foreground/80 max-w-none space-y-4">
-              <p>This is the definitive guide to La Quinta, California — built in partnership with California-licensed realtors. We don’t list, broker, or sell real estate ourselves. Instead, when a reader is ready to actually transact, we hand them off to a small, hand-picked group of California-licensed real estate professionals who specialize in La Quinta’s private clubs.</p>
-              <p>If your business is built around <strong>PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, La Quinta Country Club, or The Quarry</strong> — and you can speak honestly about what it’s actually like to own and live inside them — we’d like to hear from you.</p>
-              <p>What collaborators get:</p>
+              <p>Golf Lifestyle Network builds and operates city-level golf-lifestyle sites. Each site is leased on an annual recurring subscription to exactly one California-licensed realtor as its Exclusive Market Partner. One realtor per city. No competing names. No round-robin lead routing.</p>
+              <p>What the partner gets:</p>
               <ul>
-                <li>Direct introductions to qualified leads from the Community Quiz funnel and lead magnets.</li>
-                <li>Editorial mentions inside the relevant community profiles you specialize in.</li>
-                <li>First-look at IDX-fed listings tagged to your specialty communities when our MLS feed goes live.</li>
+                <li>A pre-built starter site featuring your headshot, brokerage, and community list — ready before you sign.</li>
+                <li>Co-branding throughout — your name and brand integrated into every page, every guide, every email.</li>
+                <li>Quarterly co-branded golf market report for your city.</li>
+                <li>Co-branded buyer&rsquo;s guide PDF you can hand to clients.</li>
+                <li>&ldquo;Exclusive Market Partner&rdquo; designation on the site — one realtor per city, no exceptions.</li>
+                <li>Every qualified lead generated through the site routes directly to you — the contact form, the community quiz, the home-valuation form, gated downloads, all of it.</li>
               </ul>
-              <p>What we ask in return: honesty, responsiveness, and a strict “no fakes” standard for client communication — the same rule we hold ourselves to.</p>
+              <p>What we ask: honesty, responsiveness, and a strict &ldquo;no-fakes&rdquo; standard for client communication.</p>
+              <p><strong>Risk-reversal guarantee:</strong> if you don&rsquo;t receive at least three qualified, ready-to-tour buyer leads in your first 90 days, we refund your payment in full and you keep the co-branded content.</p>
+              <p><strong>Pricing:</strong> $173/month or $1,733/year for U.S. markets. No setup fees. Annual renewal.</p>
             </div>
 
             <div className="mt-10">

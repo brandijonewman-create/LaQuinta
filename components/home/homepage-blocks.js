@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
+import { partner } from '@/lib/exclusive-partner';
 
 const stats = [
   { value: '14', label: 'Golf communities' },
@@ -69,46 +70,74 @@ export function ResourcesRow() {
 
 export function FeaturedRealtorSlot() {
   return (
-    <section className="bg-palm text-sand-50">
+    <section id="meet-kathy" className="bg-palm text-sand-50">
       <div className="container py-20 lg:py-28">
-        <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 items-start">
-          <div>
-            <div className="text-[11px] uppercase tracking-[0.28em] text-gold mb-4">Featured Realtor Slot — Open</div>
-            <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] mb-6">This space is reserved <span className="text-gold">for one La Quinta realtor.</span></h2>
-            <div className="space-y-4 text-sand-50/85 text-base leading-relaxed max-w-xl">
-              <p>La Quinta Golf Lifestyle is the definitive guide — we don’t list homes ourselves. We route every qualified buyer lead generated through this site to a small, hand-picked bench of California-licensed realtors who actually work inside the seven private clubs.</p>
-              <p>If you’re a licensed California realtor who specializes in The Madison Club, The Hideaway, Andalusia, The Tradition, La Quinta Country Club, or The Quarry — and you want to be the name buyers see when they reach out for showings, off-market intel, and club introductions — we want to talk.</p>
+        <div className="grid lg:grid-cols-[1fr_1.15fr] gap-12 lg:gap-16 items-center">
+          {/* Portrait side */}
+          <div className="flex flex-col items-start">
+            <div className="w-full max-w-md">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={partner.headshot.src}
+                alt={partner.headshot.alt}
+                className="w-full aspect-[4/5] object-cover border-4 border-gold/70 shadow-2xl"
+              />
             </div>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/collaborate"
-                className="inline-flex items-center gap-2 bg-gold text-palm font-semibold tracking-[0.18em] uppercase text-xs px-7 py-4 hover:bg-gold/90 transition-colors"
-              >
-                Apply for the Featured Realtor Slot <ArrowUpRight size={15} />
-              </Link>
-              <Link
-                href="/property-spotlight/sample"
-                className="inline-flex items-center gap-2 border border-gold/60 text-gold tracking-[0.18em] uppercase text-xs px-7 py-4 hover:bg-gold/15 transition-colors"
-              >
-                See a Sample Property Spotlight <ArrowUpRight size={15} />
-              </Link>
+            <div className="mt-6 space-y-1.5">
+              <div className="text-[10px] uppercase tracking-[0.28em] text-gold">Exclusive Market Partner · La Quinta</div>
+              <div className="font-serif text-3xl md:text-4xl leading-tight text-sand-50">{partner.displayName}</div>
+              <div className="text-sm text-sand-50/70">{partner.brokerage.name} · CA DRE #{partner.dreLicense}</div>
             </div>
           </div>
+
+          {/* Copy side */}
           <div>
-            <div className="text-[10px] uppercase tracking-[0.24em] text-gold/90 mb-5">What the featured realtor gets</div>
-            <ul className="space-y-5">
-              {[
-                { t: 'Exclusive lead routing', d: 'Every buyer and seller lead generated through this site routes to our hand-picked bench. No competing names.' },
-                { t: 'Homepage placement', d: 'Your headshot, brokerage, and bio appear in this exact slot — the highest-traffic position on the site.' },
-                { t: 'Community-page co-branding', d: 'Listed as the “recommended specialist” on every La Quinta community profile and filter landing page.' },
-                { t: 'Curated buyer profile', d: 'Our visitors are pre-educated, financially-qualified, and ready to tour. No tire-kickers.' },
-              ].map((i) => (
-                <li key={i.t} className="border-l border-gold/40 pl-5">
-                  <div className="text-sm font-semibold tracking-wide text-sand-50">{i.t}</div>
-                  <div className="text-sm text-sand-50/75 leading-relaxed mt-1.5">{i.d}</div>
-                </li>
-              ))}
-            </ul>
+            <div className="text-[11px] uppercase tracking-[0.28em] text-gold mb-4">Meet Your La Quinta Realtor</div>
+            <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] mb-6">
+              Every buyer lead on this site routes to <span className="text-gold">{partner.displayName}.</span>
+            </h2>
+            <div className="space-y-4 text-sand-50/85 text-base leading-relaxed max-w-xl">
+              <p>{partner.bioShort}</p>
+              <p>
+                Because Kathy is the site&rsquo;s single Exclusive Market Partner, every showing request, off-market inquiry, and community introduction routes directly to her. No round-robin. No competing names.
+              </p>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
+              <div className="border-l border-gold/40 pl-4">
+                <div className="text-[10px] uppercase tracking-[0.22em] text-gold/90">Direct</div>
+                <a href={`tel:${partner.contact.phoneTel}`} className="font-serif text-xl text-sand-50 hover:text-gold transition-colors block mt-1">
+                  {partner.contact.phone}
+                </a>
+              </div>
+              <div className="border-l border-gold/40 pl-4">
+                <div className="text-[10px] uppercase tracking-[0.22em] text-gold/90">Email</div>
+                <a href={`mailto:${partner.contact.email}`} className="font-serif text-base text-sand-50 hover:text-gold transition-colors block mt-1 break-all">
+                  {partner.contact.email}
+                </a>
+              </div>
+              <div className="border-l border-gold/40 pl-4 sm:col-span-2">
+                <div className="text-[10px] uppercase tracking-[0.22em] text-gold/90">Office</div>
+                <div className="text-sm text-sand-50/85 mt-1">{partner.brokerage.address}</div>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <a
+                href={partner.scheduler.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gold text-palm font-semibold tracking-[0.18em] uppercase text-xs px-7 py-4 hover:bg-gold/90 transition-colors"
+              >
+                {partner.scheduler.label} <ArrowUpRight size={15} />
+              </a>
+              <Link
+                href="/community-quiz"
+                className="inline-flex items-center gap-2 border border-gold/60 text-gold tracking-[0.18em] uppercase text-xs px-7 py-4 hover:bg-gold/15 transition-colors"
+              >
+                Take the Community-Fit Quiz <ArrowUpRight size={15} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
