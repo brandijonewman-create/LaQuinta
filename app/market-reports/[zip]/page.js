@@ -3,35 +3,102 @@ import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
 import Disclaimer from '@/components/shared/disclaimer';
 import LeadGate from '@/components/lead-gate';
+import ThinPageIntro from '@/components/shared/thin-page-intro';
+import ThinPageFaq from '@/components/shared/thin-page-faq';
+import { JsonLd, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
+import { MARKET_REPORT_COPY } from '@/lib/content/thin-page-copy';
+import { site, owner } from '@/lib/site-config';
 
-const VALID_ZIPS = ['92253'];
+const VALID_ZIPS = Object.keys(MARKET_REPORT_COPY);
 
 export function generateStaticParams() {
   return VALID_ZIPS.map((zip) => ({ zip }));
 }
 
 export function generateMetadata({ params }) {
-  if (!VALID_ZIPS.includes(params.zip)) return {};
+  const copy = MARKET_REPORT_COPY[params.zip];
+  if (!copy) return {};
   return {
-    title: `La Quinta Market Report — ${params.zip}`,
-    description: `Quarterly market context for La Quinta ZIP ${params.zip} — ranges only, sourced from CARETS/CRMLS via our realtor partners.`,
+    title: copy.title,
+    description: copy.metaDescription,
     alternates: { canonical: `/market-reports/${params.zip}` },
+  };
+}
+
+// Article schema for the quarterly report itself. Google treats a quarterly
+// research/data report as an editorial Article when it has clear publish +
+// modified dates, an author (the site organization), and an `about` Place.
+function marketReportArticleSchema(zip, copy) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: copy.title,
+    description: copy.metaDescription,
+    datePublished: copy.datePublished,
+    dateModified: copy.dateModified,
+    author: { '@type': 'Organization', name: owner.name },
+    publisher: {
+      '@type': 'Organization',
+      name: site.name,
+      logo: { '@type': 'ImageObject', url: `${site.url}/icon.png` },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${site.url}/market-reports/${zip}`,
+    },
+    about: {
+      '@type': 'Place',
+      name: `La Quinta, CA ${zip}`,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'La Quinta',
+        addressRegion: 'CA',
+        postalCode: zip,
+        addressCountry: 'US',
+      },
+    },
   };
 }
 
 export default function MarketReportZipPage({ params }) {
   if (!VALID_ZIPS.includes(params.zip)) notFound();
+  const copy = MARKET_REPORT_COPY[params.zip];
+
+  const crumb = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Market Reports', url: '/market-reports' },
+    { name: `La Quinta ${params.zip} Market Report`, url: `/market-reports/${params.zip}` },
+  ]);
+  const faq = faqSchema(copy.faqs);
+  const article = marketReportArticleSchema(params.zip, copy);
+
   return (
     <>
+      <JsonLd data={crumb} />
+      <JsonLd data={faq} />
+      <JsonLd data={article} />
+
       <PageHero
         eyebrow={`ZIP ${params.zip} · Q3 2026`}
         title={`La Quinta · ${params.zip} Market Report`}
-        subtitle="A quarterly read on the La Quinta golf-community market, sourced from CARETS/CRMLS via our realtor partners. Verify all figures with a licensed California real-estate professional before transacting."
+        subtitle={copy.metaDescription}
       />
-      <section className="container py-16 lg:py-24">
-        <Breadcrumbs items={[{ label: 'Market Reports', href: '/market-reports' }, { label: params.zip }]} />
 
-        <div className="max-w-3xl mx-auto mt-10">
+      <section className="container pt-10">
+        <Breadcrumbs
+          items={[
+            { label: 'Market Reports', href: '/market-reports' },
+            { label: params.zip },
+          ]}
+        />
+      </section>
+
+      {/* Public preview intro — everyone sees this. */}
+      <ThinPageIntro>{copy.intro}</ThinPageIntro>
+
+      {/* Gated quarterly PDF + summary numbers. */}
+      <section className="container pb-16 lg:pb-20">
+        <div className="max-w-3xl mx-auto">
           <LeadGate
             assetSlug={`market-report:${params.zip}-q3-2026`}
             assetTitle={`the Q3 2026 La Quinta ${params.zip} Market Report`}
@@ -88,6 +155,8 @@ export default function MarketReportZipPage({ params }) {
           </LeadGate>
         </div>
       </section>
+
+      <ThinPageFaq faqs={copy.faqs} />
     </>
   );
 }

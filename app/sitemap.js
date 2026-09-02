@@ -27,6 +27,7 @@ const FILTERS = [
   'golf-membership-included',
   'mountain-view',
   'new-construction',
+  'pga-west',
   'the-madison-club',
   'under-2-million',
   '2-to-5-million',

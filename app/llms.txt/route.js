@@ -31,6 +31,7 @@ const HOMES_FILTERS = [
   { slug: 'golf-membership-included', label: 'Homes with golf membership included' },
   { slug: 'mountain-view', label: 'Mountain-view homes' },
   { slug: 'new-construction', label: 'New-construction homes' },
+  { slug: 'pga-west', label: 'PGA West homes' },
   { slug: 'the-madison-club', label: 'The Madison Club homes' },
   { slug: 'under-2-million', label: 'Homes under $2M' },
   { slug: '2-to-5-million', label: 'Homes from $2M to $5M' },

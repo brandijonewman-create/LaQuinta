@@ -1208,3 +1208,70 @@ agent_communication:
       No backend/API contract changes; no testing-agent run required for a
       pure config pass. Screenshots taken of /blog to confirm homepage /
       blog / listing pages all render clean.
+
+## Agent Communication (2026-09-02 — SEO Pass B item #4: FAQ + schema on thin pages)
+  - agent: "main"
+  - message: |
+      Wired the 15 pages of copy the user supplied into the routes and emitted
+      the required structured data.
+
+      NEW FILES
+        • /app/lib/content/thin-page-copy.js — single source of truth for the
+          9 /homes-for-sale/* filter pages, /market-reports/92253, and the 5
+          /guides/* pages. Every intro (400-600 words) and FAQ set (4-6 pairs)
+          lives here.
+        • /app/components/shared/thin-page-intro.js — renders the long-form
+          prose paragraph in an editorial column.
+        • /app/components/shared/thin-page-faq.js — renders the FAQ list as
+          a semantic <dl>.
+
+      ROUTE UPDATES
+        • /app/app/homes-for-sale/[filter]/page.js — replaced the tiny
+          `FILTERS` label/seo map with a full data-driven page that emits
+          FAQPage + BreadcrumbList JSON-LD, uses per-slug metadata
+          (title/description/canonical), renders the intro and FAQ, and keeps
+          the Disclaimer. All 9 filter slugs verified 200 OK.
+        • /app/app/market-reports/[zip]/page.js — public preview intro
+          renders ABOVE the LeadGate; FAQ renders below. Emits FAQPage +
+          BreadcrumbList + Article schema (Article has datePublished,
+          dateModified, author=Organization, about=Place "La Quinta, CA
+          92253"). datePublished/dateModified live in the copy module and
+          should be bumped each quarter when the PDF is refreshed.
+        • /app/app/guides/[slug]/page.js — public preview intro renders
+          ABOVE the LeadGate; public preview FAQ renders BELOW the gate.
+          FAQPage schema now uses the preview FAQ (higher-quality
+          buyer-facing Q&A) rather than the frontmatter FAQ. Article +
+          BreadcrumbList unchanged.
+
+      SCOPE NOTE (flagged in user reply)
+        • The supplied copy reintroduces PGA West as one of the seven private
+          clubs across every page. This is a policy reversal from the earlier
+          "PGA West is a separate future site" scope. I restored:
+          - `pga-west` slug in the /homes-for-sale filters index page
+          - `pga-west` slug in the sitemap FILTERS array
+          - `pga-west` slug in llms.txt HOMES_FILTERS
+          I did NOT restore the top-level `pga-west` community route
+          (/communities/pga-west) or add Nicklaus/Norman/Weiskopf to
+          site-config.architects, since the user only supplied /homes-for-sale
+          and /guides copy. Those routes will still 404. Ask the user to
+          confirm whether the full PGA West scope should return (dedicated
+          community page + Nicklaus/Norman/Weiskopf architect pages) or
+          whether PGA West should live only as a filter slug and be
+          referenced in guides/homes-for-sale copy for now.
+
+      VERIFIED VIA CURL
+        • /homes-for-sale/gated, /homes-for-sale/pga-west, /homes-for-sale/over-5-million
+          → 200 OK, FAQPage=1, BreadcrumbList=1, canonical self-referential
+        • /market-reports/92253 → 200 OK, FAQPage=1, BreadcrumbList=1,
+          Article=1, canonical /market-reports/92253
+        • /guides/2026-la-quinta-buyers-guide,
+          /guides/buying-into-an-equity-club → 200 OK, all three schemas
+          present, canonical self-referential
+
+      Screenshots taken of /homes-for-sale/gated and
+      /guides/2026-la-quinta-buyers-guide confirm intro + hero + breadcrumb
+      render as expected. LeadGate flow on guides remains intact.
+
+      Ready for Google Rich Results Test — the FAQPage, BreadcrumbList and
+      Article payloads should all validate. Do the test on prod after deploy.
+

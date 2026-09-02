@@ -3,51 +3,77 @@ import Link from 'next/link';
 import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
 import Disclaimer from '@/components/shared/disclaimer';
-
-const FILTERS = {
-  'gated':                      { label: 'Gated communities',         seo: 'Gated golf communities in La Quinta with private security and 24-hour access.' },
-  'golf-membership-included':   { label: 'Golf membership included',  seo: 'La Quinta homes where the purchase includes a deeded or transferable golf membership.' },
-  'mountain-view':              { label: 'Mountain views',             seo: 'La Quinta golf homes with direct Santa Rosa or Coral Reef mountain views.' },
-  'new-construction':           { label: 'New construction',           seo: 'Newly built La Quinta golf homes — currently strongest at Andalusia and later phases of The Madison Club.' },
-  'the-madison-club':           { label: 'The Madison Club homes',     seo: 'Homes inside The Madison Club, La Quinta\u2019s most discreet private community.' },
-  'under-2-million':            { label: 'Under $2 million',           seo: 'La Quinta golf homes priced under $2,000,000 — typically condos, fairway villas, and resale single-family in older communities.' },
-  '2-to-5-million':             { label: '$2M–$5M',                     seo: 'La Quinta golf homes priced $2,000,000–$5,000,000 — the mid-luxury band.' },
-  'over-5-million':             { label: 'Over $5 million',            seo: 'La Quinta golf homes priced over $5,000,000 — typically The Madison Club, The Hideaway, and The Quarry estate sections.' },
-};
+import ThinPageIntro from '@/components/shared/thin-page-intro';
+import ThinPageFaq from '@/components/shared/thin-page-faq';
+import { JsonLd, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
+import { HOMES_FOR_SALE_COPY, HOMES_FOR_SALE_SLUGS } from '@/lib/content/thin-page-copy';
 
 export function generateStaticParams() {
-  return Object.keys(FILTERS).map((filter) => ({ filter }));
+  return HOMES_FOR_SALE_SLUGS.map((filter) => ({ filter }));
 }
 
 export function generateMetadata({ params }) {
-  const f = FILTERS[params.filter];
-  if (!f) return {};
+  const copy = HOMES_FOR_SALE_COPY[params.filter];
+  if (!copy) return {};
   return {
-    title: `La Quinta Homes for Sale: ${f.label}`,
-    description: f.seo,
+    title: copy.title,
+    description: copy.metaDescription,
     alternates: { canonical: `/homes-for-sale/${params.filter}` },
   };
 }
 
 export default function HomesForSaleFilterPage({ params }) {
-  const f = FILTERS[params.filter];
-  if (!f) notFound();
+  const copy = HOMES_FOR_SALE_COPY[params.filter];
+  if (!copy) notFound();
+
+  const crumb = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Homes for Sale', url: '/homes-for-sale' },
+    { name: copy.heroTitle, url: `/homes-for-sale/${params.filter}` },
+  ]);
+  const faq = faqSchema(copy.faqs);
+
   return (
     <>
+      <JsonLd data={crumb} />
+      <JsonLd data={faq} />
+
       <PageHero
         eyebrow="Homes for Sale"
-        title={`La Quinta: ${f.label}`}
-        subtitle={f.seo}
+        title={copy.heroTitle}
+        subtitle={copy.heroSubtitle}
       />
-      <section className="container py-16 lg:py-24">
-        <Breadcrumbs items={[{ label: 'Homes for Sale', href: '/homes-for-sale' }, { label: f.label }]} />
-        <div className="mt-10 max-w-2xl">
+
+      <section className="container pt-10">
+        <Breadcrumbs
+          items={[
+            { label: 'Homes for Sale', href: '/homes-for-sale' },
+            { label: copy.heroTitle },
+          ]}
+        />
+      </section>
+
+      <ThinPageIntro>{copy.intro}</ThinPageIntro>
+
+      <ThinPageFaq faqs={copy.faqs} />
+
+      <section className="container pb-16 lg:pb-24">
+        <div className="max-w-3xl">
           <Disclaimer>
-            Live listings for this filter will appear here once the California IDX feed is connected. Current La Quinta listings, private showings, and buyer representation are provided by Kathy Schowe, our Exclusive Market Partner. No fabricated inventory in the meantime.
+            Live listings for this filter will appear here once the California
+            IDX feed is connected. Current La Quinta listings, private showings,
+            and buyer representation are provided by Kathy Schowe, our Exclusive
+            Market Partner. Estimate only &mdash; verify with a licensed
+            California real-estate professional before transacting.
           </Disclaimer>
-        </div>
-        <div className="mt-10">
-          <Link href="/homes-for-sale" className="text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm">← All filters</Link>
+          <div className="mt-8">
+            <Link
+              href="/homes-for-sale"
+              className="text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm"
+            >
+              &larr; All filters
+            </Link>
+          </div>
         </div>
       </section>
     </>
