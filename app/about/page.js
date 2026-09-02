@@ -42,9 +42,9 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-10">
           <div className="lg:col-span-7 space-y-6 text-foreground/80 leading-relaxed">
-            <h2 className="font-serif text-3xl text-palm">Owned and operated by 7671 Enterprises LLC</h2>
+            <h2 className="font-serif text-3xl text-palm">Owned and operated by {owner.fullName}</h2>
             <p>
-              {site.name} is owned and operated by <strong className="text-palm">{owner.name}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each written for the buyer who wants a clear picture of the communities before a showing is arranged.
+              {site.name} is owned and operated by <strong className="text-palm">{owner.fullName}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each written for the buyer who wants a clear picture of the communities before a showing is arranged.
             </p>
             <p>
               The network exists because most online coverage of desert golf real estate is either listing-portal noise or thinly veiled promotion for a single brokerage. We publish lifestyle context &mdash; architecture, membership, daily character &mdash; in partnership with the local realtor who actually works each market. The listings, the tours, and the representation come from them.

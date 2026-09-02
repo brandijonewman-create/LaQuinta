@@ -95,7 +95,7 @@ export async function GET() {
               opacity: 0.9,
             }}
           >
-            7671 Enterprises LLC · Owner &amp; Operator
+            7671 Enterprises, LLC DBA Golf Lifestyle Network
           </div>
           <div style={{ fontSize: 18, color: '#FAF6EE', opacity: 0.7 }}>
             {site.domain}

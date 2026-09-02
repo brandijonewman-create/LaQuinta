@@ -1275,3 +1275,67 @@ agent_communication:
       Ready for Google Rich Results Test — the FAQPage, BreadcrumbList and
       Article payloads should all validate. Do the test on prod after deploy.
 
+
+## Agent Communication (2026-09-02 — Email display removal + DBA rebrand)
+  - agent: "main"
+  - message: |
+      User directive: no email addresses displayed anywhere on the site
+      (contact form is the only public channel); ownership label is now
+      "7671 Enterprises, LLC DBA Golf Lifestyle Network".
+
+      EMAIL DISPLAY REMOVED
+        • /app/components/home/homepage-blocks.js — dropped the Email tile
+          from the Meet-Kathy section. Remaining tiles: Direct (phone) and
+          Office. Grid rebalanced to 2-up.
+        • /app/components/contextual-contact-form.js — dropped the Email
+          row from the partner card <dl>. Remaining rows: Phone + Office.
+        • /app/lib/email.js — removed the Email row from the Kathy contact
+          card inside the outbound welcome email (visitor still gets the
+          welcome email; it just does not print her address as a
+          click-to-mail line inside the body).
+        • /app/lib/site-config.js — deleted the `contactEmail` and
+          `contactEmailIsPlaceholder` fields from `site` (they were the
+          placeholder "contact@laquintagolflifestyle.com" carried over from
+          the template scaffold).
+
+        Backend Resend flow is UNCHANGED — /api/contact still writes leads
+        to Mongo, still fires the welcome and partner-notification emails,
+        and Kathy is still the Reply-To on the visitor's welcome email so
+        replies land in her inbox natively. `CONTACT_TEST_MODE=1` remains
+        on in .env.
+
+      DBA REBRAND
+        • /app/lib/site-config.js `owner` object:
+          - name: '7671 Enterprises, LLC' (short form for prose)
+          - dba: 'Golf Lifestyle Network'
+          - fullName: '7671 Enterprises, LLC DBA Golf Lifestyle Network'
+          - attribution: '7671 Enterprises, LLC DBA Golf Lifestyle Network,
+             owner and operator'
+        • Formal disclosure spots now use `owner.fullName`:
+          - /app/components/site-footer.js (both the top-of-footer "A
+            lifestyle guide. …" line and the Disclosure paragraph)
+          - /app/app/about/page.js hardcoded H2 ("Owned and operated by
+            7671 Enterprises, LLC DBA Golf Lifestyle Network") and the
+            adjacent body paragraph
+          - /app/app/og-image/route.js OG-image footer text
+          - /app/content/blog/welcome-to-la-quinta-golf-lifestyle.mdx
+            (TL;DR bullet, "Who owns the site?" FAQ answer, closing
+            signature)
+        • Short-form `owner.name` still used where the DBA would read
+          awkwardly in a sentence (e.g. "the team at 7671 Enterprises,
+          LLC", "operated by 7671 Enterprises, LLC" in the About sidebar).
+
+      VERIFIED VIA CURL
+        • 0 mailto: / kathy@ / @laquintagolflifestyle / contact@la
+          references on /, /about, /communities/the-madison-club,
+          /guides/2026-la-quinta-buyers-guide, /homes-for-sale/gated
+        • DBA form "7671 Enterprises, LLC DBA Golf Lifestyle Network"
+          rendered on / (footer) and /about (H2 + body bold)
+
+      SCREENSHOTS
+        • /#meet-kathy — Direct + Office side-by-side, no Email tile
+        • /about — H2 and first paragraph show the full DBA name
+
+      No backend contract or schema changes. No testing-agent invocation
+      required — pure UI copy edit.
+

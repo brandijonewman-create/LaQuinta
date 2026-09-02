@@ -126,14 +126,6 @@ export default function ContextualContactForm({
               </dd>
             </div>
             <div>
-              <dt className="inline text-foreground/55 uppercase tracking-[0.14em] text-[11px] mr-2">Email</dt>
-              <dd className="inline">
-                <a href={`mailto:${partner.contact.email}`} className="text-palm hover:text-terracotta transition-colors">
-                  {partner.contact.email}
-                </a>
-              </dd>
-            </div>
-            <div>
               <dt className="inline text-foreground/55 uppercase tracking-[0.14em] text-[11px] mr-2">Office</dt>
               <dd className="inline text-foreground/75">{partner.brokerage.address}</dd>
             </div>

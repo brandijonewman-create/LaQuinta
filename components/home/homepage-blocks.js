@@ -111,14 +111,8 @@ export function FeaturedRealtorSlot() {
                 </a>
               </div>
               <div className="border-l border-gold/40 pl-4">
-                <div className="text-[10px] uppercase tracking-[0.22em] text-gold/90">Email</div>
-                <a href={`mailto:${partner.contact.email}`} className="font-serif text-base text-sand-50 hover:text-gold transition-colors block mt-1 break-all">
-                  {partner.contact.email}
-                </a>
-              </div>
-              <div className="border-l border-gold/40 pl-4 sm:col-span-2">
                 <div className="text-[10px] uppercase tracking-[0.22em] text-gold/90">Office</div>
-                <div className="text-sm text-sand-50/85 mt-1">{partner.brokerage.address}</div>
+                <div className="text-sm text-sand-50/85 mt-1 leading-snug">{partner.brokerage.address}</div>
               </div>
             </div>
 
