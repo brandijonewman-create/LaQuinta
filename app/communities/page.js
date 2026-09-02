@@ -6,7 +6,7 @@ import { getCommunityContent } from '@/lib/content/community-content';
 
 export const metadata = {
   title: 'La Quinta Private Golf Communities',
-  description: 'Profiles of all seven private golf communities in La Quinta, California — PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, The Quarry, and La Quinta Country Club.',
+  description: 'Profiles of the private golf communities in La Quinta, California — The Madison Club, The Hideaway, The Tradition, Andalusia, The Quarry, and La Quinta Country Club.',
 };
 
 export default function CommunitiesIndexPage() {

@@ -8,12 +8,11 @@ const FILTERS = {
   'gated':                      { label: 'Gated communities',         seo: 'Gated golf communities in La Quinta with private security and 24-hour access.' },
   'golf-membership-included':   { label: 'Golf membership included',  seo: 'La Quinta homes where the purchase includes a deeded or transferable golf membership.' },
   'mountain-view':              { label: 'Mountain views',             seo: 'La Quinta golf homes with direct Santa Rosa or Coral Reef mountain views.' },
-  'new-construction':           { label: 'New construction',           seo: 'Newly built La Quinta golf homes — currently strongest at Andalusia and the southern half of PGA West.' },
-  'pga-west':                   { label: 'PGA West homes',             seo: 'Homes inside PGA West, La Quinta\u2019s largest private golf community.' },
+  'new-construction':           { label: 'New construction',           seo: 'Newly built La Quinta golf homes — currently strongest at Andalusia and later phases of The Madison Club.' },
   'the-madison-club':           { label: 'The Madison Club homes',     seo: 'Homes inside The Madison Club, La Quinta\u2019s most discreet private community.' },
   'under-2-million':            { label: 'Under $2 million',           seo: 'La Quinta golf homes priced under $2,000,000 — typically condos, fairway villas, and resale single-family in older communities.' },
   '2-to-5-million':             { label: '$2M–$5M',                     seo: 'La Quinta golf homes priced $2,000,000–$5,000,000 — the mid-luxury band.' },
-  'over-5-million':             { label: 'Over $5 million',            seo: 'La Quinta golf homes priced over $5,000,000 — typically The Madison Club, Hideaway, and PGA West estate sections.' },
+  'over-5-million':             { label: 'Over $5 million',            seo: 'La Quinta golf homes priced over $5,000,000 — typically The Madison Club, The Hideaway, and The Quarry estate sections.' },
 };
 
 export function generateStaticParams() {

@@ -16,7 +16,7 @@ export default function IntroBlock() {
             A reference for serious buyers of the La Quinta golf life.
           </h2>
           <p className="text-foreground/75 text-base md:text-lg leading-relaxed mt-6">
-            From the Pete Dye Stadium Course at PGA West to the Fazio routings of The Madison Club and The Quarry, La Quinta holds one of the deepest concentrations of championship private golf on the West Coast. We document each community &mdash; its architect, its character, the lifestyle around it &mdash; so you can decide where you belong before you ever step onto a property.
+            From the Fazio routings of The Madison Club and The Quarry to the Pete Dye course at The Hideaway and Arnold Palmer&rsquo;s only Coachella Valley design at The Tradition, La Quinta holds one of the deepest concentrations of championship private golf on the West Coast. We document each community &mdash; its architect, its character, the lifestyle around it &mdash; so you can decide where you belong before you ever step onto a property.
           </p>
           <p className="text-foreground/75 text-base md:text-lg leading-relaxed mt-5">
             This publication does not sell homes or list inventory. It works in partnership with the realtors who know the market best.

@@ -3,9 +3,9 @@ import { randomUUID } from 'crypto';
 import { quizCollection, valuationCollection, leadCollection } from '@/lib/mongodb';
 import { scoreQuiz } from '@/lib/quiz-matcher';
 import { getMagnet } from '@/lib/lead-magnets';
-import { sendQuizLeadOwnerEmail, sendQuizLeadConfirmationEmail, sendCollaboratorApplicationEmail } from '@/lib/email';
+import { sendQuizLeadOwnerEmail, sendQuizLeadConfirmationEmail, sendCollaboratorApplicationEmail, sendContactWelcomeEmail, sendContactPartnerEmail } from '@/lib/email';
 
-const PASSPHRASE = process.env.LEAD_RETRIEVAL_PASSPHRASE || '';
+const PASSPHRASE = process.env.LEADS_ACCESS_KEY || process.env.LEAD_RETRIEVAL_PASSPHRASE || '';
 const CSV_KEY = process.env.LEADS_ACCESS_KEY || '';
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || '';
 
@@ -197,6 +197,55 @@ async function handleLeadsMagnet(request) {
   return json({ ok: true, downloadUrl });
 }
 
+// ---- POST /api/contact — universal contextual contact form ---------------
+// Fields:  name (req), email (req), phone (opt), message (opt),
+//          subject (req — page context, e.g. "The Madison Club"),
+//          page   (opt — pathname the buyer was on)
+//          website (honeypot; MUST be empty)
+// Behavior:
+//   1) validate + honeypot
+//   2) insert `type: 'contact'` document into `leads` collection
+//   3) fire-and-forget welcome email to the buyer + notification to Kathy + owner
+async function handleContact(request) {
+  const body = await readJson(request);
+  // Honeypot: real humans never fill this field.
+  if (cleanString(body?.website)) return json({ ok: true, honey: true });
+
+  const name    = cleanString(body?.name, 120);
+  const email   = cleanString(body?.email, 200);
+  const phone   = cleanString(body?.phone, 60);
+  const message = cleanString(body?.message, 4000);
+  const subject = cleanString(body?.subject, 200) || 'La Quinta golf real estate';
+  const page    = cleanString(body?.page, 500);
+
+  if (!name)  return err('Please add your name.');
+  if (!isEmail(email)) return err('Please add a valid email.');
+
+  const submission = {
+    id: randomUUID(),
+    type: 'contact',
+    createdAt: new Date().toISOString(),
+    name, email, phone, message, subject, page,
+    meta: await clientMeta(request),
+  };
+  try { await (await leadCollection()).insertOne(submission); }
+  catch { return err('Database error.', 500); }
+
+  Promise.allSettled([
+    sendContactWelcomeEmail({ name, email, subject, message, baseUrl: BASE_URL }),
+    sendContactPartnerEmail({ name, email, phone, subject, message, page, baseUrl: BASE_URL }),
+  ]).then((res) => {
+    res.forEach((r, i) => {
+      const which = i === 0 ? 'contact/welcome' : 'contact/partner';
+      if (r.status === 'fulfilled') console.log(`[email/${which}]`, r.value);
+      else                          console.log(`[email/${which}] rejected`, r.reason);
+    });
+  });
+
+  return json({ ok: true, id: submission.id });
+}
+
+
 // ---- GET /api/leads — admin retrieval (legacy passphrase) ----
 async function handleLeadRetrieval(request) {
   const url = new URL(request.url);
@@ -249,7 +298,7 @@ async function handleLeadsExportCsv(request) {
 // ---- Router ----
 export async function GET(request, { params }) {
   const path = (params?.path || []).join('/');
-  if (path === '')                  return json({ ok: true, service: 'La Quinta Golf Lifestyle API', endpoints: ['POST /api/quiz/score','POST /api/quiz','POST /api/valuation','POST /api/leads','POST /api/leads/magnet','GET /api/leads?key=...','GET /api/leads/export.csv?key=...'] });
+  if (path === '')                  return json({ ok: true, service: 'La Quinta Golf Lifestyle API', endpoints: ['POST /api/contact','POST /api/quiz/score','POST /api/quiz','POST /api/valuation','POST /api/leads','POST /api/leads/magnet','POST /api/leads/gate','POST /api/collaborate','GET /api/leads?key=...','GET /api/leads/export.csv?key=...'] });
   if (path === 'leads')             return handleLeadRetrieval(request);
   if (path === 'leads/export.csv')  return handleLeadsExportCsv(request);
   return err('Not found.', 404);
@@ -264,6 +313,7 @@ export async function POST(request, { params }) {
     case 'leads/magnet':  return handleLeadsMagnet(request);
     case 'leads/gate':    return handleLeadsGate(request);
     case 'collaborate':   return handleCollaborate(request);
+    case 'contact':       return handleContact(request);
     default:              return err(`POST /api/${path} not implemented.`, 404);
   }
 }

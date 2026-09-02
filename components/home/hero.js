@@ -26,7 +26,7 @@ export default function Hero() {
 
           <p className="text-sand-50/85 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">
             The definitive guide to La Quinta&apos;s seven private golf communities &mdash;
-            PGA West, The Madison Club, The Hideaway, Andalusia, The Tradition, The Quarry,
+            The Madison Club, The Hideaway, Andalusia, The Tradition, The Quarry,
             and La Quinta Country Club &mdash; the architects behind their fairways, and
             what it actually feels like to live here.
           </p>

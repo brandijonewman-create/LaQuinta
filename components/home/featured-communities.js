@@ -14,15 +14,6 @@ const communities = [
     zip: 'La Quinta, CA 92253',
   },
   {
-    slug: 'pga-west',
-    name: 'PGA West',
-    architect: 'Dye · Nicklaus · Norman · Weiskopf',
-    priceRange: '$500K – $5M',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/49/La_Quinta%2C_California_%2815656391455%29.jpg',
-    blurb: 'Six championship courses, deep PGA Tour history, and homes at every band.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
     slug: 'the-hideaway',
     name: 'The Hideaway',
     architect: 'Pete Dye & Clive Clark',

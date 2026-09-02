@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google';
 import { Providers } from './providers';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
+import GlobalContactSection from '@/components/global-contact-section';
 import GAScripts from '@/components/analytics/ga-scripts';
 import { site, owner } from '@/lib/site-config';
 import { ADSENSE_PUB_ID } from '@/lib/analytics';
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <SiteHeader />
           <main className="flex-1">{children}</main>
+          <GlobalContactSection />
           <SiteFooter />
         </Providers>
         <GAScripts />
