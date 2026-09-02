@@ -106,7 +106,7 @@ export default function QuizFlow() {
             <RotateCcw size={14} className="mr-2" /> Take it again
           </Button>
           <Button asChild className="rounded-none bg-palm text-sand-50 hover:bg-palm-700">
-            <Link href="/communities">Browse all 7 communities</Link>
+            <Link href="/communities">Browse all 6 communities</Link>
           </Button>
         </div>
       </div>

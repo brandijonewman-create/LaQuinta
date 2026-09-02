@@ -28,7 +28,7 @@ export default function SiteHeader() {
         scrolled ? 'shadow-lg shadow-palm/20' : ''
       }`}
     >
-      <div className="container flex items-center justify-between h-16 lg:h-20 gap-4">
+      <div className="container flex items-center justify-between h-16 lg:h-20 gap-8 lg:gap-10">
         <Link
           href="/"
           className="flex items-center gap-2 group shrink-0"
@@ -95,12 +95,12 @@ export default function SiteHeader() {
 
 function Wordmark() {
   return (
-    <div className="flex flex-col leading-none text-sand-50">
-      <span className="font-serif text-[17px] md:text-[19px] tracking-[0.04em]">
-        La Quinta
+    <div className="flex flex-col leading-none text-sand-50 pr-2 lg:pr-4">
+      <span className="font-serif text-[22px] md:text-[26px] tracking-[0.02em] leading-[0.95]">
+        La&nbsp;Quinta
       </span>
-      <span className="text-[10px] md:text-[11px] uppercase tracking-[0.32em] text-gold opacity-90">
-        Golf &middot; Lifestyle
+      <span className="mt-1.5 text-[9px] md:text-[10px] uppercase tracking-[0.42em] text-gold opacity-95">
+        Golf&nbsp;&middot;&nbsp;Lifestyle
       </span>
     </div>
   );

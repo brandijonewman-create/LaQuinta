@@ -3,15 +3,15 @@ import { ArrowUpRight } from 'lucide-react';
 import { partner } from '@/lib/exclusive-partner';
 
 const stats = [
-  { value: '14', label: 'Golf communities' },
-  { value: '22', label: 'Golf courses' },
-  { value: '5', label: 'Course architects' },
+  { value: '6',  label: 'Private clubs' },
+  { value: '7',  label: 'Golf courses' },
+  { value: '4',  label: 'Course architects' },
 ];
 
 const resources = [
   {
     title: 'The La Quinta Community Index',
-    blurb: 'An honest tier ranking of all seven private golf communities — from ultra-prestige to mid-market sleeper.',
+    blurb: 'An honest tier ranking of all six private golf communities — from ultra-prestige to mid-market sleeper.',
     href: '/communities',
     cta: 'Read the index',
   },

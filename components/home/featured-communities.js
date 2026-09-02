@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { ArrowUpRight, MapPin } from 'lucide-react';
 
-// 14 La Quinta golf communities. Price bands are indicative MLS observation
+// La Quinta&rsquo;s named golf communities (private clubs, resort, and
+// active-adult). Price bands are indicative MLS observation ranges only.
 // windows — wide brackets used deliberately, not guarantees.
 const communities = [
   {
@@ -135,7 +136,7 @@ export default function FeaturedCommunities() {
             Where La Quinta plays.
           </h2>
           <p className="text-foreground/70 mt-5 text-base md:text-lg leading-relaxed">
-            An honest look at La Quinta&apos;s fourteen named golf communities &mdash;
+            An honest look at La Quinta&apos;s named golf communities &mdash;
             their architects, their price bands, and what it actually feels like
             to live there.
           </p>
