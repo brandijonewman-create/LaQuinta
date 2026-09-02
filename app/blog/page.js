@@ -7,6 +7,7 @@ import { ArrowUpRight } from 'lucide-react';
 export const metadata = {
   title: 'Blog',
   description: 'Long-form coverage of La Quinta golf real estate, private clubs, architects, and the California desert lifestyle.',
+  alternates: { canonical: '/blog' },
 };
 
 export default function BlogIndexPage() {

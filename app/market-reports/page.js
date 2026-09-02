@@ -7,6 +7,7 @@ import { market } from '@/lib/site-config';
 export const metadata = {
   title: 'La Quinta Market Reports',
   description: 'Quarterly market reports for La Quinta\u2019s 92253 ZIP code. Honest ranges with disclaimers — no fabricated medians.',
+  alternates: { canonical: '/market-reports' },
 };
 
 export default function MarketReportsIndex() {

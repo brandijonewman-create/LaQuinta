@@ -39,6 +39,23 @@ const nextConfig = {
       },
     ];
   },
+  // Force www → apex on the production domain. Cloudflare fronts this site,
+  // so the redirect is also enforceable at the edge; this fallback ensures
+  // Next.js origins never serve a 200 on the www host. Cache should be
+  // purged at Cloudflare after deploy so the previously-cached 200s on
+  // https://www.laquintagolflifestyle.com/* are evicted.
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          { type: 'host', value: 'www.laquintagolflifestyle.com' },
+        ],
+        destination: 'https://laquintagolflifestyle.com/:path*',
+        statusCode: 301,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

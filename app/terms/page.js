@@ -5,6 +5,7 @@ import { site, MARKET_DISCLAIMER } from '@/lib/site-config';
 export const metadata = {
   title: 'Terms of Use',
   description: `Terms of use for ${site.name}.`,
+  alternates: { canonical: '/terms' },
 };
 
 export default function TermsPage() {

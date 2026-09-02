@@ -6,6 +6,7 @@ export const metadata = {
   title: 'Privacy Policy',
   description: `Privacy policy for ${site.name}.`,
   robots: { index: true, follow: true },
+  alternates: { canonical: '/privacy' },
 };
 
 export default function PrivacyPage() {

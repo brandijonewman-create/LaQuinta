@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/shared/breadcrumbs';
 export const metadata = {
   title: 'Glossary',
   description: 'Golf and real-estate terminology used across La Quinta Golf Lifestyle — equity membership, deeded membership, base-year value, and more.',
+  alternates: { canonical: '/glossary' },
 };
 
 const terms = [

@@ -7,6 +7,7 @@ import { ArrowUpRight } from 'lucide-react';
 export const metadata = {
   title: 'Guides',
   description: 'Pillar guides to buying into a La Quinta private golf community — architects, membership economics, California-specific context.',
+  alternates: { canonical: '/guides' },
 };
 
 export default function GuidesIndexPage() {

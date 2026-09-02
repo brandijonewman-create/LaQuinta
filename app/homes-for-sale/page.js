@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 export const metadata = {
   title: 'Homes for Sale in La Quinta',
   description: 'Current La Quinta listings are handled by Kathy Schowe, our California-licensed Exclusive Market Partner. A live IDX/MLS search will appear here once the feed is connected.',
+  alternates: { canonical: '/homes-for-sale' },
 };
 
 const filters = [

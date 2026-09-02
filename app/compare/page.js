@@ -5,6 +5,7 @@ import ComingSoon from '@/components/shared/coming-soon';
 export const metadata = {
   title: 'Compare La Quinta Communities',
   description: 'Side-by-side comparison of any two La Quinta private golf communities — architects, courses, membership style, real-estate character.',
+  alternates: { canonical: '/compare' },
 };
 
 export default function ComparePage() {

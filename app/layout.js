@@ -6,7 +6,6 @@ import SiteFooter from '@/components/site-footer';
 import GlobalContactSection from '@/components/global-contact-section';
 import GAScripts from '@/components/analytics/ga-scripts';
 import { site, owner } from '@/lib/site-config';
-import { ADSENSE_PUB_ID } from '@/lib/analytics';
 import { organizationSchema, websiteSchema, JsonLd } from '@/lib/json-ld';
 
 const playfair = Playfair_Display({
@@ -23,9 +22,7 @@ const inter = Inter({
   weight: ['300', '400', '500', '600', '700'],
 });
 
-const otherMeta = ADSENSE_PUB_ID
-  ? { 'google-adsense-account': ADSENSE_PUB_ID }
-  : undefined;
+const otherMeta = undefined;
 
 export const metadata = {
   metadataBase: new URL(site.url),
@@ -61,7 +58,6 @@ export const metadata = {
   // Hard rule: suppress Next's auto-emitted twitter:* tags.
   twitter: null,
   robots: { index: true, follow: true },
-  alternates: { canonical: site.url },
   other: otherMeta,
 };
 
@@ -78,13 +74,6 @@ export default function RootLayout({ children }) {
         <script dangerouslySetInnerHTML={{__html:'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);'}} />
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
-        {ADSENSE_PUB_ID ? (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}`}
-            crossOrigin="anonymous"
-          />
-        ) : null}
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground">
         <Providers>

@@ -1119,3 +1119,92 @@ agent_communication:
       /#meet-kathy: all pages compile clean and render the new voice.
 
       No backend/API contract changes; no testing agent invocation required.
+
+
+## Agent Communication (2026-09-02 — SEO Pass A: config-only fixes)
+  - agent: "main"
+  - message: |
+      SEO fixes #1, #2, #3, #6, #7, and half of #8 shipped. No content edits.
+
+      #1 CANONICAL URLs
+        • Removed `alternates.canonical` from the root layout (it was silently
+          making every child page inherit `/`).
+        • Added self-referencing relative `alternates.canonical` to every page
+          that was missing one: /, /architects, /blog, /communities, /compare,
+          /glossary, /golf-clubs, /guides, /homes-for-sale, /market-reports,
+          /privacy, /terms. Dynamic routes (/communities/[slug], /blog/[slug],
+          /guides/[slug], /architects/[slug], /homes-for-sale/[filter],
+          /market-reports/[zip]) already generated their own canonical from
+          the slug — verified via curl on 18 URLs and all resolve to their
+          own https://laquintagolflifestyle.com/... URL.
+
+      #2 www → apex 301
+        • Added host-matched redirect in next.config.js using
+          `has: [{ type: 'host', value: 'www.laquintagolflifestyle.com' }]`
+          and `statusCode: 301` (explicit 301 rather than the default 308).
+        • Verified locally: `Host: www.laquintagolflifestyle.com` on /about
+          returns `301` with `Location: https://laquintagolflifestyle.com/about`.
+        • Production caveat: site is fronted by Cloudflare with s-maxage
+          31536000. After deploy the Cloudflare cache MUST be purged for
+          /www.laquintagolflifestyle.com/* so previously-cached 200s stop
+          serving. If Cloudflare has its own www→apex Page Rule that will
+          fire first — either is fine, but the Next.js origin now enforces
+          it as a fallback.
+
+      #3 sitemap.xml — real lastmod + drop changefreq/priority
+        • app/sitemap.js rewritten. Rules:
+          - Blog posts and guides pull lastmod from their MDX frontmatter
+            `date`.
+          - Hub / listing pages (/blog, /guides, /communities, /architects,
+            /homes-for-sale, /market-reports) aggregate their children and
+            emit the newest child date, so publishing a post automatically
+            bumps the hub.
+          - Every static page must appear in the hand-maintained
+            `PAGE_LAST_MODIFIED` map (seeded at 2026-06-08). Missing entries
+            throw at render time so a new page can't silently deploy with
+            the wrong date.
+          - `changeFrequency` and `priority` removed on every entry per the
+            brief (Google ignores them).
+          - Deliberately NOT using fs.statSync(mtime) — on a fresh CI clone
+            every file's mtime is the build time, which would be worse than
+            the current bug.
+        • Verified curl of /sitemap.xml — each URL now shows a distinct
+          lastmod that matches its frontmatter (posts 2026-06-01 through
+          2026-06-08, guides 2026-06-07, hubs / static all 2026-06-08).
+
+      #6 Remove Google AdSense (fully purged)
+        • Removed the `<script src=...pagead2.googlesyndication.com...>`
+          and `<meta name="google-adsense-account">` from app/layout.js.
+        • Removed the `ADSENSE_PUB_ID` export from lib/analytics.js.
+        • Deleted components/analytics/adsense-loader.js and
+          components/analytics/ad-slot.js (both were unused after the
+          layout edit).
+        • Removed `NEXT_PUBLIC_ADSENSE_PUB_ID` from .env.
+        • curl-verified: 0 references to googlesyndication / adsbygoogle /
+          adsense on /, /about, /homes-for-sale, /blog, and a guide page.
+
+      #7 /llms.txt
+        • Already existed at /app/app/llms.txt/route.js and already emitted
+          `Content-Type: text/plain; charset=utf-8`, listed every community /
+          architect / guide / blog post as absolute URLs, and regenerated
+          from the same registries the sitemap uses.
+        • Only edit: rewrote the intro paragraph to match the "lifestyle
+          guide" voice (was still referring to "editorial coverage of golf
+          real estate").
+
+      #8 Homepage — Latest Journal
+        • The "Coming to the blog" placeholder was already replaced with
+          `<LatestJournal />` (server component reading the 3 newest posts
+          from /content/blog). Verified renders "From the Blog · Long-form
+          reading" with 3 real post cards.
+        • `sameAs` links on the Organization schema deferred — waiting for
+          the site's actual Instagram / LinkedIn URLs.
+
+      DEFERRED to Pass B (waiting on your input/copy):
+        #4 FAQ + BreadcrumbList + Article schema on thin pages
+        #5 self-host + WebP images
+        #9 npm run seo:check regression test
+
+      No backend/API contract changes; no testing-agent run required for a
+      pure config pass. Screenshots taken of /blog to confirm homepage /
+      blog / listing pages all render clean.

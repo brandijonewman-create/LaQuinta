@@ -7,6 +7,7 @@ import { ArrowUpRight } from 'lucide-react';
 export const metadata = {
   title: 'La Quinta Golf Clubs',
   description: 'An index of the six private golf clubs of La Quinta, California, plus notes on the resort and daily-fee options.',
+  alternates: { canonical: '/golf-clubs' },
 };
 
 export default function GolfClubsIndex() {

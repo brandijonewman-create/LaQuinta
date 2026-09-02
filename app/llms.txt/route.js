@@ -56,10 +56,12 @@ function build() {
   out.push(`> ${site.seoDescription}`);
   out.push('');
   out.push(
-    `${site.name} covers golf real estate, private clubs, and the desert ` +
-      `lifestyle of La Quinta, California (${market.county}). The site is ` +
-      `owned and operated by ${owner.name}. All content is editorial; ` +
-      `transactions are routed to a California-licensed real estate professional.`
+    `${site.name} is a lifestyle guide to La Quinta, California ` +
+      `(${market.county}). It covers the private golf communities, the ` +
+      `architects who built them, and the desert life around them. The ` +
+      `site is owned and operated by ${owner.name}. Listings, private ` +
+      `showings, and buyer representation are provided by our ` +
+      `California-licensed Exclusive Market Partner.`
   );
   out.push('');
 
