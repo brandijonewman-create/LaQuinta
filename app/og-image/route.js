@@ -1,11 +1,16 @@
 import { ImageResponse } from 'next/og';
 import { site } from '@/lib/site-config';
 
-export const alt = `${site.name} — ${site.tagline}`;
-export const size = { width: 1200, height: 630 };
-export const contentType = 'image/png';
+// Dynamic OpenGraph image. Served from a normal Route Handler (NOT the
+// app/opengraph-image.js file convention) so that the emitted og:image URL
+// is deterministic across dev, preview, and production. The absolute URL is
+// declared in app/layout.js as `${site.url}/og-image`.
+//
+// Rendered as 1200x630 PNG per Open Graph and Twitter Cards specs.
 
-export default async function Image() {
+export const runtime = 'nodejs';
+
+export async function GET() {
   return new ImageResponse(
     (
       <div
@@ -98,6 +103,13 @@ export default async function Image() {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        // Cache aggressively; the image only changes when we redeploy.
+        'Cache-Control': 'public, max-age=86400, s-maxage=604800, immutable',
+      },
+    }
   );
 }

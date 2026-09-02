@@ -424,7 +424,7 @@ frontend:
   # Frontend UI not under test in this round.
 
 metadata:
-  test_sequence: 3
+  test_sequence: 4
   run_ui: true
 
 test_plan:
@@ -432,6 +432,177 @@ test_plan:
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
+
+canonical_url_fix_tasks:
+  - task: "All SEO surfaces emit https://laquintagolflifestyle.com (not the preview host)"
+    implemented: true
+    working: true
+    file: "lib/site-config.js, .env, app/layout.js, app/og-image/route.js (new), removed app/opengraph-image.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: "NA"
+        -agent: "main"
+        -comment: |
+          Root cause of the GSC "Page with redirect" report was that lib/site-config.js
+          used NEXT_PUBLIC_BASE_URL (currently the Emergent preview host) as `site.url`,
+          which flowed into sitemap.xml, canonical tags, OG tags, and every JSON-LD
+          @id / url. Google was crawling the live domain, finding canonicals pointing
+          at the preview host, and reporting a preview→prod redirect.
+
+          Fix applied:
+          1) lib/site-config.js now reads `site.url` from NEXT_PUBLIC_CANONICAL_URL with
+             a hardcoded default of https://laquintagolflifestyle.com. It no longer
+             touches NEXT_PUBLIC_BASE_URL.
+          2) .env now sets NEXT_PUBLIC_CANONICAL_URL=https://laquintagolflifestyle.com.
+             NEXT_PUBLIC_BASE_URL was NOT modified.
+          3) File-based OG image (app/opengraph-image.js) removed because Next.js was
+             serving its URL with the request host in dev mode, overriding metadataBase.
+             Replaced with app/og-image/route.js (a normal Route Handler) and
+             app/layout.js now declares an explicit openGraph.images entry.
+        -working: true
+        -agent: "testing"
+        -comment: |
+          ✅ ALL 21 SEO CANONICAL URL TESTS PASSED
+          
+          Verified every externally-visible SEO surface now emits https://laquintagolflifestyle.com
+          and NEVER emits preview.emergentagent.com or localhost.
+          
+          [A] /sitemap.xml (4 assertions) - ✅ PASS
+              • HTTP 200 response
+              • All 56 <loc> entries start with https://laquintagolflifestyle.com
+              • No <loc> entries contain forbidden hosts (preview.emergentagent.com or localhost)
+              • All required paths present: /, /about, /communities, /architects, /blog
+          
+          [B] /robots.txt (4 assertions) - ✅ PASS
+              • HTTP 200 response
+              • Sitemap line: "Sitemap: https://laquintagolflifestyle.com/sitemap.xml" ✓
+              • Host line: "Host: https://laquintagolflifestyle.com" ✓
+              • No forbidden hosts in robots.txt body
+          
+          [C] Homepage / HTML head (5 assertions) - ✅ PASS
+              • <link rel="canonical" href="https://laquintagolflifestyle.com"/> ✓
+              • <meta property="og:url" content="https://laquintagolflifestyle.com"/> ✓
+              • <meta property="og:image" content="https://laquintagolflifestyle.com/og-image"/> ✓
+              • All 2 JSON-LD scripts clean (Organization + WebSite schemas)
+                - All @id and url fields use https://laquintagolflifestyle.com
+                - No preview.emergentagent.com or localhost anywhere
+              • Document title length: 54 chars (within 40-65 range) ✓
+          
+          [D] /og-image route (4 assertions) - ✅ PASS
+              • HTTP 200 response
+              • Content-Type: image/png ✓
+              • Response body: 256,827 bytes (> 5000 bytes minimum) ✓
+              • PNG magic bytes correct: 89 50 4E 47 ✓
+          
+          [E] /communities/the-madison-club HTML head (2 assertions) - ✅ PASS
+              • Canonical: https://laquintagolflifestyle.com/communities/the-madison-club ✓
+              • All 5 JSON-LD scripts clean (Organization, WebSite, Place, FAQPage, BreadcrumbList)
+                - Place schema url: https://laquintagolflifestyle.com/communities/the-madison-club
+                - BreadcrumbList all 3 items use https://laquintagolflifestyle.com
+                - No forbidden hosts anywhere
+          
+          [F] /blog/inside-the-madison-club HTML head (2 assertions) - ✅ PASS
+              • Canonical: https://laquintagolflifestyle.com/blog/inside-the-madison-club ✓
+              • All 5 JSON-LD scripts clean (Organization, WebSite, Article, FAQPage, BreadcrumbList)
+                - Article schema mainEntityOfPage.@id: https://laquintagolflifestyle.com/blog/inside-the-madison-club
+                - Article schema publisher.logo.url: https://laquintagolflifestyle.com/icon.png
+                - BreadcrumbList all 3 items use https://laquintagolflifestyle.com
+                - No forbidden hosts anywhere
+          
+          DETAILED VERIFICATION:
+          • Inspected full JSON-LD content from all 3 test pages (homepage, community, blog)
+          • Every @id field uses https://laquintagolflifestyle.com (with #fragments where appropriate)
+          • Every url field uses https://laquintagolflifestyle.com with correct paths
+          • Zero instances of "preview.emergentagent.com" found across all SEO surfaces
+          • Zero instances of "localhost" found across all SEO surfaces
+          
+          The canonical URL fix is working perfectly. Google Search Console should no longer
+          report "Page with redirect" issues once the site is re-crawled.
+
+second_round_agent_communication:
+    -agent: "main"
+    -message: |
+      Canonical URL fix ready for verification. Base URL: http://localhost:3000
+
+      Verify EVERY externally-visible SEO surface emits https://laquintagolflifestyle.com
+      and never emits `la-quinta-living.preview.emergentagent.com` or `localhost:3000`.
+
+      Assertions:
+
+      A) /sitemap.xml
+         - HTTP 200
+         - Every <loc> starts with "https://laquintagolflifestyle.com"
+         - No <loc> contains "preview.emergentagent.com" or "localhost"
+         - Contains at minimum: homepage, /about, /communities, /architects, /blog
+
+      B) /robots.txt
+         - HTTP 200
+         - `Sitemap:` line = https://laquintagolflifestyle.com/sitemap.xml
+         - `Host:` line = https://laquintagolflifestyle.com
+
+      C) Homepage / head:
+         - <link rel="canonical" href="https://laquintagolflifestyle.com"/>
+         - <meta property="og:url" content="https://laquintagolflifestyle.com"/>
+         - <meta property="og:image" content="https://laquintagolflifestyle.com/og-image"/>
+         - Any JSON-LD <script type="application/ld+json"> blob contains NO
+           "preview.emergentagent.com" or "localhost" substrings. All @id/url values
+           reference https://laquintagolflifestyle.com.
+
+      D) /og-image route:
+         - HTTP 200
+         - Content-Type: image/png
+         - Body starts with PNG magic bytes (89 50 4E 47 0D 0A 1A 0A)
+
+      E) /communities/the-madison-club:
+         - Canonical starts with "https://laquintagolflifestyle.com/communities/"
+         - All JSON-LD @id/url values on host laquintagolflifestyle.com
+         - No "localhost" or "preview.emergentagent.com" strings in <head>
+
+      F) /blog/inside-the-madison-club:
+         - Canonical = https://laquintagolflifestyle.com/blog/inside-the-madison-club
+         - Same JSON-LD host purity as (E)
+
+      Non-goals: do NOT test form submissions, quiz funnel, downloads, /desert-lifestyle-map,
+      or any backend endpoints. This run is purely HTML/head/SEO string inspection.
+
+      Please report each assertion pass/fail with observed value on failure.
+    -agent: "testing"
+    -message: |
+      ✅ CANONICAL URL SEO FIX VERIFICATION COMPLETE - ALL 21 TESTS PASSED
+      
+      Tested at http://localhost:3000 and verified that EVERY SEO surface now emits
+      https://laquintagolflifestyle.com and NEVER emits preview.emergentagent.com or localhost.
+      
+      Test Results Summary:
+      • [A] /sitemap.xml: 4/4 passed - All 56 <loc> entries use canonical URL
+      • [B] /robots.txt: 4/4 passed - Sitemap and Host lines correct
+      • [C] Homepage /: 5/5 passed - canonical, og:url, og:image, JSON-LD all correct
+      • [D] /og-image: 4/4 passed - Valid PNG (256KB) with correct magic bytes
+      • [E] /communities/the-madison-club: 2/2 passed - canonical and JSON-LD clean
+      • [F] /blog/inside-the-madison-club: 2/2 passed - canonical and JSON-LD clean
+      
+      Key Findings:
+      1. sitemap.xml contains 56 entries, ALL starting with https://laquintagolflifestyle.com
+      2. robots.txt correctly declares Sitemap and Host as https://laquintagolflifestyle.com
+      3. All canonical tags use https://laquintagolflifestyle.com (homepage, community, blog)
+      4. All OpenGraph tags (og:url, og:image) use https://laquintagolflifestyle.com
+      5. All JSON-LD schemas (Organization, WebSite, Place, Article, BreadcrumbList, FAQPage)
+         use https://laquintagolflifestyle.com for all @id and url fields
+      6. /og-image route returns valid PNG (256,827 bytes) with correct Content-Type header
+      7. ZERO instances of "preview.emergentagent.com" found across all tested surfaces
+      8. ZERO instances of "localhost" found across all tested surfaces
+      
+      The fix is working perfectly. Google Search Console should no longer report
+      "Page with redirect" issues once the site is re-crawled. The canonical URL
+      configuration is now environment-independent and will work correctly in dev,
+      preview, and production environments.
+
+# --- Previous SEO test run below (preserved) ---
+previous_seo_test_metadata:
+  test_sequence: 3
+  run_ui: true
 
 new_frontend_tasks:
   - task: "Homepage SEO title length ≤ 60 chars"
