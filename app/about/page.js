@@ -24,7 +24,7 @@ const NETWORK_MARKETS = [
 
 export const metadata = {
   title: 'About',
-  description: `About ${site.name} — the definitive guide to La Quinta golf real estate. Owned and operated by ${owner.name}.`,
+  description: `About ${site.name} — a lifestyle guide to La Quinta’s private golf communities. Owned and operated by ${owner.name}.`,
   alternates: { canonical: '/about' },
 };
 
@@ -33,8 +33,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="The definitive guide to La Quinta."
-        subtitle={`${site.name} covers the seven private golf communities of La Quinta, California, the architects who built them, and the lifestyle they sit inside. `}
+        title="A lifestyle guide to La Quinta."
+        subtitle={`${site.name} covers La Quinta’s private golf communities, the architects who built them, and the desert life around them. Listings and representation are provided by our California-licensed Exclusive Market Partner.`}
       />
 
       <section className="container py-16 lg:py-24">
@@ -44,15 +44,15 @@ export default function AboutPage() {
           <div className="lg:col-span-7 space-y-6 text-foreground/80 leading-relaxed">
             <h2 className="font-serif text-3xl text-palm">Owned and operated by 7671 Enterprises LLC</h2>
             <p>
-              {site.name} is owned and operated by <strong className="text-palm">{owner.name}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each one written for the buyer who wants the real story before the sales pitch.
+              {site.name} is owned and operated by <strong className="text-palm">{owner.name}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each written for the buyer who wants a clear picture of the communities before a showing is arranged.
             </p>
             <p>
-              The network exists because the desert golf market is consistently misrepresented online. Most coverage is either listing-portal noise or thinly disguised marketing for a single brokerage. The trusted-resource slot &mdash; honest coverage, no fake testimonials, no fabricated stats, built in partnership with realtors who actually work the market &mdash; was empty. We&rsquo;re filling it, one city at a time.
+              The network exists because most online coverage of desert golf real estate is either listing-portal noise or thinly veiled promotion for a single brokerage. We publish lifestyle context &mdash; architecture, membership, daily character &mdash; in partnership with the local realtor who actually works each market. The listings, the tours, and the representation come from them.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-6">What we publish</h2>
             <p>
-              Profiles of all seven La Quinta private golf communities. Dedicated pages for the architects whose work defines them. Long-form buyer guides &mdash; starting with the 2026 La Quinta Golf Buyer&rsquo;s Guide. An honest market report for the 92253 ZIP. An interactive lifestyle map. And a regular blog covering the things buyers actually want to know about, written like a normal human.
+              Profiles of La Quinta&rsquo;s private golf communities. Dedicated pages for the architects whose work defines them. Long-form buyer guides &mdash; starting with the 2026 La Quinta Golf Buyer&rsquo;s Guide. A market-context report for the 92253 ZIP. An interactive lifestyle map. And a regular journal on the questions buyers actually ask.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-6">What we don&rsquo;t do</h2>
@@ -65,7 +65,7 @@ export default function AboutPage() {
 
             <h2 className="font-serif text-3xl text-palm pt-6">Editorial independence</h2>
             <p>
-              We are a publisher, not a broker. Every California real estate transaction referenced on this site is executed by a California-licensed real estate professional. Editorial content is not for sale. There are no affiliate placements in the articles, no paid community placement in the quiz results, and no listing fees.
+              We are a publisher, not a broker. Every California real estate transaction referenced on this site is executed by our California-licensed Exclusive Market Partner. Editorial content is not for sale &mdash; no affiliate placements in the articles, no paid community placement in the quiz results, no listing fees.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-10">The Golf Lifestyle network</h2>

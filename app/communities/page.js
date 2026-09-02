@@ -14,8 +14,8 @@ export default function CommunitiesIndexPage() {
     <>
       <PageHero
         eyebrow="Private Clubs"
-        title="The seven private golf communities of La Quinta."
-        subtitle="Each profile covers the architecture, the membership, the real estate, and what it actually feels like to live there."
+        title="La Quinta’s private golf communities."
+        subtitle="Each profile covers the architecture, the membership, the daily lifestyle, and the real-estate character — with listings and private tours arranged by Kathy Schowe, our Exclusive Market Partner."
       />
 
       <section className="container py-16 lg:py-24">

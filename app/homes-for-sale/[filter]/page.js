@@ -43,7 +43,7 @@ export default function HomesForSaleFilterPage({ params }) {
         <Breadcrumbs items={[{ label: 'Homes for Sale', href: '/homes-for-sale' }, { label: f.label }]} />
         <div className="mt-10 max-w-2xl">
           <Disclaimer>
-            Live listings for this filter will appear here when a verified California IDX feed is connected. Until then this page exists as an honest placeholder — no fabricated inventory.
+            Live listings for this filter will appear here once the California IDX feed is connected. Current La Quinta listings, private showings, and buyer representation are provided by Kathy Schowe, our Exclusive Market Partner. No fabricated inventory in the meantime.
           </Disclaimer>
         </div>
         <div className="mt-10">

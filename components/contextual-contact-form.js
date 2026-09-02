@@ -28,7 +28,7 @@ export default function ContextualContactForm({
     headline || `Interested in ${subject}?`;
   const derivedIntro =
     intro ||
-    `Kathy Schowe, our Exclusive Market Partner for La Quinta, will personally reply within one business day with a welcome package — including tour options, community briefs, and the current buyer\u2019s guide.`;
+    `Connect with Kathy Schowe, our Exclusive Market Partner for La Quinta. She provides current listings, private community tours, and buyer representation, and will personally reply within one business day.`;
 
   const onChange = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 

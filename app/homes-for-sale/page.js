@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 export const metadata = {
   title: 'Homes for Sale in La Quinta',
-  description: 'A live IDX feed for La Quinta golf homes will appear here when a verified California CARETS/CRMLS feed and a partner licensed agent are in place.',
+  description: 'Current La Quinta listings are handled by Kathy Schowe, our California-licensed Exclusive Market Partner. A live IDX/MLS search will appear here once the feed is connected.',
 };
 
 const filters = [
@@ -14,7 +14,6 @@ const filters = [
   { slug: 'golf-membership-included', label: 'Golf membership included' },
   { slug: 'mountain-view', label: 'Mountain views' },
   { slug: 'new-construction', label: 'New construction' },
-  { slug: 'pga-west', label: 'PGA West homes' },
   { slug: 'the-madison-club', label: 'The Madison Club homes' },
   { slug: 'under-2-million', label: 'Under $2M' },
   { slug: '2-to-5-million', label: '$2M–$5M' },
@@ -26,15 +25,15 @@ export default function HomesForSaleIndex() {
     <>
       <PageHero
         eyebrow="Homes for Sale"
-        title="Listings coming soon."
-        subtitle="A live MLS feed for La Quinta will appear here the day we have a verified California CARETS/CRMLS data partner and a licensed-agent partner in place. Until then, no fake listings."
+        title="Where to find current La Quinta listings."
+        subtitle="This site is a lifestyle guide to La Quinta’s golf communities — we don’t list inventory ourselves. Current listings, private showings, and buyer representation are handled by Kathy Schowe, our California-licensed Exclusive Market Partner. A live MLS search will appear here once the CARETS/CRMLS feed is connected."
       />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Homes for Sale' }]} />
 
         <div className="mt-10 max-w-2xl">
           <Disclaimer>
-            This site is the definitive guide. Listings are powered by our California-licensed realtor partners. The live IDX feed goes online when the CARETS/CRMLS data is in place.
+            A lifestyle guide, not a brokerage. Listings and representation are provided by our California-licensed Exclusive Market Partner. The live IDX feed is scheduled once the CARETS/CRMLS integration is in place.
           </Disclaimer>
         </div>
 
@@ -51,9 +50,12 @@ export default function HomesForSaleIndex() {
           </div>
         </div>
 
-        <div className="mt-14 text-center">
+        <div className="mt-14 flex flex-wrap gap-3 justify-center">
           <Button asChild className="rounded-none bg-palm text-sand-50 hover:bg-palm-700">
-            <Link href="/community-quiz">Take the Community Quiz Instead</Link>
+            <Link href="/#meet-kathy">Connect with Kathy for current listings</Link>
+          </Button>
+          <Button asChild variant="outline" className="rounded-none">
+            <Link href="/community-quiz">Take the Community Quiz</Link>
           </Button>
         </div>
       </section>

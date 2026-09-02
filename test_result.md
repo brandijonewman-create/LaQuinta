@@ -1053,3 +1053,69 @@ agent_communication:
       All MongoDB collections (quiz_submissions, valuation_requests, leads) are being populated correctly.
       All validation rules working as expected.
       No critical issues found.
+
+
+## Agent Communication (2026-06-08 — Language / "AI slop" cleanup pass)
+  - agent: "main"
+  - message: |
+      Copy sweep pass to reframe site as a **lifestyle guide** (per user directive
+      "we are promoting communities. our realtor partners are providing listings
+      and their expertise"). No API or schema changes.
+
+      Files touched:
+        • lib/site-config.js — tagline, description, seoTitle, seoDescription
+          swapped to "lifestyle guide" framing.
+        • components/home/hero.js — H1 + subtitle rewritten (no more "definitive
+          guide" / "what it actually feels like").
+        • components/home/editorial-intro.js — "reference for serious buyers" →
+          "A lifestyle guide to the La Quinta golf communities"; added "We're a
+          lifestyle guide, not a brokerage" sentence naming Kathy for listings +
+          representation.
+        • components/home/featured-communities.js — removed "honest look /
+          actually feels" AI-tell; new subhead names Kathy for tours.
+        • components/home/homepage-blocks.js — resources copy tightened (no
+          "honest tier ranking"); "Meet Your La Quinta Realtor" section relabelled
+          "Meet Your La Quinta Market Partner" with new headline "Listings, private
+          tours, and buyer representation from Kathy Schowe." CTA button now reads
+          "Connect with Kathy".
+        • components/contextual-contact-form.js — default intro rewritten to
+          "Connect with Kathy Schowe, our Exclusive Market Partner…".
+        • components/site-footer.js — "The definitive guide" → "A lifestyle
+          guide"; disclosure reframed around Kathy providing listings & rep.
+        • app/homes-for-sale/page.js — title/subtitle rewritten as "Where to find
+          current La Quinta listings" + reframed disclaimer; removed the leftover
+          `pga-west` filter chip; primary CTA now "Connect with Kathy for current
+          listings" (secondary keeps the Quiz).
+        • app/homes-for-sale/[filter]/page.js — disclaimer reframed.
+        • app/communities/page.js — hero switched from "The seven private…" to
+          "La Quinta's private golf communities."; subtitle no longer says
+          "actually feels".
+        • app/about/page.js — hero title now "A lifestyle guide to La Quinta.";
+          killed AI-slop paragraph ("The trusted-resource slot… was empty. We're
+          filling it, one city at a time.") and phrase "written like a normal
+          human"; corrected "seven" → generic; Editorial-independence paragraph
+          reframed around the Exclusive Market Partner.
+        • app/terms/page.js — first paragraph reframed.
+        • lib/email.js — shell footer + welcome-email closing paragraph now
+          reference "lifestyle guide" and the Exclusive Market Partner (not
+          "team / definitive guide / built with California-licensed realtors").
+        • app/community-quiz/QuizClient.js — footer microcopy reworded.
+        • components/quiz/quiz-flow.js — same reword.
+        • components/forms/valuation-form.js, download-gate.js, lead-magnet-form.js
+          — all "A member of our team may reach out" replaced with Kathy Schowe
+          named directly.
+        • lib/content/community-content.js — scrubbed PGA West comparisons from
+          the-madison-club / the-hideaway / la-quinta-country-club / andalusia
+          sections (dead pga-west entry retained as-is; not routed). Changed
+          "the seven La Quinta private clubs" → "the La Quinta private clubs"
+          across the file.
+        • content/blog/welcome-to-la-quinta-golf-lifestyle.mdx — rewritten to
+          six-clubs framing, no PGA West, Kathy named for transactions.
+        • content/guides/2026-la-quinta-buyers-guide.mdx — PGA West section
+          removed, "seven" → "six", category "Definitive Guide" →
+          "Lifestyle Guide".
+
+      Visual verification via screenshots on /, /about, /homes-for-sale,
+      /#meet-kathy: all pages compile clean and render the new voice.
+
+      No backend/API contract changes; no testing agent invocation required.

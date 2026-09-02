@@ -13,13 +13,13 @@ export default function IntroBlock() {
             From the Journal
           </div>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-palm leading-[1.1]">
-            A reference for serious buyers of the La Quinta golf life.
+            A lifestyle guide to the La Quinta golf communities.
           </h2>
           <p className="text-foreground/75 text-base md:text-lg leading-relaxed mt-6">
-            From the Fazio routings of The Madison Club and The Quarry to the Pete Dye course at The Hideaway and Arnold Palmer&rsquo;s only Coachella Valley design at The Tradition, La Quinta holds one of the deepest concentrations of championship private golf on the West Coast. We document each community &mdash; its architect, its character, the lifestyle around it &mdash; so you can decide where you belong before you ever step onto a property.
+            From the Fazio routings of The Madison Club and The Quarry to the Pete Dye course at The Hideaway and Arnold Palmer&rsquo;s only Coachella Valley design at The Tradition, La Quinta holds one of the deepest concentrations of championship private golf on the West Coast. We cover each community &mdash; its architect, its membership, its daily character &mdash; so you can decide where you belong before you tour.
           </p>
           <p className="text-foreground/75 text-base md:text-lg leading-relaxed mt-5">
-            This publication does not sell homes or list inventory. Every buyer inquiry is routed to Kathy Schowe, our Exclusive Market Partner and a California-licensed real estate professional based in La Quinta.
+            We&rsquo;re a lifestyle guide, not a brokerage. Current listings, private showings, and buyer representation are provided by Kathy Schowe, our Exclusive Market Partner and a California-licensed real estate professional based in La Quinta.
           </p>
         </div>
       </div>

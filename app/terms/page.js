@@ -15,7 +15,7 @@ export default function TermsPage() {
         <Breadcrumbs items={[{ label: 'Terms' }]} />
         <div className="prose-editorial mt-10 space-y-6 text-foreground/80 leading-relaxed">
           <p>
-            {site.name} is an editorial guide to La Quinta golf real estate, built in partnership with California-licensed real estate professionals. Nothing on this site constitutes legal, tax, or real-estate advice.
+            {site.name} is a lifestyle guide to La Quinta&rsquo;s private golf communities. Listings, private showings, and buyer representation are provided by our California-licensed Exclusive Market Partner. Nothing on this site constitutes legal, tax, or real-estate advice.
           </p>
           <p>
             All market figures referenced on this site are presented as ranges. {MARKET_DISCLAIMER}

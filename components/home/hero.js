@@ -21,14 +21,15 @@ export default function Hero() {
           </div>
 
           <h1 className="font-serif text-white text-balance text-5xl md:text-6xl lg:text-7xl leading-[1.03] font-medium">
-            Golf homes, private clubs, and the desert lifestyle of La Quinta.
+            The private golf communities and desert lifestyle of La Quinta.
           </h1>
 
           <p className="text-sand-50/85 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">
-            The definitive guide to La Quinta&apos;s six private golf communities &mdash;
+            A lifestyle guide to La Quinta&rsquo;s six private golf communities &mdash;
             The Madison Club, The Hideaway, Andalusia, The Tradition, The Quarry,
             and La Quinta Country Club &mdash; the architects behind their fairways, and
-            what it actually feels like to live here.
+            the daily life around them. Listings and representation are provided by
+            Kathy Schowe, our Exclusive Market Partner.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">

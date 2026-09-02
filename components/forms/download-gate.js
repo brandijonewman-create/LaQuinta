@@ -82,7 +82,7 @@ export default function DownloadGate({ slug, label, community, requirePhone }) {
           {submitting ? 'Sending…' : 'Send me the guide'}
         </Button>
         <p className="text-[11px] text-foreground/55 leading-relaxed">
-          No automated marketing emails. A member of our team may reach out directly. We do not sell or share your information.
+          No automated marketing emails. Kathy Schowe, our Exclusive Market Partner, will follow up directly. We do not sell or share your information.
         </p>
       </div>
     </form>

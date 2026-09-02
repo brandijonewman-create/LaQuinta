@@ -136,9 +136,10 @@ export default function FeaturedCommunities() {
             Where La Quinta plays.
           </h2>
           <p className="text-foreground/70 mt-5 text-base md:text-lg leading-relaxed">
-            An honest look at La Quinta&apos;s named golf communities &mdash;
-            their architects, their price bands, and what it actually feels like
-            to live there.
+            A community-by-community lifestyle guide &mdash; their architects,
+            their price bands, and the character of daily life inside each gate.
+            Current listings and private tours are arranged by Kathy Schowe, our
+            Exclusive Market Partner.
           </p>
         </div>
         <Link

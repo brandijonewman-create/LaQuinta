@@ -11,19 +11,19 @@ const stats = [
 const resources = [
   {
     title: 'The La Quinta Community Index',
-    blurb: 'An honest tier ranking of all six private golf communities — from ultra-prestige to mid-market sleeper.',
+    blurb: 'A comparative lifestyle guide to all six private golf communities — architecture, membership style, and daily character.',
     href: '/communities',
     cta: 'Read the index',
   },
   {
     title: 'The Course Architects',
-    blurb: 'Dye, Nicklaus, Fazio, Palmer, Rees Jones. Meet the designers behind every great La Quinta course — and where they built.',
+    blurb: 'Dye, Fazio, Palmer, Rees Jones. Meet the designers behind every great La Quinta course — and where they built.',
     href: '/architects',
     cta: 'Meet the architects',
   },
   {
     title: 'Find Your Match (2-min quiz)',
-    blurb: 'Five questions about your budget, golf style, and lifestyle. We match you to your top three La Quinta clubs.',
+    blurb: 'Five questions about your budget, golf style, and lifestyle. We match you to your top three La Quinta communities.',
     href: '/community-quiz',
     cta: 'Take the quiz',
   },
@@ -92,14 +92,14 @@ export function FeaturedRealtorSlot() {
 
           {/* Copy side */}
           <div>
-            <div className="text-[11px] uppercase tracking-[0.28em] text-gold mb-4">Meet Your La Quinta Realtor</div>
+            <div className="text-[11px] uppercase tracking-[0.28em] text-gold mb-4">Meet Your La Quinta Market Partner</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] mb-6">
-              Every buyer lead on this site routes to <span className="text-gold">{partner.displayName}.</span>
+              Listings, private tours, and buyer representation from <span className="text-gold">{partner.displayName}.</span>
             </h2>
             <div className="space-y-4 text-sand-50/85 text-base leading-relaxed max-w-xl">
               <p>{partner.bioShort}</p>
               <p>
-                Because Kathy is the site&rsquo;s single Exclusive Market Partner, every showing request, off-market inquiry, and community introduction routes directly to her. No round-robin. No competing names.
+                We&rsquo;re a lifestyle guide to La Quinta&rsquo;s golf communities; Kathy is the licensed real estate professional. As the site&rsquo;s single Exclusive Market Partner, every showing request, off-market inquiry, and community introduction goes directly to her. No round-robin. No competing names.
               </p>
             </div>
 
@@ -129,7 +129,7 @@ export function FeaturedRealtorSlot() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gold text-palm font-semibold tracking-[0.18em] uppercase text-xs px-7 py-4 hover:bg-gold/90 transition-colors"
               >
-                {partner.scheduler.label} <ArrowUpRight size={15} />
+                Connect with Kathy <ArrowUpRight size={15} />
               </a>
               <Link
                 href="/community-quiz"
