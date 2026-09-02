@@ -91,9 +91,21 @@ export default function ContextualContactForm({
         <div className="lg:col-span-5 lg:pr-6 border-l-2 border-terracotta pl-6 lg:border-l-0 lg:border-r-2 lg:pl-0 lg:pr-6 lg:border-r-terracotta">
           <div className="editorial-eyebrow mb-4"><span className="editorial-rule" />Exclusive Market Partner</div>
           <div className="flex items-center gap-4 mb-5">
-            <div className="h-16 w-16 rounded-full bg-palm text-cream flex items-center justify-center font-serif text-2xl shrink-0">
-              {partner.headshot.initials}
-            </div>
+            {partner.headshot?.src ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={partner.headshot.src}
+                alt={partner.headshot.alt}
+                width={72}
+                height={72}
+                className="h-18 w-18 rounded-full object-cover ring-2 ring-terracotta/70 shrink-0"
+                style={{ height: 72, width: 72 }}
+              />
+            ) : (
+              <div className="h-16 w-16 rounded-full bg-palm text-cream flex items-center justify-center font-serif text-2xl shrink-0">
+                {partner.headshot.initials}
+              </div>
+            )}
             <div>
               <div className="font-serif text-2xl text-palm leading-tight">{partner.displayName}</div>
               <div className="text-[11px] uppercase tracking-[0.22em] text-foreground/60 mt-1">
