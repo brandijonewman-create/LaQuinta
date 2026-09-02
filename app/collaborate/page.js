@@ -48,7 +48,6 @@ export default function CollaboratePage() {
                 <li>Every qualified lead generated through the site routes directly to you — the contact form, the community quiz, the home-valuation form, gated downloads, all of it.</li>
               </ul>
               <p>What we ask: honesty, responsiveness, and a strict &ldquo;no-fakes&rdquo; standard for client communication.</p>
-              <p><strong>Risk-reversal guarantee:</strong> if you don&rsquo;t receive at least three qualified, ready-to-tour buyer leads in your first 90 days, we refund your payment in full and you keep the co-branded content.</p>
               <p><strong>Pricing:</strong> $173/month or $1,733/year for U.S. markets. No setup fees. Annual renewal.</p>
             </div>
 
