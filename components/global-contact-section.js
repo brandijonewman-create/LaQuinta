@@ -9,7 +9,6 @@ import { communities, architects } from '@/lib/site-config';
 const EXCLUDED_PATHS = [
   '/community-quiz',
   '/home-valuation',
-  '/collaborate',
   '/privacy',
   '/terms',
   '/glossary',

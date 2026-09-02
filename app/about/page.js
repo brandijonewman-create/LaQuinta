@@ -63,9 +63,9 @@ export default function AboutPage() {
               <li>We do not send automated marketing emails.</li>
             </ul>
 
-            <h2 className="font-serif text-3xl text-palm pt-6">How we make money</h2>
+            <h2 className="font-serif text-3xl text-palm pt-6">Editorial independence</h2>
             <p>
-              Display advertising via Google AdSense and an annual Exclusive Market Partner subscription with Kathy Schowe, our California-licensed real estate professional for La Quinta. No affiliate placements in the articles, no paid community placement in the quiz results, no listing fees.
+              We are a publisher, not a broker. Every California real estate transaction referenced on this site is executed by a California-licensed real estate professional. Editorial content is not for sale. There are no affiliate placements in the articles, no paid community placement in the quiz results, and no listing fees.
             </p>
 
             <h2 className="font-serif text-3xl text-palm pt-10">The Golf Lifestyle network</h2>

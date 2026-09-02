@@ -150,8 +150,6 @@ function build() {
       : undefined;
     out.push(line(`/collaborators/${pageSlug}`, first.name, note));
   }
-  out.push(line('/collaborate', 'Exclusive Market Partner program', 'How California-licensed agents can lease a city site in the Golf Lifestyle Network portfolio (La Quinta is filled; other cities open).'));
-  out.push(line('/property-spotlight/sample', 'Sample property spotlight', 'Reference format for the site\u2019s property-spotlight editorial slot.'));
   out.push('');
 
   // ---- Legal --------------------------------------------------------------
