@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export const metadata = {
   title: 'La Quinta Golf Clubs',
-  description: 'An index of the six private golf clubs of La Quinta, California, plus notes on the resort and daily-fee options.',
+  description: 'An index of the seven private golf clubs of La Quinta, California, plus notes on the resort and daily-fee options.',
   alternates: { canonical: '/golf-clubs' },
 };
 
@@ -15,7 +15,7 @@ export default function GolfClubsIndex() {
     <>
       <PageHero
         eyebrow="Golf Clubs"
-        title="The six private clubs of La Quinta."
+        title="The seven private clubs of La Quinta."
         subtitle="Private membership clubs are the heart of La Quinta golf. Public and resort access lives elsewhere in the city — we&rsquo;ll cover both."
       />
       <section className="container py-16 lg:py-24">

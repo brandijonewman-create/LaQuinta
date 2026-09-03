@@ -5,7 +5,7 @@ import { architects } from '@/lib/site-config';
 
 export const metadata = {
   title: 'The Architects of La Quinta Golf',
-  description: 'Profiles of the course architects whose work defines La Quinta golf — Pete Dye, Tom Fazio, Arnold Palmer, and Rees Jones.',
+  description: 'Profiles of the course architects whose work defines La Quinta golf — Pete Dye, Tom Fazio, Jack Nicklaus, Arnold Palmer, Greg Norman, Tom Weiskopf, and Rees Jones.',
   alternates: { canonical: '/architects' },
 };
 

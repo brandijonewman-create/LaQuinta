@@ -13,7 +13,7 @@ export default function QuizCta() {
               Find Your Community
             </div>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              Six private clubs. One city. One quiz to narrow the field.
+              Seven private clubs. One city. One quiz to narrow the field.
             </h2>
             <p className="text-sand-50/75 mt-6 max-w-2xl text-base md:text-lg leading-relaxed">
               Eight questions &mdash; architecture, scale, social scene, price band,

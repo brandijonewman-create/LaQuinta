@@ -24,6 +24,15 @@ const communities = [
     zip: 'La Quinta, CA 92253',
   },
   {
+    slug: 'pga-west',
+    name: 'PGA West',
+    architect: 'Dye, Nicklaus, Norman & Weiskopf',
+    priceRange: '$500K – $15M+',
+    image: 'https://images.pexels.com/photos/1409004/pexels-photo-1409004.jpeg',
+    blurb: 'Six courses, four architects, and La Quinta\u2019s widest price band \u2014 condos to estates behind one master-planned gate.',
+    zip: 'La Quinta, CA 92253',
+  },
+  {
     slug: 'andalusia-country-club',
     name: 'Andalusia Country Club',
     architect: 'Rees Jones',

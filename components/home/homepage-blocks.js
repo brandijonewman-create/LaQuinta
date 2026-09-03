@@ -3,21 +3,21 @@ import { ArrowUpRight } from 'lucide-react';
 import { partner } from '@/lib/exclusive-partner';
 
 const stats = [
-  { value: '6',  label: 'Private clubs' },
-  { value: '7',  label: 'Golf courses' },
-  { value: '4',  label: 'Course architects' },
+  { value: '7',  label: 'Private clubs' },
+  { value: '13', label: 'Golf courses' },
+  { value: '7',  label: 'Course architects' },
 ];
 
 const resources = [
   {
     title: 'The La Quinta Community Index',
-    blurb: 'A comparative lifestyle guide to all six private golf communities — architecture, membership style, and daily character.',
+    blurb: 'A comparative lifestyle guide to all seven private golf communities — architecture, membership style, and daily character.',
     href: '/communities',
     cta: 'Read the index',
   },
   {
     title: 'The Course Architects',
-    blurb: 'Dye, Fazio, Palmer, Rees Jones. Meet the designers behind every great La Quinta course — and where they built.',
+    blurb: 'Dye, Fazio, Nicklaus, Palmer, Norman, Weiskopf, Rees Jones. Meet the designers behind every great La Quinta course — and where they built.',
     href: '/architects',
     cta: 'Meet the architects',
   },

@@ -1339,3 +1339,78 @@ agent_communication:
       No backend contract or schema changes. No testing-agent invocation
       required — pure UI copy edit.
 
+
+## Agent Communication (2026-09-02 — PGA West restored as 7th La Quinta private club)
+  - agent: "main"
+  - message: |
+      User confirmed the scope reversal: PGA West is back as the seventh
+      La Quinta private club, and Nicklaus / Norman / Weiskopf are back as
+      La Quinta architects.
+
+      SITE-CONFIG (single source of truth)
+        • /app/lib/site-config.js `communities` array — added
+          `pga-west` (positioned 3rd, after Hideaway) with architect string
+          "Pete Dye, Jack Nicklaus, Greg Norman & Tom Weiskopf". Total: 7.
+        • /app/lib/site-config.js `architects` array — added
+          `jack-nicklaus`, `greg-norman`, `tom-weiskopf`. Total: 7.
+        • site.description and site.seoDescription rewritten to enumerate
+          all seven communities.
+
+      All 4 new detail routes went live automatically because the content
+      modules `/app/lib/content/community-content.js` and
+      `/app/lib/content/architect-content.js` already had the pga-west /
+      jack-nicklaus / greg-norman / tom-weiskopf entries from the earlier
+      scope. Verified 200 OK + self-referencing canonical on each:
+        - /communities/pga-west
+        - /architects/jack-nicklaus
+        - /architects/greg-norman
+        - /architects/tom-weiskopf
+
+      Sitemap auto-added the 4 routes (uses site-config arrays). llms.txt
+      auto-included them. Community Quiz already had `pga-west` in its
+      SCORE_TABLE and CLUB_REASONS, so quiz results now can return PGA
+      West as a top match.
+
+      COPY UPDATES (from "six" → "seven")
+        • /app/components/home/hero.js — subtitle
+        • /app/components/home/homepage-blocks.js — stats row (6→7, 7→13,
+          4→7) + resources blurbs (Community Index + Architects)
+        • /app/components/home/quiz-cta.js — "Seven private clubs" headline
+        • /app/components/home/featured-communities.js — inserted PGA West
+          tile (Pexels image, $500K–$15M+ band)
+        • /app/app/communities/page.js — meta description
+        • /app/app/architects/page.js — meta description (adds all 7 names)
+        • /app/app/golf-clubs/page.js — meta description + hero title
+        • /app/content/blog/welcome-to-la-quinta-golf-lifestyle.mdx —
+          opening paragraph + TL;DR bullet
+        • /app/content/guides/2026-la-quinta-buyers-guide.mdx — intro,
+          section-1 heading, section-2 intro, TL;DR bullet, and added a
+          full PGA West subsection at the top of "The seven private clubs"
+
+      TWO REMAINING "OTHER SIX" REFERENCES ARE CORRECT (not stale)
+        • content/blog/inside-the-madison-club.mdx: "one of the other six
+          La Quinta clubs" — from Madison's POV, 6 non-Madison peers.
+          Correct if total = 7. ✓
+        • content/blog/club-membership-styles.mdx: "None of the other six
+          La Quinta privates" — from PGA West's POV, 6 non-PGA West peers.
+          Correct if total = 7. ✓
+
+      VERIFIED
+        • /communities index renders 7 tiles (PGA West as 3rd)
+        • /architects index renders 7 tiles
+        • /homes-for-sale/pga-west (from Pass B) still 200 OK with all
+          three schemas
+        • curl for site meta description shows all 7 communities enumerated
+
+      No visible stats discrepancy on the homepage — `StatsRow` from
+      homepage-blocks.js is exported but not currently imported into
+      app/page.js, so no stat row is on the live homepage. Values are
+      correct in the source (7/13/7) for whenever it's re-added.
+
+      Screenshots taken:
+        • /communities index — PGA West visible as 3rd tile
+        • /communities/pga-west — hero, breadcrumb, Quick Facts sidebar
+          all render clean
+        • / — hero subtitle now reads "La Quinta's seven private golf
+          communities"
+
