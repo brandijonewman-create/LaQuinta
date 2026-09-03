@@ -62,9 +62,9 @@ export default function HomesForSaleFilterPage({ params }) {
           <Disclaimer>
             Live listings for this filter will appear here once the California
             IDX feed is connected. Current La Quinta listings, private showings,
-            and buyer representation are provided by Kathy Schowe, our Exclusive
-            Market Partner. Estimate only &mdash; verify with a licensed
-            California real-estate professional before transacting.
+            and buyer representation are provided by a licensed California
+            real-estate professional. Estimate only &mdash; verify with a
+            licensed California real-estate professional before transacting.
           </Disclaimer>
           <div className="mt-8">
             <Link

@@ -192,7 +192,7 @@ export default function QuizClient() {
             </Button>
           </div>
           <p className="text-[11px] text-foreground/55 mt-4 leading-relaxed">
-            No automated marketing emails. Kathy Schowe, our Exclusive Market Partner, will follow up directly. We do not sell or share your information.
+            No automated marketing emails. We&rsquo;ll follow up directly. We do not sell or share your information.
           </p>
         </form>
       </div>

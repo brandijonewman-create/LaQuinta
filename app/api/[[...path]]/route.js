@@ -205,7 +205,7 @@ async function handleLeadsMagnet(request) {
 // Behavior:
 //   1) validate + honeypot
 //   2) insert `type: 'contact'` document into `leads` collection
-//   3) fire-and-forget welcome email to the buyer + notification to Kathy + owner
+//   3) fire-and-forget welcome email to the buyer + notification to OWNER_EMAIL
 async function handleContact(request) {
   const body = await readJson(request);
   // Honeypot: real humans never fill this field.

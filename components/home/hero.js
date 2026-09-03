@@ -27,8 +27,7 @@ export default function Hero() {
           <p className="text-sand-50/85 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">
             A lifestyle guide to La Quinta&rsquo;s seven private golf communities,
             the architects behind their fairways, and the daily life around them.
-            Listings and representation are provided by Kathy Schowe, our
-            Exclusive Market Partner.
+            One editorial guide, published by the Golf Lifestyle Network.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">

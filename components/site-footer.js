@@ -10,7 +10,7 @@ export default function SiteFooter() {
           <div className="lg:col-span-4">
             <div className="font-serif text-2xl leading-tight">{site.name}</div>
             <div className="text-xs uppercase tracking-[0.28em] text-gold/90 mt-2">
-              La Quinta, CA · A lifestyle guide, in partnership with Kathy Schowe
+              La Quinta, CA · A lifestyle guide by the Golf Lifestyle Network
             </div>
             <p className="text-sm text-sand-50/75 mt-6 max-w-sm leading-relaxed">
               {site.tagline}

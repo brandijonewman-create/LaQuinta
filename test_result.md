@@ -1414,3 +1414,128 @@ agent_communication:
         • / — hero subtitle now reads "La Quinta's seven private golf
           communities"
 
+
+## Agent Communication (2026-09-02 — Kathy Schowe removed, partner-recruitment pivot)
+  - agent: "main"
+  - message: |
+      User directive: remove Kathy Schowe entirely; convert the former
+      "Meet Kathy" homepage section into a **partner-recruitment pitch**
+      ("Become La Quinta Golf Lifestyle's Realtor"); route all leads to
+      OWNER_EMAIL only; delete the Kathy contact card from the outbound
+      welcome email.
+
+      SOURCE OF TRUTH — /app/lib/exclusive-partner.js
+        • Rewritten. New exports:
+          - `partner = { status: 'open', displayName: 'La Quinta Golf
+            Lifestyle', signed: null }` — while status is 'open', consumer
+            components render the recruitment pitch; no realtor name /
+            photo / phone / DRE / email anywhere on the site.
+          - `partnerRecruitment` — headline, subhead, 4 value-prop points,
+            and the inquiry-form copy for the recruitment section. Single
+            edit-point for the pitch.
+          - `partnerIsSigned()` helper.
+        • Comment at top explains the "to sign a partner" playbook: flip
+          `status: 'signed'`, populate `signed`, and remove
+          CONTACT_TEST_MODE from .env so partner notifications resume.
+
+      HOMEPAGE
+        • /app/components/home/homepage-blocks.js `FeaturedRealtorSlot` —
+          fully rewritten. Section anchor renamed `#become-our-partner`.
+          Left column: eyebrow → headline → subhead → 4 value-prop cards
+          (Every lead / Editorial not classified / Geographic exclusivity /
+          Built for you) → CTAs "Request the brief" (→ #partner-inquiry)
+          and "About the Network" (→ /about). Right column: "The Slot"
+          data list (Market, Segment, Status with live-pulse dot, Terms,
+          Requirements) + a footnote linking to the Golf Lifestyle Network.
+        • /app/components/home/partner-inquiry-form.js — NEW. Wraps
+          ContextualContactForm with the partner-inquiry subject/headline
+          and anchors as `#partner-inquiry`. Mounts on the homepage
+          directly below FeaturedRealtorSlot so "Request the brief" scrolls
+          into it.
+        • /app/app/page.js — section order updated with a comment
+          documenting the B2B pitch + inquiry form.
+
+      NAV
+        • /app/lib/site-config.js `NAV_PRIMARY` — "Meet Kathy" removed;
+          "For Realtors" (href `/#become-our-partner`) inserted at the
+          position where "Meet Kathy" used to live.
+
+      CONTACT FORM
+        • /app/components/contextual-contact-form.js — fully rewritten.
+          Partner card / headshot / bio column deleted; single-column
+          layout only. Accepts new optional props (submitLabel, formId,
+          intro, headline) so the partner-inquiry variant can override.
+          Default intro reads "Send us a note. We'll reply within one
+          business day…" (no Kathy).
+
+      EMAIL
+        • /app/lib/email.js — full rewrite:
+          - Dropped `import { partner }`; imports `site` instead.
+          - Shell footer now: "…lifestyle guide operated by [owner.fullName]".
+            Removed the "Exclusive Market Partner" line that referenced
+            the (now-defunct) live partner.
+          - `sendContactWelcomeEmail`: dropped `partnerCardHtml()` block.
+            Body now says "Thank you for reaching out about {subject}.
+            We'll reply personally within one business day." + 3 while-
+            you-wait links (Quiz, 2026 buyer's guide, Communities). No
+            partner name or contact card. Reply-To is OWNER_EMAIL or
+            FROM as fallback.
+          - `sendContactPartnerEmail`: kept name for API-route compat but
+            it now routes ONLY to OWNER_EMAIL (+ optional COLLAB list).
+            No partner recipient. CONTACT_TEST_MODE guard removed — the
+            behaviour is unconditionally owner-only until a partner is
+            signed. The email body drops the "her contact card" line.
+          - `sendQuizLeadConfirmationEmail`: signoff changed from
+            "The team at 7671 Enterprises, LLC" to just owner.fullName.
+            Removed the "our California-licensed Exclusive Market Partner"
+            phrasing.
+
+      COPY SWEEP — 15 files touched to remove every "Kathy Schowe" mention:
+        • components/site-footer.js — "in partnership with Kathy Schowe"
+          → "by the Golf Lifestyle Network"
+        • components/home/hero.js — subtitle now "One editorial guide,
+          published by the Golf Lifestyle Network."
+        • components/home/editorial-intro.js — partner line replaced with
+          "handled by a licensed California real-estate professional. The
+          La Quinta Exclusive Market Partner slot is currently open — see
+          the For Realtors section."
+        • components/home/featured-communities.js — subhead reworded
+        • components/quiz/quiz-flow.js — microcopy neutralized
+        • components/lead-gate.js — both intro and footer microcopy
+          rewritten to be partner-agnostic
+        • components/forms/{download-gate,valuation-form,lead-magnet-form}.js
+        • app/communities/page.js subtitle
+        • app/community-quiz/QuizClient.js consent microcopy
+        • app/homes-for-sale/page.js meta + hero subtitle + CTA (which
+          used to link to `/#meet-kathy`; now links to
+          `/community-quiz` and `/guides/2026-la-quinta-buyers-guide`)
+        • app/homes-for-sale/[filter]/page.js Disclaimer
+        • app/api/[[...path]]/route.js comment updated
+        • app/llms.txt/route.js — dropped `partner` import; renamed the
+          "Exclusive Market Partner" section to reflect the open-slot
+          status and linked `/#become-our-partner`
+        • content/blog/welcome-to-la-quinta-golf-lifestyle.mdx — excerpt,
+          TL;DR, FAQ answer, and body paragraphs rewritten
+        • content/guides/2026-la-quinta-buyers-guide.mdx — two paragraphs
+
+      VERIFICATION (via curl)
+        • 0 Kathy / Schowe / meet-kathy references on: /, /about,
+          /homes-for-sale, /homes-for-sale/gated, /communities/pga-west,
+          /community-quiz, /guides/2026-la-quinta-buyers-guide
+        • Homepage HTML confirms "Become La Quinta Golf Lifestyle",
+          "Request the brief", `#become-our-partner` anchor, and
+          `#partner-inquiry` form anchor all present
+        • All previously-live routes still 200: /, /homes-for-sale/pga-west,
+          /guides/buying-into-an-equity-club, /communities,
+          /architects/jack-nicklaus
+
+      SCREENSHOT taken of /#become-our-partner: recruitment section renders
+      with the headline, 4 value-prop cards, "The Slot" data column with
+      pulsing "Open — accepting inquiries" status, CTAs, and the
+      "Request the partnership brief." inquiry form directly below.
+
+      No .env changes required — CONTACT_TEST_MODE=1 stays on but is now
+      effectively a no-op since email.js no longer branches on it. The
+      Resend welcome email + owner notification both continue to fire on
+      form submissions.
+

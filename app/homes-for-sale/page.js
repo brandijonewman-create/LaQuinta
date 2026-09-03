@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 export const metadata = {
   title: 'Homes for Sale in La Quinta',
-  description: 'Current La Quinta listings are handled by Kathy Schowe, our California-licensed Exclusive Market Partner. A live IDX/MLS search will appear here once the feed is connected.',
+  description: 'A live IDX/MLS search will appear here once the CARETS/CRMLS feed is connected. Current La Quinta listings are handled by a licensed California real-estate professional.',
   alternates: { canonical: '/homes-for-sale' },
 };
 
@@ -28,14 +28,14 @@ export default function HomesForSaleIndex() {
       <PageHero
         eyebrow="Homes for Sale"
         title="Where to find current La Quinta listings."
-        subtitle="This site is a lifestyle guide to La Quinta’s golf communities — we don’t list inventory ourselves. Current listings, private showings, and buyer representation are handled by Kathy Schowe, our California-licensed Exclusive Market Partner. A live MLS search will appear here once the CARETS/CRMLS feed is connected."
+        subtitle="This site is a lifestyle guide to La Quinta’s golf communities — we don’t list inventory ourselves. Current listings, private showings, and buyer representation are handled by a licensed California real-estate professional. A live MLS search will appear here once the CARETS/CRMLS feed is connected."
       />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Homes for Sale' }]} />
 
         <div className="mt-10 max-w-2xl">
           <Disclaimer>
-            A lifestyle guide, not a brokerage. Listings and representation are provided by our California-licensed Exclusive Market Partner. The live IDX feed is scheduled once the CARETS/CRMLS integration is in place.
+            A lifestyle guide, not a brokerage. Listings and representation are provided by a licensed California real-estate professional. The live IDX feed is scheduled once the CARETS/CRMLS integration is in place.
           </Disclaimer>
         </div>
 
@@ -54,10 +54,10 @@ export default function HomesForSaleIndex() {
 
         <div className="mt-14 flex flex-wrap gap-3 justify-center">
           <Button asChild className="rounded-none bg-palm text-sand-50 hover:bg-palm-700">
-            <Link href="/#meet-kathy">Connect with Kathy for current listings</Link>
+            <Link href="/community-quiz">Find your community</Link>
           </Button>
           <Button asChild variant="outline" className="rounded-none">
-            <Link href="/community-quiz">Take the Community Quiz</Link>
+            <Link href="/guides/2026-la-quinta-buyers-guide">Read the 2026 buyer&rsquo;s guide</Link>
           </Button>
         </div>
       </section>

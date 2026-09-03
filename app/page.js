@@ -1,6 +1,7 @@
 import Hero from '@/components/home/hero';
 import IntroBlock, { ArchitectsPreview } from '@/components/home/editorial-intro';
 import { FeaturedRealtorSlot } from '@/components/home/homepage-blocks';
+import PartnerInquiryForm from '@/components/home/partner-inquiry-form';
 import FeaturedCommunities from '@/components/home/featured-communities';
 import LifestylePreview from '@/components/home/lifestyle-preview';
 import QuizCta from '@/components/home/quiz-cta';
@@ -10,10 +11,12 @@ export const metadata = {
   alternates: { canonical: '/' },
 };
 
-// Homepage section order mirrors the Golf Lifestyle network reference site
-// (Palm Beach Golf Lifestyle) for consistency across all 14 markets:
-//   Hero → Intro → Communities → Featured Realtor → Quiz CTA → Architects →
-//   Lifestyle → Latest articles
+// Homepage section order:
+//   Hero → Intro → Communities → Partner Recruitment → Partner Inquiry Form
+//   → Quiz CTA → Architects → Lifestyle → Latest articles
+// The Partner Recruitment section is a B2B pitch to prospective realtors
+// while the La Quinta Exclusive Market Partner slot is open. The buyer
+// contact form still mounts globally below <main> on every page.
 export default function HomePage() {
   return (
     <>
@@ -21,6 +24,7 @@ export default function HomePage() {
       <IntroBlock />
       <FeaturedCommunities />
       <FeaturedRealtorSlot />
+      <PartnerInquiryForm />
       <QuizCta />
       <ArchitectsPreview />
       <LifestylePreview />

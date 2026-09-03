@@ -43,7 +43,7 @@ export default function ValuationForm() {
         <CheckCircle2 size={36} className="text-palm mx-auto" />
         <h2 className="font-serif text-3xl text-palm mt-5">Thanks — we have your request.</h2>
         <p className="text-foreground/75 mt-4 leading-relaxed">
-          Your request is recorded. Kathy Schowe, our California-licensed Exclusive Market Partner, will follow up directly with a range valuation grounded in current La Quinta comps. No automated emails, and we do not sell or share your information.
+          Your request is recorded. A licensed California real-estate professional will follow up with a range valuation grounded in current La Quinta comps. No automated emails, and we do not sell or share your information.
         </p>
       </div>
     );
@@ -97,7 +97,7 @@ export default function ValuationForm() {
           {submitting ? 'Submitting…' : 'Request honest range valuation'}
         </Button>
         <p className="text-[11px] text-foreground/55 mt-4 leading-relaxed">
-          By submitting you consent to Kathy Schowe, our California-licensed Exclusive Market Partner, contacting you directly. We do not sell or share your information.
+          By submitting you consent to a licensed California real-estate professional contacting you directly. We do not sell or share your information.
         </p>
       </div>
 

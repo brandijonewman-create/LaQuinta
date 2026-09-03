@@ -61,7 +61,7 @@ export default function LeadMagnetForm({ magnetSlug, magnetLabel }) {
           {submitting ? 'Submitting…' : `Get “${magnetLabel}”`}
         </Button>
         <p className="text-[11px] text-foreground/55 leading-relaxed">
-          No automated marketing emails. Kathy Schowe, our Exclusive Market Partner, may follow up directly.
+          No automated marketing emails. We&rsquo;ll follow up directly.
         </p>
       </div>
     </form>

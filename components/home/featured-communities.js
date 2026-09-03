@@ -147,8 +147,8 @@ export default function FeaturedCommunities() {
           <p className="text-foreground/70 mt-5 text-base md:text-lg leading-relaxed">
             A community-by-community lifestyle guide &mdash; their architects,
             their price bands, and the character of daily life inside each gate.
-            Current listings and private tours are arranged by Kathy Schowe, our
-            Exclusive Market Partner.
+            Current listings and private tours are arranged by a licensed
+            California real-estate professional.
           </p>
         </div>
         <Link

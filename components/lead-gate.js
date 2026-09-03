@@ -76,7 +76,7 @@ export default function LeadGate({ assetSlug, assetTitle, downloadUrl, children 
         Continue to {assetTitle}.
       </h2>
       <p className="text-sm text-foreground/70 leading-relaxed mb-6">
-        Please share your name, email, and phone number to continue. Your details will be shared with Kathy Schowe, our Exclusive Market Partner for La Quinta{downloadUrl ? ', and we will email you a PDF copy of the document' : ''}.
+        Please share your name, email, and phone number to continue{downloadUrl ? '. We will email you a PDF copy of the document' : ''}. Your details are used only for this request &mdash; no automated marketing emails, no third-party lists.
       </p>
 
       <form onSubmit={onSubmit} className="space-y-4">
@@ -108,7 +108,7 @@ export default function LeadGate({ assetSlug, assetTitle, downloadUrl, children 
         </Button>
 
         <p className="text-[10px] uppercase tracking-[0.18em] text-foreground/45 text-center pt-2">
-          Your details are used only to unlock this guide and to introduce you to Kathy Schowe, our La Quinta Exclusive Market Partner.
+          Your details are used only to unlock this guide. We do not sell or share your information.
         </p>
       </form>
     </div>

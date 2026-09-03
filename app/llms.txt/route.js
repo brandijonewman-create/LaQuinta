@@ -17,7 +17,6 @@
 import { site, owner, communities, architects, market } from '@/lib/site-config';
 import { getAllPosts, getAllGuides } from '@/lib/blog';
 import { collaborators, getCollaboratorPageSlugs, getCollaborator } from '@/lib/collaborators';
-import { partner } from '@/lib/exclusive-partner';
 
 // Force this route to be rendered on every request so newly-added posts,
 // guides and collaborators appear in /llms.txt immediately.
@@ -139,10 +138,10 @@ function build() {
   out.push(line('/golf-clubs', 'Golf clubs directory', 'Directory of La Quinta private golf clubs.'));
   out.push('');
 
-  // ---- Exclusive Market Partner & collaborators --------------------------
-  out.push('## Exclusive Market Partner & Editorial Collaborators');
+  // ---- Exclusive Market Partner slot & collaborators ---------------------
+  out.push('## Exclusive Market Partner slot & Editorial Collaborators');
   out.push('');
-  out.push(line('/#meet-kathy', `Meet ${partner.displayName}`, `${partner.brokerage.name} \u00b7 CA DRE #${partner.dreLicense} \u2014 the site\u2019s Exclusive Market Partner for La Quinta.`));
+  out.push(line('/#become-our-partner', 'La Quinta Exclusive Market Partner \u2014 open slot', 'The Exclusive Market Partner slot for La Quinta is currently open. One California-licensed realtor per city site. Every buyer inquiry on this site routes to the signed partner.'));
   out.push(line('/collaborators', 'Editorial collaborators', 'Vetted professionals who contribute editorial expertise to the site.'));
   for (const pageSlug of collabPages) {
     // Represent each page by its first collaborator.
