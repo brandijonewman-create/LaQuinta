@@ -14,7 +14,7 @@ export default function QuizPage() {
       <PageHero
         eyebrow="Find Your Community"
         title="Seven private clubs. One match."
-        subtitle="Five questions — setting, course era, club character, real-estate footprint, and how you\u2019ll actually use the home. We\u2019ll match you to the La Quinta community that fits best, plus two runners-up, and send you a printable guide for the match."
+        subtitle="Five questions — setting, course era, club character, real-estate footprint, and how you’ll actually use the home. We’ll match you to the La Quinta community that fits best, plus two runners-up, and send you a printable guide for the match."
       />
       <section className="container py-14 lg:py-20">
         <Breadcrumbs items={[{ label: 'Community Quiz' }]} />
