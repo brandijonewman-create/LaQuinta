@@ -16,9 +16,16 @@ export default function GuidesIndexPage() {
     <>
       <PageHero
         eyebrow="Guides"
-        title="Long-form pillar guides to La Quinta golf real estate."
-        subtitle="Pillar pieces — from the 2026 Buyer&rsquo;s Guide to architect-by-architect breakdowns."
-      />
+        title="Find Your Perfect La Quinta Golf Home."
+        subtitle="Every course, every community, every price range &mdash; covered. Start with our 60-second quiz to find your match."
+      >
+        <Link
+          href="/community-quiz"
+          className="inline-flex items-center gap-2 bg-palm text-sand-50 px-8 py-4 text-xs uppercase tracking-[0.22em] font-semibold hover:bg-terracotta transition-colors"
+        >
+          Take the Quiz <ArrowUpRight size={14} />
+        </Link>
+      </PageHero>
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Guides' }]} />
         {guides.length === 0 ? (

@@ -1,6 +1,9 @@
 // Reusable page hero. Two variants:
 //   simple — cream background, used for most utility/stub pages.
 //   image  — full-bleed image with overlay, used for communities, architects.
+//
+// Optional `children` render below the subtitle inside the hero column and
+// are typically used for CTA buttons.
 
 export default function PageHero({
   eyebrow,
@@ -9,6 +12,7 @@ export default function PageHero({
   image,
   variant = 'simple',
   align = 'left',
+  children,
 }) {
   if (variant === 'image' && image) {
     return (
@@ -31,6 +35,7 @@ export default function PageHero({
                 {subtitle}
               </p>
             )}
+            {children && <div className="mt-8">{children}</div>}
           </div>
         </div>
       </section>
@@ -55,6 +60,7 @@ export default function PageHero({
               {subtitle}
             </p>
           )}
+          {children && <div className="mt-8">{children}</div>}
         </div>
       </div>
     </section>
