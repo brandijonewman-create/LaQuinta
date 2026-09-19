@@ -143,9 +143,16 @@ export function FeaturedRealtorSlot() {
                 </dd>
               </div>
               <div>
-                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Terms</dt>
-                <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Monthly fee. 12-month term. Right of first renewal. No commission split, no referral fee.
+                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Term</dt>
+                <dd className="font-serif text-xl text-sand-50 mt-1">
+                  3 years
+                </dd>
+              </div>
+              <div>
+                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Fee</dt>
+                <dd className="text-sm text-sand-50/90 leading-relaxed mt-1">
+                  <span className="font-serif text-xl text-sand-50 block">$500 / quarter</span>
+                  <span className="text-xs text-sand-50/65 block mt-0.5">$2,000 per year, billed quarterly. No commission split, no referral fee.</span>
                 </dd>
               </div>
               <div>
