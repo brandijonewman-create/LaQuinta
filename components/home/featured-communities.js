@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { ArrowUpRight, MapPin } from 'lucide-react';
 
-// La Quinta&rsquo;s named golf communities (private clubs, resort, and
-// active-adult). Price bands are indicative MLS observation ranges only.
-// windows — wide brackets used deliberately, not guarantees.
+// The seven La Quinta golf communities profiled on the site. Price bands
+// are indicative MLS observation ranges only — wide brackets used
+// deliberately, not guarantees.
 const communities = [
   {
     slug: 'the-madison-club',
@@ -66,69 +66,6 @@ const communities = [
     priceRange: '$3M – $15M',
     image: 'https://images.pexels.com/photos/35828565/pexels-photo-35828565.jpeg',
     blurb: 'A second Fazio routing on a dramatic granite-quarry site \u2014 one of the smallest memberships in the valley.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
-    slug: 'rancho-la-quinta-country-club',
-    name: 'Rancho La Quinta Country Club',
-    architect: 'Robert Trent Jones Jr. · Jerry Pate',
-    priceRange: '$650K – $3.5M',
-    image: 'https://images.pexels.com/photos/9173341/pexels-photo-9173341.jpeg',
-    blurb: 'Two private 18s behind one gate \u2014 a true country-club lifestyle with broader access.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
-    slug: 'la-quinta-resort-club',
-    name: 'La Quinta Resort & Club',
-    architect: 'Pete Dye · Ed Lawrence',
-    priceRange: '$500K – $3M',
-    image: 'https://images.pexels.com/photos/6794794/pexels-photo-6794794.jpeg',
-    blurb: 'Historic 1926 resort with the Mountain and Dunes courses \u2014 the village core of La Quinta.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
-    slug: 'mountain-view-country-club',
-    name: 'Mountain View Country Club',
-    architect: 'Arnold Palmer',
-    priceRange: '$900K – $3.5M',
-    image: 'https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg',
-    blurb: 'Palmer-designed semi-private club with Mediterranean estates and mountain backdrops.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
-    slug: 'the-citrus-club',
-    name: 'The Citrus Club',
-    architect: 'Pete Dye',
-    priceRange: '$650K – $3M',
-    image: 'https://images.pexels.com/photos/28054849/pexels-photo-28054849.jpeg',
-    blurb: 'A private Dye design near the city core \u2014 grove-lined fairways and walkable Spanish-style streets.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
-    slug: 'trilogy-at-la-quinta',
-    name: 'Trilogy at La Quinta',
-    architect: 'Gary Panks',
-    priceRange: '$450K – $1.4M',
-    image: 'https://images.pexels.com/photos/37911536/pexels-photo-37911536.jpeg',
-    blurb: 'A 55+ active-adult community on the Santa Rosa Cove side \u2014 lock-and-leave, social calendar, value.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
-    slug: 'coral-mountain-club',
-    name: 'Coral Mountain Club',
-    architect: 'Jack Nicklaus',
-    priceRange: '$1.5M – $7M',
-    image: 'https://images.pexels.com/photos/14869685/pexels-photo-14869685.jpeg',
-    blurb: 'A small private Nicklaus enclave below the Coral Reef mountains \u2014 architecturally controlled and quiet.',
-    zip: 'La Quinta, CA 92253',
-  },
-  {
-    slug: 'duna-la-quinta',
-    name: 'Duna La Quinta',
-    architect: 'Pete Dye',
-    priceRange: '$550K – $2M',
-    image: 'https://images.pexels.com/photos/9173341/pexels-photo-9173341.jpeg',
-    blurb: 'Guard-gated condos and casitas on the Dunes Course \u2014 the most affordable inside-the-rope address.',
     zip: 'La Quinta, CA 92253',
   },
 ];
