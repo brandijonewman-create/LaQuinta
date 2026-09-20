@@ -45,27 +45,6 @@ const nextConfig = {
   // purged at Cloudflare after deploy so the previously-cached 200s on
   // https://www.laquintagolflifestyle.com/* are evicted.
   async redirects() {
-    // Communities that were previously indexed by Google but are not part
-    // of our current 7-community roster. 301 to the /communities index so
-    // organic traffic lands somewhere useful instead of a 404. Keep this
-    // list in sync with the "Other La Quinta communities" note on
-    // /communities.
-    const retiredCommunitySlugs = [
-      'rancho-la-quinta-country-club',
-      'mountain-view-country-club',
-      'coral-mountain-club',
-      'the-citrus-club',
-      'la-quinta-resort-club',
-      'duna-la-quinta',
-      'trilogy-at-la-quinta',
-    ];
-
-    const retiredCommunityRedirects = retiredCommunitySlugs.map((slug) => ({
-      source: `/communities/${slug}`,
-      destination: '/communities',
-      statusCode: 301,
-    }));
-
     return [
       {
         source: '/:path*',
@@ -75,7 +54,6 @@ const nextConfig = {
         destination: 'https://laquintagolflifestyle.com/:path*',
         statusCode: 301,
       },
-      ...retiredCommunityRedirects,
     ];
   },
 };
