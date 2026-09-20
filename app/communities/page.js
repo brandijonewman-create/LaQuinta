@@ -35,6 +35,36 @@ export default function CommunitiesIndexPage() {
             );
           })}
         </div>
+
+        <div className="mt-16 border-t border-border pt-10">
+          <h2 className="text-2xl font-serif text-foreground">
+            Other La Quinta communities we don&rsquo;t currently cover
+          </h2>
+          <p className="mt-3 text-muted-foreground max-w-3xl">
+            La Quinta and the surrounding Coachella Valley are home to several additional
+            golf and country-club neighborhoods that fall outside the seven private clubs
+            profiled above. If you&rsquo;re researching one of the communities below and
+            would like a private introduction, tell us what you&rsquo;re looking for and
+            we&rsquo;ll route you to a licensed California real-estate professional who
+            covers that area.
+          </p>
+          <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-muted-foreground list-disc list-inside">
+            <li>Rancho La Quinta Country Club</li>
+            <li>Mountain View Country Club</li>
+            <li>Coral Mountain Club</li>
+            <li>The Citrus Club</li>
+            <li>La Quinta Resort Club</li>
+            <li>Duna La Quinta</li>
+            <li>Trilogy at La Quinta</li>
+          </ul>
+          <p className="mt-6 text-sm text-muted-foreground">
+            Looking for something specific?{' '}
+            <a href="/contact" className="text-foreground underline underline-offset-4 hover:no-underline">
+              Send us a note
+            </a>{' '}
+            and we&rsquo;ll follow up personally.
+          </p>
+        </div>
       </section>
     </>
   );
