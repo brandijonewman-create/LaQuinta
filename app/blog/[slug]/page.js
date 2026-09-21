@@ -19,11 +19,13 @@ export function generateMetadata({ params }) {
   const post = getPost(params.slug);
   if (!post) return {};
   return {
-    title: post.frontmatter.title,
+    title: post.frontmatter.seoTitle
+      ? { absolute: post.frontmatter.seoTitle }
+      : post.frontmatter.title,
     description: post.frontmatter.excerpt,
     alternates: { canonical: `/blog/${params.slug}` },
     openGraph: {
-      title: post.frontmatter.title,
+      title: post.frontmatter.seoTitle || post.frontmatter.title,
       description: post.frontmatter.excerpt,
       images: post.frontmatter.cover ? [post.frontmatter.cover] : [],
       type: 'article',
