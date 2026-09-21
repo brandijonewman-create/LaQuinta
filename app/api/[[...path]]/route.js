@@ -4,6 +4,7 @@ import { quizCollection, valuationCollection, leadCollection } from '@/lib/mongo
 import { scoreQuiz } from '@/lib/quiz-matcher';
 import { getMagnet } from '@/lib/lead-magnets';
 import { sendQuizLeadOwnerEmail, sendQuizLeadConfirmationEmail, sendCollaboratorApplicationEmail, sendContactWelcomeEmail, sendContactPartnerEmail } from '@/lib/email';
+import { rateLimit, maybePrune } from '@/lib/rate-limit';
 
 const PASSPHRASE = process.env.LEADS_ACCESS_KEY || process.env.LEAD_RETRIEVAL_PASSPHRASE || '';
 const CSV_KEY = process.env.LEADS_ACCESS_KEY || '';
@@ -11,6 +12,25 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || '';
 
 const json = (body, init = {}) => NextResponse.json(body, init);
 const err  = (msg, status = 400) => json({ ok: false, error: msg }, { status });
+
+// Wrap rateLimit so a 429 short-circuits with a consistent shape and a
+// Retry-After header the browser can act on.
+function limit(request, opts) {
+  maybePrune();
+  const r = rateLimit(request, opts);
+  if (r.ok) return null;
+  return json(
+    { ok: false, error: r.error },
+    { status: 429, headers: { 'Retry-After': String(r.retryAfter) } }
+  );
+}
+
+// Honeypot: real humans never fill this field. Bots that scrape and submit
+// forms typically do. If it's populated we return a 200-OK-ish shape so the
+// bot thinks it succeeded, but we never persist anything.
+function isHoneypotTripped(body) {
+  return Boolean(cleanString(body?.website) || cleanString(body?._hp));
+}
 
 function cleanString(v, max = 500) {
   if (typeof v !== 'string') return '';
@@ -28,7 +48,12 @@ async function clientMeta(request) {
 
 // ---- POST /api/leads/gate — universal per-asset lead gate ----
 async function handleLeadsGate(request) {
+  const rl = limit(request, { bucket: 'leads-gate', limit: 5, windowMs: 60 * 60 * 1000 });
+  if (rl) return rl;
+
   const body = await readJson(request);
+  if (isHoneypotTripped(body)) return json({ ok: true, honey: true });
+
   const name = cleanString(body?.name, 160);
   const email = cleanString(body?.email, 200);
   const phone = cleanString(body?.phone, 50);
@@ -54,7 +79,14 @@ async function handleLeadsGate(request) {
 
 // ---- POST /api/collaborate — realtor collaborator application ----
 async function handleCollaborate(request) {
+  const rl = limit(request, { bucket: 'collaborate', limit: 3, windowMs: 60 * 60 * 1000 });
+  if (rl) return rl;
+
   const body = await readJson(request);
+  // Honeypot: dedicated hidden field (never `website` here — that's a real
+  // broker-site field on the collaborator form).
+  if (cleanString(body?._hp)) return json({ ok: true, honey: true });
+
   const name = cleanString(body?.name, 160);
   const email = cleanString(body?.email, 200);
   const phone = cleanString(body?.phone, 50);
@@ -94,6 +126,9 @@ async function handleCollaborate(request) {
 
 // ---- POST /api/quiz/score — score-only, no persistence ----
 async function handleQuizScore(request) {
+  const rl = limit(request, { bucket: 'quiz-score', limit: 30, windowMs: 60 * 60 * 1000 });
+  if (rl) return rl;
+
   const body = await readJson(request);
   const answers = body?.answers || {};
   const result = scoreQuiz(answers);
@@ -102,6 +137,9 @@ async function handleQuizScore(request) {
 
 // ---- POST /api/quiz — legacy persistence (kept for back-compat) ----
 async function handleQuiz(request) {
+  const rl = limit(request, { bucket: 'quiz', limit: 10, windowMs: 60 * 60 * 1000 });
+  if (rl) return rl;
+
   const body = await readJson(request);
   const answers = body?.answers || {};
   if (typeof answers !== 'object' || Array.isArray(answers)) return err('Invalid answers payload.');
@@ -153,7 +191,12 @@ async function handleLeadCapture(request) {
 
 // ---- POST /api/leads/magnet — NEW quiz-magnet funnel ----
 async function handleLeadsMagnet(request) {
+  const rl = limit(request, { bucket: 'leads-magnet', limit: 5, windowMs: 60 * 60 * 1000 });
+  if (rl) return rl;
+
   const body = await readJson(request);
+  if (isHoneypotTripped(body)) return json({ ok: true, honey: true });
+
   const slug    = cleanString(body?.slug, 120);
   const name    = cleanString(body?.name, 120);
   const email   = cleanString(body?.email, 200);
@@ -207,9 +250,12 @@ async function handleLeadsMagnet(request) {
 //   2) insert `type: 'contact'` document into `leads` collection
 //   3) fire-and-forget welcome email to the buyer + notification to OWNER_EMAIL
 async function handleContact(request) {
+  const rl = limit(request, { bucket: 'contact', limit: 5, windowMs: 60 * 60 * 1000 });
+  if (rl) return rl;
+
   const body = await readJson(request);
   // Honeypot: real humans never fill this field.
-  if (cleanString(body?.website)) return json({ ok: true, honey: true });
+  if (isHoneypotTripped(body)) return json({ ok: true, honey: true });
 
   const name    = cleanString(body?.name, 120);
   const email   = cleanString(body?.email, 200);

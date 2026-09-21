@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { NAV_FOOTER, site, owner, MARKET_DISCLAIMER } from '@/lib/site-config';
+import FooterConsentLink from '@/components/shared/footer-consent-link';
 
 export default function SiteFooter() {
   const year = new Date().getFullYear();
@@ -53,8 +54,9 @@ export default function SiteFooter() {
             <div className="text-[11px] text-sand-50/50">
               © {year} {site.name}. All rights reserved.
             </div>
-            <div className="text-[11px] text-sand-50/50">
-              {site.domain}
+            <div className="flex items-center gap-4 text-[11px] text-sand-50/50">
+              <FooterConsentLink className="hover:text-sand-50 underline-offset-4 hover:underline transition-colors" />
+              <span>{site.domain}</span>
             </div>
           </div>
         </div>

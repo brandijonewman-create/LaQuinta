@@ -5,7 +5,7 @@ import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
 import GlobalContactSection from '@/components/global-contact-section';
 import QuizFab from '@/components/quiz-fab';
-import GAScripts from '@/components/analytics/ga-scripts';
+import ConsentAndAnalytics from '@/components/analytics/consent-and-analytics';
 import { site, owner } from '@/lib/site-config';
 import { organizationSchema, websiteSchema, JsonLd } from '@/lib/json-ld';
 
@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
           <SiteFooter />
           <QuizFab />
         </Providers>
-        <GAScripts />
+        <ConsentAndAnalytics />
       </body>
     </html>
   );

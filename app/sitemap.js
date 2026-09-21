@@ -19,6 +19,7 @@
 
 import { site, communities, architects, market } from '@/lib/site-config';
 import { getAllPosts, getAllGuides } from '@/lib/blog';
+import { getLifestyleSlugs } from '@/lib/content/lifestyle-content';
 
 // Homes-for-sale filter landing pages that resolve today. Kept in lock-step
 // with the FILTERS object in app/homes-for-sale/[filter]/page.js.
@@ -50,6 +51,7 @@ const STATIC_PAGES = [
   '/compare',
   '/guides',
   '/blog',
+  '/lifestyle',
   '/glossary',
   '/privacy',
   '/terms',
@@ -84,8 +86,9 @@ const PAGE_LAST_MODIFIED = {
   '/home-valuation':       '2026-06-08',
   '/compare':              '2026-06-08',
   '/guides':               '2026-06-08',
-  '/blog':                 '2026-06-08',
-  '/glossary':             '2026-06-08',
+  '/blog':                  '2026-06-08',
+  '/lifestyle':             '2026-06-08',
+  '/glossary':              '2026-06-08',
   '/privacy':              '2026-06-08',
   '/terms':                '2026-06-08',
 };
@@ -157,6 +160,17 @@ export default function sitemap() {
     });
   }
 
+  // Lifestyle detail pages (neighborhoods, parks, trails, districts).
+  const lifestyleDates = [];
+  for (const slug of getLifestyleSlugs()) {
+    const d = parseDate('2026-06-08');
+    lifestyleDates.push(d);
+    entries.push({
+      url: `${site.url}/lifestyle/${slug}`,
+      lastModified: d,
+    });
+  }
+
   // Architect detail pages
   const architectDates = [];
   for (const a of architects) {
@@ -206,6 +220,7 @@ export default function sitemap() {
     '/architects':     architectDates,
     '/homes-for-sale': homesFilterDates,
     '/market-reports': marketZipDates,
+    '/lifestyle':      lifestyleDates,
   };
 
   // ---- Static pages -------------------------------------------------------
