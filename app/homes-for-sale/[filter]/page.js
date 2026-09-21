@@ -60,11 +60,11 @@ export default function HomesForSaleFilterPage({ params }) {
       <section className="container pb-16 lg:pb-24">
         <div className="max-w-3xl">
           <Disclaimer>
-            Live listings for this filter will appear here once the California
-            IDX feed is connected. Current La Quinta listings, private showings,
-            and buyer representation are provided by a licensed California
-            real-estate professional. Estimate only &mdash; verify with a
-            licensed California real-estate professional before transacting.
+            Current La Quinta listings, private showings, and buyer
+            representation are provided by a licensed California real-estate
+            professional. Tell us what you&rsquo;re looking for and we&rsquo;ll
+            connect you. Estimate only &mdash; verify with a licensed California
+            real-estate professional before transacting.
           </Disclaimer>
           <div className="mt-8">
             <Link

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 export const metadata = {
   title: 'Homes for Sale in La Quinta',
-  description: 'A live IDX/MLS search will appear here once the CARETS/CRMLS feed is connected. Current La Quinta listings are handled by a licensed California real-estate professional.',
+  description: 'La Quinta golf-community listings, private showings, and buyer representation are handled by a licensed California real-estate professional. Tell us what you’re looking for and we’ll connect you.',
   alternates: { canonical: '/homes-for-sale' },
 };
 
@@ -28,25 +28,25 @@ export default function HomesForSaleIndex() {
       <PageHero
         eyebrow="Homes for Sale"
         title="Where to find current La Quinta listings."
-        subtitle="This site is a lifestyle guide to La Quinta’s golf communities — we don’t list inventory ourselves. Current listings, private showings, and buyer representation are handled by a licensed California real-estate professional. A live MLS search will appear here once the CARETS/CRMLS feed is connected."
+        subtitle="This site is a lifestyle guide to La Quinta’s golf communities. Current listings, private showings, and buyer representation are handled by a licensed California real-estate professional. Tell us what you’re looking for and we’ll put you in touch with our partner agent."
       />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Homes for Sale' }]} />
 
         <div className="mt-10 max-w-2xl">
           <Disclaimer>
-            A lifestyle guide, not a brokerage. Listings and representation are provided by a licensed California real-estate professional. The live IDX feed is scheduled once the CARETS/CRMLS integration is in place.
+            A lifestyle guide, not a brokerage. Listings and representation are provided by a licensed California real-estate professional. Tell us what you&rsquo;re looking for and we&rsquo;ll make the introduction.
           </Disclaimer>
         </div>
 
         <div className="mt-14">
           <div className="editorial-eyebrow mb-5"><span className="editorial-rule" />Browse by</div>
-          <h2 className="font-serif text-3xl text-palm mb-8">Filters that will be live at launch</h2>
+          <h2 className="font-serif text-3xl text-palm mb-8">Browse La Quinta by focus</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {filters.map((f) => (
               <Link key={f.slug} href={`/homes-for-sale/${f.slug}`} className="group border border-border hover:border-palm bg-sand-50 hover:bg-palm hover:text-sand-50 transition-colors p-5">
                 <div className="font-serif text-lg leading-tight">{f.label}</div>
-                <div className="text-[10px] uppercase tracking-[0.22em] text-foreground/55 group-hover:text-sand-50/70 mt-2">View when live →</div>
+                <div className="text-[10px] uppercase tracking-[0.22em] text-foreground/55 group-hover:text-sand-50/70 mt-2">Explore →</div>
               </Link>
             ))}
           </div>

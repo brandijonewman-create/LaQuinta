@@ -21,7 +21,7 @@ export default function PartnerInquiryForm() {
         intro={partnerRecruitment.form.intro}
         submitLabel={partnerRecruitment.form.submitLabel}
         questionLabel="Tell us about your practice"
-        questionPlaceholder="California DRE license, brokerage, La Quinta production, and the IDX feed you'd bring. Where builder or tier-one introductions are possible, mention those too."
+        questionPlaceholder="California DRE license, brokerage, La Quinta production, and the active listings you'd bring. Where builder or tier-one introductions are possible, mention those too."
       />
     </div>
   );

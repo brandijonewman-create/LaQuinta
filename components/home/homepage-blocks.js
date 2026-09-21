@@ -152,7 +152,7 @@ export function FeaturedRealtorSlot() {
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">What the partner provides</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Their IDX/MLS feed for the on-site home search, plus \u2014 where the opportunity arises \u2014 warm introductions to home builders, developers, and other tier-one operators who fit the same buyer profile.
+                  Their active listings — every photo and all the detail — for the on-site home search, plus — where the opportunity arises — warm introductions to home builders, developers, and other tier-one operators who fit the same buyer profile.
                 </dd>
               </div>
               <div>
@@ -164,7 +164,7 @@ export function FeaturedRealtorSlot() {
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Requirements</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Active California DRE license, La Quinta market fluency, an IDX feed we can integrate, and a brokerage relationship that supports independent lead sourcing.
+                  Active California DRE license, La Quinta market fluency, active listings we can feature, and a brokerage relationship that supports independent lead sourcing.
                 </dd>
               </div>
             </dl>
