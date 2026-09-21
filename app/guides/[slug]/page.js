@@ -21,11 +21,13 @@ export function generateMetadata({ params }) {
   if (!guide) return {};
   const preview = GUIDE_PREVIEW_COPY[params.slug];
   return {
-    title: preview?.title || guide.frontmatter.title,
+    title: preview?.seoTitle
+      ? { absolute: preview.seoTitle }
+      : (preview?.title || guide.frontmatter.title),
     description: preview?.metaDescription || guide.frontmatter.excerpt,
     alternates: { canonical: `/guides/${params.slug}` },
     openGraph: {
-      title: preview?.title || guide.frontmatter.title,
+      title: preview?.seoTitle || preview?.title || guide.frontmatter.title,
       description: preview?.metaDescription || guide.frontmatter.excerpt,
       images: guide.frontmatter.cover ? [guide.frontmatter.cover] : [],
       type: 'article',
