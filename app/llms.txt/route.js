@@ -48,7 +48,6 @@ function line(url, label, note) {
 function build() {
   const posts = getAllPosts();
   const guides = getAllGuides();
-  const collabPages = getCollaboratorPageSlugs();
 
   const out = [];
   out.push(`# ${site.name}`);
@@ -138,20 +137,10 @@ function build() {
   out.push(line('/golf-clubs', 'Golf clubs directory', 'Directory of La Quinta private golf clubs.'));
   out.push('');
 
-  // ---- Exclusive Market Partner slot & collaborators ---------------------
-  out.push('## Exclusive Market Partner slot & Editorial Collaborators');
+  // ---- Exclusive Market Partner slot ------------------------------------
+  out.push('## Exclusive Market Partner slot');
   out.push('');
   out.push(line('/#become-our-partner', 'La Quinta Exclusive Market Partner \u2014 by invitation', 'The Exclusive Market Partner slot for La Quinta is filled by invitation. One California-licensed realtor per city site. No fee is charged; the invited partner provides their active listings for on-site home search and, where possible, introductions to home builders and other tier-one operators. Every buyer inquiry on this site routes to the signed partner.'));
-  out.push(line('/collaborators', 'Editorial collaborators', 'Vetted professionals who contribute editorial expertise to the site.'));
-  for (const pageSlug of collabPages) {
-    // Represent each page by its first collaborator.
-    const first = collaborators.find((c) => (c.page || c.slug) === pageSlug);
-    if (!first) continue;
-    const note = first.jobTitle
-      ? `${first.jobTitle}${first.affiliation ? ` \u2014 ${first.affiliation}` : ''}.`
-      : undefined;
-    out.push(line(`/collaborators/${pageSlug}`, first.name, note));
-  }
   out.push('');
 
   // ---- Legal --------------------------------------------------------------
