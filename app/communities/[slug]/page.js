@@ -310,6 +310,26 @@ export default function CommunityDetailPage({ params }) {
         </div>
       </section>
 
+      {Array.isArray(content.journal) && content.journal.length > 0 && (
+        <section className="container pb-8">
+          <div className="editorial-eyebrow mb-6"><span className="editorial-rule" />From the Journal</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {content.journal.map((a) => (
+              <Link
+                key={a.href}
+                href={a.href}
+                className="group block border border-border bg-sand-50 p-5 hover:border-terracotta transition-colors"
+              >
+                <div className="text-[10px] uppercase tracking-[0.22em] text-terracotta mb-2">Read</div>
+                <div className="font-serif text-lg text-palm leading-snug group-hover:text-terracotta transition-colors">
+                  {a.title}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {related.length > 0 && (
         <section className="container pb-24">
           <div className="editorial-eyebrow mb-6"><span className="editorial-rule" />Related Communities</div>

@@ -11,6 +11,12 @@ import { getGuide, getGuideSlugs } from '@/lib/blog';
 import { mdxComponents } from '@/components/mdx-components';
 import { JsonLd, articleSchema, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
 import { GUIDE_PREVIEW_COPY } from '@/lib/content/thin-page-copy';
+import { author } from '@/lib/site-config';
+
+function formatDate(iso) {
+  if (!iso) return '';
+  return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
 
 export function generateStaticParams() {
   return getGuideSlugs().map((slug) => ({ slug }));
@@ -42,7 +48,7 @@ export default function GuidePage({ params }) {
   const fm = guide.frontmatter;
   const preview = GUIDE_PREVIEW_COPY[params.slug];
 
-  const articleData = articleSchema(guide, 'guides');
+  const articleData = articleSchema(guide, 'guides', author);
   // Prefer the public preview FAQ for schema (higher-quality, buyer-facing
   // Q&A). Fall back to any frontmatter FAQ for older guides that predate the
   // preview copy.
@@ -63,6 +69,33 @@ export default function GuidePage({ params }) {
 
       <section className="container pt-10 max-w-3xl">
         <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: fm.title }]} />
+
+        {/* Byline — every guide is authored by the site's publisher until
+            additional strategic partners contribute. */}
+        <div className="mt-8 flex items-center gap-3 text-sm text-foreground/70">
+          <span className="w-9 h-9 rounded-full overflow-hidden bg-sand-100 border border-border flex-shrink-0">
+            <img src={author.image} alt={author.name} className="w-full h-full object-cover" />
+          </span>
+          <span>
+            <span className="block text-foreground/55 text-[11px] uppercase tracking-[0.2em]">By</span>
+            <span className="block text-palm font-medium">
+              {author.name}
+              {author.title ? <span className="text-foreground/55 font-normal">, {author.title}</span> : null}
+            </span>
+          </span>
+          {fm.date ? (
+            <>
+              <span className="text-foreground/30">·</span>
+              <span className="text-foreground/65">{formatDate(fm.date)}</span>
+            </>
+          ) : null}
+          {fm.readMin ? (
+            <>
+              <span className="text-foreground/30">·</span>
+              <span className="text-foreground/65">{fm.readMin} min read</span>
+            </>
+          ) : null}
+        </div>
       </section>
 
       {/* Public preview intro — renders ABOVE the lead-gate form so the page
