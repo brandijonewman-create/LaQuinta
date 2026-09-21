@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { quizQuestions } from '@/lib/quiz-matcher';
+import { magnetForCommunity } from '@/lib/lead-magnets';
 import { trackEvent } from '@/lib/analytics';
 import {
   ArrowLeft,
@@ -174,6 +175,32 @@ export default function QuizClient() {
     e.preventDefault();
     setSubmitting(true); setError('');
     try {
+      const magnet = magnetForCommunity(match.top.slug);
+
+      // Fallback path: the matched community has no printable guide PDF
+      // registered. Route to the contextual contact endpoint instead so
+      // we don't advertise a download we can't fulfil.
+      if (!magnet) {
+        const r = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            name, email, phone,
+            community: match.top.name,
+            source: 'community-quiz',
+            message: `Quiz match: ${match.top.name}. Runners-up: ${match.runnersUp.map((r) => r.name).join(', ')}. Please introduce me to a licensed La Quinta professional for this community.`,
+            quizAnswers: answers,
+          }),
+        });
+        const data = await r.json();
+        if (!data.ok) throw new Error(data.error || 'Submission failed');
+        setDownloadUrl('');
+        trackEvent('quiz_intro_request', { community: match.top.name });
+        setStage('done');
+        return;
+      }
+
+      // Standard path: matched community has a printable guide.
       const slug = `community-guide-${match.top.slug}`;
       const r = await fetch('/api/leads/magnet', {
         method: 'POST',
@@ -278,18 +305,27 @@ export default function QuizClient() {
 
   // ---- DONE ----
   if (stage === 'done') {
+    const hasMagnet = !!(match && magnetForCommunity(match.top.slug));
     return (
       <div className="max-w-2xl mx-auto">
         <div className="border border-border bg-sand-50 p-10 lg:p-14 text-center">
           <CheckCircle2 size={42} className="text-palm mx-auto" />
-          <h2 className="font-serif text-3xl text-palm mt-5">Your guide is downloading&hellip;</h2>
+          <h2 className="font-serif text-3xl text-palm mt-5">
+            {hasMagnet ? 'Your guide is downloading\u2026' : 'Thank you \u2014 we\u2019ll be in touch.'}
+          </h2>
           <p className="text-foreground/75 mt-4 leading-relaxed max-w-md mx-auto">
-            We&rsquo;ve also sent a copy to <strong>{email}</strong> with a re-download link.
+            {hasMagnet ? (
+              <>We&rsquo;ve also sent a copy to <strong>{email}</strong> with a re-download link.</>
+            ) : (
+              <>We&rsquo;ve received your request for an introduction to a licensed La Quinta professional covering <strong>{match?.top?.name}</strong>. Someone will follow up personally at <strong>{email}</strong>.</>
+            )}
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
-            <Button asChild className="rounded-none bg-palm text-sand-50 hover:bg-palm-700 h-12 px-7 text-sm uppercase tracking-[0.18em]">
-              <a href={downloadUrl} download><Download size={14} className="mr-2" /> Download again</a>
-            </Button>
+            {hasMagnet && downloadUrl && (
+              <Button asChild className="rounded-none bg-palm text-sand-50 hover:bg-palm-700 h-12 px-7 text-sm uppercase tracking-[0.18em]">
+                <a href={downloadUrl} download><Download size={14} className="mr-2" /> Download again</a>
+              </Button>
+            )}
             <Button asChild variant="outline" className="rounded-none border-palm text-palm hover:bg-palm hover:text-sand-50 h-12 px-7 text-sm uppercase tracking-[0.18em]">
               <Link href={`/communities/${match.top.slug}`}>Read {match.top.name} profile</Link>
             </Button>
@@ -405,10 +441,21 @@ export default function QuizClient() {
         </div>
 
         <form onSubmit={submit} className="mt-10 border border-border bg-sand-50 p-6 lg:p-8">
-          <div className="text-xs uppercase tracking-[0.22em] text-terracotta mb-3"><span className="editorial-rule" />Get the printable guide</div>
-          <p className="text-foreground/75 leading-relaxed mb-5 text-sm">
-            A printable {match.top.name} guide &mdash; the course, the club, the real estate, the questions to ask.
-          </p>
+          {(() => {
+            const hasMagnet = !!magnetForCommunity(match.top.slug);
+            return (
+              <>
+                <div className="text-xs uppercase tracking-[0.22em] text-terracotta mb-3"><span className="editorial-rule" />{hasMagnet ? 'Get the printable guide' : 'Request an introduction'}</div>
+                <p className="text-foreground/75 leading-relaxed mb-5 text-sm">
+                  {hasMagnet ? (
+                    <>A printable {match.top.name} guide &mdash; the course, the club, the real estate, the questions to ask.</>
+                  ) : (
+                    <>Tell us how to reach you and we&rsquo;ll route you personally to a licensed California professional who covers {match.top.name}. No automated marketing.</>
+                  )}
+                </p>
+              </>
+            );
+          })()}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <label className="block">
               <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">Name <span className="text-terracotta">*</span></span>
@@ -426,7 +473,7 @@ export default function QuizClient() {
           {error && <p className="text-sm text-destructive mt-4">{error}</p>}
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button type="submit" disabled={submitting} className="rounded-none bg-palm text-sand-50 hover:bg-palm-700 h-12 px-7 text-sm uppercase tracking-[0.18em]">
-              {submitting ? 'Sending\u2026' : 'Send me the guide'}
+              {submitting ? 'Sending\u2026' : (magnetForCommunity(match.top.slug) ? 'Send me the guide' : 'Request introduction')}
             </Button>
             <Button type="button" onClick={arrivedViaLink ? restart : back} variant="ghost" className="rounded-none text-foreground/70 hover:text-palm">
               <ArrowLeft size={14} className="mr-2" /> {arrivedViaLink ? 'Take my own quiz' : 'Adjust answers'}

@@ -56,6 +56,17 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      // The public "market-report" PDF URL is a stable, Google-crawlable
+      // pathname; internally we generate it on demand via a Node API
+      // route so no static file is required in /public/downloads.
+      {
+        source: '/downloads/la-quinta-market-report-:zip-q3-2026.pdf',
+        destination: '/api/market-report-pdf/:zip',
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

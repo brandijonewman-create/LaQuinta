@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
       <img
-        src="https://images.pexels.com/photos/39480846/pexels-photo-39480846.jpeg?auto=compress&cs=tinysrgb&w=2400&q=80"
+        src="/images/hero/homepage-hero.jpg"
         alt="A manicured desert golf fairway lined with tall palms, framed by the jagged Santa Rosa Mountains under warm golden-hour light"
         loading="eager"
         fetchpriority="high"

@@ -4,7 +4,7 @@ import QuizClient from './QuizClient';
 
 export const metadata = {
   title: 'Find Your La Quinta Community',
-  description: 'A five-question match: tell us how you want to live, and we will point you to the La Quinta private golf community that fits best. Includes a printable guide on the matched community.',
+  description: 'A six-question match across every named La Quinta community \u2014 private clubs, semi-private, resort residences, active-adult 55+, gated residential, and historic non-gated neighborhoods. We point you to the community that fits best, plus two runners-up.',
   alternates: { canonical: '/community-quiz' },
 };
 
@@ -13,8 +13,8 @@ export default function QuizPage() {
     <>
       <PageHero
         eyebrow="Find Your Community"
-        title="Seven private clubs. One match."
-        subtitle="Five questions — setting, course era, club character, real-estate footprint, and how you’ll actually use the home. We’ll match you to the La Quinta community that fits best, plus two runners-up, and send you a printable guide for the match."
+        title={'Twenty-eight communities. One match.'}
+        subtitle="Six questions &mdash; the kind of community, setting, design era, character, real-estate footprint, and how you&rsquo;ll actually use the home. We&rsquo;ll match you to the La Quinta community that fits best, plus two runners-up."
       />
       <section className="container py-14 lg:py-20">
         <Breadcrumbs items={[{ label: 'Community Quiz' }]} />
