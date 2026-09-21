@@ -50,6 +50,26 @@ export default function AboutPage() {
               The network exists because most online coverage of desert golf real estate is either listing-portal noise or thinly veiled promotion for a single brokerage. We publish lifestyle context &mdash; architecture, membership, daily character &mdash; in partnership with the local realtor who actually works each market. The listings, the tours, and the representation come from them.
             </p>
 
+            <h2 className="font-serif text-3xl text-palm pt-6">Meet the publisher</h2>
+            <div className="flex flex-col sm:flex-row gap-6 items-start pt-1">
+              <img
+                src="/images/brandi-jo-newman.jpg"
+                alt="Brandi Jo Newman, Publisher"
+                className="w-32 h-32 rounded-full object-cover border border-border flex-shrink-0"
+              />
+              <div className="space-y-4">
+                <p>
+                  {site.name} is published by <strong className="text-palm">Brandi Jo Newman</strong>. Golf has been the throughline of her life: between 1994 and 2003 she competed as a touring professional on the LPGA Futures Tour, the Ladies European Tour, and the Asian Tour, playing across six continents.
+                </p>
+                <p>
+                  She went on to build, scale, and exit companies over the two decades that followed, and founded the Golf Lifestyle Network to give serious buyers something the listing portals don&rsquo;t: an honest, community-by-community read on the places golfers actually want to live &mdash; written before a single showing is arranged. La Quinta is one of the network&rsquo;s live markets, alongside Scottsdale and Palm Beach.
+                </p>
+                <p>
+                  Brandi Jo is the author of the guides and journal on this site until additional strategic partners contribute. The aim is simple: the clearest, most trustworthy picture of desert golf communities anywhere online.
+                </p>
+              </div>
+            </div>
+
             <h2 className="font-serif text-3xl text-palm pt-6">What we publish</h2>
             <p>
               Profiles of La Quinta&rsquo;s private golf communities. Dedicated pages for the architects whose work defines them. Long-form buyer guides &mdash; starting with the 2026 La Quinta Golf Buyer&rsquo;s Guide. A market-context report for the 92253 ZIP. An interactive lifestyle map. And a regular journal on the questions buyers actually ask.
