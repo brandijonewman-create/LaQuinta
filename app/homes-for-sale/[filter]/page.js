@@ -16,7 +16,7 @@ export function generateMetadata({ params }) {
   const copy = HOMES_FOR_SALE_COPY[params.filter];
   if (!copy) return {};
   return {
-    title: copy.title,
+    title: { absolute: copy.title },
     description: copy.metaDescription,
     alternates: { canonical: `/homes-for-sale/${params.filter}` },
   };

@@ -19,7 +19,7 @@ export function generateMetadata({ params }) {
   const copy = MARKET_REPORT_COPY[params.zip];
   if (!copy) return {};
   return {
-    title: copy.title,
+    title: { absolute: copy.title },
     description: copy.metaDescription,
     alternates: { canonical: `/market-reports/${params.zip}` },
   };

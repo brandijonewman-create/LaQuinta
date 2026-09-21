@@ -14,7 +14,7 @@ export function generateMetadata({ params }) {
   const page = getLifestylePage(params.slug);
   if (!page) return {};
   return {
-    title: page.metaTitle || page.title,
+    title: { absolute: page.metaTitle || page.title },
     description: page.metaDescription,
     alternates: { canonical: `/lifestyle/${params.slug}` },
     openGraph: {
