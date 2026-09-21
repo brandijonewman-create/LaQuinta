@@ -82,10 +82,11 @@ export default function FeaturedCommunities() {
             Where La Quinta plays.
           </h2>
           <p className="text-foreground/70 mt-5 text-base md:text-lg leading-relaxed">
-            A community-by-community lifestyle guide &mdash; their architects,
-            their price bands, and the character of daily life inside each gate.
-            Current listings and private tours are arranged by a licensed
-            California real-estate professional.
+            The seven flagship private clubs, profiled in full &mdash; part of the
+            28 gated, golf and lifestyle communities we cover across La Quinta.
+            Their architects, their price bands, and the character of daily life
+            inside each gate. Current listings and private tours are arranged by a
+            licensed California real-estate professional.
           </p>
         </div>
         <Link

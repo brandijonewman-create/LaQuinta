@@ -3,15 +3,15 @@ import { ArrowUpRight } from 'lucide-react';
 import { partner, partnerRecruitment } from '@/lib/exclusive-partner';
 
 const stats = [
+  { value: '28', label: 'Communities' },
   { value: '7',  label: 'Private clubs' },
   { value: '13', label: 'Golf courses' },
-  { value: '7',  label: 'Course architects' },
 ];
 
 const resources = [
   {
     title: 'The La Quinta Community Index',
-    blurb: 'A comparative lifestyle guide to all seven private golf communities — architecture, membership style, and daily character.',
+    blurb: 'A comparative lifestyle guide to every La Quinta community — the flagship private clubs plus the semi-private, resort, gated, and active-adult neighborhoods around them.',
     href: '/communities',
     cta: 'Read the index',
   },
@@ -130,7 +130,7 @@ export function FeaturedRealtorSlot() {
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Segment</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Seven private golf communities plus the broader semi-private, resort-residence and active-adult belt around them. Buyers range from $450K condos to $30M+ estates.
+                  All 28 gated, golf and lifestyle communities in La Quinta — the seven flagship private clubs plus the semi-private, resort-residence, gated-residential and active-adult neighborhoods around them. Buyers range from $450K condos to $30M+ estates.
                 </dd>
               </div>
               <div>

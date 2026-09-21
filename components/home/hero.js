@@ -28,9 +28,10 @@ export default function Hero() {
           </h1>
 
           <p className="text-sand-50/85 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">
-            A lifestyle guide to La Quinta&rsquo;s seven private golf communities,
-            the architects behind their fairways, and the daily life around them.
-            One editorial guide, published by the Golf Lifestyle Network.
+            A lifestyle guide to every gated, golf, and lifestyle community in
+            La Quinta &mdash; from the flagship private clubs to the semi-private,
+            resort, and active-adult neighborhoods around them. One editorial
+            guide, published by the Golf Lifestyle Network.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
