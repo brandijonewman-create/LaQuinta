@@ -130,7 +130,7 @@ export function FeaturedRealtorSlot() {
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Segment</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Seven private golf communities, plus the broader semi-private and active-adult belt around them. Buyers range from $450K condos to $30M+ estates.
+                  Seven private golf communities plus the broader semi-private, resort-residence and active-adult belt around them. Buyers range from $450K condos to $30M+ estates.
                 </dd>
               </div>
               <div>
@@ -138,34 +138,40 @@ export function FeaturedRealtorSlot() {
                 <dd className="text-sm text-sand-50 mt-1">
                   <span className="inline-flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-                    Open — accepting inquiries
+                    Open &mdash; by invitation
                   </span>
                 </dd>
               </div>
               <div>
-                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Term</dt>
-                <dd className="font-serif text-xl text-sand-50 mt-1">
-                  3 years
+                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Cost to the partner</dt>
+                <dd className="mt-1">
+                  <span className="font-serif text-xl text-sand-50 block">No fee</span>
+                  <span className="text-xs text-sand-50/65 block mt-0.5">No commission split, no referral fee, no monthly retainer.</span>
                 </dd>
               </div>
               <div>
-                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Fee</dt>
-                <dd className="text-sm text-sand-50/90 leading-relaxed mt-1">
-                  <span className="font-serif text-xl text-sand-50 block">$500 / quarter</span>
-                  <span className="text-xs text-sand-50/65 block mt-0.5">$2,000 per year, billed quarterly. No commission split, no referral fee.</span>
+                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">What the partner provides</dt>
+                <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
+                  Their IDX/MLS feed for the on-site home search, plus \u2014 where the opportunity arises \u2014 warm introductions to home builders, developers, and other tier-one operators who fit the same buyer profile.
+                </dd>
+              </div>
+              <div>
+                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">What the partner receives</dt>
+                <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
+                  Every buyer inquiry from the site, featured placement across the guide, and their active listings surfaced on the homepage, on community pages, and inside the editorial articles.
                 </dd>
               </div>
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Requirements</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Active California DRE license, La Quinta market fluency, and a brokerage relationship that supports independent lead sourcing.
+                  Active California DRE license, La Quinta market fluency, an IDX feed we can integrate, and a brokerage relationship that supports independent lead sourcing.
                 </dd>
               </div>
             </dl>
 
             <div className="mt-10 pt-6 border-t border-gold/25">
               <p className="text-xs text-sand-50/60 leading-relaxed">
-                {partner.displayName} is one of fourteen single-city golf-market publications in the Golf Lifestyle Network, operated by 7671 Enterprises, LLC.
+                {partner.displayName} is one of the single-city golf-market publications in the Golf Lifestyle Network, operated by 7671 Enterprises, LLC.
               </p>
             </div>
           </div>

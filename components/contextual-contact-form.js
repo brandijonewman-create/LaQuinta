@@ -14,6 +14,7 @@ import { site } from '@/lib/site-config';
 
 export default function ContextualContactForm({
   subject = 'La Quinta golf real estate',
+  eyebrow,
   headline,
   intro,
   variant = 'default', // 'default' | 'compact'
@@ -80,7 +81,7 @@ export default function ContextualContactForm({
   return (
     <section id={formId} className="container py-16 lg:py-24">
       <div className="mx-auto max-w-2xl">
-        <div className="editorial-eyebrow mb-4"><span className="editorial-rule" />{site.name}</div>
+        <div className="editorial-eyebrow mb-4"><span className="editorial-rule" />{eyebrow || site.name}</div>
         <h2 className="font-serif text-3xl md:text-4xl text-palm leading-tight">
           {derivedHeadline}
         </h2>

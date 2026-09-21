@@ -21,7 +21,7 @@ const TYPE_LABELS = {
   'gated-asset':   'Gated download',
   'quiz-magnet':   'Quiz + guide',
   quiz:            'Quiz completion',
-  collaborator:    'Realtor application',
+  collaborator:    'Realtor introduction',
   lead_magnet:     'Lead magnet',
   valuation:       'Home valuation',
 };

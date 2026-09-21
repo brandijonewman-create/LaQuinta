@@ -141,7 +141,7 @@ function build() {
   // ---- Exclusive Market Partner slot & collaborators ---------------------
   out.push('## Exclusive Market Partner slot & Editorial Collaborators');
   out.push('');
-  out.push(line('/#become-our-partner', 'La Quinta Exclusive Market Partner \u2014 open slot', 'The Exclusive Market Partner slot for La Quinta is currently open. One California-licensed realtor per city site. Every buyer inquiry on this site routes to the signed partner.'));
+  out.push(line('/#become-our-partner', 'La Quinta Exclusive Market Partner \u2014 by invitation', 'The Exclusive Market Partner slot for La Quinta is filled by invitation. One California-licensed realtor per city site. No fee is charged; the invited partner provides their IDX feed for on-site home search and, where possible, introductions to home builders and other tier-one operators. Every buyer inquiry on this site routes to the signed partner.'));
   out.push(line('/collaborators', 'Editorial collaborators', 'Vetted professionals who contribute editorial expertise to the site.'));
   for (const pageSlug of collabPages) {
     // Represent each page by its first collaborator.
