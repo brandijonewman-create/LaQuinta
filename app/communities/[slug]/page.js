@@ -23,12 +23,20 @@ export function generateMetadata({ params }) {
   const community = communities.find((c) => c.slug === params.slug);
   if (!community) return {};
   const content = getCommunityContent(params.slug);
+  // Consistent, keyword-rich SEO title for every community page.
+  // Locality is appended only when the name doesn't already contain
+  // "La Quinta" (avoids duplication like "...La Quinta | La Quinta...").
+  // Set as an absolute title so the global "· La Quinta Golf Lifestyle"
+  // template suffix isn't appended, keeping every title < 60 chars.
+  const hasLocality = /la quinta/i.test(community.name);
+  const base = hasLocality ? community.name : `${community.name}, La Quinta`;
+  const seoTitle = `${base} | Homes & Real Estate`;
   return {
-    title: community.name,
+    title: { absolute: seoTitle },
     description: content.tagline,
     alternates: { canonical: `/communities/${params.slug}` },
     openGraph: {
-      title: community.name,
+      title: seoTitle,
       description: content.tagline,
       images: content.image ? [content.image] : [],
       type: 'article',
