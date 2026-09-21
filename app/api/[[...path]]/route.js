@@ -124,6 +124,71 @@ async function handleCollaborate(request) {
   return json({ ok: true, id: doc.id });
 }
 
+// ---- POST /api/quiz/gate — gate the quiz result behind a lead capture.
+// Called from the community-quiz flow between "last question answered" and
+// "result shown". Persists the lead into the leads collection so it lands
+// in /admin/leads, then returns the score payload so the client can reveal
+// the match.
+async function handleQuizGate(request) {
+  const rl = limit(request, { bucket: 'quiz-gate', limit: 5, windowMs: 60 * 60 * 1000 });
+  if (rl) return rl;
+
+  const body = await readJson(request);
+  if (isHoneypotTripped(body)) {
+    // Silently succeed but still score, so the honey caller doesn't infer
+    // the gate exists.
+    const answers = (body?.answers && typeof body.answers === 'object') ? body.answers : {};
+    const result = scoreQuiz(answers);
+    return json({ ok: true, honey: true, ...result });
+  }
+
+  const firstName = cleanString(body?.firstName, 120);
+  const lastName  = cleanString(body?.lastName, 120);
+  const email     = cleanString(body?.email, 200);
+  const phone     = cleanString(body?.phone, 60); // optional
+  const zip       = cleanString(body?.zip, 15);
+  const answers   = (body?.answers && typeof body.answers === 'object') ? body.answers : {};
+
+  if (!firstName) return err('Please add your first name.');
+  if (!lastName)  return err('Please add your last name.');
+  if (!isEmail(email)) return err('Please add a valid email.');
+  if (!zip || !/^\d{5}(-\d{4})?$/.test(zip)) return err('Please add a valid U.S. ZIP code.');
+
+  // Score first (deterministic, safe to precompute) so we can attach the
+  // top match to the lead doc for at-a-glance triage in the admin table.
+  const result = scoreQuiz(answers);
+  const fullName = `${firstName} ${lastName}`.trim();
+
+  const submission = {
+    id: randomUUID(),
+    type: 'quiz-gate',
+    source: 'community-quiz',
+    createdAt: new Date().toISOString(),
+    // Top-level shorthand fields (what the admin table renders)
+    name:  fullName,
+    email,
+    phone,
+    subject: result?.top?.name || 'Community quiz',
+    message: `Quiz gate: matched to ${result?.top?.name || '\u2014'}. Runners-up: ${(result?.runnersUp || []).map((r) => r.name).join(', ') || '\u2014'}. ZIP: ${zip}.`,
+    // Full structured record
+    payload: {
+      firstName, lastName, email, phone, zip,
+      match:      result?.top || null,
+      runnersUp:  result?.runnersUp || [],
+      answers,
+    },
+    meta: await clientMeta(request),
+  };
+
+  try {
+    await (await leadCollection()).insertOne(submission);
+  } catch {
+    return err('Database error.', 500);
+  }
+
+  return json({ ok: true, id: submission.id, ...result });
+}
+
 // ---- POST /api/quiz/score — score-only, no persistence ----
 async function handleQuizScore(request) {
   const rl = limit(request, { bucket: 'quiz-score', limit: 30, windowMs: 60 * 60 * 1000 });
@@ -353,6 +418,7 @@ export async function POST(request, { params }) {
   const path = (params?.path || []).join('/');
   switch (path) {
     case 'quiz/score':    return handleQuizScore(request);
+    case 'quiz/gate':     return handleQuizGate(request);
     case 'quiz':          return handleQuiz(request);
     case 'valuation':     return handleValuation(request);
     case 'leads':         return handleLeadCapture(request);

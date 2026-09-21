@@ -46,7 +46,7 @@ function decodeAnswers(str) {
 }
 
 export default function QuizClient() {
-  // stage: 'q' | 'result' | 'done'
+  // stage: 'q' | 'gate' | 'result' | 'done'
   const [stage, setStage] = useState('q');
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -56,7 +56,16 @@ export default function QuizClient() {
   const [arrivedViaLink, setArrivedViaLink] = useState(false);
   const [rehydrating, setRehydrating] = useState(false);
 
-  // lead form
+  // gate form (first-name / last-name / email / phone-opt / zip)
+  const [gateFirst, setGateFirst] = useState('');
+  const [gateLast,  setGateLast]  = useState('');
+  const [gateEmail, setGateEmail] = useState('');
+  const [gatePhone, setGatePhone] = useState('');
+  const [gateZip,   setGateZip]   = useState('');
+  const [gateSubmitting, setGateSubmitting] = useState(false);
+  const [gateError, setGateError] = useState('');
+
+  // post-result lead form (guide download / intro request)
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -131,31 +140,60 @@ export default function QuizClient() {
     if (step < total - 1) {
       setStep(step + 1);
     } else {
-      // last question — score now and move to result
-      try {
-        const r = await fetch('/api/quiz/score', {
-          method: 'POST',
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ answers: next }),
-        });
-        const data = await r.json();
-        if (!data.ok) throw new Error(data.error || 'Score failed');
-        setMatch(data);
-        setStage('result');
-        setArrivedViaLink(false);
-        trackEvent('quiz_complete', { top_match: data.top.slug, score: data.top.score });
-      } catch (e) {
-        setError(e.message);
-      }
+      // last question — surface the gate. We DON'T score here; the gate
+      // POST both persists the lead and returns the score.
+      setStage('gate');
+    }
+  }
+
+  async function submitGate(e) {
+    e.preventDefault();
+    if (gateSubmitting) return;
+    setGateSubmitting(true);
+    setGateError('');
+    try {
+      const r = await fetch('/api/quiz/gate', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          firstName: gateFirst,
+          lastName:  gateLast,
+          email:     gateEmail,
+          phone:     gatePhone, // optional
+          zip:       gateZip,
+          answers,
+          // honeypot — real users never fill this
+          website: '',
+        }),
+      });
+      const data = await r.json();
+      if (!r.ok || !data.ok) throw new Error(data.error || 'Something went wrong.');
+      setMatch(data);
+      setStage('result');
+      setArrivedViaLink(false);
+      // Pre-fill the post-result lead form so the user doesn't retype.
+      setName(`${gateFirst} ${gateLast}`.trim());
+      setEmail(gateEmail);
+      if (gatePhone) setPhone(gatePhone);
+      trackEvent('quiz_complete', { top_match: data.top?.slug, score: data.top?.score });
+    } catch (err) {
+      setGateError(err.message || 'Please try again.');
+    } finally {
+      setGateSubmitting(false);
     }
   }
 
   function back() {
     setError('');
+    setGateError('');
     if (stage === 'q') {
       if (step > 0) setStep(step - 1);
-    } else if (stage === 'result') {
+    } else if (stage === 'gate') {
+      // From the gate, go back to the last question so the user can adjust.
       setStage('q');
+    } else if (stage === 'result') {
+      // From result, drop back to the gate so answers are preserved.
+      setStage('gate');
       setArrivedViaLink(false);
     }
   }
@@ -163,6 +201,8 @@ export default function QuizClient() {
   function restart() {
     setStep(0); setAnswers({}); setMatch(null);
     setName(''); setEmail(''); setPhone('');
+    setGateFirst(''); setGateLast(''); setGateEmail(''); setGatePhone(''); setGateZip('');
+    setGateError(''); setGateSubmitting(false);
     setDownloadUrl(''); setError(''); setStage('q');
     setArrivedViaLink(false);
     setShareUrl('');
@@ -334,6 +374,136 @@ export default function QuizClient() {
             </Button>
           </div>
         </div>
+      </div>
+    );
+  }
+
+  // ---- GATE (final step before revealing the match) ---------------------
+  if (stage === 'gate') {
+    return (
+      <div className="max-w-2xl mx-auto">
+        <div className="text-[11px] uppercase tracking-[0.22em] text-terracotta mb-3">
+          <span className="editorial-rule" />Almost there
+        </div>
+        <h2 className="font-serif text-3xl md:text-4xl text-palm leading-tight">
+          Where should we send your match?
+        </h2>
+        <p className="text-foreground/75 mt-4 leading-relaxed">
+          Your answers are complete. Tell us who to reach and we&rsquo;ll reveal your
+          matched La Quinta community &mdash; plus two runners-up &mdash; and route
+          you personally to a licensed California professional. No automated marketing
+          emails and we do not sell or share your details.
+        </p>
+
+        <form onSubmit={submitGate} className="mt-8 border border-border bg-sand-50 p-6 lg:p-8 space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <label className="block">
+              <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">
+                First name <span className="text-terracotta">*</span>
+              </span>
+              <input
+                required
+                value={gateFirst}
+                onChange={(e) => setGateFirst(e.target.value)}
+                autoComplete="given-name"
+                className="w-full border border-border bg-white px-4 py-3"
+                placeholder="First"
+              />
+            </label>
+            <label className="block">
+              <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">
+                Last name <span className="text-terracotta">*</span>
+              </span>
+              <input
+                required
+                value={gateLast}
+                onChange={(e) => setGateLast(e.target.value)}
+                autoComplete="family-name"
+                className="w-full border border-border bg-white px-4 py-3"
+                placeholder="Last"
+              />
+            </label>
+          </div>
+
+          <label className="block">
+            <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">
+              Email <span className="text-terracotta">*</span>
+            </span>
+            <input
+              required
+              type="email"
+              value={gateEmail}
+              onChange={(e) => setGateEmail(e.target.value)}
+              autoComplete="email"
+              className="w-full border border-border bg-white px-4 py-3"
+              placeholder="you@example.com"
+            />
+          </label>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <label className="block">
+              <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">
+                Phone <span className="text-foreground/40 normal-case tracking-normal">(optional)</span>
+              </span>
+              <input
+                type="tel"
+                value={gatePhone}
+                onChange={(e) => setGatePhone(e.target.value)}
+                autoComplete="tel"
+                className="w-full border border-border bg-white px-4 py-3"
+                placeholder="(760) 555-0100"
+              />
+            </label>
+            <label className="block">
+              <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">
+                Current ZIP <span className="text-terracotta">*</span>
+              </span>
+              <input
+                required
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9\-]*"
+                maxLength={10}
+                value={gateZip}
+                onChange={(e) => setGateZip(e.target.value)}
+                autoComplete="postal-code"
+                className="w-full border border-border bg-white px-4 py-3"
+                placeholder="94024"
+              />
+            </label>
+          </div>
+
+          {/* honeypot — off-screen, real users never fill this */}
+          <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: 'auto', width: 1, height: 1, overflow: 'hidden' }}>
+            <label>Do not fill<input type="text" name="_hp" tabIndex={-1} autoComplete="off" /></label>
+          </div>
+
+          {gateError && <p className="text-sm text-destructive">{gateError}</p>}
+
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            <Button
+              type="submit"
+              disabled={gateSubmitting}
+              className="rounded-none bg-palm text-sand-50 hover:bg-palm-700 h-12 px-7 text-sm uppercase tracking-[0.18em]"
+            >
+              {gateSubmitting ? 'Revealing\u2026' : 'Reveal my match'}
+            </Button>
+            <Button
+              type="button"
+              onClick={back}
+              variant="ghost"
+              className="rounded-none text-foreground/70 hover:text-palm"
+            >
+              <ArrowLeft size={14} className="mr-2" /> Adjust answers
+            </Button>
+          </div>
+
+          <p className="text-[11px] text-foreground/55 leading-relaxed pt-2">
+            Your details are used to introduce you to a licensed California professional
+            and to send the match. No automated marketing emails. We do not sell or share
+            your information.
+          </p>
+        </form>
       </div>
     );
   }
