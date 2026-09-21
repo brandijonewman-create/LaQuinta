@@ -58,15 +58,9 @@ export default function AboutPage() {
             <h2 className="font-serif text-3xl text-palm pt-6">What we don&rsquo;t do</h2>
             <ul className="list-disc pl-5 space-y-2">
               <li>We do not publish fabricated testimonials or quotes.</li>
-              <li>We do not publish unverified market figures, initiation fees, or transaction prices.</li>
+              <li>We do not publish unverified market figures.</li>
               <li>We do not publish celebrity or homeowner addresses.</li>
-              <li>We do not send automated marketing emails.</li>
             </ul>
-
-            <h2 className="font-serif text-3xl text-palm pt-6">Editorial independence</h2>
-            <p>
-              We are a publisher, not a broker. Every California real estate transaction referenced on this site is executed by our California-licensed Exclusive Market Partner. Editorial content is not for sale &mdash; no affiliate placements in the articles, no paid community placement in the quiz results, no listing fees.
-            </p>
 
             <h2 className="font-serif text-3xl text-palm pt-10">The Golf Lifestyle network</h2>
             <p>
