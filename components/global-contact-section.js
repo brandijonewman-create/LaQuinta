@@ -6,7 +6,10 @@ import { communities, architects } from '@/lib/site-config';
 
 // Pages that already contain their own primary form or would be inappropriate
 // hosts for a contact form (legal pages, admin, downloads, API, etc.).
+// The homepage ('/') carries the realtor partner-inquiry form as its single
+// form, so the global buyer form is suppressed there.
 const EXCLUDED_PATHS = [
+  '/',
   '/community-quiz',
   '/home-valuation',
   '/privacy',
@@ -22,6 +25,9 @@ const EXCLUDED_PREFIXES = [
   '/og-image',
   '/robots',
   '/sitemap',
+  // Gated detail pages carry their own LeadGate as the single form.
+  '/guides/',
+  '/market-reports/',
 ];
 
 // Given a pathname, produce a subject line for the contact form. The subject

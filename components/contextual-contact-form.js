@@ -20,6 +20,8 @@ export default function ContextualContactForm({
   variant = 'default', // 'default' | 'compact'
   submitLabel,
   formId,
+  questionLabel,
+  questionPlaceholder,
 }) {
   const [status, setStatus] = useState('idle'); // idle | sending | ok | error
   const [error, setError] = useState('');
@@ -127,14 +129,14 @@ export default function ContextualContactForm({
 
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.22em] text-foreground/60">
-              What would you like to know about {subject}?
+              {questionLabel || `What would you like to know about ${subject}?`}
             </span>
             <textarea
               value={form.message}
               onChange={onChange('message')}
               rows={4}
               className="mt-2 w-full border border-border bg-transparent p-3 text-palm focus:outline-none focus:border-terracotta transition-colors"
-              placeholder="Timeline, budget range, must-haves, or just ask anything."
+              placeholder={questionPlaceholder || 'Timeline, budget range, must-haves, or just ask anything.'}
             />
           </label>
 
