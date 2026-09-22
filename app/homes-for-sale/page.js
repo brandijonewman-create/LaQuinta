@@ -54,7 +54,7 @@ export default function HomesForSaleIndex() {
 
         <div className="mt-14 flex flex-wrap gap-3 justify-center">
           <Button asChild className="rounded-none bg-palm text-sand-50 hover:bg-palm-700">
-            <Link href="/community-quiz">Find your community</Link>
+            <Link href="/community-quiz">Find Your Lifestyle Profile</Link>
           </Button>
           <Button asChild variant="outline" className="rounded-none">
             <Link href="/guides/2026-la-quinta-buyers-guide">Read the 2026 buyer&rsquo;s guide</Link>

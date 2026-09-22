@@ -46,7 +46,7 @@ export default function QuizFab() {
       }
     >
       <Compass size={16} strokeWidth={2.4} />
-      <span>Take the Quiz</span>
+      <span>Find Your Lifestyle Profile</span>
     </Link>
   );
 }

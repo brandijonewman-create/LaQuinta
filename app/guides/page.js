@@ -23,7 +23,7 @@ export default function GuidesIndexPage() {
           href="/community-quiz"
           className="inline-flex items-center gap-2 bg-palm text-sand-50 px-8 py-4 text-xs uppercase tracking-[0.22em] font-semibold hover:bg-terracotta transition-colors"
         >
-          Take the Quiz <ArrowUpRight size={14} />
+          Find Your Lifestyle Profile <ArrowUpRight size={14} />
         </Link>
       </PageHero>
       <section className="container py-16 lg:py-24">

@@ -48,7 +48,7 @@ export default function Hero() {
               variant="outline"
               className="rounded-none border-white/70 bg-transparent text-white hover:bg-white hover:text-palm h-12 px-7 text-sm uppercase tracking-[0.18em]"
             >
-              <Link href="/community-quiz">Take the Quiz</Link>
+              <Link href="/community-quiz">Find Your Lifestyle Profile</Link>
             </Button>
           </div>
         </div>

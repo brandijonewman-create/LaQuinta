@@ -303,7 +303,7 @@ export default function CommunityDetailPage({ params }) {
                 Take the eight-question quiz to see which of La Quinta&rsquo;s seven clubs fit you best.
               </p>
               <Button asChild className="rounded-none bg-gold text-palm hover:bg-sand-50 w-full">
-                <Link href="/community-quiz">Start the Quiz</Link>
+                <Link href="/community-quiz">Find Your Lifestyle Profile</Link>
               </Button>
             </div>
           </aside>

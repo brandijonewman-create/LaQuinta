@@ -25,7 +25,7 @@ const resources = [
     title: 'Find Your Match (2-min quiz)',
     blurb: 'Five questions about your budget, golf style, and lifestyle. We match you to your top three La Quinta communities.',
     href: '/community-quiz',
-    cta: 'Take the quiz',
+    cta: 'Find Your Lifestyle Profile',
   },
 ];
 

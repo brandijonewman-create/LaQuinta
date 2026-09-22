@@ -27,7 +27,7 @@ export default function QuizCta() {
               size="lg"
               className="rounded-none bg-gold text-palm hover:bg-sand-50 h-14 px-9 text-sm uppercase tracking-[0.2em] font-semibold"
             >
-              <Link href="/community-quiz">Start the Quiz</Link>
+              <Link href="/community-quiz">Find Your Lifestyle Profile</Link>
             </Button>
           </div>
         </div>
