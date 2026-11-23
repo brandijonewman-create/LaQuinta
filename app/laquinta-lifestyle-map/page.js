@@ -30,7 +30,7 @@ export default function LifestyleMap() {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'Lifestyle Map', path: '/scottsdale-lifestyle-map' }
+        { name: 'Lifestyle Map', path: '/laquinta-lifestyle-map' }
       ])} />
 
       <section className="bg-[#062840] text-amber-50">

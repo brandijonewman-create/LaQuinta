@@ -30,7 +30,7 @@ export default function Page({ params }) {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: `Scottsdale ${z.zip}`, path: `/scottsdale/${z.zip}` }
+        { name: `Scottsdale ${z.zip}`, path: `/laquinta/${z.zip}` }
       ])} />
       <section className="bg-[#062840] text-amber-50">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-24">
@@ -80,7 +80,7 @@ export default function Page({ params }) {
         <h2 className="font-serif text-2xl text-[#062840] mb-4">Explore other Scottsdale zip codes</h2>
         <div className="flex flex-wrap gap-2">
           {ZIP_PAGES.filter(o => o.zip !== z.zip).map(o => (
-            <Link key={o.zip} href={`/scottsdale/${o.zip}`} className="text-sm rounded-full border border-emerald-900/15 bg-white hover:bg-emerald-50 px-4 py-2 text-emerald-900 transition">{o.name}</Link>
+            <Link key={o.zip} href={`/laquinta/${o.zip}`} className="text-sm rounded-full border border-emerald-900/15 bg-white hover:bg-emerald-50 px-4 py-2 text-emerald-900 transition">{o.name}</Link>
           ))}
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function Page({ params }) {
         <SavedSearchForm
           searchTitle={`Homes for Sale in Scottsdale ${z.zip}`}
           searchSlug={`zip-${z.zip}`}
-          sourcePath={`/scottsdale/${z.zip}`}
+          sourcePath={`/laquinta/${z.zip}`}
         />
       </section>
       <section className="max-w-3xl mx-auto px-6 pb-6">

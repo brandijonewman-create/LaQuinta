@@ -9,12 +9,12 @@ import { breadcrumbSchema, JsonLd } from '@/lib/seo';
 import { ArrowRight, Award, MapPin, Sparkles, Compass, Flag, Crown, Utensils, Sun, PenTool, Plane } from 'lucide-react';
 
 const LIFESTYLE = [
-  { href: '/scottsdale-golf-courses', icon: Flag, eyebrow: 'Play', title: 'The Courses', copy: 'Desert target golf, mountain views and championship layouts, public and private, across North Scottsdale.', cta: 'Explore the courses' },
+  { href: '/laquinta-golf-courses', icon: Flag, eyebrow: 'Play', title: 'The Courses', copy: 'Desert target golf, mountain views and championship layouts, public and private, across North Scottsdale.', cta: 'Explore the courses' },
   { href: '/golf-clubs', icon: Crown, eyebrow: 'Belong', title: 'The Private Clubs', copy: 'Club culture, membership types and what life inside each club looks like, from first tee to the dining room.', cta: 'Read the club guide' },
-  { href: '/scottsdale-lifestyle-map', icon: Utensils, eyebrow: 'Dine and Shop', title: 'The Lifestyle Map', copy: 'Dining, retail, schools, hospitals and airports mapped around the golf communities they serve.', cta: 'Open the map' },
-  { href: '/scottsdale-snowbird-guide', icon: Sun, eyebrow: 'The Season', title: 'Seasonal Living', copy: 'Winters in the sun, summers wherever you like. How part-time Scottsdale life works.', cta: 'Read the snowbird guide' },
+  { href: '/laquinta-lifestyle-map', icon: Utensils, eyebrow: 'Dine and Shop', title: 'The Lifestyle Map', copy: 'Dining, retail, schools, hospitals and airports mapped around the golf communities they serve.', cta: 'Open the map' },
+  { href: '/laquinta-snowbird-guide', icon: Sun, eyebrow: 'The Season', title: 'Seasonal Living', copy: 'Winters in the sun, summers wherever you like. How part-time Scottsdale life works.', cta: 'Read the snowbird guide' },
   { href: '/architects', icon: PenTool, eyebrow: 'The Craft', title: 'The 8 Course Architects', copy: 'Fazio. Nicklaus. Weiskopf. Mickelson. Coore and Crenshaw. The designers behind Scottsdale golf.', cta: 'Meet the architects' },
-  { href: '/relocating-to-scottsdale', icon: Plane, eyebrow: 'The Move', title: 'Relocating to Scottsdale', copy: 'Neighborhoods, schools, healthcare, taxes and when to visit before you make Scottsdale home.', cta: 'Plan the move' }
+  { href: '/relocating-to-laquinta', icon: Plane, eyebrow: 'The Move', title: 'Relocating to Scottsdale', copy: 'Neighborhoods, schools, healthcare, taxes and when to visit before you make Scottsdale home.', cta: 'Plan the move' }
 ];
 
 export const metadata = {
@@ -45,7 +45,7 @@ export default function HomePage() {
           <h1 className="font-serif text-5xl md:text-7xl text-white leading-[1.05] tracking-tight [text-shadow:_0_2px_12px_rgba(0,0,0,0.55)]">Where Scottsdale<br/><em className="text-amber-200 not-italic">Lives Well</em></h1>
           <p className="text-white mt-6 max-w-2xl mx-auto text-lg [text-shadow:_0_2px_10px_rgba(0,0,0,0.6)]">Golf, dining, wellness, cars and the communities that hold it all. The guide to the luxury golf lifestyle in Scottsdale.</p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Link href="/scottsdale-lifestyle-map" className="inline-flex items-center gap-2 rounded-full bg-amber-300 hover:bg-amber-200 text-[#062840] px-7 py-3 text-sm font-semibold tracking-wide transition shadow-xl shadow-black/30">Explore the Lifestyle <ArrowRight className="h-4 w-4" /></Link>
+            <Link href="/laquinta-lifestyle-map" className="inline-flex items-center gap-2 rounded-full bg-amber-300 hover:bg-amber-200 text-[#062840] px-7 py-3 text-sm font-semibold tracking-wide transition shadow-xl shadow-black/30">Explore the Lifestyle <ArrowRight className="h-4 w-4" /></Link>
             <Link href="/golf-clubs" className="inline-flex items-center gap-2 rounded-full bg-[#062840]/85 hover:bg-[#062840] border border-amber-200/40 text-amber-50 px-7 py-3 text-sm font-semibold tracking-wide transition backdrop-blur-sm shadow-xl shadow-black/30">Private Club Guide</Link>
           </div>
           <div className="mt-16 grid grid-cols-3 gap-4 max-w-2xl mx-auto text-white">
@@ -136,12 +136,12 @@ export default function HomePage() {
               <h3 className="font-serif text-xl mb-1 group-hover:text-amber-200 transition">Which community fits you?</h3>
               <p className="text-sm text-emerald-50/70">A 2-minute, 5-question quiz. Your top match plus two runners-up, with the reason each surfaced.</p>
             </Link>
-            <Link href="/scottsdale-golf-community-index-2026" className="group block">
+            <Link href="/laquinta-golf-community-index-2026" className="group block">
               <Award className="h-6 w-6 text-amber-300 mb-3" />
               <h3 className="font-serif text-xl mb-1 group-hover:text-amber-200 transition">The 2026 Community Index</h3>
               <p className="text-sm text-emerald-50/70">A tier ranking of all 46 named Scottsdale-area golf communities.</p>
             </Link>
-            <Link href="/scottsdale-home-value" className="group block">
+            <Link href="/laquinta-home-value" className="group block">
               <Sparkles className="h-6 w-6 text-amber-300 mb-3" />
               <h3 className="font-serif text-xl mb-1 group-hover:text-amber-200 transition">Home Valuation</h3>
               <p className="text-sm text-emerald-50/70">A no-obligation, human-prepared comparative market analysis for your Scottsdale golf home.</p>

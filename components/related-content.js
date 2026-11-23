@@ -227,7 +227,7 @@ function buildRelated({ pageType, community, communities, architect, tags, exclu
   const backfill = [
     { kind: 'Guide',   icon: BookOpen,   title: 'Scottsdale Buyer’s Guide 2026',     blurb: 'Free 11-page PDF: communities, taxes, club economics, relocation timeline.', href: '/guides/scottsdale-buyers-guide-2026' },
     { kind: 'Glossary',icon: BookOpen,   title: 'Scottsdale Real-Estate Glossary',    blurb: '40+ terms every buyer eventually has to look up, defined in plain English.', href: '/glossary' },
-    { kind: 'Guide',   icon: BookOpen,   title: 'Relocating to Scottsdale',           blurb: 'Schools, taxes, weather, daily life: the relocation primer.', href: '/relocating-to-scottsdale' }
+    { kind: 'Guide',   icon: BookOpen,   title: 'Relocating to Scottsdale',           blurb: 'Schools, taxes, weather, daily life: the relocation primer.', href: '/relocating-to-laquinta' }
   ];
   backfill.forEach(push);
 

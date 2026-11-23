@@ -97,7 +97,7 @@ export default function CommunityIndex2026() {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'The 2026 Community Index', path: '/scottsdale-golf-community-index-2026' }
+        { name: 'The 2026 Community Index', path: '/laquinta-golf-community-index-2026' }
       ])} />
       <JsonLd data={itemListSchema} />
 

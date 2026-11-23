@@ -32,7 +32,7 @@ export default function SnowbirdGuide() {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'Snowbird Guide', path: '/scottsdale-snowbird-guide' }
+        { name: 'Snowbird Guide', path: '/laquinta-snowbird-guide' }
       ])} />
       <JsonLd data={{
         '@context': 'https://schema.org',
@@ -115,7 +115,7 @@ export default function SnowbirdGuide() {
           <p className="mt-3 text-emerald-50/75">Take our 2-minute matching quiz: tell us your investment range, golf preference, and lifestyle, and we&rsquo;ll surface your top 3 candidates from the 46 Scottsdale golf communities.</p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <Link href="/community-quiz" className="inline-flex items-center gap-2 rounded-full bg-amber-300 hover:bg-amber-200 text-[#062840] px-7 py-3 text-sm font-semibold">Take the community quiz <ArrowRight className="h-4 w-4" /></Link>
-            <Link href="/scottsdale-golf-community-index-2026" className="inline-flex items-center gap-2 rounded-full border border-amber-300/40 text-amber-50 hover:bg-amber-50 hover:text-[#062840] px-7 py-3 text-sm font-semibold">2026 Community Index</Link>
+            <Link href="/laquinta-golf-community-index-2026" className="inline-flex items-center gap-2 rounded-full border border-amber-300/40 text-amber-50 hover:bg-amber-50 hover:text-[#062840] px-7 py-3 text-sm font-semibold">2026 Community Index</Link>
           </div>
         </div>
       </section>

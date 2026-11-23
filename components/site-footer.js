@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { SITE } from '@/lib/data';
 import { MapPin } from 'lucide-react';
+import { MARKET } from '@/lib/market';
 
 export default function SiteFooter() {
   return (
@@ -9,27 +10,27 @@ export default function SiteFooter() {
         {/* Brand + contact */}
         <div className="md:col-span-4">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center text-[#062840] font-serif font-bold text-xl">S</div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center text-[#062840] font-serif font-bold text-xl">{MARKET.name[0]}</div>
             <div>
-              <div className="font-serif text-xl text-amber-50">Scottsdale Golf Lifestyle</div>
+              <div className="font-serif text-xl text-amber-50">{MARKET.siteName}</div>
               <div className="text-xs uppercase tracking-[0.25em] text-emerald-200/60">Luxury Real Estate</div>
             </div>
           </div>
-          <p className="text-sm leading-relaxed max-w-md text-emerald-50/65">A curated platform for luxury golf-course real estate in Scottsdale, Arizona, and a collaborative of the trusted service professionals every Scottsdale homeowner eventually needs.</p>
+          <p className="text-sm leading-relaxed max-w-md text-emerald-50/65">A curated platform for the luxury golf lifestyle in {MARKET.name}, {MARKET.state}, and a collaborative of the trusted service professionals every {MARKET.name} homeowner eventually needs.</p>
         </div>
 
         {/* Explore */}
         <div className="md:col-span-3">
           <div className="font-serif text-amber-100 mb-4">Explore</div>
           <ul className="space-y-2 text-sm">
-            <li><Link className="hover:text-amber-300" href="/scottsdale-golf-community-index-2026">2026 Community Index</Link></li>
+            <li><Link className="hover:text-amber-300" href="/laquinta-golf-community-index-2026">2026 Community Index</Link></li>
             <li><Link className="hover:text-amber-300" href="/community-quiz">Community Quiz</Link></li>
-            <li><Link className="hover:text-amber-300" href="/scottsdale-communities">Communities by Lifestyle</Link></li>
-            <li><Link className="hover:text-amber-300" href="/scottsdale-lifestyle-map">Lifestyle Map</Link></li>
+            <li><Link className="hover:text-amber-300" href="/laquinta-communities">Communities by Lifestyle</Link></li>
+            <li><Link className="hover:text-amber-300" href="/laquinta-lifestyle-map">Lifestyle Map</Link></li>
             <li><Link className="hover:text-amber-300" href="/communities">Golf Communities</Link></li>
             <li><Link className="hover:text-amber-300" href="/architects">Course Architects</Link></li>
             <li><Link className="hover:text-amber-300" href="/golf-clubs">Private Clubs</Link></li>
-            <li><Link className="hover:text-amber-300" href="/relocating-to-scottsdale">Relocating Guide</Link></li>
+            <li><Link className="hover:text-amber-300" href="/relocating-to-laquinta">Relocating Guide</Link></li>
           </ul>
         </div>
 
@@ -39,10 +40,10 @@ export default function SiteFooter() {
           <ul className="space-y-2 text-sm">
             <li><Link className="hover:text-amber-300" href="/blog">Journal</Link></li>
             <li><Link className="hover:text-amber-300" href="/market-reports">Market Reports</Link></li>
-            <li><Link className="hover:text-amber-300" href="/scottsdale-club-membership-costs-2026">Club Membership Costs</Link></li>
-            <li><Link className="hover:text-amber-300" href="/scottsdale-snowbird-guide">Snowbird Guide</Link></li>
-            <li><Link className="hover:text-amber-300" href="/guides/scottsdale-buyers-guide-2026">Buyer&rsquo;s Guide</Link></li>
-            <li><Link className="hover:text-amber-300" href="/scottsdale-home-value">Home Valuation</Link></li>
+            <li><Link className="hover:text-amber-300" href="/laquinta-club-membership-costs-2026">Club Membership Costs</Link></li>
+            <li><Link className="hover:text-amber-300" href="/laquinta-snowbird-guide">Snowbird Guide</Link></li>
+            <li><Link className="hover:text-amber-300" href={`/guides/${MARKET.slug}-buyers-guide-2026`}>Buyer&rsquo;s Guide</Link></li>
+            <li><Link className="hover:text-amber-300" href="/laquinta-home-value">Home Valuation</Link></li>
             <li><Link className="hover:text-amber-300" href="/collaborators">Collaborators</Link></li>
           </ul>
         </div>
@@ -70,7 +71,7 @@ export default function SiteFooter() {
           </div>
         </div>
         <div className="mt-3 text-[10px] text-emerald-50/30 leading-relaxed">
-          Scottsdale Golf Lifestyle is operated by 7671 Enterprises, LLC DBA Golf Lifestyle Network, owner and operator. It is built in partnership with Arizona-licensed real estate professionals. We are not a real estate brokerage. See our <Link href="/privacy" className="underline hover:text-amber-300">Privacy Policy</Link> for details on cookies and analytics.
+          {MARKET.siteName} is operated by 7671 Enterprises, LLC DBA Golf Lifestyle Network, owner and operator. It is built in partnership with {MARKET.licenseState}-licensed real estate professionals. We are not a real estate brokerage. See our <Link href="/privacy" className="underline hover:text-amber-300">Privacy Policy</Link> for details on cookies and analytics.
         </div>
       </div>
     </footer>

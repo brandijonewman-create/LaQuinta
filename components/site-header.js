@@ -2,12 +2,13 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { MapPin, Menu, X } from 'lucide-react';
+import { MARKET } from '@/lib/market';
 
 const NAV_LINKS = [
   { href: '/communities',                 label: 'Communities' },
   { href: '/community-quiz',              label: 'Community Quiz' },
   { href: '/architects',                  label: 'Architects' },
-  { href: '/scottsdale-home-value',       label: 'Home Value' },
+  { href: '/laquinta-home-value',       label: 'Home Value' },
   { href: '/guide',                       label: 'The Guide' },
   { href: '/blog',                        label: 'Journal' },
   { href: '/about',                       label: 'About' }
@@ -26,13 +27,13 @@ export default function SiteHeader() {
     <>
       <header className="sticky top-0 z-50 w-full border-b border-emerald-900/20 bg-[#062840]/95 backdrop-blur supports-[backdrop-filter]:bg-[#062840]/85">
         <div className="hidden md:flex items-center justify-end gap-6 px-6 py-1.5 text-[11px] text-emerald-50/70 border-b border-emerald-50/10">
-          <span className="flex items-center gap-1.5"><MapPin className="h-3 w-3" /> Scottsdale, Arizona</span>
+          <span className="flex items-center gap-1.5"><MapPin className="h-3 w-3" /> {MARKET.name}, {MARKET.state}</span>
         </div>
         <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
           <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
             <div className="w-9 h-9 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center text-[#062840] font-serif font-bold text-lg">S</div>
             <div className="leading-tight">
-              <div className="font-serif text-lg text-amber-50 tracking-wide">Scottsdale</div>
+              <div className="font-serif text-lg text-amber-50 tracking-wide">{MARKET.name}</div>
               <div className="text-[10px] uppercase tracking-[0.25em] text-emerald-200/70">Golf Lifestyle</div>
             </div>
           </Link>
@@ -77,7 +78,7 @@ export default function SiteHeader() {
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center text-[#062840] font-serif font-bold text-lg">S</div>
               <div className="leading-tight">
-                <div className="font-serif text-lg text-amber-50">Scottsdale</div>
+                <div className="font-serif text-lg text-amber-50">{MARKET.name}</div>
                 <div className="text-[10px] uppercase tracking-[0.25em] text-emerald-200/70">Golf Lifestyle</div>
               </div>
             </div>
@@ -109,14 +110,14 @@ export default function SiteHeader() {
               Interactive Map
             </Link>
             <Link
-              href="/market-reports/scottsdale-q2-2026"
+              href={`/market-reports/${MARKET.slug}-q2-2026`}
               onClick={() => setOpen(false)}
               className="py-3.5 border-b border-amber-300/10 text-emerald-50/75 hover:text-amber-300 text-sm transition"
             >
               Market Report
             </Link>
             <Link
-              href="/guides/scottsdale-buyers-guide-2026"
+              href={`/guides/${MARKET.slug}-buyers-guide-2026`}
               onClick={() => setOpen(false)}
               className="py-3.5 text-emerald-50/75 hover:text-amber-300 text-sm transition"
             >
@@ -126,7 +127,7 @@ export default function SiteHeader() {
 
           <div className="mt-auto p-6 border-t border-amber-300/10 space-y-3">
             <div className="pt-2 text-center text-[11px] text-emerald-50/40 flex items-center justify-center gap-1.5">
-              <MapPin className="h-3 w-3" /> Scottsdale, Arizona
+              <MapPin className="h-3 w-3" /> {MARKET.name}, {MARKET.state}
             </div>
           </div>
         </aside>

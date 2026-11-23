@@ -36,7 +36,7 @@ export default function NotFound() {
           {[
             { href: '/homes-for-sale/under-1m',  title: 'Homes Under $1M',     icon: Search },
             { href: '/homes-for-sale/1m-to-3m',  title: 'Homes $1M\u2013$3M', icon: Search },
-            { href: '/relocating-to-scottsdale', title: 'Relocating Guide',    icon: BookOpen },
+            { href: '/relocating-to-laquinta', title: 'Relocating Guide',    icon: BookOpen },
             { href: '/guides/scottsdale-buyers-guide-2026', title: 'Free Buyer\u2019s Guide PDF', icon: BookOpen }
           ].map(({ href, title, icon: Icon }) => (
             <Link key={href} href={href} className="group block bg-white border border-emerald-900/10 hover:border-amber-300 hover:shadow rounded-xl p-5 transition">

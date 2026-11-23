@@ -2,6 +2,7 @@ import './globals.css';
 import Script from 'next/script';
 import { headers } from 'next/headers';
 import { SITE } from '@/lib/data';
+import { MARKET } from '@/lib/market';
 import { localBusinessSchema } from '@/lib/seo';
 import GARouteTracker from '@/components/ga-route-tracker';
 
@@ -14,17 +15,7 @@ export const revalidate = 86400;
 // Detect production hostname so the preview/staging environments never get
 // indexed by search engines. The canonical SITE.url is already locked to the
 // production domain, but this is defense-in-depth.
-// NOTE: Both the new (scottsdalegolflifestyle.com) and the legacy
-// (golfhomesofscottsdale.com) domains are listed so the site continues to be
-// indexable during the DNS / domain migration window. Once the legacy domain
-// is fully redirected to the new one, the two `golfhomesofscottsdale.com`
-// entries below can be removed.
-const PRODUCTION_HOSTS = new Set([
-  'scottsdalegolflifestyle.com',
-  'www.scottsdalegolflifestyle.com',
-  'golfhomesofscottsdale.com',
-  'www.golfhomesofscottsdale.com'
-]);
+const PRODUCTION_HOSTS = new Set([MARKET.domain, ...MARKET.altDomains]);
 
 function isProductionHost() {
   try {
@@ -42,19 +33,19 @@ export function generateMetadata() {
   return {
     metadataBase: new URL(SITE.url),
     title: {
-      default: 'Scottsdale Golf Lifestyle | Luxury Golf Real Estate',
+      default: `${MARKET.siteName} | Luxury Golf Lifestyle`,
       // No brand-suffix template: page titles already include positioning,
-      // and the 25-char "| Scottsdale Golf Lifestyle" suffix was pushing every
+      // and a brand suffix was pushing every
       // title past Google's ~60-char SERP truncation cutoff. Pages that want
       // the brand in the title now include it themselves.
       template: '%s'
     },
-    description: 'The definitive guide to luxury golf real estate in Scottsdale, Arizona. Explore homes for sale in Grayhawk, DC Ranch, Troon North and Scottsdale\u2019s premier golf communities.',
+    description: MARKET.metaDescription,
     openGraph: {
       type: 'website',
       siteName: SITE.name,
-      title: 'Scottsdale Golf Lifestyle | Luxury Golf Real Estate',
-      description: 'Homes for sale in Scottsdale\u2019s premier golf communities: Grayhawk, DC Ranch, Troon North & more.'
+      title: `${MARKET.siteName} | Luxury Golf Lifestyle`,
+      description: MARKET.tagline
       // og:url intentionally omitted; each page sets its own canonical via
       // `alternates.canonical` and per-page openGraph.url where needed.
       // og:image intentionally omitted; Next.js automatically uses the
@@ -75,7 +66,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23BA9273'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='56' font-family='serif' font-weight='bold' fill='%23062840'%3ES%3C/text%3E%3C/svg%3E" />
+        <link rel="icon" href={`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23BA9273'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='56' font-family='serif' font-weight='bold' fill='%23062840'%3E${encodeURIComponent(MARKET.name[0])}%3C/text%3E%3C/svg%3E`} />
         <script dangerouslySetInnerHTML={{__html:'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);'}} />
         <script
           type="application/ld+json"

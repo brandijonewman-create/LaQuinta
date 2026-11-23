@@ -24,9 +24,9 @@ export async function GET() {
 
   parts.push('', '## Guides');
   for (const g of LEAD_MAGNETS) parts.push(line(g.title, `/guides/${g.slug}`, oneLine(g.description)));
-  parts.push(line('Scottsdale Club Membership Costs 2026', '/scottsdale-club-membership-costs-2026', 'Initiation and dues bands for Scottsdale private golf clubs, with equity vs non-equity explained.'));
-  parts.push(line('The 2026 Scottsdale Golf Community Index', '/scottsdale-golf-community-index-2026', 'Editorial tier ranking of every named Scottsdale-area golf community.'));
-  parts.push(line('Scottsdale Snowbird Guide', '/scottsdale-snowbird-guide', 'Seasonal ownership playbook for October-to-April residents.'));
+  parts.push(line('Scottsdale Club Membership Costs 2026', '/laquinta-club-membership-costs-2026', 'Initiation and dues bands for Scottsdale private golf clubs, with equity vs non-equity explained.'));
+  parts.push(line('The 2026 Scottsdale Golf Community Index', '/laquinta-golf-community-index-2026', 'Editorial tier ranking of every named Scottsdale-area golf community.'));
+  parts.push(line('Scottsdale Snowbird Guide', '/laquinta-snowbird-guide', 'Seasonal ownership playbook for October-to-April residents.'));
 
   parts.push('', '## Market Reports');
   for (const r of MARKET_REPORTS) parts.push(line(r.title, `/market-reports/${r.slug}`, oneLine(r.summary)));

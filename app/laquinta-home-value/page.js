@@ -19,7 +19,7 @@ export default function HomeValuePage() {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'Scottsdale Home Value', path: '/scottsdale-home-value' }
+        { name: 'Scottsdale Home Value', path: '/laquinta-home-value' }
       ])} />
       <JsonLd data={{
         '@context': 'https://schema.org',

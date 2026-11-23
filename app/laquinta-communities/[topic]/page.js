@@ -93,7 +93,7 @@ export default function Page({ params }) {
             <Link href="/community-quiz" className="inline-flex items-center gap-2 rounded-full bg-amber-300 hover:bg-amber-200 text-[#062840] px-5 py-2.5 text-sm font-semibold transition">
               Take the community quiz <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/scottsdale-communities" className="inline-flex items-center gap-2 rounded-full border border-amber-200/40 text-amber-100 hover:bg-amber-300 hover:text-[#062840] px-5 py-2.5 text-sm font-semibold transition">
+            <Link href="/laquinta-communities" className="inline-flex items-center gap-2 rounded-full border border-amber-200/40 text-amber-100 hover:bg-amber-300 hover:text-[#062840] px-5 py-2.5 text-sm font-semibold transition">
               Other lifestyle topics
             </Link>
           </div>
@@ -173,7 +173,7 @@ export default function Page({ params }) {
           <h2 className="font-serif text-3xl text-[#062840] mb-6">Other ways buyers narrow the Scottsdale shortlist</h2>
           <div className="grid md:grid-cols-3 gap-5">
             {relatedTopics.map(r => (
-              <Link key={r.slug} href={`/scottsdale-communities/${r.slug}`} className="group bg-white border border-[#062840]/10 rounded-xl p-5 hover:shadow-md hover:border-amber-300 transition">
+              <Link key={r.slug} href={`/laquinta-communities/${r.slug}`} className="group bg-white border border-[#062840]/10 rounded-xl p-5 hover:shadow-md hover:border-amber-300 transition">
                 <div className="text-[10px] uppercase tracking-[0.2em] text-[#BA9273] mb-1">{r.eyebrow}</div>
                 <div className="font-serif text-lg text-[#062840] group-hover:text-amber-700 transition">{r.h1}</div>
                 <div className="mt-2 inline-flex items-center gap-1 text-xs text-amber-700 group-hover:gap-2 transition-all">Read the guide <ArrowRight className="h-3 w-3" /></div>
@@ -183,7 +183,7 @@ export default function Page({ params }) {
         </section>
       )}
 
-      <RelatedContent pageType="generic" communities={t.communitySlugs?.slice(0, 3)} excludePath={`/scottsdale-communities/${t.slug}`} />
+      <RelatedContent pageType="generic" communities={t.communitySlugs?.slice(0, 3)} excludePath={`/laquinta-communities/${t.slug}`} />
     </PageShell>
   );
 }

@@ -24,8 +24,8 @@ export default function Page({ params }) {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'Relocating to Scottsdale', path: '/relocating-to-scottsdale' },
-        { name: `From ${c.from}`, path: `/relocating-to-scottsdale/${c.slug}` }
+        { name: 'Relocating to Scottsdale', path: '/relocating-to-laquinta' },
+        { name: `From ${c.from}`, path: `/relocating-to-laquinta/${c.slug}` }
       ])} />
       <section className="bg-[#062840] text-amber-50">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-24">
@@ -46,7 +46,7 @@ export default function Page({ params }) {
         <h2 className="font-serif text-2xl text-[#062840] mb-4">More relocation comparisons</h2>
         <div className="flex flex-wrap gap-2">
           {COMPARISONS.filter(o => o.slug !== c.slug).map(o => (
-            <Link key={o.slug} href={`/relocating-to-scottsdale/${o.slug}`} className="text-sm rounded-full border border-emerald-900/15 bg-white hover:bg-emerald-50 px-4 py-2 text-emerald-900 transition">From {o.from} <ArrowRight className="inline h-3 w-3" /></Link>
+            <Link key={o.slug} href={`/relocating-to-laquinta/${o.slug}`} className="text-sm rounded-full border border-emerald-900/15 bg-white hover:bg-emerald-50 px-4 py-2 text-emerald-900 transition">From {o.from} <ArrowRight className="inline h-3 w-3" /></Link>
           ))}
         </div>
       </section>

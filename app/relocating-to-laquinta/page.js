@@ -28,7 +28,7 @@ export default function Page() {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'Relocating to Scottsdale', path: '/relocating-to-scottsdale' }
+        { name: 'Relocating to Scottsdale', path: '/relocating-to-laquinta' }
       ])} />
 
       <section className="relative">

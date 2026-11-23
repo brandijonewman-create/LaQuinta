@@ -37,7 +37,7 @@ export default function Page() {
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-6">
           {LANDING_TOPICS.map(t => (
-            <Link key={t.slug} href={`/scottsdale-communities/${t.slug}`} className="group bg-white border border-[#062840]/10 rounded-2xl p-7 hover:shadow-xl hover:border-amber-300 transition">
+            <Link key={t.slug} href={`/laquinta-communities/${t.slug}`} className="group bg-white border border-[#062840]/10 rounded-2xl p-7 hover:shadow-xl hover:border-amber-300 transition">
               <div className="text-xs uppercase tracking-[0.3em] text-[#BA9273] mb-2">{t.eyebrow}</div>
               <h2 className="font-serif text-2xl text-[#062840] group-hover:text-amber-700 transition leading-tight">{t.h1}</h2>
               <p className="mt-3 text-sm text-[#062840]/70 line-clamp-3 leading-relaxed">{t.metaDescription}</p>

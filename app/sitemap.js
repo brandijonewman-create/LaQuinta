@@ -18,15 +18,15 @@ export default function sitemap() {
   const staticRoutes = [
     '',
     '/communities',
-    '/scottsdale-golf-courses',
+    '/laquinta-golf-courses',
     '/blog',
     '/golf-clubs',
     '/architects',
-    '/scottsdale-golf-community-index-2026',
+    '/laquinta-golf-community-index-2026',
     '/community-quiz',
-    '/scottsdale-club-membership-costs-2026',
-    '/scottsdale-snowbird-guide',
-    '/scottsdale-lifestyle-map',
+    '/laquinta-club-membership-costs-2026',
+    '/laquinta-snowbird-guide',
+    '/laquinta-lifestyle-map',
     '/collaborators',
     '/partner-with-us',
     '/about',
@@ -51,7 +51,7 @@ export default function sitemap() {
   const golfClubRoutes     = GOLF_CLUBS.map(c =>       ({ url: `${SITE.url}/golf-clubs/${c.slug}`,             lastModified: familyDate('golf-clubs') }));
   const architectRoutes    = ARCHITECTS.map(a =>       ({ url: `${SITE.url}/architects/${a.slug}`,             lastModified: familyDate('architects') }));
   const landingTopicRoutes = LANDING_TOPICS.map(t =>   ({ url: `${SITE.url}/scottsdale-communities/${t.slug}`, lastModified: familyDate('landing-topics') }));
-  const landingTopicIndex  = [{ url: `${SITE.url}/scottsdale-communities`,        lastModified: routeDate('/scottsdale-communities') }];
+  const landingTopicIndex  = [{ url: `${SITE.url}/scottsdale-communities`,        lastModified: routeDate('/laquinta-communities') }];
 
   // Directory (/guide): the hub, then only category, category-city and business
   // pages that have real listings. Empty category pages stay out until filled.

@@ -73,7 +73,7 @@ export default function CommunityQuizPage() {
             architectural era, club character, real-estate footprint, and intended-use fit. Communities are
             ranked by total weighted match, and we surface the top match plus two runners-up with the exact reasons each one
             surfaced. You can sanity-check the logic, retake the quiz, or skip straight to the
-            <Link href="/scottsdale-golf-community-index-2026" className="text-[#BA9273] underline ml-1">2026 Community Index</Link>
+            <Link href="/laquinta-golf-community-index-2026" className="text-[#BA9273] underline ml-1">2026 Community Index</Link>
             if you&rsquo;d rather browse all 46 yourself.
           </p>
         </div>

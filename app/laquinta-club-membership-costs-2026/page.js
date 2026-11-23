@@ -24,7 +24,7 @@ export default function Page() {
     <PageShell>
       <JsonLd data={breadcrumbSchema([
         { name: 'Home', path: '/' },
-        { name: 'Club Membership Costs 2026', path: '/scottsdale-club-membership-costs-2026' }
+        { name: 'Club Membership Costs 2026', path: '/laquinta-club-membership-costs-2026' }
       ])} />
       <JsonLd data={{
         '@context': 'https://schema.org',
@@ -124,7 +124,7 @@ export default function Page() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link href="/architects" className="inline-flex items-center gap-2 rounded-full bg-[#062840] hover:bg-[#0a3a55] text-amber-50 px-6 py-3 text-sm font-semibold">Browse club architects <ArrowRight className="h-4 w-4" /></Link>
-            <Link href="/scottsdale-golf-community-index-2026" className="inline-flex items-center gap-2 rounded-full border border-[#062840]/20 text-[#062840] hover:bg-[#062840]/5 px-6 py-3 text-sm font-semibold">The 2026 Community Index</Link>
+            <Link href="/laquinta-golf-community-index-2026" className="inline-flex items-center gap-2 rounded-full border border-[#062840]/20 text-[#062840] hover:bg-[#062840]/5 px-6 py-3 text-sm font-semibold">The 2026 Community Index</Link>
           </div>
         </div>
       </section>

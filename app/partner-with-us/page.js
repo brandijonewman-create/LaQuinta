@@ -111,7 +111,7 @@ export default function PartnerWithUsPage({ searchParams }) {
           </p>
           <p>
             Read a <Link href="/communities/desert-mountain" className="text-amber-700 underline underline-offset-4">community guide</Link>,
-            the <Link href="/scottsdale-golf-community-index-2026" className="text-amber-700 underline underline-offset-4">Community Index</Link> or
+            the <Link href="/laquinta-golf-community-index-2026" className="text-amber-700 underline underline-offset-4">Community Index</Link> or
             the <Link href="/blog" className="text-amber-700 underline underline-offset-4">Journal</Link> to see
             the depth of what we publish. We share real numbers in conversation and publish only what we can verify.
           </p>
