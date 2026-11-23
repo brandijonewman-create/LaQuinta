@@ -78,9 +78,18 @@ agenthub/agents/youtube/db
 memory/test_credentials.md
 
 # Mobile development
-android-sdk/node_modules/@next/swc-linux-arm64-gnu/next-swc.linux-arm64-gnu.node
-node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
+android-sdk/node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
 node_modules/@next/swc-linux-arm64-gnu/next-swc.linux-arm64-gnu.node
+node_modules/@next/swc-linux-arm64-musl/next-swc.linux-arm64-musl.node
+.next/cache/webpack/client-development/5.pack.gz
+.next/cache/webpack/client-development/25.pack.gz
+.next/cache/webpack/client-development/14.pack.gz
+.next/cache/webpack/client-development/23.pack.gz
+.next/cache/webpack/client-development/8.pack.gz
+.next/cache/webpack/client-development/10.pack.gz
+.next/cache/webpack/client-development/16.pack.gz
+.next/cache/webpack/client-development/3.pack.gz
+.next/cache/webpack/client-development/11.pack.gz
 .env
 .env.*
 *.env

@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "cave-creek-land-surveyors",
+   "name": "Cave Creek Land Surveyors",
+   "categories": [
+    "land-surveyors"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6300 E Cave Creek Rd Ste 203",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.944
+   },
+   "description": "Land surveyor in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 595-1798",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJEbFyy2V_K4cRCEpVuOy1_dM",
+    "cid": "15275565539420097032",
+    "category": "Land surveyor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "everett-alan-group-llc",
+   "name": "Everett Alan Group, LLC",
+   "categories": [
+    "land-surveyors"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6300 E Cave Creek Rd #202",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.944
+   },
+   "description": "Land surveyor in Cave Creek, Arizona. Its Google profile also lists civil engineer and drafting service.",
+   "website": "http://everettalangroup.com/",
+   "phone": "(480) 990-0545",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJv-5-_Zh-K4cRNEaO9cqtb4U",
+    "cid": "9615094816674039348",
+    "category": "Land surveyor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

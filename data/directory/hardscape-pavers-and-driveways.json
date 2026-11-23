@@ -1,0 +1,186 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "az-pavers-and-turf-llc",
+   "name": "AZ Pavers & Turf LLC",
+   "categories": [
+    "hardscape-pavers-and-driveways"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "37410 N Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.825,
+    "lng": -111.955
+   },
+   "description": "Landscaper in Cave Creek, Arizona. Its Google profile also lists bricklayer and masonry contractor.",
+   "website": "https://www.azpaversandturf.com/",
+   "phone": "(623) 302-0777",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ_5Majw434ysRF6n0nsLWhpY",
+    "cid": "10846592883947251991",
+    "category": "Landscaper"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "camelback-hardscapes",
+   "name": "Camelback Hardscapes",
+   "categories": [
+    "hardscape-pavers-and-driveways"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7135 E Camelback Rd #230",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.928
+   },
+   "description": "Landscaper in Scottsdale, Arizona. Its Google profile also lists bricklayer and carport and pergola builder.",
+   "website": "https://camelbackhardscapes.com/",
+   "phone": "(480) 600-8011",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ4ztCKRULK4cRwSy1qV7A94c",
+    "cid": "9797511027174485185",
+    "category": "Landscaper"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mc-kenzie-brothers-masonry",
+   "name": "Mc Kenzie Brothers Masonry",
+   "categories": [
+    "hardscape-pavers-and-driveways"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "35440 N 52nd St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.808,
+    "lng": -111.97
+   },
+   "description": "Masonry contractor in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 595-1148",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJJX7bXwl8K4cR7hQ8ryRQqJU",
+    "cid": "10783957426227647726",
+    "category": "Masonry contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "old-mission-masonry-inc",
+   "name": "Old Mission Masonry Inc",
+   "categories": [
+    "hardscape-pavers-and-driveways"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "32793 N 66th St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.783,
+    "lng": -111.938
+   },
+   "description": "Masonry contractor in Cave Creek, Arizona.",
+   "website": "http://oldmissionmasonry.com/",
+   "phone": "(480) 595-6040",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi8lAMW95K4cRDaCBiubiWUg",
+    "cid": "5213447523452166157",
+    "category": "Masonry contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "patio-design-group",
+   "name": "Patio Design Group",
+   "categories": [
+    "hardscape-pavers-and-driveways"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "2614 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85257"
+   },
+   "geo": {
+    "lat": 33.477,
+    "lng": -111.927
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists landscape designer and fence contractor.",
+   "website": "http://www.pdgaz.com/",
+   "phone": "(480) 306-8822",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVXV9xN0LK4cRtuaAuQf6I1Y",
+    "cid": "6207079622530623158",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "stone-creations-inc",
+   "name": "Stone Creations Inc",
+   "categories": [
+    "hardscape-pavers-and-driveways"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3940 N Miller Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.494,
+    "lng": -111.918
+   },
+   "description": "Paving contractor in Scottsdale, Arizona. Its Google profile also lists concrete contractor and masonry contractor.",
+   "website": "https://www.stonecreationsaz.com/",
+   "phone": "(928) 851-4969",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJrwy3jMcLK4cRIOHIvhA32Js",
+    "cid": "11229786215908172064",
+    "category": "Paving contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

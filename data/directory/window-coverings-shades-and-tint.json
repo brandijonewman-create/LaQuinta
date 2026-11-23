@@ -1,0 +1,276 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "arizona-blinds-express-design-studio",
+   "name": "Arizona Blinds Express - Design Studio",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd #303-2",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Blinds shop in Carefree, Arizona. Its Google profile also lists window treatment store.",
+   "website": "https://azblindsexpress.com/",
+   "phone": "(602) 819-3608",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJwYc2q5N5K4cRJkTJX-h0y_s",
+    "cid": "18143724065180435494",
+    "category": "Blinds shop"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "arizona-window-coverings-center",
+   "name": "Arizona Window Coverings Center",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6710 N Scottsdale Rd Ste 110",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.534,
+    "lng": -111.926
+   },
+   "description": "Window treatment store in Scottsdale, Arizona. Its Google profile also lists blinds shop and curtain store.",
+   "website": "https://arizonawcc.com/locations/paradise-valley/",
+   "phone": "(480) 405-7895",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJx8mVeqYLK4cRihxObiziHq4",
+    "cid": "12546714292357831818",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "arizona-window-coverings-center-fountain-hills",
+   "name": "Arizona Window Coverings Center",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16930 E Palisades Blvd Suit #110",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.715
+   },
+   "description": "Window treatment store in Fountain Hills, Arizona. Its Google profile also lists blinds shop and curtain store.",
+   "website": "https://arizonawcc.com/locations/fountain-hills/",
+   "phone": "(480) 864-2999",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJIda0c66ZK4cRbN1w8e2a8KU",
+    "cid": "11957227357417299308",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "chris-shutters-and-blinds-of-arizona",
+   "name": "Chris' Shutters & Blinds of Arizona",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5511 E 7 Palms Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.792,
+    "lng": -111.963
+   },
+   "description": "Window treatment store in Cave Creek, Arizona. Its Google profile also lists blinds shop and interior designer.",
+   "website": "https://shuttersblindsaz.com/",
+   "phone": "(480) 375-1381",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJz5XFntt7K4cR5Bil20Rnsrs",
+    "cid": "13524986176387487972",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hunter-douglas-by-carefree-shades-and-design",
+   "name": "Hunter Douglas By Carefree Shades and Design",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "34522 N Scottsdale Rd Ste 100B",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.799,
+    "lng": -111.93
+   },
+   "description": "Window treatment store in Scottsdale, Arizona. Its Google profile also lists blinds shop and curtain store.",
+   "website": "http://carefreeshadesanddesign.com/",
+   "phone": "(480) 261-1760",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJkVxcQmp5K4cRbP6BV7ogD_M",
+    "cid": "17514253460571291244",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "shades-under-the-sun-hunter-douglas",
+   "name": "Shades Under The Sun | Hunter Douglas",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "37608 N Cave Creek Rd Ste 101",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.826,
+    "lng": -111.955
+   },
+   "description": "Window treatment store in Cave Creek, Arizona. Its Google profile also lists blinds shop.",
+   "website": "http://shadesunderthesun.net/",
+   "phone": "(602) 944-4794",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCyBmC_x9K4cREDDQaXwd25s",
+    "cid": "11230602515966865424",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "southwest-shutter-designs",
+   "name": "Southwest Shutter Designs",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "11807 N Saguaro Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.594,
+    "lng": -111.711
+   },
+   "description": "Window treatment store in Fountain Hills, Arizona.",
+   "website": "",
+   "phone": "(480) 837-9461",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJiQiSq4GiK4cRPX4MiUgdQgg",
+    "cid": "595070298140474941",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-shade-store",
+   "name": "The Shade Store",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7014 E Camelback Rd Suite 1041",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.929
+   },
+   "description": "Window treatment store in Scottsdale, Arizona. Its Google profile also lists blinds shop and curtain store.",
+   "website": "https://www.theshadestore.com/showrooms/arizona/scottsdale-fashion-square",
+   "phone": "(480) 977-3258",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJwatZpnQLK4cR63OYK5p04t0",
+    "cid": "15988469832623879147",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "window-coverings-by-julie-hunter-douglas",
+   "name": "Window Coverings by Julie - Hunter Douglas",
+   "categories": [
+    "window-coverings-shades-and-tint"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36889 N Tom Darlington Dr Ste D-7",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.923
+   },
+   "description": "Window treatment store in Carefree, Arizona. Its Google profile also lists awning supplier and blinds shop.",
+   "website": "https://windowcoveringsbyjulie.com/",
+   "phone": "(928) 389-9030",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJh6PJXyySQigRu563XuBaIi4",
+    "cid": "3324319394661113531",
+    "category": "Window treatment store"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

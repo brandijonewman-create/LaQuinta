@@ -1,0 +1,96 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "andaz-scottsdale-resort-and-bungalows",
+   "name": "Andaz Scottsdale Resort & Bungalows",
+   "categories": [
+    "resorts-and-hotels"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6114 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.528,
+    "lng": -111.928
+   },
+   "description": "Hotel in Scottsdale, Arizona.",
+   "website": "https://www.hyatt.com/andaz/en-US/phxaz-andaz-scottsdale-resort-and-bungalows?src=corp_lclb_google_seo_phxaz",
+   "phone": "(480) 368-1234",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJK439wxILK4cRY-Om_9pfc1w",
+    "cid": "6661773668007732067",
+    "category": "Hotel"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hilton-vacation-club-rancho-manana-phoenix-cave-creek",
+   "name": "Hilton Vacation Club Rancho Manana Phoenix/Cave Creek",
+   "categories": [
+    "resorts-and-hotels"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5720 E Rancho Manana Blvd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.956
+   },
+   "description": "Hotel in Cave Creek, Arizona.",
+   "website": "https://www.hilton.com/en/hotels/phxragv-hilton-vacation-club-rancho-manana/?SEO_id=GMB-AMER-HH-PHXRAGV",
+   "phone": "(480) 575-7900",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJfyiMNCF8K4cRFFU1krSqKfc",
+    "cid": "17809953893937141012",
+    "category": "Hotel"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mountain-shadows-resort-scottsdale",
+   "name": "Mountain Shadows Resort Scottsdale",
+   "categories": [
+    "resorts-and-hotels"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "5445 E Lincoln Dr",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.531,
+    "lng": -111.964
+   },
+   "description": "Hotel in Paradise Valley, Arizona. Its Google profile also lists bar and event venue.",
+   "website": "https://mountainshadows.com/",
+   "phone": "(855) 485-1417",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJO_3Uw6IMK4cROrZu4ffUOR0",
+    "cid": "2105948461876557370",
+    "category": "Hotel"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "desert-foothills-gardens-nursery-inc",
+   "name": "Desert Foothills Gardens Nursery Inc.",
+   "categories": [
+    "plant-nursery-and-plant-service"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "33840 N Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.793,
+    "lng": -111.968
+   },
+   "description": "Plant nursery in Cave Creek, Arizona. Its Google profile also lists garden center and landscaping supply store.",
+   "website": "https://www.dfgnursery.com/",
+   "phone": "(480) 488-9455",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJUXKTH-57K4cRYz7hWmy1g7k",
+    "cid": "13367727595951570531",
+    "category": "Plant nursery"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "pearson-and-company",
+   "name": "Pearson & Company",
+   "categories": [
+    "plant-nursery-and-plant-service"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7022 E Main St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.93
+   },
+   "description": "Interior plant service in Scottsdale, Arizona. Its Google profile also lists dried flower shop and interior designer.",
+   "website": "http://www.pearsonandcompany.com/",
+   "phone": "(602) 840-6447",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJXyMSapULK4cR2F2yKySalrs",
+    "cid": "13517160811741732312",
+    "category": "Interior plant service"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "r-e-t-a-b-l-o",
+   "name": "R E T A B L O",
+   "categories": [
+    "plant-nursery-and-plant-service"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6009 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.952
+   },
+   "description": "Pottery store in Cave Creek, Arizona. Its Google profile also lists furniture store and garden.",
+   "website": "http://retablo.com/",
+   "phone": "(480) 488-1499",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCY1sDp5-K4cR7bilZ1KWA5s",
+    "cid": "11169936781479360749",
+    "category": "Pottery store"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

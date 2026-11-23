@@ -1,0 +1,4443 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT, custom home builder, home builder and luxury home builder, 5 cities",
+ "businesses": [
+  {
+   "slug": "12-west-custom-homes",
+   "name": "12 West Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "15020 Hayden Rd #201",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.622,
+    "lng": -111.907
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.12westcustomhomes.com/",
+   "phone": "(480) 600-1749",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJM3xhwL11K4cR-JU-wK2rmwQ",
+    "cid": "332047760284882424",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "adair-homes-scottsdale-arizona",
+   "name": "Adair Homes - Scottsdale, Arizona",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16220 N Scottsdale Rd Ste 300",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.634,
+    "lng": -111.927
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists construction company and home builder.",
+   "website": "https://www.adairhomes.com/branch/scottsdale",
+   "phone": "(480) 739-3944",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJsby8Ugh1K4cRd8RWVbnUlkE",
+    "cid": "4726198751437702263",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "adams-craig-acquisition",
+   "name": "Adams Craig Acquisition",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7904 E Chaparral Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.51,
+    "lng": -111.912
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder and real estate agency.",
+   "website": "http://www.adamscraigacq.com/",
+   "phone": "(480) 634-5015",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJuXRNm64LK4cRmNM4pkgo1sc",
+    "cid": "14399741151055238040",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "aft-construction",
+   "name": "AFT Construction",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "15270 N 83rd Pl #200",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.624,
+    "lng": -111.904
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists construction company and contractor.",
+   "website": "http://aftconstruction.com/",
+   "phone": "(480) 553-7873",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJg3cAV7V1K4cRyDQReXcf-lo",
+    "cid": "6555586805583918280",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "alair-homes-paradise-valley",
+   "name": "Alair Homes Paradise Valley",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "9990 N Scottsdale Rd Apt 2036",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.576,
+    "lng": -111.928
+   },
+   "description": "Custom home builder in Paradise Valley, Arizona.",
+   "website": "https://www.alairhomes.com/paradise-valley/",
+   "phone": "(602) 461-7234",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxT5uDcB0K4cRtl2hULoAdW4",
+    "cid": "7959268716663889334",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "alair-homes-scottsdale",
+   "name": "Alair Homes Scottsdale",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "14988 N 78th Way Ste 103",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.622,
+    "lng": -111.909
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and contractor.",
+   "website": "http://www.alairhomes.com/scottsdale/",
+   "phone": "(602) 892-4355",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJYzMP4NF0K4cRJbDlKY0fI88",
+    "cid": "14925808281189724197",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "allhaus",
+   "name": "AllHaus",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "14666 N 74th St Ste 100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.62,
+    "lng": -111.921
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor and property maintenance.",
+   "website": "http://allhaus.com/",
+   "phone": "(855) 315-4663",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJreQ-r-51K4cRzm20JhH_4VI",
+    "cid": "5972335029998874062",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "american-first-builders",
+   "name": "American First Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9160 E Verde Grove View",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.646,
+    "lng": -111.884
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists contractor and general contractor.",
+   "website": "http://www.americanfirstbuilders.com/",
+   "phone": "(480) 275-4559",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6paW0F2K4cRqHpGwxxvv4I",
+    "cid": "9421371114808310440",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "apollo-builders",
+   "name": "Apollo Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10345 E Desert Cove Ave Suite 2",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.586,
+    "lng": -111.858
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and contractor.",
+   "website": "https://www.apollobuilders.com/",
+   "phone": "(480) 980-1156",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ__PRBIB1K4cR0Q5yH0RhFRI",
+    "cid": "1303054612406865617",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "aria-builder-llc",
+   "name": "Aria Builder LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "5635 N Scottsdale Rd Ste 170 b1",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85257"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.926
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists concrete contractor and construction company.",
+   "website": "https://aria.builders/",
+   "phone": "(623) 232-8990",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ134zW54JK4cRgPm1pzSQcgw",
+    "cid": "896937831626570112",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "arizona-cowboy-custom-builders",
+   "name": "Arizona Cowboy Custom Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "31815 N 65th St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.774,
+    "lng": -111.941
+   },
+   "description": "Home builder in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 575-6960",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6rOe3p5K4cRMrObAxwfceI",
+    "cid": "16316857130120098610",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "armstrong-construction-group",
+   "name": "Armstrong Construction Group",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8281 E Gelding Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.615,
+    "lng": -111.902
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "http://acgarizona.com/",
+   "phone": "(602) 369-0767",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlTpTe8J1K4cROMq9ClVavvg",
+    "cid": "17923862888280083000",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "aspect-fine-homes",
+   "name": "Aspect Fine Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8711 E Pinnacle Peak Rd Ste. B-104",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.698,
+    "lng": -111.893
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://aspectfinehomes.com/",
+   "phone": "(480) 818-5593",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQQiCSPF1K4cRcdTJQ1iMFsY",
+    "cid": "14273750379719677041",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "beacon-rock-builders",
+   "name": "Beacon Rock Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7522 E McDonald Dr Ste J",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.524,
+    "lng": -111.918
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor and home builder.",
+   "website": "https://www.beaconrockbuilders.com/arizona-custom-homes",
+   "phone": "(480) 442-5792",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJF9SG0DapK4cRWHp2oHEcXrM",
+    "cid": "12924799254948903512",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bedbrock-developers",
+   "name": "BedBrock Developers",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "5203 E Lincoln Dr",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.531,
+    "lng": -111.969
+   },
+   "description": "Custom home builder in Paradise Valley, Arizona. Its Google profile also lists architect and architecture firm.",
+   "website": "https://bedbrock.com/",
+   "phone": "(602) 953-3232",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJK_lSr5t0K4cR2nhmjVFYBPQ",
+    "cid": "17583275952449157338",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bella-legacy-custom-homes-llc",
+   "name": "Bella Legacy Custom Homes LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "20715 N Pima Rd #108",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.676,
+    "lng": -111.888
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor and home builder.",
+   "website": "https://www.bellalegacy.com/",
+   "phone": "(480) 780-0008",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBdCB_c93K4cRoLg0Hd3RG3g",
+    "cid": "8654741856530512032",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "beringer-fine-homes",
+   "name": "Beringer Fine Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "20865 N 90th Pl Ste 125",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.675,
+    "lng": -111.886
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists architect and architectural designer.",
+   "website": "http://www.beringerfinehomes.com/",
+   "phone": "(480) 614-5535",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJRcsbhR53K4cRAUTnXiB2pAs",
+    "cid": "838925312001000449",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "better-quality-builders",
+   "name": "Better Quality Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16220 N Scottsdale Rd Ste 300",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.634,
+    "lng": -111.927
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://www.betterqualitybuilders.com/",
+   "phone": "(480) 602-2182",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJmaWVX8J1K4cR0XqjYxKrUac",
+    "cid": "12056605772916947665",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "big-sky-custom-homes-llc",
+   "name": "Big Sky Custom Homes, LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "28308 N 141st Wy",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85262"
+   },
+   "geo": {
+    "lat": 33.743,
+    "lng": -111.775
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "http://bigskyaz.com/",
+   "phone": "(602) 909-9535",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVVVVZWdK4cR60G0mIagGco",
+    "cid": "14562847370027221483",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bink-development",
+   "name": "BINK Development",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6710 N Scottsdale Rd Ste 100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.534,
+    "lng": -111.926
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists construction company and general contractor.",
+   "website": "https://binkdev.com/",
+   "phone": "(480) 256-8977",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJWQp1uRMLK4cRU637Nl5RdAo",
+    "cid": "753316502768954707",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bloomfield-builders-llc",
+   "name": "Bloomfield Builders LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8515 E Cholla St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.589,
+    "lng": -111.896
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://www.bloomfieldbuilders.com/",
+   "phone": "(602) 821-0358",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-4VcxDF1K4cR-EP5DDsdIpo",
+    "cid": "11106471770507002872",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bolte-homes-llc",
+   "name": "Bolte Homes LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "15730 N 83rd Way #103",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.629,
+    "lng": -111.9
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://www.boltehomes.com/",
+   "phone": "(480) 990-7979",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJy3KrAk10K4cRAVxIIy8NIys",
+    "cid": "3108342663922342913",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bordeaux-homes",
+   "name": "Bordeaux Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "23623 N Scottsdale Rd d3228",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.701,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://bordeauxhomes.co/",
+   "phone": "(480) 746-3649",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJEx49IBR3K4cRAOOdbQCc6LM",
+    "cid": "12963783053038969600",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "brown-homes",
+   "name": "Brown Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16454 N 91st St Ste 101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.636,
+    "lng": -111.885
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists contractor and real estate developer.",
+   "website": "https://brownhomesaz.com/",
+   "phone": "(480) 305-5319",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6raadAKK4cR4eWkoOe23MQ",
+    "cid": "14185414032259081697",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cachet-homes",
+   "name": "Cachet Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10446 N 74th St #220",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.58,
+    "lng": -111.922
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architectural designer and condominium complex.",
+   "website": "http://cachethomes.net/",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJme6ss9Z1K4cR2YLXmAb0xBU",
+    "cid": "1568646879403016921",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "calvis-wyant-luxury-homes",
+   "name": "Calvis Wyant Luxury Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8910 E Raintree Dr Suite 100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.619,
+    "lng": -111.888
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and architectural designer.",
+   "website": "https://www.calviswyant.com/",
+   "phone": "(480) 905-0200",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJad29XdB1K4cRXf7Diwz5W1M",
+    "cid": "6006668360308489821",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "camelot-homes",
+   "name": "Camelot Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6607 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.532,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder and general contractor.",
+   "website": "https://www.camelothomes.com/",
+   "phone": "(480) 367-4300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJl6ANQBQLK4cRIHHN0sFp0-k",
+    "cid": "16848926912109441312",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cameron-custom-homes-and-renovations",
+   "name": "Cameron Custom Homes & Renovations",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6607 N Scottsdale Rd # H100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.532,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.cameron-custom.com/",
+   "phone": "(480) 887-0606",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJm63AtmwLK4cRcXLE6zsTBDE",
+    "cid": "3531969155844829809",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "carlson-homes",
+   "name": "Carlson Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "14300 N Northsight Blvd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.899
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists remodeler.",
+   "website": "http://www.carlsonhomesscottsdale.com/",
+   "phone": "(480) 443-9100",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJkzQQ87F1K4cR-BOTMQirh8k",
+    "cid": "14521763575159264248",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "carmel-homes-design-group",
+   "name": "Carmel Homes Design Group",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7702 E Doubletree Ranch Rd Ste 300-C",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.565,
+    "lng": -111.916
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://www.luxuryhomebuildersscottsdale.com/",
+   "phone": "(602) 348-2430",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJzW3p39F0K4cRbzxDaNbT8ls",
+    "cid": "6625590919641119855",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "casa-del-rey-development",
+   "name": "Casa Del Rey Development",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8340 E Raintree Dr Ste B7",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.62,
+    "lng": -111.9
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://www.casadelreyhomes.com/",
+   "phone": "(602) 439-9800",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-c82yx1uK4cRJpazydkvhmk",
+    "cid": "7603817633300059686",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "centurion-luxury-homes",
+   "name": "Centurion Luxury Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7333 E Doubletree Ranch Rd Ste 140",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.567,
+    "lng": -111.924
+   },
+   "description": "Real estate developer in Scottsdale, Arizona.",
+   "website": "https://centurionluxuryhomes.com/",
+   "phone": "(480) 613-7465",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJzTd_Q2d1K4cRiB656CdBtyk",
+    "cid": "3005942915957071496",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "century-custom-homes",
+   "name": "Century Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7288 E Echo Ln",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.56,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://centuryhomesaz.com/",
+   "phone": "(602) 980-4321",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBxqfVUp1K4cRqHlzc7lf7bQ",
+    "cid": "13037181746417990056",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "citywide-builders-inc",
+   "name": "Citywide Builders, Inc.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8711 E Pinnacle Peak Rd d101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.698,
+    "lng": -111.893
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor.",
+   "website": "http://citywidebuilders.com/",
+   "phone": "(702) 991-6808",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ75en0K93K4cR_fLcTORfBlo",
+    "cid": "6486977747420508925",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cm-built-luxury-remodels-and-builds",
+   "name": "CM BUILT Luxury Remodels & Builds",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7135 E Camelback Rd #230",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.928
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and cabinet maker.",
+   "website": "https://cmbuilt.com/",
+   "phone": "(480) 447-2411",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJH4Vz2iavK4cRW3lrbDWmA0Y",
+    "cid": "5045058755967547739",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "constructed-matter-inc",
+   "name": "Constructed Matter, Inc",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7314 E Osborn Dr Ste A",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.487,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "https://www.constructedmatter.com/",
+   "phone": "(480) 628-4458",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJb3IfA1YO9k0RHzQqot9Yyc8",
+    "cid": "14972596153691550751",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "craig-eckhardt-and-associates",
+   "name": "Craig Eckhardt & Associates",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "41104 N Old Stage Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.859,
+    "lng": -111.97
+   },
+   "description": "Home builder in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 488-0190",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCYvpeMZ9K4cRq2f0iwkUmCg",
+    "cid": "2925109989212448683",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cullum-homes",
+   "name": "Cullum Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "14746 N 78th Way",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.619,
+    "lng": -111.911
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and bathroom remodeler.",
+   "website": "https://cullumhomes.com/",
+   "phone": "(480) 949-2700",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJL9kgRR91K4cRUtDmYiVnStw",
+    "cid": "15873613246891479122",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "customline-builders-llc",
+   "name": "Customline Builders, LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "34034 N 56th St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.794,
+    "lng": -111.961
+   },
+   "description": "Construction company in Cave Creek, Arizona. Its Google profile also lists architectural designer and real estate agent.",
+   "website": "",
+   "phone": "(480) 488-1286",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJx9TPJ-V7K4cRhl147KPpZyQ",
+    "cid": "2623322198222855558",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "danny-meador-construction",
+   "name": "Danny Meador Construction",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8151 E Indian Bend Rd #105a",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.537,
+    "lng": -111.904
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and contractor.",
+   "website": "",
+   "phone": "(480) 470-3699",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJa_2VeMleK4cR3pYC3xE9U7U",
+    "cid": "13065854090897168094",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "dc-custom-homes-llc",
+   "name": "DC Custom Homes, LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10559 N 119th Pl",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85259"
+   },
+   "geo": {
+    "lat": 33.582,
+    "lng": -111.823
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://dchomesllc.com/",
+   "phone": "(480) 451-9899",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJLXbQPo-fK4cRX6yY2D32jvA",
+    "cid": "17334062761282939999",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "desert-homes-development",
+   "name": "Desert Homes Development",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10869 N Scottsdale Rd #1",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.585,
+    "lng": -111.924
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "http://www.deserthomesdevelopment.com/",
+   "phone": "(480) 595-5005",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlaGoy6B5K4cRZ2nHQFT6_Us",
+    "cid": "5475807961723398503",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "desert-star-construction-inc",
+   "name": "Desert Star Construction, Inc.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8144 E Cactus Rd Ste 840",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.597,
+    "lng": -111.906
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists contractor and home builder.",
+   "website": "http://desertstarconstruction.com/",
+   "phone": "(480) 951-4425",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJE73t2_10K4cRLefZgQl9rw0",
+    "cid": "986144323204146989",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "diamond-custom-homes-az",
+   "name": "Diamond Custom Homes AZ",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7730 E Greenway Rd Ste 102",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.626,
+    "lng": -111.914
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder and remodeler.",
+   "website": "https://diamondcustomhomesaz.com/",
+   "phone": "(602) 989-2741",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ15zAdgdEha0RVqzd_0sp2Fg",
+    "cid": "6401912276699163734",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "e-and-s-builders",
+   "name": "E & S Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8370 East Vía de Ventura Ste k150",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.555,
+    "lng": -111.901
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and contractor.",
+   "website": "http://www.esbuildersaz.com/",
+   "phone": "(602) 502-8605",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJE1X83P10K4cR2ZPv0Z_1-9k",
+    "cid": "15707418192155481049",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "eagle-luxury-properties",
+   "name": "Eagle Luxury Properties",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8275 N Pima Rd Ste 4A",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.556,
+    "lng": -111.891
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.eagleluxuryproperties.com/",
+   "phone": "(480) 905-1200",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBR2kSxQLK4cRcNItaZp2lRE",
+    "cid": "1267049275736314480",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "echelon-fine-homebuilders",
+   "name": "Echelon Fine Homebuilders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "9624 N Monterey Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.572,
+    "lng": -111.711
+   },
+   "description": "Home builder in Fountain Hills, Arizona.",
+   "website": "https://theecheloncompany.com/",
+   "phone": "(480) 816-1244",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJkZxbBvWiK4cR2RMpMOgsE7I",
+    "cid": "12831649139060708313",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "edwards-design-group",
+   "name": "Edwards Design Group",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8151 E Smokehouse Tr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.788,
+    "lng": -111.905
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor.",
+   "website": "http://www.edwardsdesigngroup.com/",
+   "phone": "(480) 268-6948",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJrVmkUF15K4cRa8TYFhmOKdU",
+    "cid": "15359964242532418667",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "encanta-homes",
+   "name": "Encanta Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9105 E Del Camino Dr Suite 111",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.551,
+    "lng": -111.882
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://encantahomes.com/",
+   "phone": "(480) 362-2300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ19f258cKK4cRx36mm0A4FUc",
+    "cid": "5122062001344249543",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "estara-homes",
+   "name": "Estara Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8800 N Gainey Center Dr Unit 175",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.566,
+    "lng": -111.914
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://estarahome.com/",
+   "phone": "(602) 582-8858",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJs9vvM7V1K4cR1iAMDYNhSI0",
+    "cid": "10180494173158514902",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fhr-construction",
+   "name": "FHR Construction",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7720 E Gelding Dr Ste 200",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.914
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and general contractor.",
+   "website": "https://fhraz.com/",
+   "phone": "(480) 990-7555",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ3ew6EU90K4cRmB7yO2iL-v4",
+    "cid": "18373150909609942680",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fitch-builders-llc",
+   "name": "Fitch Builders, LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "15051 N Kierland Blvd Suite 300",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.624,
+    "lng": -111.93
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.fitchbuilders.com/",
+   "phone": "(503) 806-5773",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCzp0JiYW3IoR3Y9C4CF8qtc",
+    "cid": "15540369949133541341",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "five-star-design-build",
+   "name": "Five Star Design Build",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7949 E Acoma Dr #208",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.617,
+    "lng": -111.909
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "https://www.fivestardesignbuild.com/",
+   "phone": "(480) 437-8382",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ4_izVNN1K4cR48ne3adBpkI",
+    "cid": "4802598241874921955",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fratantoni-luxury-estates",
+   "name": "Fratantoni Luxury Estates",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9811 E Bell Rd Ste 105",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.64,
+    "lng": -111.869
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and bathroom remodeler.",
+   "website": "https://www.fratantoniluxuryestates.com/",
+   "phone": "(480) 621-7878",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJnUwF9dB1K4cR9WK3AgLjDbc",
+    "cid": "13190448481413063413",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "full-circle-custom-homes",
+   "name": "Full Circle Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7100 E Cave Creek Rd Ste 104",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.831,
+    "lng": -111.929
+   },
+   "description": "Custom home builder in Cave Creek, Arizona. Its Google profile also lists bathroom remodeler and kitchen remodeler.",
+   "website": "https://fullcirclecustom.com/",
+   "phone": "(480) 212-2162",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJWdYTWs14K4cRsFJkXOX06mQ",
+    "cid": "7271893814277853872",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fuller-builders-llc",
+   "name": "Fuller Builders LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7608 E Osborn Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.488,
+    "lng": -111.917
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "",
+   "phone": "(480) 433-6735",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJNwO188ULK4cR7UkwijFNK_A",
+    "cid": "17306010868268419565",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "golden-heritage-homes",
+   "name": "Golden Heritage Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8150 N 86th Pl",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.555,
+    "lng": -111.895
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists construction company and contractor.",
+   "website": "http://www.goldenheritagehomes.com/",
+   "phone": "(480) 816-0100",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJKXFqgYiYK4cRjnka65BIxoU",
+    "cid": "9639471839689996686",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "harr-family-homes",
+   "name": "Harr Family Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "15871 E Eagle Rock Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.625,
+    "lng": -111.738
+   },
+   "description": "Contractor in Fountain Hills, Arizona.",
+   "website": "http://harrfamilybuilders.com/",
+   "phone": "(602) 826-8655",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVVFZN2YK4cRChANa-kvEVA",
+    "cid": "5769445277208219658",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hickok-custom-homes",
+   "name": "Hickok Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "3627 E Bethany Home Rd",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.524,
+    "lng": -112.003
+   },
+   "description": "Custom home builder in Paradise Valley, Arizona. Its Google profile also lists bathroom remodeler and home builder.",
+   "website": "https://hickokhomes.com/paradise-valley/",
+   "phone": "(623) 377-7017",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJe_xqyRENK4cRJgefci2HQUY",
+    "cid": "5062476085407450918",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hickok-homes",
+   "name": "Hickok Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "1852 Century Way",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.811,
+    "lng": -111.914
+   },
+   "description": "Custom home builder in Carefree, Arizona.",
+   "website": "https://www.hickokhomes.com/",
+   "phone": "(623) 377-7017",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ20AYmTt5K4cRnck4_CjYFRw",
+    "cid": "2023761278114777501",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hillis-built",
+   "name": "Hillis Built",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6615 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.533,
+    "lng": -111.925
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.hillisbuilt.com/",
+   "phone": "(480) 454-8380",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJs3g6TLJ1K4cRX1E7LgK_UII",
+    "cid": "9390215239153963359",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "homes-by-monarch",
+   "name": "Homes by Monarch",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8700 E Vista Bonita Dr #228",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.697,
+    "lng": -111.894
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists construction company.",
+   "website": "http://www.monarchcoaz.com/",
+   "phone": "(480) 284-8350",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJmWUC2K93K4cRMr_C4cUgTT8",
+    "cid": "4561338031864463154",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "homes-by-towne",
+   "name": "Homes by Towne",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "31420 N 41st Pl",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.771,
+    "lng": -111.992
+   },
+   "description": "Home builder in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(602) 601-6833",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJHw6XTKR7K4cRxKxX6bRGASk",
+    "cid": "2954720573354650820",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hs3-general-contracting",
+   "name": "HS3 General Contracting",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17225 E Shea Blvd A 109",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.569,
+    "lng": -111.711
+   },
+   "description": "Custom home builder in Fountain Hills, Arizona. Its Google profile also lists bathroom remodeler and building restoration service.",
+   "website": "https://hs3az.com/",
+   "phone": "(480) 684-4130",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJJdOj4F6YK4cRWUQGeJmrFDc",
+    "cid": "3968985847252272217",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "imagine-builders",
+   "name": "Imagine Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7745 E Gelding Dr Ste B104",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.615,
+    "lng": -111.913
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists construction company and general contractor.",
+   "website": "https://www.imaginebuildersaz.com/",
+   "phone": "(602) 676-0168",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJdfmbzd50K4cRQ_81AUzff3g",
+    "cid": "8682904124124430147",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "integrity-luxury-homes",
+   "name": "Integrity Luxury Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7633 E Acoma Dr #209",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.617,
+    "lng": -111.915
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and bathroom remodeler.",
+   "website": "https://integrityluxuryhomes.com/",
+   "phone": "(480) 657-0010",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJT2iuIUx0K4cRWW7ziJbPWKs",
+    "cid": "12346846623885913689",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "jematell-homes",
+   "name": "Jematell Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8350 E Raintree Dr Ste 210",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.619,
+    "lng": -111.899
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder.",
+   "website": "https://jematellhomes.com/",
+   "phone": "(602) 421-5576",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJK91Qo8R3K4cRy1G-fkYfOTY",
+    "cid": "3907188539355189707",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "jp-malone-construction-inc",
+   "name": "JP Malone Construction INC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8261 E Evans Rd Ste 104",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.903
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and general contractor.",
+   "website": "https://www.jpmalone.com/",
+   "phone": "(480) 443-0201",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-_7m5bJ1K4cRYGWcl9_2iSg",
+    "cid": "2921137273508226400",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "kauffman-homes",
+   "name": "Kauffman Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16810 E Ave of the Fountains",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.605,
+    "lng": -111.718
+   },
+   "description": "Home builder in Fountain Hills, Arizona. Its Google profile also lists real estate developer.",
+   "website": "http://www.kauffmanhomes.com/",
+   "phone": "(480) 816-6155",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi6-OPIaYK4cRWv5pZw9vWGM",
+    "cid": "7158593719655595610",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "kevin-david-homes",
+   "name": "Kevin David Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6991 E Camelback Rd #D300",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.931
+   },
+   "description": "Real estate developer in Scottsdale, Arizona.",
+   "website": "https://www.kevindavidhomes.com/",
+   "phone": "(602) 536-5880",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJtXau5SlLtokRBtTtymKs12o",
+    "cid": "7698811628324508678",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "keystone-homes",
+   "name": "Keystone Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7550 E McDonald Dr Ste G",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.525,
+    "lng": -111.918
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://www.keystonehomesaz.com/",
+   "phone": "(480) 428-1001",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQ0LxRSoGK4cRVvweVQ8R6GM",
+    "cid": "7199022761902013526",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "kf-builders-inc",
+   "name": "KF Builders, Inc.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "4102 E Dynamite Blvd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.742,
+    "lng": -111.993
+   },
+   "description": "Custom home builder in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 473-3085",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJY_BO8Ft6K4cRzAsQL6Y7umU",
+    "cid": "7330236928439094220",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "kreate-and-konstruct",
+   "name": "KREATE AND KONSTRUCT",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16305 E Inca Ave",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.591,
+    "lng": -111.728
+   },
+   "description": "Custom home builder in Fountain Hills, Arizona.",
+   "website": "https://www.kreateandkonstruct.com/",
+   "phone": "(480) 452-4499",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJNZZ6jbijK4cRj9d-cGa383w",
+    "cid": "9003741730645661583",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "la-blonde-homes-ltd",
+   "name": "La Blonde Homes Ltd",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10025 E Dynamite Blvd Unit 101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85262"
+   },
+   "geo": {
+    "lat": 33.742,
+    "lng": -111.865
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://www.lablonde.com/",
+   "phone": "(480) 585-1845",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJl_BypgN4K4cRdOVb417cQYQ",
+    "cid": "9530140586592167284",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "la-casa-builders-inc",
+   "name": "La Casa Builders, Inc.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8260 E Gelding Dr Ste 104",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.903
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.lacasabuilders.com/",
+   "phone": "(480) 922-2101",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ6zwP7LJ1K4cR9QVGeXwzfSk",
+    "cid": "2989602337347470837",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "la-costa-construction",
+   "name": "La Costa Construction",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "11883 N Saguaro Blvd #100C",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.595,
+    "lng": -111.715
+   },
+   "description": "Home builder in Fountain Hills, Arizona.",
+   "website": "",
+   "phone": "(480) 837-1640",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJqz4W8X-iK4cRFwsMWLUhir4",
+    "cid": "13729823476742359831",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "landmark-homes-usa",
+   "name": "Landmark Homes USA",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8901 E Pima Center Pkwy Ste 100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.56,
+    "lng": -111.889
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(866) 353-8555",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ46vpTcwKK4cRwCRg8V3lfT4",
+    "cid": "4503007394084693184",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "launch-builders",
+   "name": "Launch Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7904 E Chaparral Rd Ste A110-606",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.51,
+    "lng": -111.912
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists construction company and general contractor.",
+   "website": "http://launchbuildersllc.com/",
+   "phone": "(480) 465-9840",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlT7fLJoLK4cRzeCshfwAcBI",
+    "cid": "1328562974648754381",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "lexar-homes-of-cave-creek",
+   "name": "Lexar Homes of Cave Creek",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "34207 N Black Mountain Pkwy",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.796,
+    "lng": -111.978
+   },
+   "description": "Custom home builder in Cave Creek, Arizona.",
+   "website": "https://www.lexarhomes.com/arizona/?region=Arizona",
+   "phone": "(480) 781-2417",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJf-cokYd7K4cRWFKK8Jz7_lQ",
+    "cid": "6124609194739520088",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "lifestyle-homes",
+   "name": "Lifestyle Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16009 N 81st St #130",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.631,
+    "lng": -111.905
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "http://lifestylehomesaz.com/",
+   "phone": "(480) 889-7200",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJC4VKuOl1K4cRljW2uXWOob8",
+    "cid": "13808474568772695446",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "luster-custom-homes-and-remodeling",
+   "name": "Luster Custom Homes & Remodeling",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "18801 N Thompson Peak Pkwy #240",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": null,
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and general contractor.",
+   "website": "",
+   "phone": "(480) 304-5525",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJyV-Euj90K4cRWPhPTl72mFo",
+    "cid": "6528238544774756440",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "lux-custom-cabinetry-and-construction-group",
+   "name": "Lux Custom Cabinetry & Construction Group",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13225 N Verde River Dr #104",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.717
+   },
+   "description": "Custom home builder in Fountain Hills, Arizona. Its Google profile also lists cabinet store and kitchen remodeler.",
+   "website": "http://luxcustomcabinetry.com/",
+   "phone": "(602) 888-9063",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ8d-aaZgLK4cRZOCz_gBgmKE",
+    "cid": "11644162393955885156",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "luxor-homes",
+   "name": "Luxor Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7615 E Pinnacle Peak Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.698,
+    "lng": -111.915
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "https://www.luxorhomes.com/",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJNYjVwQ93K4cRwoHeADddVKA",
+    "cid": "11552961434931331522",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "madison-couturier",
+   "name": "Madison Couturier",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7500 E McDonald Dr # 102A",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.525,
+    "lng": -111.919
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(480) 922-6920",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJj08stg8LK4cRdsz1jcdpc6U",
+    "cid": "11921988944380939382",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "magnus-builders-arizona",
+   "name": "Magnus Builders Arizona",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.915
+   },
+   "description": "Home builder in Carefree, Arizona.",
+   "website": "",
+   "phone": "(480) 488-1960",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0bpP47t-K4cRVjZyxvRBrZA",
+    "cid": "10425061231989765718",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "malone-custom-homes",
+   "name": "Malone Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "36004 N Prickly Pear Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.812,
+    "lng": -111.969
+   },
+   "description": "Contractor in Cave Creek, Arizona.",
+   "website": "http://malonecustomhomes.com/",
+   "phone": "(480) 404-5927",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJbYlS4ah7K4cRDJmBCJ9aQIU",
+    "cid": "9601774044642908428",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "manship-builders",
+   "name": "Manship Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "37417 N Tom Darlington Dr # N",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.825,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Carefree, Arizona. Its Google profile also lists consultant and contractor.",
+   "website": "http://www.manshipbuilders.com/",
+   "phone": "(480) 488-9111",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ65aq9sZ-K4cRnOrOFe07PN8",
+    "cid": "16085797858519739036",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mark-barber-custom-homes",
+   "name": "Mark Barber Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16824 E Ave of the Fountains Ste 14",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.604,
+    "lng": -111.717
+   },
+   "description": "Custom home builder in Fountain Hills, Arizona.",
+   "website": "http://www.markbarbercustomhomes.com/",
+   "phone": "(480) 826-2424",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJd_Qw7IqZK4cRANsaTI4-hZ4",
+    "cid": "11422604810778237696",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mattamy-homes-phoenix-division-office",
+   "name": "Mattamy Homes - Phoenix Division Office",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9200 E Pima Center Pkwy Suite 160",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.56,
+    "lng": -111.883
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists housing development.",
+   "website": "https://mattamyhomes.com/arizona/phoenix",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJm4RriMkKK4cRMNO7cE-pv-U",
+    "cid": "16555136913896100656",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mcdowell-mountain-builders",
+   "name": "McDowell Mountain Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7750 E Gelding Dr Ste 2",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.913
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "https://mcdowellmountainbuilders.com/",
+   "phone": "(480) 845-9621",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJibZec090K4cRC0J_1vuzeuw",
+    "cid": "17040130034326520331",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "meritage-homes",
+   "name": "Meritage Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "18655 N Claret Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.657,
+    "lng": -111.912
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists construction company and housing development.",
+   "website": "https://www.meritagehomes.com/company/corporate-offices",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJV96NL3l2K4cRBn5WYsrY4tQ",
+    "cid": "15340061644522159622",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mra-custom-homes",
+   "name": "MRA Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10559 N 119th Pl",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85259"
+   },
+   "geo": {
+    "lat": 33.582,
+    "lng": -111.823
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor.",
+   "website": "https://www.mrahomes.com/",
+   "phone": "(602) 451-6645",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJLXbQPo-fK4cRqe-XoEOkC-0",
+    "cid": "17080926622096813993",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "nance-construction",
+   "name": "Nance Construction",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6950 E 1st St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.492,
+    "lng": -111.931
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://nanceconstruction.com/",
+   "phone": "(480) 663-7894",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJfwJC05ELK4cRwCFvXFebWbU",
+    "cid": "13067646593307451840",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "nanke-luxury-homes",
+   "name": "Nanke Luxury Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7272 E Indian School Rd #540",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder.",
+   "website": "",
+   "phone": "(480) 798-3338",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJze6K5AULK4cR_SDqleq92VI",
+    "cid": "5970011596291449085",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "newmark-homes",
+   "name": "Newmark Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7725 E Evans Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.915
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://www.newmarkhomes-az.com/",
+   "phone": "(480) 505-4600",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJy3KrAk10K4cRAlIWccaGFvY",
+    "cid": "17732508769676841474",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "norton-luxury-homes",
+   "name": "Norton Luxury Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6929 Hayden Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.537,
+    "lng": -111.907
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "http://www.nortonluxury.com/contact/",
+   "phone": "(435) 216-6698",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ818Yux8LK4cRMjK9D8Cr8Ws",
+    "cid": "7778186872831685170",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "paragon-custom-homes",
+   "name": "Paragon Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9096 E Bahia Dr Ste 109",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.637,
+    "lng": -111.885
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://www.paragoncustom.com/",
+   "phone": "(480) 948-6700",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJAfoBh4d1K4cRW1WOi12PNQs",
+    "cid": "807709340118963547",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "patrick-cunningham-group-inc-dba-pcg-custom-homes",
+   "name": "Patrick Cunningham Group, Inc. dba/ PCG Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8350 E Raintree Dr Ste 215",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.619,
+    "lng": -111.899
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(480) 272-6292",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJWV4E57N1K4cR2YrCawy4bws",
+    "cid": "824079620319120089",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "patterson-homes-llc",
+   "name": "Patterson Homes, LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16460 N 91st St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.636,
+    "lng": -111.886
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and general contractor.",
+   "website": "https://pattersonhomesaz.com/",
+   "phone": "(480) 245-7614",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJB6Y0pnSvK4cR7x-t-oYugdU",
+    "cid": "15384628959340470255",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "peak-one-builders",
+   "name": "Peak One Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7410 E Pinnacle Peak Rd Ste 116",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.7,
+    "lng": -111.921
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "https://peakonebuilders.com/",
+   "phone": "(480) 613-2417",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCTKObyhxK4cRSh18D8ZC_fE",
+    "cid": "17437166750679178570",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "phoenix-home-gallery-richmond-american-homes",
+   "name": "Phoenix Home Gallery – Richmond American Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16427 N Scottsdale Rd #175",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.637,
+    "lng": -111.923
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists real estate developer.",
+   "website": "https://www.richmondamerican.com/arizona/phoenix-new-homes/",
+   "phone": "(877) 444-1485",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJbTwUbhANK4cRQb12Nb9cM-g",
+    "cid": "16731819016917007681",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "platinum-companies-inc",
+   "name": "Platinum Companies. Inc",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7400 E Pinnacle Peak Rd Ste 106",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.699,
+    "lng": -111.92
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor.",
+   "website": "https://www.platinumcompanies.com/",
+   "phone": "(480) 585-5080",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVQ5bGxF3K4cRR4hRSQTXnkA",
+    "cid": "4656395478157592647",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "precision-home-development",
+   "name": "Precision Home Development",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8350 E Evans Rd b8",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.617,
+    "lng": -111.9
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://phdhomes.com/",
+   "phone": "(480) 292-7574",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJpUtDVjh0K4cRZlh8qbTkT78",
+    "cid": "13785488448993122406",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "pro-terra-builders",
+   "name": "Pro-Terra Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8776 E Shea Blvd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.584,
+    "lng": -111.893
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder.",
+   "website": "https://pro-terra.com/",
+   "phone": "(480) 798-9522",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJWXRfSZC3rEMRORf1_UPQ2d8",
+    "cid": "16130152530846226233",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "project-construction-llc",
+   "name": "Project Construction LLC",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6507 E Vernon Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85257"
+   },
+   "geo": {
+    "lat": 33.474,
+    "lng": -111.941
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and carpenter.",
+   "website": "https://projectconstructionaz.com/",
+   "phone": "(480) 420-9329",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJz0JOUxV1K4cRQcKcOJZGEsI",
+    "cid": "13984317403947647553",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "rawhide-luxury-builders",
+   "name": "Rawhide Luxury Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16220 N Scottsdale Rd Ste 300",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.634,
+    "lng": -111.927
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists general contractor and home builder.",
+   "website": "https://rawhideluxbuilders.com/",
+   "phone": "(480) 716-0327",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJZVZqFMwJgKIREBzj2-mNpFw",
+    "cid": "6675616583225908240",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "realmonde-builders",
+   "name": "realmonde builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16319 E Tombstone Ave",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.572,
+    "lng": -111.728
+   },
+   "description": "Home builder in Fountain Hills, Arizona.",
+   "website": "http://www.realmondebuilders.com/contact",
+   "phone": "(602) 377-9069",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-VAVO2iiK4cRUlswUDPH0Os",
+    "cid": "16992300417271487314",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "refine-construction-llc",
+   "name": "Refine Construction LLC.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16810 E El Pueblo Blvd Suite 103",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.624,
+    "lng": -111.718
+   },
+   "description": "Home builder in Fountain Hills, Arizona. Its Google profile also lists bathroom remodeler and general contractor.",
+   "website": "https://www.refineconstructionllc.com/",
+   "phone": "(480) 720-0260",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJiW9PF1vLV2URvyWoq-WQ3Z8",
+    "cid": "11519522737985430975",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "regal-american-homes",
+   "name": "Regal American Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "5725 E Shea Blvd",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.582,
+    "lng": -111.957
+   },
+   "description": "Custom home builder in Paradise Valley, Arizona.",
+   "website": "http://regalamericanhomes.com/",
+   "phone": "(480) 770-9922",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQ8df1JoSK4cRJBRdH7bbqtU",
+    "cid": "15396359851376186404",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "regency-custom-homes",
+   "name": "Regency Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "18835 N Thompson Peak Pkwy C225",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.657,
+    "lng": -111.867
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and contractor.",
+   "website": "http://regencycustom.com/",
+   "phone": "(480) 367-1959",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJz6QHEDd0K4cR31fQ5z-eeAM",
+    "cid": "250123776628381663",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "restoration-85",
+   "name": "Restoration 85",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8485 E McDonald Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.523,
+    "lng": -111.897
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.restoration85.com/",
+   "phone": "(480) 229-6525",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJC6VcohoLK4cRldBiYw7lpts",
+    "cid": "15827589790399910037",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "restoration-refuge",
+   "name": "Restoration Refuge",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7075 E Panorama Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.861,
+    "lng": -111.928
+   },
+   "description": "Home builder in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 595-2756",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJGQ9WkV1-K4cRys69sd0fGWY",
+    "cid": "7356946503316655818",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "richter-homes",
+   "name": "Richter Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "14747 N Northsight Blvd #111",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.62,
+    "lng": -111.896
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://www.richterhomes.com/",
+   "phone": "(800) 845-1848",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ_4IuI7F1K4cRhgNoHZB3quI",
+    "cid": "16332998459464876934",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "rieck-construction-inc",
+   "name": "Rieck Construction Inc",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16617 E Glenbrook Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.624,
+    "lng": -111.722
+   },
+   "description": "Custom home builder in Fountain Hills, Arizona.",
+   "website": "http://www.rieckconstruction.com/",
+   "phone": "(602) 525-1389",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJg_uWe9WeK4cRPWCd36dXMAE",
+    "cid": "85664771442827325",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "risewell-homes-arizona",
+   "name": "Risewell Homes - Arizona",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8501 N Scottsdale Rd Ste 280",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.561,
+    "lng": -111.925
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists architectural designer and construction company.",
+   "website": "https://risewellhomes.com/arizona",
+   "phone": "(480) 634-6385",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJET30kuJ1K4cRqFhrg36fKBs",
+    "cid": "1956989403812026536",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sabia-construction",
+   "name": "SABIA Construction",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "38400 N School House Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.944
+   },
+   "description": "Custom home builder in Cave Creek, Arizona. Its Google profile also lists bathroom remodeler and carpenter.",
+   "website": "https://sabiaconst.com/",
+   "phone": "(480) 688-0009",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJZ6-WK-V7K4cRq-VNNUQapW8",
+    "cid": "8044865189621654955",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sage-luxury-homes",
+   "name": "Sage Luxury Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4237 N Craftsman Ct #200",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.927
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists property management company.",
+   "website": "",
+   "phone": "(480) 949-6804",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBeLFDr4LK4cRbAm-MBxK9Dc",
+    "cid": "4031929051340736876",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "salcito-custom-homes-ltd",
+   "name": "Salcito Custom Homes Ltd",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "20909 N 90th Pl",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.675,
+    "lng": -111.886
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder.",
+   "website": "http://salcito.com/",
+   "phone": "(480) 585-5065",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJhUuWVkF2K4cR5has55JP0Ss",
+    "cid": "3157392306134062822",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "scottsdale-custom-homes",
+   "name": "Scottsdale Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "23623 N Scottsdale Rd d3294",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.702,
+    "lng": -111.925
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder.",
+   "website": "",
+   "phone": "(480) 244-6347",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJM_HCxtx3K4cRRRVajpmTRvk",
+    "cid": "17962206451541349701",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "scottsdale-signature-homes",
+   "name": "Scottsdale Signature Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "33747 N Scottsdale Rd Suite 125",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.791,
+    "lng": -111.925
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "https://scottsdalesignaturehomes-pro.com/",
+   "phone": "(602) 576-2000",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJhWuAfQx5K4cRJhYZRsNaKxs",
+    "cid": "1957758257763784230",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "shepherd-custom-homes",
+   "name": "Shepherd Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "20715 N Pima Rd Ste 108",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.674,
+    "lng": -111.888
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://shepherdhomesaz.com/",
+   "phone": "(480) 818-1984",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJg5y2fZOTwkYRVEluw269KKs",
+    "cid": "12333315862976940372",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "shiloh-builders",
+   "name": "Shiloh Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7202 E Carefree Dr #2A",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Carefree, Arizona.",
+   "website": "https://shiloh.builders/",
+   "phone": "(480) 248-7983",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJd6d96P97K4cRGNJnKQ_h2mg",
+    "cid": "7555598780102857240",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "signature-custom-homes",
+   "name": "Signature Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7626 E Greenway Rd Ste 103",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.626,
+    "lng": -111.916
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://www.signaturecustomarizona.com/",
+   "phone": "(602) 309-9323",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-X4ZnWN1K4cRUQBh-Kmk9fo",
+    "cid": "18083540928699629649",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sommer-custom-homes",
+   "name": "Sommer Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16700 N Thompson Peak Pkwy Ste 110",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.638,
+    "lng": -111.862
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.sommercustomhomes.com/",
+   "phone": "(480) 571-8181",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQ3dkYcJ1K4cRrV5XJry125s",
+    "cid": "11230769915480202925",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sonora-west-development-inc",
+   "name": "Sonora West Development Inc",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "17767 N Scottsdale Rd Ste 210",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.65,
+    "lng": -111.924
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder.",
+   "website": "https://www.sonorawestdev.com/",
+   "phone": "(602) 667-3145",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxf-BQdt1K4cRwMKKqBdJGjo",
+    "cid": "4186739169555038912",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sonoran-classic-builders",
+   "name": "Sonoran Classic Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7950 E Acoma Dr Ste 104",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.618,
+    "lng": -111.909
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "http://www.sonoranclassic.com/",
+   "phone": "(480) 585-8442",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJC5bn0Uh0K4cRGiCLoUekS5Q",
+    "cid": "10685815168426516506",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sonoran-concepts-custom-homes",
+   "name": "Sonoran Concepts Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10105 E Vía Linda 103 PMB 358",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.574,
+    "lng": -111.862
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(480) 695-4869",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6p6-lN1K4cRH9njO7Mol58",
+    "cid": "11499704923782895903",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sonoran-desert-homes",
+   "name": "Sonoran Desert Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "5309 E Juniper Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.638,
+    "lng": -111.968
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "https://sonorandeserthomes.com/",
+   "phone": "(602) 545-4600",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJa-xdC1lxK4cRw9LPosoklD8",
+    "cid": "4581327173676159683",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sotazona-homes",
+   "name": "Sotazona Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.915
+   },
+   "description": "Custom home builder in Carefree, Arizona.",
+   "website": "",
+   "phone": "(602) 690-6222",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVVVFdB-K4cRD74C9jM0g5M",
+    "cid": "10629396943299853839",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "taylor-morrison-phoenix-design-studio",
+   "name": "Taylor Morrison Phoenix Design Studio",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4900 N Scottsdale Rd #1000",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.509,
+    "lng": -111.929
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://www.taylormorrison.com/new-homes/arizona/phoenix/design-studio",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJB9PZchMLK4cRnf5m06NEwnQ",
+    "cid": "8413362524298608285",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-phil-nichols-company-inc",
+   "name": "The Phil Nichols Company, Inc.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "15455 N Greenway Hayden Loop",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.626,
+    "lng": -111.919
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://thephilnicholscompany.com/",
+   "phone": "(480) 443-9500",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ6b6Gejl0K4cRVCc0wjHxUFI",
+    "cid": "5931505905260832596",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-wightman-group",
+   "name": "The Wightman Group",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8502 East Vía de Ventura Ste 124",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.555,
+    "lng": -111.897
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(480) 388-7391",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJmzFlq5MLK4cRnI_SQ53vGK0",
+    "cid": "12472982626729365404",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "thomas-james-homes",
+   "name": "Thomas James Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7702 E Doubletree Ranch Rd Unit 200",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.565,
+    "lng": -111.917
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://tjh.com/arizona/",
+   "phone": "(877) 381-4092",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJM28uuKJ1K4cReixd2OK53-4",
+    "cid": "17212680684777057402",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tierra-custom-homes",
+   "name": "Tierra Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "41606 N 113th Pl",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85262"
+   },
+   "geo": {
+    "lat": 33.862,
+    "lng": -111.835
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(602) 499-5997",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJs3OTRMiBK4cRhkWKAxeMWxY",
+    "cid": "1611035322186614150",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tinker-development",
+   "name": "Tinker Development",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7530 E Main St #101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.919
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://tinkerdevelopment.com/",
+   "phone": "(480) 694-6709",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxaLJMM8LK4cRjX10b8jJqv8",
+    "cid": "18422759088412982669",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "todd-curtis-custom-homes",
+   "name": "Todd Curtis Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6929 E Greenway Pkwy",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.622,
+    "lng": -111.932
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://toddcurtishomes.com/",
+   "phone": "(602) 569-5697",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJl4v4TxR0K4cRoSXqpDSxQHM",
+    "cid": "8304832552534418849",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "travis-custom-homes",
+   "name": "Travis Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "15957 N 81st St #101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.631,
+    "lng": -111.905
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-ZLQRTN0K4cR-KSWPPmX1O0",
+    "cid": "17137489578770736376",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tri-pointe-homes",
+   "name": "Tri Pointe Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7001 N Scottsdale Rd Ste 2020",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.539,
+    "lng": -111.921
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://tripointehomes.com/az/phoenix-metro/",
+   "phone": "(480) 526-8916",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJD5Kx3IwJ1oYR1aK2EuQJwSU",
+    "cid": "2720466525079642837",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "trinity-homes-az",
+   "name": "Trinity Homes AZ",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "15455 N Greenway Hayden Loop c19",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.626,
+    "lng": -111.919
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and remodeler.",
+   "website": "https://trinityhomesaz.com/",
+   "phone": "(602) 708-9986",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ4YmCPiURLIcRNTK_y4YhR8I",
+    "cid": "13999194829532115509",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "true-north-builders",
+   "name": "True North Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "9531 Technology Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.573,
+    "lng": -111.719
+   },
+   "description": "Custom home builder in Fountain Hills, Arizona. Its Google profile also lists general contractor.",
+   "website": "http://www.truenorth.builders/",
+   "phone": "(480) 659-1008",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJNwLqhGeiK4cRDHYBIbVy02I",
+    "cid": "7121161558071277068",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "us-west-builders",
+   "name": "US West Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Custom home builder in Carefree, Arizona.",
+   "website": "https://uswestbuilders.com/",
+   "phone": "(602) 228-1556",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi-EDvKZ5K4cR-Jx37oppp9U",
+    "cid": "15395389896616549624",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "vineyard-custom-homes",
+   "name": "Vineyard Custom Homes",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8151 E Indian Bend Rd #101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.536,
+    "lng": -111.905
+   },
+   "description": "Custom home builder in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(530) 550-9501",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ93mFKh4LK4cRJvuUFbacGk4",
+    "cid": "5627982990212922150",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "weber-custom-homes-llc-weber-construction-corporation",
+   "name": "Weber Custom Homes LLC/Weber Construction Corporation",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8701 E Vista Bonita Dr Unit 105",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.696,
+    "lng": -111.892
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists consultant and general contractor.",
+   "website": "https://wc.homes/",
+   "phone": "(480) 492-4801",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJMxvkYLV1K4cRAS7rxcXBxLM",
+    "cid": "12953691483397631489",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "west-construction-and-development-co-inc",
+   "name": "West Construction & Development Co., Inc.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7755 E Evans Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.913
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "https://www.westconstructionaz.com/",
+   "phone": "(480) 451-4300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJwaXqFhygK4cRJwoCODPIBm4",
+    "cid": "7928244316340881959",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "white-builder-inc",
+   "name": "White Builder, Inc.",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7150 E Camelback Rd UNIT 444",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.503,
+    "lng": -111.926
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and construction company.",
+   "website": "https://whitebuilder.com/",
+   "phone": "(480) 447-2492",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi7gpmOUBK4cRIjUNeF9_mfo",
+    "cid": "18057604228931466530",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bercel-builders",
+   "name": "Bercel Builders",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16623 E Laser Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.573,
+    "lng": -111.721
+   },
+   "description": "Business in Fountain Hills, Arizona.",
+   "website": "https://www.bercelbuildersinc.com/contact/",
+   "phone": "(480) 837-2596",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJwY2wjF2iK4cRmSp6OddQGqY",
+    "cid": "11968967845003012761",
+    "category": null
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sonora-west-development-inc-scottsdale",
+   "name": "Sonora West Development Inc",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9260 Raintree Resort Casitas #100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.62,
+    "lng": -111.882
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://www.sonorawestdev.com/",
+   "phone": "(480) 656-9789",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJiXdhc711K4cR6K2wBJmByRU",
+    "cid": "1569928439323995624",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tri-pointe-homes-design-studio-arizona",
+   "name": "Tri Pointe Homes Design Studio - Arizona",
+   "categories": [
+    "custom-home-builders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7001 N Scottsdale Rd Suite 2025",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.539,
+    "lng": -111.921
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://www.tripointehomes.com/design-studio-arizona/",
+   "phone": "(480) 526-8916",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJLezXt3ULK4cR3dz4urY3UGU",
+    "cid": "7300396253928021213",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

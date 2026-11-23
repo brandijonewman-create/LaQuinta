@@ -1,100 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 40 50% 97%;
-    --foreground: 205 73% 14%;
-    --card: 0 0% 100%;
-    --card-foreground: 205 73% 14%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 205 73% 14%;
-    --primary: 205 86% 14%;
-    --primary-foreground: 40 50% 97%;
-    --secondary: 40 41% 90%;
-    --secondary-foreground: 205 86% 14%;
-    --muted: 40 35% 92%;
-    --muted-foreground: 205 25% 35%;
-    --accent: 42 64% 52%;
-    --accent-foreground: 205 86% 14%;
-    --destructive: 15 49% 47%;
-    --destructive-foreground: 40 50% 97%;
-    --border: 205 30% 88%;
-    --input: 205 30% 88%;
-    --ring: 205 86% 14%;
-    --chart-1: 15 49% 47%;
-    --chart-2: 151 31% 28%;
-    --chart-3: 42 53% 54%;
-    --chart-4: 0 36% 66%;
-    --chart-5: 40 41% 70%;
+    --background: 38 33% 97%;
+    --foreground: 168 45% 8%;
+    --primary: 168 60% 12%;
+    --primary-foreground: 40 33% 97%;
+    --secondary: 40 64% 56%;
+    --secondary-foreground: 168 60% 12%;
+    --muted: 40 20% 92%;
+    --muted-foreground: 168 15% 35%;
+    --border: 168 30% 88%;
+    --ring: 40 64% 56%;
     --radius: 0.5rem;
-    --sidebar-background: 40 50% 97%;
-    --sidebar-foreground: 205 73% 14%;
-    --sidebar-primary: 205 86% 14%;
-    --sidebar-primary-foreground: 40 50% 97%;
-    --sidebar-accent: 40 41% 90%;
-    --sidebar-accent-foreground: 205 86% 14%;
-    --sidebar-border: 205 30% 88%;
-    --sidebar-ring: 42 64% 52%;
   }
-  .dark {
-    --background: 30 12% 8%;
-    --foreground: 40 53% 96%;
-    --card: 30 12% 10%;
-    --card-foreground: 40 53% 96%;
-    --popover: 30 12% 10%;
-    --popover-foreground: 40 53% 96%;
-    --primary: 40 41% 84%;
-    --primary-foreground: 151 31% 18%;
-    --secondary: 151 31% 18%;
-    --secondary-foreground: 40 53% 96%;
-    --muted: 30 10% 18%;
-    --muted-foreground: 40 20% 70%;
-    --accent: 42 53% 54%;
-    --accent-foreground: 30 12% 9%;
-    --destructive: 15 49% 47%;
-    --destructive-foreground: 40 53% 96%;
-    --border: 30 10% 20%;
-    --input: 30 10% 20%;
-    --ring: 42 53% 54%;
-    --chart-1: 15 49% 57%;
-    --chart-2: 151 31% 48%;
-    --chart-3: 42 53% 64%;
-    --chart-4: 0 36% 76%;
-    --chart-5: 40 41% 80%;
-    --sidebar-background: 30 12% 8%;
-    --sidebar-foreground: 40 53% 96%;
-    --sidebar-primary: 40 41% 84%;
-    --sidebar-primary-foreground: 151 31% 18%;
-    --sidebar-accent: 151 31% 18%;
-    --sidebar-accent-foreground: 40 53% 96%;
-    --sidebar-border: 30 10% 20%;
-    --sidebar-ring: 42 53% 54%;
-  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; color: #062840; }
+  .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
 }
 
-@layer base {
-  * { @apply border-border; }
-  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
-  body { @apply bg-background text-foreground font-sans; font-feature-settings: 'ss01', 'cv11'; }
-  h1, h2, h3, h4, h5 { @apply font-serif tracking-tight; }
-}
-
-@layer components {
-  .editorial-eyebrow { @apply text-xs uppercase tracking-[0.22em] text-terracotta font-medium; }
-  .editorial-rule { @apply h-px w-12 bg-gold/70 inline-block align-middle mr-3; }
-  .hero-overlay { background: linear-gradient(180deg, rgba(26,23,20,0.05) 0%, rgba(26,23,20,0.25) 55%, rgba(26,23,20,0.65) 100%); }
-  .text-balance { text-wrap: balance; }
-
-  /* Long-form blog/guide article styling. Applied via .prose-editorial wrapper. */
-  .prose-editorial > * + * { margin-top: 1.25rem; }
-  .prose-editorial p { @apply text-foreground/85 leading-[1.75]; }
-  .prose-editorial h2 { @apply font-serif text-3xl text-palm mt-12 mb-4 leading-tight; }
-  .prose-editorial h3 { @apply font-serif text-2xl text-palm mt-8 mb-3 leading-tight; }
-  .prose-editorial ul { @apply list-disc pl-6 space-y-2; }
-  .prose-editorial ol { @apply list-decimal pl-6 space-y-2; }
-  .prose-editorial a  { @apply text-terracotta hover:text-palm underline underline-offset-2; }
-  .prose-editorial blockquote { @apply border-l-2 border-gold pl-6 my-8 font-serif text-xl text-palm italic; }
-  .prose-editorial strong { @apply text-palm font-semibold; }
+/* Hide Made with Emergent badge across all variants */
+#emergent-badge,
+.emergent-badge,
+[id*='emergent-badge'],
+[class*='emergent-badge'],
+a[href*='emergent.sh' i],
+a[href*='app.emergent.sh' i],
+a[href*='emergent.dev' i],
+a[href*='emergent.dev/' i] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }

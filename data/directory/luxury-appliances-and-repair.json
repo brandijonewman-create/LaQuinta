@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "dynamic-appliance-repair",
+   "name": "Dynamic Appliance Repair",
+   "categories": [
+    "luxury-appliances-and-repair"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7406 E Nonchalant Ave",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.921
+   },
+   "description": "Appliance repair service in Carefree, Arizona.",
+   "website": "https://dynamicappliancerepairaz.com/",
+   "phone": "(480) 590-7322",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJRZ3V-CB_K4cRWWPCvUDdWqE",
+    "cid": "11626848658141635417",
+    "category": "Appliance repair service"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

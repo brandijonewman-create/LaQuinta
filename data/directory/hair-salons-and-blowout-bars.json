@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "exquisite-style-by-anastasiya",
+   "name": "Exquisite Style by Anastasiya",
+   "categories": [
+    "hair-salons-and-blowout-bars"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "inside KG Salon Studios, 7202 E Carefree Dr",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.822,
+    "lng": -111.924
+   },
+   "description": "Hair salon in Carefree, Arizona. Its Google profile also lists beauty salon and image consultant.",
+   "website": "https://exquisitestylebyanastasiya.com/",
+   "phone": "(602) 299-2567",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJqWmjBZdlK4cRzVahOzkhL-M",
+    "cid": "16370339700212324045",
+    "category": "Hair salon"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sola-salons",
+   "name": "Sola Salons",
+   "categories": [
+    "hair-salons-and-blowout-bars"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7316 E Stetson Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.924
+   },
+   "description": "Beauty salon in Scottsdale, Arizona. Its Google profile also lists barber shop and eyebrow bar.",
+   "website": "https://www.solasalonstudios.com/locations/old-town",
+   "phone": "(928) 295-6668",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ30du2FELK4cRnDrvqrGe7oA",
+    "cid": "9290537567226116764",
+    "category": "Beauty salon"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "baluchi-rug-gallery-fine-rugs",
+   "name": "Baluchi Rug Gallery | Fine Rugs",
+   "categories": [
+    "furniture-rugs-and-antiques"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7155 E 5th Ave Ste B",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.927
+   },
+   "description": "Rug store in Scottsdale, Arizona. Its Google profile also lists antique store and carpet cleaning service.",
+   "website": "https://baluchiruggallery.com/",
+   "phone": "(480) 219-8095",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJd0v_270LK4cRUdjNnvzcsFQ",
+    "cid": "6102620472641181777",
+    "category": "Rug store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "canyon-lifestyle-home-decor",
+   "name": "Canyon Lifestyle Home Decor",
+   "categories": [
+    "furniture-rugs-and-antiques"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "99 Easy St Ste 235",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.825,
+    "lng": -111.923
+   },
+   "description": "Furniture store in Carefree, Arizona.",
+   "website": "http://canyonlifestyleshomedecor.com/",
+   "phone": "(480) 734-3883",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJSzo4fcZ-K4cRT-O5_P_LTsg",
+    "cid": "14433698156086158159",
+    "category": "Furniture store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "dorleg-creations-inc",
+   "name": "Dorleg Creations Inc",
+   "categories": [
+    "furniture-rugs-and-antiques"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7100 E Cave Creek Road Building 2 Suite 129 & 130, 7100 E Cave Creek Rd Ste 130",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.831,
+    "lng": -111.93
+   },
+   "description": "Furniture store in Cave Creek, Arizona. Its Google profile also lists cabinet store and outdoor furniture store.",
+   "website": "http://dorlegcreations.com/",
+   "phone": "(480) 595-5018",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJSyxcQqh_K4cRL3IyzVDRzpQ",
+    "cid": "10722737907785953839",
+    "category": "Furniture store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "market-by-modern-nest",
+   "name": "Market By Modern Nest",
+   "categories": [
+    "furniture-rugs-and-antiques"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7038 E 5th Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.93
+   },
+   "description": "Furniture accessories in Scottsdale, Arizona.",
+   "website": "http://marketbymodernnest.com/",
+   "phone": "(480) 702-0947",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJXT-ZyacLK4cRCIJHjxsTs-Y",
+    "cid": "16623651658643505672",
+    "category": "Furniture accessories"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mexicana-rose",
+   "name": "Mexicana Rose",
+   "categories": [
+    "furniture-rugs-and-antiques"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6300 E Cave Creek Rd Bldg 2",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.944
+   },
+   "description": "Furniture store in Cave Creek, Arizona. Its Google profile also lists rustic furniture store.",
+   "website": "http://www.mexicanarose.com/",
+   "phone": "(480) 488-7441",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJv-5-_Zh-K4cREhJ42vsPIsU",
+    "cid": "14204933749056475666",
+    "category": "Furniture store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "so-coastal-home",
+   "name": "So Coastal Home",
+   "categories": [
+    "furniture-rugs-and-antiques"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6501 E Cave Creek Rd Ste 4 -5",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.941
+   },
+   "description": "Home goods store in Cave Creek, Arizona. Its Google profile also lists handyman/handywoman/handyperson.",
+   "website": "https://www.socoastalhome.com/",
+   "phone": "(480) 525-4107",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJKdsRRFkqPGMRt2lJ_GI4Yeo",
+    "cid": "16888842075406690743",
+    "category": "Home goods store"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

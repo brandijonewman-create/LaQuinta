@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "mattys-rod-and-custom",
+   "name": "Matty's Rod and Custom",
+   "categories": [
+    "classic-car-restoration"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16524 E Laser Dr #6",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.573,
+    "lng": -111.723
+   },
+   "description": "General contractor in Fountain Hills, Arizona.",
+   "website": "http://mattysrodandcustom.com/",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJNwLqhGeiK4cRp_a6L5iDe98",
+    "cid": "16103609582252390055",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

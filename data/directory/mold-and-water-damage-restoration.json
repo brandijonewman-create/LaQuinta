@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "priority-scottsdale",
+   "name": "Priority Scottsdale",
+   "categories": [
+    "mold-and-water-damage-restoration"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4250 N Drinkwater Blvd Ste 7",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.922
+   },
+   "description": "Water damage restoration service in Scottsdale, Arizona.",
+   "website": "https://priority-waterdamagerestoration.com/scottsdale/",
+   "phone": "(602) 932-6955",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJr-29VN6lK4cRV_h9Zpiyr1A",
+    "cid": "5814062011582904407",
+    "category": "Water damage restoration service"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

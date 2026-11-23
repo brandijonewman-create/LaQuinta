@@ -1,0 +1,156 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "barbagallo-electrical",
+   "name": "Barbagallo Electrical",
+   "categories": [
+    "electricians"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16605 E Palisades Blvd 110 / PMB 183",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.609,
+    "lng": -111.723
+   },
+   "description": "Electrician in Fountain Hills, Arizona.",
+   "website": "https://barbagalloelectric.com/",
+   "phone": "(480) 212-2473",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJmY9FfY6YK4cRIy1cujvl2Xw",
+    "cid": "8996473775341710627",
+    "category": "Electrician"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fountain-hills-electrician-electrical-contractors",
+   "name": "Fountain Hills Electrician - Electrical Contractors",
+   "categories": [
+    "electricians"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13771 N Fountain Hills Blvd #114",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.61,
+    "lng": -111.728
+   },
+   "description": "Electrician in Fountain Hills, Arizona.",
+   "website": "https://www.fountainhillselectrician.com/",
+   "phone": "(888) 418-5250",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJeW-OOJKYK4cRxWYVXfOaURQ",
+    "cid": "1464121723901535941",
+    "category": "Electrician"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "home-electrician-pros-scottsdale",
+   "name": "Home Electrician Pros Scottsdale",
+   "categories": [
+    "electricians"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3266 Hayden Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.485,
+    "lng": -111.91
+   },
+   "description": "Electrician in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(520) 680-3820",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJc6zsxXILK4cRZH36VWustu4",
+    "cid": "17201125403792145764",
+    "category": "Electrician"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sandoval-electrical-services-llc",
+   "name": "Sandoval Electrical Services LLC",
+   "categories": [
+    "electricians"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "11605 N Saguaro Blvd Ste D",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.591,
+    "lng": -111.707
+   },
+   "description": "Electrician in Fountain Hills, Arizona. Its Google profile also lists electrical installation service.",
+   "website": "http://sandovalelectrical.com/",
+   "phone": "(602) 802-9997",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJe6M5rK-uuWkRMAP3luNEMg4",
+    "cid": "1022955809647559472",
+    "category": "Electrician"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "state-electrical-contractors-inc",
+   "name": "State Electrical Contractors, Inc.",
+   "categories": [
+    "electricians"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16921 E Enterprise Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.596,
+    "lng": -111.715
+   },
+   "description": "Electrician in Fountain Hills, Arizona. Its Google profile also lists electrical equipment supplier and electrical installation service.",
+   "website": "https://stateelectricalcontractors.com/",
+   "phone": "(480) 837-9765",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQ4L873uZK4cRCMZ3SBBMJE8",
+    "cid": "5702766660976887304",
+    "category": "Electrician"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

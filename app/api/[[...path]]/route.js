@@ -1,431 +1,384 @@
 import { NextResponse } from 'next/server';
-import { randomUUID } from 'crypto';
-import { quizCollection, valuationCollection, leadCollection } from '@/lib/mongodb';
-import { scoreQuiz } from '@/lib/quiz-matcher';
+import { LISTINGS, COMMUNITIES } from '@/lib/data';
+import { ensureSeeded } from '@/lib/data-server';
+import { getDb } from '@/lib/mongodb';
 import { getMagnet } from '@/lib/lead-magnets';
-import { sendQuizLeadOwnerEmail, sendQuizLeadConfirmationEmail, sendCollaboratorApplicationEmail, sendContactWelcomeEmail, sendContactPartnerEmail } from '@/lib/email';
-import { rateLimit, maybePrune } from '@/lib/rate-limit';
+import { sendQuizLeadOwnerEmail, sendQuizLeadConfirmationEmail, sendCollaboratorApplicationOwnerEmail } from '@/lib/email';
 
-const PASSPHRASE = process.env.LEADS_ACCESS_KEY || process.env.LEAD_RETRIEVAL_PASSPHRASE || '';
-const CSV_KEY = process.env.LEADS_ACCESS_KEY || '';
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || '';
+// ---------- helpers ----------
 
-const json = (body, init = {}) => NextResponse.json(body, init);
-const err  = (msg, status = 400) => json({ ok: false, error: msg }, { status });
-
-// Wrap rateLimit so a 429 short-circuits with a consistent shape and a
-// Retry-After header the browser can act on.
-function limit(request, opts) {
-  maybePrune();
-  const r = rateLimit(request, opts);
-  if (r.ok) return null;
-  return json(
-    { ok: false, error: r.error },
-    { status: 429, headers: { 'Retry-After': String(r.retryAfter) } }
-  );
-}
-
-// Honeypot: real humans never fill this field. Bots that scrape and submit
-// forms typically do. If it's populated we return a 200-OK-ish shape so the
-// bot thinks it succeeded, but we never persist anything.
-function isHoneypotTripped(body) {
-  return Boolean(cleanString(body?.website) || cleanString(body?._hp));
-}
-
-function cleanString(v, max = 500) {
-  if (typeof v !== 'string') return '';
-  return v.trim().slice(0, max);
-}
-function isEmail(s) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s || ''); }
-async function readJson(request) { try { return await request.json(); } catch { return {}; } }
-async function clientMeta(request) {
+function getClientMeta(request) {
+  const fwd = request.headers.get('x-forwarded-for') || '';
+  const ip = fwd.split(',')[0].trim() || request.headers.get('x-real-ip') || '';
   return {
-    ip:        request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || null,
-    userAgent: request.headers.get('user-agent') || null,
-    referer:   request.headers.get('referer') || null,
+    ip,
+    userAgent: request.headers.get('user-agent') || '',
+    referer: request.headers.get('referer') || ''
   };
 }
 
-// ---- POST /api/leads/gate — universal per-asset lead gate ----
-async function handleLeadsGate(request) {
-  const rl = limit(request, { bucket: 'leads-gate', limit: 5, windowMs: 60 * 60 * 1000 });
-  if (rl) return rl;
-
-  const body = await readJson(request);
-  if (isHoneypotTripped(body)) return json({ ok: true, honey: true });
-
-  const name = cleanString(body?.name, 160);
-  const email = cleanString(body?.email, 200);
-  const phone = cleanString(body?.phone, 50);
-  const assetSlug = cleanString(body?.assetSlug, 200);
-  const assetTitle = cleanString(body?.assetTitle, 300);
-  const downloadUrl = cleanString(body?.downloadUrl, 500);
-
-  if (!name || !email || !phone) return err('Name, email, and phone are required.');
-  if (!isEmail(email)) return err('Invalid email.');
-
-  const doc = {
-    id: randomUUID(),
-    type: 'gated-asset',
-    source: assetSlug || 'unknown',
-    createdAt: new Date().toISOString(),
-    payload: { name, email, phone, assetSlug, assetTitle, downloadUrl },
-    meta: await clientMeta(request),
-  };
-  try { await (await leadCollection()).insertOne(doc); } catch { return err('Database error.', 500); }
-
-  return json({ ok: true, id: doc.id });
+function unauthorized() {
+  return NextResponse.json({ ok: false, error: 'unauthorized' }, { status: 401 });
 }
 
-// ---- POST /api/collaborate — realtor collaborator application ----
-async function handleCollaborate(request) {
-  const rl = limit(request, { bucket: 'collaborate', limit: 3, windowMs: 60 * 60 * 1000 });
-  if (rl) return rl;
-
-  const body = await readJson(request);
-  // Honeypot: dedicated hidden field (never `website` here — that's a real
-  // broker-site field on the collaborator form).
-  if (cleanString(body?._hp)) return json({ ok: true, honey: true });
-
-  const name = cleanString(body?.name, 160);
-  const email = cleanString(body?.email, 200);
-  const phone = cleanString(body?.phone, 50);
-  const brokerage = cleanString(body?.brokerage, 200);
-  const dreLicense = cleanString(body?.dreLicense, 60);
-  const yearsActive = cleanString(body?.yearsActive, 30);
-  const website = cleanString(body?.website, 300);
-  const notes = cleanString(body?.notes, 4000);
-  const specialties = Array.isArray(body?.specialties)
-    ? body.specialties.filter((s) => typeof s === 'string').slice(0, 12).map((s) => cleanString(s, 80))
-    : [];
-  const agree = !!body?.agree;
-
-  if (!name || !email || !brokerage || !dreLicense) return err('Name, email, brokerage, and DRE license number are required.');
-  if (!isEmail(email)) return err('Invalid email.');
-  if (!agree) return err('Please confirm California licensure.');
-
-  const doc = {
-    id: randomUUID(),
-    type: 'collaborator',
-    source: 'collaborate-page',
-    createdAt: new Date().toISOString(),
-    payload: { name, email, phone, brokerage, dreLicense, yearsActive, website, specialties, notes },
-    meta: await clientMeta(request),
-  };
-  try { await (await leadCollection()).insertOne(doc); } catch { return err('Database error.', 500); }
-
-  // Fire-and-forget owner notification (fails soft if Resend not configured)
-  try {
-    await sendCollaboratorApplicationEmail({
-      name, email, phone, brokerage, dreLicense, yearsActive, website, specialties, notes,
-    });
-  } catch (_) { /* fail soft */ }
-
-  return json({ ok: true, id: doc.id });
+function isAuthorized(request) {
+  const key = new URL(request.url).searchParams.get('key');
+  const expected = process.env.LEADS_ACCESS_KEY;
+  // Constant-time-ish compare; both are short opaque strings, so a simple compare is fine.
+  return Boolean(expected) && key === expected;
 }
 
-// ---- POST /api/quiz/gate — gate the quiz result behind a lead capture.
-// Called from the community-quiz flow between "last question answered" and
-// "result shown". Persists the lead into the leads collection so it lands
-// in /admin/leads, then returns the score payload so the client can reveal
-// the match.
-async function handleQuizGate(request) {
-  const rl = limit(request, { bucket: 'quiz-gate', limit: 5, windowMs: 60 * 60 * 1000 });
-  if (rl) return rl;
-
-  const body = await readJson(request);
-  if (isHoneypotTripped(body)) {
-    // Silently succeed but still score, so the honey caller doesn't infer
-    // the gate exists.
-    const answers = (body?.answers && typeof body.answers === 'object') ? body.answers : {};
-    const result = scoreQuiz(answers);
-    return json({ ok: true, honey: true, ...result });
-  }
-
-  const firstName = cleanString(body?.firstName, 120);
-  const lastName  = cleanString(body?.lastName, 120);
-  const email     = cleanString(body?.email, 200);
-  const phone     = cleanString(body?.phone, 60); // optional
-  const zip       = cleanString(body?.zip, 15);
-  const answers   = (body?.answers && typeof body.answers === 'object') ? body.answers : {};
-
-  if (!firstName) return err('Please add your first name.');
-  if (!lastName)  return err('Please add your last name.');
-  if (!isEmail(email)) return err('Please add a valid email.');
-  if (!zip || !/^\d{5}(-\d{4})?$/.test(zip)) return err('Please add a valid U.S. ZIP code.');
-
-  // Score first (deterministic, safe to precompute) so we can attach the
-  // top match to the lead doc for at-a-glance triage in the admin table.
-  const result = scoreQuiz(answers);
-  const fullName = `${firstName} ${lastName}`.trim();
-
-  const submission = {
-    id: randomUUID(),
-    type: 'quiz-gate',
-    source: 'community-quiz',
-    createdAt: new Date().toISOString(),
-    // Top-level shorthand fields (what the admin table renders)
-    name:  fullName,
-    email,
-    phone,
-    subject: result?.top?.name || 'Community quiz',
-    message: `Quiz gate: matched to ${result?.top?.name || '\u2014'}. Runners-up: ${(result?.runnersUp || []).map((r) => r.name).join(', ') || '\u2014'}. ZIP: ${zip}.`,
-    // Full structured record
-    payload: {
-      firstName, lastName, email, phone, zip,
-      match:      result?.top || null,
-      runnersUp:  result?.runnersUp || [],
-      answers,
-    },
-    meta: await clientMeta(request),
-  };
-
-  try {
-    await (await leadCollection()).insertOne(submission);
-  } catch {
-    return err('Database error.', 500);
-  }
-
-  return json({ ok: true, id: submission.id, ...result });
+function csvEscape(v) {
+  if (v === null || v === undefined) return '';
+  const s = String(v);
+  if (/[",\n\r]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+  return s;
 }
 
-// ---- POST /api/quiz/score — score-only, no persistence ----
-async function handleQuizScore(request) {
-  const rl = limit(request, { bucket: 'quiz-score', limit: 30, windowMs: 60 * 60 * 1000 });
-  if (rl) return rl;
-
-  const body = await readJson(request);
-  const answers = body?.answers || {};
-  const result = scoreQuiz(answers);
-  return json({ ok: true, ...result });
+async function saveLead(doc) {
+  const db = await getDb();
+  await db.collection('leads').insertOne({ ...doc, createdAt: new Date() });
 }
 
-// ---- POST /api/quiz — legacy persistence (kept for back-compat) ----
-async function handleQuiz(request) {
-  const rl = limit(request, { bucket: 'quiz', limit: 10, windowMs: 60 * 60 * 1000 });
-  if (rl) return rl;
+// ---------- GET ----------
 
-  const body = await readJson(request);
-  const answers = body?.answers || {};
-  if (typeof answers !== 'object' || Array.isArray(answers)) return err('Invalid answers payload.');
-  const result = scoreQuiz(answers);
-  const submission = {
-    id: randomUUID(),
-    type: 'quiz',
-    createdAt: new Date().toISOString(),
-    answers,
-    results: [result.top, ...result.runnersUp],
-    email: cleanString(body?.email, 200) || null,
-    name: cleanString(body?.name, 120) || null,
-    meta: await clientMeta(request),
-  };
-  if (submission.email && !isEmail(submission.email)) return err('Invalid email.');
-  try { await (await quizCollection()).insertOne(submission); } catch { return err('Database error.', 500); }
-  return json({ ok: true, id: submission.id, results: submission.results });
-}
-
-// ---- POST /api/valuation ----
-async function handleValuation(request) {
-  const body = await readJson(request);
-  for (const f of ['address', 'email', 'name']) if (!cleanString(body?.[f])) return err(`Missing field: ${f}`);
-  const email = cleanString(body.email, 200);
-  if (!isEmail(email)) return err('Invalid email.');
-  const submission = {
-    id: randomUUID(), type: 'valuation', createdAt: new Date().toISOString(),
-    address: cleanString(body.address, 500), name: cleanString(body.name, 120), email,
-    phone: cleanString(body.phone, 60), community: cleanString(body.community, 120),
-    sqft: cleanString(body.sqft, 30), beds: cleanString(body.beds, 30), baths: cleanString(body.baths, 30),
-    notes: cleanString(body.notes, 2000), meta: await clientMeta(request),
-  };
-  try { await (await valuationCollection()).insertOne(submission); } catch { return err('Database error.', 500); }
-  return json({ ok: true, id: submission.id });
-}
-
-// ---- POST /api/leads — legacy generic lead capture ----
-async function handleLeadCapture(request) {
-  const body = await readJson(request);
-  const email = cleanString(body?.email, 200);
-  const name  = cleanString(body?.name, 120);
-  const magnet = cleanString(body?.magnet, 120);
-  if (!isEmail(email)) return err('Invalid email.');
-  if (!magnet) return err('Missing magnet slug.');
-  const submission = { id: randomUUID(), type: 'lead_magnet', createdAt: new Date().toISOString(), magnet, email, name, meta: await clientMeta(request) };
-  try { await (await leadCollection()).insertOne(submission); } catch { return err('Database error.', 500); }
-  return json({ ok: true, id: submission.id });
-}
-
-// ---- POST /api/leads/magnet — NEW quiz-magnet funnel ----
-async function handleLeadsMagnet(request) {
-  const rl = limit(request, { bucket: 'leads-magnet', limit: 5, windowMs: 60 * 60 * 1000 });
-  if (rl) return rl;
-
-  const body = await readJson(request);
-  if (isHoneypotTripped(body)) return json({ ok: true, honey: true });
-
-  const slug    = cleanString(body?.slug, 120);
-  const name    = cleanString(body?.name, 120);
-  const email   = cleanString(body?.email, 200);
-  const phone   = cleanString(body?.phone, 60);
-  const community = cleanString(body?.community, 200);
-  const source = cleanString(body?.source, 60) || 'community-quiz';
-  const quizAnswers = (body?.quizAnswers && typeof body.quizAnswers === 'object') ? body.quizAnswers : {};
-  const runnersUp = Array.isArray(body?.runnersUp) ? body.runnersUp.map((s) => cleanString(s, 200)) : [];
-
-  if (!slug)          return err('Missing slug.');
-  const magnet = getMagnet(slug);
-  if (!magnet)        return err('Unknown magnet.');
-  if (!name)          return err('Missing name.');
-  if (!isEmail(email))return err('Invalid email.');
-  if (!phone) return err('Missing phone.');
-
-  const submission = {
-    id: randomUUID(),
-    type: 'quiz-magnet',
-    createdAt: new Date().toISOString(),
-    slug, source,
-    payload: { name, email, phone, community, quizAnswers, runnersUp },
-    meta: await clientMeta(request),
-  };
-  try { await (await leadCollection()).insertOne(submission); } catch { return err('Database error.', 500); }
-
-  const downloadUrl = magnet.file;
-
-  // Fire-and-forget email sends; do not block response.
-  Promise.allSettled([
-    sendQuizLeadOwnerEmail({ name, email, phone, matchedCommunity: community, runnersUp, quizAnswers }),
-    sendQuizLeadConfirmationEmail({ name, email, matchedCommunity: community, downloadUrl, baseUrl: BASE_URL }),
-  ]).then((res) => {
-    res.forEach((r, i) => {
-      const which = i === 0 ? 'owner' : 'confirmation';
-      if (r.status === 'fulfilled') console.log(`[email/${which}]`, r.value);
-      else                          console.log(`[email/${which}] rejected`, r.reason);
-    });
-  });
-
-  return json({ ok: true, downloadUrl });
-}
-
-// ---- POST /api/contact — universal contextual contact form ---------------
-// Fields:  name (req), email (req), phone (opt), message (opt),
-//          subject (req — page context, e.g. "The Madison Club"),
-//          page   (opt — pathname the buyer was on)
-//          website (honeypot; MUST be empty)
-// Behavior:
-//   1) validate + honeypot
-//   2) insert `type: 'contact'` document into `leads` collection
-//   3) fire-and-forget welcome email to the buyer + notification to OWNER_EMAIL
-async function handleContact(request) {
-  const rl = limit(request, { bucket: 'contact', limit: 5, windowMs: 60 * 60 * 1000 });
-  if (rl) return rl;
-
-  const body = await readJson(request);
-  // Honeypot: real humans never fill this field.
-  if (isHoneypotTripped(body)) return json({ ok: true, honey: true });
-
-  const name    = cleanString(body?.name, 120);
-  const email   = cleanString(body?.email, 200);
-  const phone   = cleanString(body?.phone, 60);
-  const message = cleanString(body?.message, 4000);
-  const subject = cleanString(body?.subject, 200) || 'La Quinta golf real estate';
-  const page    = cleanString(body?.page, 500);
-
-  if (!name)  return err('Please add your name.');
-  if (!isEmail(email)) return err('Please add a valid email.');
-
-  const submission = {
-    id: randomUUID(),
-    type: 'contact',
-    createdAt: new Date().toISOString(),
-    name, email, phone, message, subject, page,
-    meta: await clientMeta(request),
-  };
-  try { await (await leadCollection()).insertOne(submission); }
-  catch { return err('Database error.', 500); }
-
-  Promise.allSettled([
-    sendContactWelcomeEmail({ name, email, subject, message, baseUrl: BASE_URL }),
-    sendContactPartnerEmail({ name, email, phone, subject, message, page, baseUrl: BASE_URL }),
-  ]).then((res) => {
-    res.forEach((r, i) => {
-      const which = i === 0 ? 'contact/welcome' : 'contact/partner';
-      if (r.status === 'fulfilled') console.log(`[email/${which}]`, r.value);
-      else                          console.log(`[email/${which}] rejected`, r.reason);
-    });
-  });
-
-  return json({ ok: true, id: submission.id });
-}
-
-
-// ---- GET /api/leads — admin retrieval (legacy passphrase) ----
-async function handleLeadRetrieval(request) {
-  const url = new URL(request.url);
-  const key = url.searchParams.get('key') || '';
-  if (!PASSPHRASE || key !== PASSPHRASE) return err('Unauthorized.', 401);
-  try {
-    const limit = Math.min(parseInt(url.searchParams.get('limit') || '500', 10), 2000);
-    const [quiz, valuation, leads] = await Promise.all([
-      (await quizCollection()).find({}, { projection: { _id: 0 } }).sort({ createdAt: -1 }).limit(limit).toArray(),
-      (await valuationCollection()).find({}, { projection: { _id: 0 } }).sort({ createdAt: -1 }).limit(limit).toArray(),
-      (await leadCollection()).find({}, { projection: { _id: 0 } }).sort({ createdAt: -1 }).limit(limit).toArray(),
-    ]);
-    return json({ ok: true, counts: { quiz: quiz.length, valuation: valuation.length, leadMagnet: leads.length }, quiz, valuation, leadMagnet: leads });
-  } catch { return err('Database error.', 500); }
-}
-
-// ---- GET /api/leads/export.csv — LEADS_ACCESS_KEY-gated CSV export ----
-async function handleLeadsExportCsv(request) {
-  const url = new URL(request.url);
-  const key = url.searchParams.get('key') || '';
-  if (!CSV_KEY || key !== CSV_KEY) return new Response('Unauthorized', { status: 401 });
-  try {
-    const docs = await (await leadCollection()).find({}, { projection: { _id: 0 } }).sort({ createdAt: -1 }).limit(5000).toArray();
-    const cols = ['createdAt','type','source','slug','name','email','phone','community','runnersUp','quizAnswers','ip','userAgent','referer'];
-    const esc = (v) => {
-      if (v == null) return '';
-      const s = typeof v === 'object' ? JSON.stringify(v) : String(v);
-      return '"' + s.replace(/"/g, '""') + '"';
-    };
-    const rows = [cols.join(',')];
-    for (const d of docs) {
-      const p = d.payload || {};
-      const m = d.meta || {};
-      rows.push([
-        d.createdAt, d.type, d.source || '', d.slug || d.magnet || '',
-        p.name || d.name || '', p.email || d.email || '', p.phone || '',
-        p.community || '',
-        Array.isArray(p.runnersUp) ? p.runnersUp.join(' | ') : '',
-        p.quizAnswers || d.answers || '',
-        m.ip || '', m.userAgent || '', m.referer || '',
-      ].map(esc).join(','));
-    }
-    return new Response(rows.join('\n'), {
-      status: 200,
-      headers: { 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'attachment; filename="leads.csv"' },
-    });
-  } catch { return new Response('Database error', { status: 500 }); }
-}
-
-// ---- Router ----
 export async function GET(request, { params }) {
   const path = (params?.path || []).join('/');
-  if (path === '')                  return json({ ok: true, service: 'La Quinta Golf Lifestyle API', endpoints: ['POST /api/contact','POST /api/quiz/score','POST /api/quiz','POST /api/valuation','POST /api/leads','POST /api/leads/magnet','POST /api/leads/gate','POST /api/collaborate','GET /api/leads?key=...','GET /api/leads/export.csv?key=...'] });
-  if (path === 'leads')             return handleLeadRetrieval(request);
-  if (path === 'leads/export.csv')  return handleLeadsExportCsv(request);
-  return err('Not found.', 404);
+
+  if (path === '' || path === 'health') {
+    return NextResponse.json({ ok: true, service: 'scottsdale-golf-lifestyle' });
+  }
+  if (path === 'seed') {
+    const r = await ensureSeeded();
+    return NextResponse.json(r);
+  }
+  if (path === 'listings') {
+    return NextResponse.json({ listings: LISTINGS });
+  }
+  if (path === 'communities') {
+    return NextResponse.json({ communities: COMMUNITIES });
+  }
+
+  // --- Leads retrieval (passphrase-gated) ---
+  if (path === 'leads/list') {
+    if (!isAuthorized(request)) return unauthorized();
+    try {
+      const url = new URL(request.url);
+      const typeFilter = url.searchParams.get('type');
+      let limit = parseInt(url.searchParams.get('limit') || '500', 10);
+      if (!Number.isFinite(limit) || limit < 1) limit = 500;
+      if (limit > 2000) limit = 2000;
+
+      const db = await getDb();
+      const query = typeFilter ? { type: typeFilter } : {};
+      const leads = await db
+        .collection('leads')
+        .find(query, { projection: { _id: 0 } })
+        .sort({ createdAt: -1 })
+        .limit(limit)
+        .toArray();
+
+      return NextResponse.json({ ok: true, count: leads.length, leads });
+    } catch (e) {
+      return NextResponse.json({ ok: false, error: e.message }, { status: 500 });
+    }
+  }
+
+  if (path === 'leads/export.csv') {
+    if (!isAuthorized(request)) return unauthorized();
+    try {
+      const db = await getDb();
+      const leads = await db
+        .collection('leads')
+        .find({}, { projection: { _id: 0 } })
+        .sort({ createdAt: -1 })
+        .limit(10000)
+        .toArray();
+
+      const header = ['createdAt', 'type', 'magnet', 'name', 'email', 'phone', 'community', 'source', 'sourcePath', 'sourceDetail', 'quiz_region', 'quiz_era', 'quiz_character', 'quiz_footprint', 'quiz_fit', 'runnersUp', 'referer', 'ip', 'userAgent'];
+      const rows = leads.map(l => {
+        const p = l.payload || {};
+        const m = l.meta || {};
+        const q = p.quizAnswers || {};
+        return [
+          l.createdAt instanceof Date ? l.createdAt.toISOString() : l.createdAt,
+          l.type || '',
+          p.slug || '',
+          p.name || '',
+          p.email || '',
+          p.phone || '',
+          p.community || '',
+          p.source || '',
+          p.sourcePath || '',
+          p.sourceDetail || '',
+          q.region || '',
+          q.era || '',
+          q.character || '',
+          q.footprint || '',
+          q.fit || '',
+          Array.isArray(p.runnersUp) ? p.runnersUp.join(' | ') : '',
+          m.referer || '',
+          m.ip || '',
+          m.userAgent || ''
+        ].map(csvEscape).join(',');
+      });
+      const csv = [header.join(','), ...rows].join('\n') + '\n';
+
+      return new NextResponse(csv, {
+        status: 200,
+        headers: {
+          'Content-Type': 'text/csv; charset=utf-8',
+          'Content-Disposition': 'attachment; filename="leads.csv"',
+          'Cache-Control': 'no-store'
+        }
+      });
+    } catch (e) {
+      return NextResponse.json({ ok: false, error: e.message }, { status: 500 });
+    }
+  }
+
+  return NextResponse.json({ error: 'not found' }, { status: 404 });
 }
+
+// ---------- POST ----------
+
 export async function POST(request, { params }) {
   const path = (params?.path || []).join('/');
-  switch (path) {
-    case 'quiz/score':    return handleQuizScore(request);
-    case 'quiz/gate':     return handleQuizGate(request);
-    case 'quiz':          return handleQuiz(request);
-    case 'valuation':     return handleValuation(request);
-    case 'leads':         return handleLeadCapture(request);
-    case 'leads/magnet':  return handleLeadsMagnet(request);
-    case 'leads/gate':    return handleLeadsGate(request);
-    case 'collaborate':   return handleCollaborate(request);
-    case 'contact':       return handleContact(request);
-    default:              return err(`POST /api/${path} not implemented.`, 404);
+
+  // -------- Gated lead magnet (primary new endpoint) --------
+  if (path === 'leads/magnet') {
+    try {
+      const body = await request.json();
+      const slug = (body.slug || '').trim();
+      const name = (body.name || '').trim();
+      const email = (body.email || '').trim();
+      const phone = (body.phone || '').trim();
+      const community = (body.community || '').trim();
+      const source = (body.source || 'magnet').trim();
+      const sourcePath = (body.sourcePath || '').toString().trim().slice(0, 300);
+      const sourceDetail = (body.sourceDetail || '').toString().trim().slice(0, 300);
+      const quizAnswers = body.quizAnswers && typeof body.quizAnswers === 'object' ? body.quizAnswers : null;
+      const runnersUp = Array.isArray(body.runnersUp) ? body.runnersUp.map(s => String(s).trim()).filter(Boolean) : [];
+
+      if (!name || !email || !phone) {
+        return NextResponse.json(
+          { ok: false, error: 'name, email, and phone are required' },
+          { status: 400 }
+        );
+      }
+      const magnet = getMagnet(slug);
+      if (!magnet) {
+        return NextResponse.json({ ok: false, error: 'unknown magnet' }, { status: 404 });
+      }
+
+      const meta = getClientMeta(request);
+      const isQuiz = source === 'community-quiz' && quizAnswers;
+      const docType = isQuiz ? 'quiz-magnet' : 'magnet';
+
+      // Persist the lead. quizAnswers + runnersUp are kept in payload so
+      // /api/leads/list and the CSV export surface them with the rest.
+      await saveLead({
+        type: docType,
+        payload: {
+          slug,
+          name,
+          email,
+          phone,
+          community,
+          source,
+          sourcePath,
+          sourceDetail,
+          quizAnswers,
+          runnersUp
+        },
+        meta
+      });
+
+      const downloadUrl = magnet.file || null;
+
+      // Fire-and-forget transactional emails for EVERY magnet submission.
+      // Quiz-specific context (runnersUp, quizAnswers) is included when
+      // present; for plain community-page or guide-page submissions the
+      // owner still gets a notification and the lead still gets a
+      // confirmation with the download link.
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '';
+      const matchedCommunity = community || magnet.title;
+      Promise.allSettled([
+        sendQuizLeadOwnerEmail({
+          name,
+          email,
+          phone,
+          matchedCommunity,
+          runnersUp,
+          quizAnswers: quizAnswers || { source },
+          score: body.score ?? null
+        }),
+        sendQuizLeadConfirmationEmail({
+          name,
+          email,
+          matchedCommunity,
+          downloadUrl,
+          baseUrl
+        })
+      ]).then(results => {
+        const summary = results.map((r, i) => {
+          const label = i === 0 ? 'owner' : 'lead';
+          if (r.status === 'fulfilled') {
+            const v = r.value || {};
+            return `${label}=${v.skipped ? 'skipped:' + (v.reason || '?') : (v.ok ? 'ok' : 'fail:' + (v.error || '?'))}`;
+          }
+          return `${label}=rejected:${r.reason?.message || r.reason || '?'}`;
+        }).join(' | ');
+        console.log(`[${docType} email] ${email} src=${source} ${summary}`);
+      }).catch(e => console.log(`[${docType} email] unhandled`, e?.message || e));
+
+      return NextResponse.json({
+        ok: true,
+        downloadUrl
+      });
+    } catch (e) {
+      return NextResponse.json({ ok: false, error: e.message }, { status: 400 });
+    }
   }
+
+  // -------- Collaborator application (native form replacing prior Google Form) --------
+  if (path === 'collaborator/apply') {
+    try {
+      const body = await request.json();
+      const fields = {
+        name:            (body.name || '').toString().trim().slice(0, 200),
+        brokerage:       (body.brokerage || '').toString().trim().slice(0, 200),
+        license:         (body.license || '').toString().trim().slice(0, 100),
+        email:           (body.email || '').toString().trim().slice(0, 200),
+        phone:           (body.phone || '').toString().trim().slice(0, 50),
+        website:         (body.website || '').toString().trim().slice(0, 300),
+        linkedin:        (body.linkedin || '').toString().trim().slice(0, 300),
+        yearsExperience: (body.yearsExperience || '').toString().trim().slice(0, 50),
+        specialty:       (body.specialty || '').toString().trim().slice(0, 300),
+        communities:     (body.communities || '').toString().trim().slice(0, 1000),
+        pitch:           (body.pitch || '').toString().trim().slice(0, 3000),
+        sourcePath:      (body.sourcePath || '').toString().trim().slice(0, 300),
+        sourceDetail:    (body.sourceDetail || '').toString().trim().slice(0, 300)
+      };
+
+      if (!fields.name || !fields.email || !fields.phone || !fields.brokerage) {
+        return NextResponse.json(
+          { ok: false, error: 'name, email, phone, and brokerage are required' },
+          { status: 400 }
+        );
+      }
+
+      const meta = getClientMeta(request);
+      await saveLead({
+        type: 'collaborator-application',
+        payload: fields,
+        meta
+      });
+
+      // Fire-and-forget owner notification.
+      sendCollaboratorApplicationOwnerEmail(fields).then(r => {
+        const status = r?.skipped ? 'skipped:' + (r.reason || '?') : (r?.ok ? 'ok' : 'fail:' + (r?.error || '?'));
+        console.log(`[collaborator-application email] ${fields.email} ${status}`);
+      }).catch(e => console.log('[collaborator-application email] unhandled', e?.message || e));
+
+      return NextResponse.json({ ok: true });
+    } catch (e) {
+      return NextResponse.json({ ok: false, error: e.message }, { status: 400 });
+    }
+  }
+
+  // -------- Legacy form endpoints: now MongoDB-only (external CRM push removed) --------
+  // All five existing form components continue to POST to these paths. They
+  // now persist to our MongoDB `leads` collection. Owner retrieves via
+  // /api/leads/list?key=... or /api/leads/export.csv?key=...
+
+  if (path === 'lead') {
+    try {
+      const body = await request.json();
+      const meta = getClientMeta(request);
+      await saveLead({
+        type: 'lead',
+        payload: {
+          name: (body.name || '').trim(),
+          email: (body.email || '').trim(),
+          phone: (body.phone || '').trim(),
+          message: (body.message || '').trim(),
+          timeline: body.timeline || null,
+          budget: body.budget || null,
+          community: body.community || null
+        },
+        meta
+      });
+      return NextResponse.json({ ok: true });
+    } catch (e) {
+      return NextResponse.json({ ok: false, error: e.message }, { status: 400 });
+    }
+  }
+
+  if (path === 'guide-download') {
+    try {
+      const body = await request.json();
+      const name = (body.name || '').trim();
+      const email = (body.email || '').trim();
+      const guideSlug = body.guideSlug || 'scottsdale-buyers-guide-2026';
+      const guideTitle = body.guideTitle || 'Scottsdale Buyer\u2019s Guide 2026';
+
+      if (!email) {
+        return NextResponse.json({ ok: false, error: 'email required' }, { status: 400 });
+      }
+
+      const meta = getClientMeta(request);
+      await saveLead({
+        type: 'guide-download',
+        payload: { slug: guideSlug, name, email, guideTitle }
+      , meta });
+
+      // Stream the freshly-generated PDF back to the browser.
+      const { generateBuyersGuidePdf } = await import('@/lib/buyers-guide-pdf');
+      const pdfBuffer = await generateBuyersGuidePdf({ leadName: name.split(/\s+/)[0] || null });
+
+      return new NextResponse(pdfBuffer, {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/pdf',
+          'Content-Disposition': `attachment; filename="${guideSlug}.pdf"`,
+          'Content-Length': String(pdfBuffer.length),
+          'Cache-Control': 'no-store'
+        }
+      });
+    } catch (e) {
+      console.error('Guide PDF generation failed:', e);
+      return NextResponse.json({ ok: false, error: e.message }, { status: 500 });
+    }
+  }
+
+  if (path === 'saved-search') {
+    try {
+      const body = await request.json();
+      const email = (body.email || '').trim();
+      const name = (body.name || '').trim();
+      if (!email) {
+        return NextResponse.json({ ok: false, error: 'email required' }, { status: 400 });
+      }
+      const meta = getClientMeta(request);
+      await saveLead({
+        type: 'saved-search',
+        payload: {
+          name,
+          email,
+          searchTitle: body.searchTitle || 'Saved Search',
+          searchSlug: body.searchSlug || 'unknown',
+          communitySlug: body.communitySlug || null,
+          frequency: body.frequency || 'Daily',
+          sourcePath: body.sourcePath || meta.referer || ''
+        },
+        meta
+      });
+      return NextResponse.json({ ok: true });
+    } catch (e) {
+      return NextResponse.json({ ok: false, error: e.message }, { status: 400 });
+    }
+  }
+
+  return NextResponse.json({ error: 'not found' }, { status: 404 });
 }

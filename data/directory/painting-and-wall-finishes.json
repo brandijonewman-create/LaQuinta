@@ -1,0 +1,216 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "arizona-painting-company",
+   "name": "Arizona Painting Company",
+   "categories": [
+    "painting-and-wall-finishes"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6450 E Cave Creek Rd Ste 201-E",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.941
+   },
+   "description": "Painter in Cave Creek, Arizona. Its Google profile also lists dry wall contractor and painting.",
+   "website": "https://arizonapaintingcompany.com/locations/cave-creek/",
+   "phone": "(480) 359-3822",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJV9EInL5_K4cR9_bxIoD3Pgs",
+    "cid": "810357112687425271",
+    "category": "Painter"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "green-custom-paint",
+   "name": "Green Custom Paint",
+   "categories": [
+    "painting-and-wall-finishes"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "28809 N 51st St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.747,
+    "lng": -111.971
+   },
+   "description": "Painter in Cave Creek, Arizona. Its Google profile also lists granite supplier.",
+   "website": "http://www.greencustompaint.com/",
+   "phone": "(602) 325-3187",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJefwTejl6K4cRfuzT9lzrWQQ",
+    "cid": "313540433589562494",
+    "category": "Painter"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hett-painting-group",
+   "name": "Hett Painting Group",
+   "categories": [
+    "painting-and-wall-finishes"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd #101-6",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Painter in Carefree, Arizona. Its Google profile also lists painting.",
+   "website": "https://hettpaintinggroup.com/",
+   "phone": "(480) 335-8099",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJkerAxtQm1GcRJDFKbtr7mqM",
+    "cid": "11789011890167492900",
+    "category": "Painter"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hometown-painting-company",
+   "name": "Hometown Painting Company",
+   "categories": [
+    "painting-and-wall-finishes"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "26623 N 43rd St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.727,
+    "lng": -111.989
+   },
+   "description": "Painter in Cave Creek, Arizona. Its Google profile also lists painting.",
+   "website": "https://hometownpaintingcompany.com/",
+   "phone": "(480) 427-6616",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBU1LfCh7K4cRHRYwiUBlazE",
+    "cid": "3561051258220451357",
+    "category": "Painter"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "that-1-painter-phoenix-metro",
+   "name": "That 1 Painter Phoenix Metro",
+   "categories": [
+    "painting-and-wall-finishes"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd #303-2",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Painter in Carefree, Arizona. Its Google profile also lists dry wall contractor and painting.",
+   "website": "https://that1painter.com/phoenix-metro/painters-in-carefree/",
+   "phone": "(623) 663-2757",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ1ewjF9J5K4cRcHfdPmke3cQ",
+    "cid": "14185527838662031216",
+    "category": "Painter"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "that-1-painter-scottsdale",
+   "name": "That 1 Painter Scottsdale",
+   "categories": [
+    "painting-and-wall-finishes"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7135 E Camelback Rd Suite 230 - PMB #EH10",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.928
+   },
+   "description": "Painter in Scottsdale, Arizona. Its Google profile also lists cabinet maker and carpenter.",
+   "website": "https://that1painter.com/scottsdale/",
+   "phone": "(480) 580-0633",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJeZSoeig2ta0R28qT6Sq88fg",
+    "cid": "17938325683286821595",
+    "category": "Painter"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "vernon-nolte-and-son-custom-painting",
+   "name": "Vernon Nolte and Son Custom Painting",
+   "categories": [
+    "painting-and-wall-finishes"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7171 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.828,
+    "lng": -111.925
+   },
+   "description": "Painter in Cave Creek, Arizona.",
+   "website": "http://www.vnsaz.com/",
+   "phone": "(480) 488-3420",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJRYazycB-K4cRHWRVtcY6EkE",
+    "cid": "4688874787166315549",
+    "category": "Painter"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

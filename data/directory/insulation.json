@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "attic-construction-and-insulation",
+   "name": "Attic Construction & Insulation",
+   "categories": [
+    "insulation"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17100 E Shea Blvd Ste 440",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.573,
+    "lng": -111.712
+   },
+   "description": "Insulation contractor in Fountain Hills, Arizona.",
+   "website": "https://atticconstruction.com/",
+   "phone": "(480) 397-0209",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJmyjUHtOjK4cRpxkseGSxJSU",
+    "cid": "2676740598612629927",
+    "category": "Insulation contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

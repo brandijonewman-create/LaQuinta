@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "fountain-hills-door-and-supply",
+   "name": "Fountain Hills Door & Supply",
+   "categories": [
+    "windows-and-doors"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16549 E Laser Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.572,
+    "lng": -111.722
+   },
+   "description": "Door supplier in Fountain Hills, Arizona.",
+   "website": "https://www.fhillsdoor.com/",
+   "phone": "(480) 837-8303",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJY5b4g12iK4cRJ7bxFHLPAms",
+    "cid": "7710953600896316967",
+    "category": "Door supplier"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "vip-smart-windows",
+   "name": "VIP Smart Windows",
+   "categories": [
+    "windows-and-doors"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16939 E Colony Dr suite 7",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.597,
+    "lng": -111.714
+   },
+   "description": "Window installation service in Fountain Hills, Arizona.",
+   "website": "https://vipsmartwindows.com/",
+   "phone": "(480) 842-9225",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJTSgxGQCZK4cRALHdy22FXTg",
+    "cid": "4061549145576288512",
+    "category": "Window installation service"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

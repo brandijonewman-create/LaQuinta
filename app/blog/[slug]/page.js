@@ -1,155 +1,165 @@
+import Image from 'next/image';
+import MarketDisclaimer from '@/components/market-disclaimer';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote/rsc';
-import remarkGfm from 'remark-gfm';
-import PageHero from '@/components/shared/page-hero';
-import Breadcrumbs from '@/components/shared/breadcrumbs';
-import CollaboratorHeadshot from '@/components/collaborators/collaborator-headshot';
-import { getPost, getPostSlugs } from '@/lib/blog';
-import { getCollaborator } from '@/lib/collaborators';
-import { mdxComponents } from '@/components/mdx-components';
-import { JsonLd, articleSchema, faqSchema, breadcrumbSchema } from '@/lib/json-ld';
-import { owner, author } from '@/lib/site-config';
+import PageShell from '@/components/page-shell';
+import RelatedContent from '@/components/related-content';
+import QuizCTABand from '@/components/QuizCTABand';
+import { mdxComponents, FAQBlock, TLDR } from '@/components/mdx-components';
+import { SITE, COMMUNITIES } from '@/lib/data';
+import { BLOG_POSTS, findPost } from '@/lib/blog';
+import { getAuthor, authorJsonLd } from '@/lib/authors';
+import { breadcrumbSchema, JsonLd } from '@/lib/seo';
+import { Calendar, User, ArrowLeft } from 'lucide-react';
 
-export function generateStaticParams() {
-  return getPostSlugs().map((slug) => ({ slug }));
+export async function generateStaticParams() {
+  return BLOG_POSTS.map(p => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const post = getPost(params.slug);
-  if (!post) return {};
+export async function generateMetadata({ params }) {
+  const p = findPost(params.slug);
+  if (!p) return { title: 'Post not found' };
   return {
-    title: post.frontmatter.seoTitle
-      ? { absolute: post.frontmatter.seoTitle }
-      : post.frontmatter.title,
-    description: post.frontmatter.excerpt,
-    alternates: { canonical: `/blog/${params.slug}` },
-    openGraph: {
-      title: post.frontmatter.seoTitle || post.frontmatter.title,
-      description: post.frontmatter.excerpt,
-      images: post.frontmatter.cover ? [post.frontmatter.cover] : [],
-      type: 'article',
-      publishedTime: post.frontmatter.date,
-    },
+    title: p.title,
+    description: p.description,
+    alternates: { canonical: `${SITE.url}/blog/${p.slug}` },
+    openGraph: { url: `${SITE.url}/blog/${p.slug}`, type: 'article', images: [{ url: `${SITE.url}/opengraph-image`, width: 1200, height: 630, alt: p.title }], publishedTime: p.date }
   };
 }
 
-function formatDate(iso) {
-  if (!iso) return '';
-  try {
-    return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-  } catch {
-    return iso;
-  }
-}
+export default function Page({ params }) {
+  const p = findPost(params.slug);
+  if (!p) notFound();
+  const related = (p.related || []).map(findPost).filter(Boolean);
 
-export default function BlogPostPage({ params }) {
-  const post = getPost(params.slug);
-  if (!post) notFound();
-  const fm = post.frontmatter;
+  // Detect community slugs mentioned in the post (title/excerpt/content) for
+  // programmatic internal linking via RelatedContent below.
+  const contentBlob = ((p.title || '') + ' ' + (p.excerpt || '') + ' ' + (p.description || '') + ' ' + (p.content || '')).toLowerCase();
+  const mentionedCommunitySlugs = COMMUNITIES
+    .filter(c => contentBlob.includes(c.name.toLowerCase()) || contentBlob.includes(c.slug))
+    .map(c => c.slug)
+    .slice(0, 5);
 
-  // Author: every article is attributed to the site's publisher until
-  // additional strategic partners contribute. Rendered as plain text (the
-  // collaborators section is deactivated), so no profile link.
-  const articleData = articleSchema(post, 'blog', author);
-  const faqData = faqSchema(fm.faq);
-  const crumbData = breadcrumbSchema([
-    { name: 'Home', url: '/' },
-    { name: 'Blog', url: '/blog' },
-    { name: fm.title, url: `/blog/${post.slug}` },
-  ]);
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: p.title,
+    description: p.description,
+    image: p.cover && p.cover.startsWith('/') ? `${SITE.url}${p.cover}` : p.cover,
+    datePublished: p.date,
+    dateModified: p.date,
+    author: authorJsonLd(p.author),
+    publisher: { '@type': 'Organization', name: 'Scottsdale Golf Lifestyle', logo: { '@type': 'ImageObject', url: `${SITE.url}/og.jpg` } },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE.url}/blog/${p.slug}` }
+  };
+
+  // FAQPage JSON-LD schema \u2014 only emitted if the post has FAQs in frontmatter.
+  const faqSchema = (p.faqs && p.faqs.length > 0) ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: p.faqs.map(qa => ({
+      '@type': 'Question',
+      name: qa.q,
+      acceptedAnswer: { '@type': 'Answer', text: qa.a }
+    }))
+  } : null;
 
   return (
-    <>
-      <JsonLd data={articleData} />
-      <JsonLd data={faqData} />
-      <JsonLd data={crumbData} />
+    <PageShell>
+      <JsonLd data={breadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Blog', path: '/blog' },
+        { name: p.title, path: `/blog/${p.slug}` }
+      ])} />
+      <JsonLd data={articleSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
 
-      <PageHero variant="image" image={fm.cover} eyebrow={fm.category} title={fm.title} subtitle={fm.excerpt} />
-      <section className="container py-16 lg:py-24 max-w-3xl">
-        <Breadcrumbs items={[{ label: 'Blog', href: '/blog' }, { label: fm.title }]} />
-
-        {/* Byline. Every article is attributed to the site's publisher,
-            rendered as plain text with a headshot (no profile link). */}
-        <div className="mt-8 flex items-center gap-3 text-sm text-foreground/70">
-          <span className="w-9 h-9 rounded-full overflow-hidden bg-sand-100 border border-border flex-shrink-0">
-            <img src={author.image} alt={author.name} className="w-full h-full object-cover" />
-          </span>
-          <span>
-            <span className="block text-foreground/55 text-[11px] uppercase tracking-[0.2em]">By</span>
-            <span className="block text-palm font-medium">
-              {author.name}
-              {author.title ? <span className="text-foreground/55 font-normal">, {author.title}</span> : null}
-            </span>
-          </span>
-          <span className="text-foreground/30">·</span>
-          <span className="text-foreground/65">{formatDate(fm.date)}</span>
-          {fm.readMin ? (
-            <>
-              <span className="text-foreground/30">·</span>
-              <span className="text-foreground/65">{fm.readMin} min read</span>
-            </>
-          ) : null}
+      <article>
+        <div className="relative">
+          <div className="absolute inset-0"><Image src={p.cover} alt={p.title} className="object-cover" fill sizes="(max-width: 768px) 100vw, 50vw" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#062840]/65 to-[#062840]/95" />
+          </div>
+          <div className="relative max-w-4xl mx-auto px-6 py-24 md:py-32">
+            <Link href="/blog" className="inline-flex items-center gap-1 text-sm text-amber-200 hover:text-amber-100 mb-6"><ArrowLeft className="h-4 w-4" /> All articles</Link>
+            <h1 className="font-serif text-4xl md:text-6xl text-amber-50 tracking-tight leading-tight">{p.title}</h1>
+            <div className="mt-6 flex flex-wrap items-center gap-5 text-sm text-emerald-50/70">
+              <span className="flex items-center gap-1.5"><Calendar className="h-3.5 w-3.5" /> {new Date(p.date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}</span>
+              <span className="flex items-center gap-1.5">
+                <User className="h-3.5 w-3.5" />
+                {(() => {
+                  const a = getAuthor(p.author);
+                  return a.profilePath ? (
+                    <Link href={a.profilePath} className="hover:text-amber-200 underline-offset-4 hover:underline">{a.name}</Link>
+                  ) : a.name;
+                })()}
+              </span>
+            </div>
+          </div>
         </div>
 
-        {Array.isArray(fm.tldr) && fm.tldr.length > 0 && (
-          <div className="mt-10 bg-sand-50 border border-border p-6">
-            <div className="editorial-eyebrow mb-3"><span className="editorial-rule" />TL;DR</div>
-            <ul className="space-y-2 text-foreground/80 text-sm leading-relaxed list-disc pl-5">
-              {fm.tldr.map((t, i) => <li key={i}>{t}</li>)}
-            </ul>
-          </div>
-        )}
+        <div className="max-w-3xl mx-auto px-6 py-14 text-[#062840]/85 text-lg leading-relaxed">
+          {/* TL;DR (frontmatter-driven) renders before the prose body for the long-form articles that include one. */}
+          {p.tldr && p.tldr.length > 0 && <TLDR items={p.tldr} />}
+          {/* MDX content. Bodies authored in /content/blog/[slug].mdx — frontmatter + markdown + custom <CTA> components. TL;DR and FAQ live in YAML frontmatter for reliable structured rendering + JSON-LD. */}
+          <MDXRemote source={p.content || ''} components={mdxComponents} />
+          {p.faqs && p.faqs.length > 0 && <FAQBlock items={p.faqs} />}
+          <MarketDisclaimer className="not-prose" />
 
-        <article className="prose-editorial mt-10">
-          <MDXRemote source={post.content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
-        </article>
-
-        {Array.isArray(fm.faq) && fm.faq.length > 0 && (
-          <div className="mt-16 border-t border-border pt-10">
-            <h2 className="font-serif text-3xl text-palm mb-6">Frequently asked</h2>
-            <dl className="space-y-6">
-              {fm.faq.map((q, i) => (
-                <div key={i} className="border-b border-border pb-6">
-                  <dt className="font-serif text-xl text-palm">{q.q}</dt>
-                  <dd className="text-foreground/75 leading-relaxed mt-2">{q.a}</dd>
+          {/* About-the-author block — appears only for posts written by a registered collaborator. */}
+          {(() => {
+            const a = getAuthor(p.author);
+            if (a.isOrg) return null;
+            return (
+              <aside className="mt-12 rounded-2xl border border-[#062840]/10 bg-white p-6 md:p-7 flex flex-col md:flex-row gap-5 not-prose">
+                <div className="flex-shrink-0 relative w-24 h-24"><Image src={a.image} alt={a.name} className="rounded-full object-cover ring-2 ring-amber-300/40" fill sizes="96px" />
                 </div>
-              ))}
-            </dl>
-          </div>
-        )}
-
-        {/* About the Author. Every article is authored by the site's
-            publisher until additional strategic partners contribute; links to
-            the About page for the full bio. */}
-        <aside className="mt-16 border-t border-border pt-10" aria-labelledby="about-the-author">
-          <div className="text-[11px] uppercase tracking-[0.22em] text-terracotta mb-4" id="about-the-author">
-            About the Author
-          </div>
-          <div className="grid grid-cols-[88px_1fr] md:grid-cols-[120px_1fr] gap-5 md:gap-7 bg-sand-50 border border-border p-6 md:p-8">
-            <div className="aspect-square rounded-xl overflow-hidden bg-sand-100 border border-border">
-              <img src={author.image} alt={author.name} className="w-full h-full object-cover" />
-            </div>
-            <div>
-              <div className="font-serif text-2xl text-palm leading-tight">{author.name}</div>
-              <div className="text-sm text-foreground/70 mt-1">{author.title}</div>
-              {author.bio ? (
-                <p className="text-sm text-foreground/80 leading-relaxed mt-3">{author.bio}</p>
-              ) : null}
-              <Link
-                href={author.url || '/about'}
-                className="mt-4 inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.22em] text-terracotta hover:text-palm transition-colors"
-              >
-                More about the publisher &rarr;
-              </Link>
-            </div>
-          </div>
-        </aside>
-
-        <div className="mt-14">
-          <Link href="/blog" className="text-xs uppercase tracking-[0.22em] text-terracotta hover:text-palm">&larr; All posts</Link>
+                <div className="flex-1 text-base">
+                  <div className="text-[11px] uppercase tracking-[0.25em] text-[#BA9273]">About the author</div>
+                  <div className="mt-1 font-serif text-xl text-[#062840]">{a.name}</div>
+                  <div className="text-sm text-[#062840]/70">{a.title}{a.affiliation ? ` · ${a.affiliation}` : ''}</div>
+                  <p className="mt-3 text-[15px] text-[#062840]/80 leading-relaxed">{a.bio}</p>
+                  {a.profilePath && (
+                    <Link href={a.profilePath} className="mt-3 inline-flex text-sm text-amber-700 hover:text-amber-800 underline-offset-4 hover:underline">
+                      View full profile →
+                    </Link>
+                  )}
+                </div>
+              </aside>
+            );
+          })()}
         </div>
-      </section>
-    </>
+
+        {related.length > 0 && (
+          <section className="bg-emerald-50/40 border-t border-emerald-900/10">
+            <div className="max-w-7xl mx-auto px-6 py-14">
+              <h2 className="font-serif text-3xl text-[#062840] mb-6">Keep reading</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {related.map(r => (
+                  <Link key={r.slug} href={`/blog/${r.slug}`} className="group flex gap-5 bg-white rounded-xl overflow-hidden border border-emerald-900/10 hover:shadow-xl transition">
+                    <div className="w-1/3 aspect-square overflow-hidden flex-shrink-0 relative"><Image src={r.cover} alt={r.title} className="object-cover group-hover:scale-105 transition-transform duration-500" fill sizes="(max-width: 768px) 100vw, 50vw" /></div>
+                    <div className="p-4 flex-1">
+                      <div className="text-xs uppercase text-amber-700 tracking-wider">{new Date(r.date).toLocaleDateString('en-US',{month:'short',year:'numeric'})}</div>
+                      <div className="font-serif text-lg text-[#062840] leading-snug mt-1">{r.title}</div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </article>
+
+      {/* Programmatic internal links \u2014 surfaces communities mentioned in the post,
+          relevant comparisons, and the latest market report. */}
+      <RelatedContent
+        pageType="blog"
+        tags={mentionedCommunitySlugs}
+        excludePath={`/blog/${p.slug}`}
+      />
+
+      {/* Quiz funnel CTA \u2014 every blog post terminates in a path back to the\n          interactive matcher, capturing readers who arrived from organic search. */}
+      <QuizCTABand variant="subtle" />
+    </PageShell>
   );
 }

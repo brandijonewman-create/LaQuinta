@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "concrete-contractors-of-scottsdale",
+   "name": "Concrete Contractors of Scottsdale",
+   "categories": [
+    "concrete-and-foundation-repair"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7154 E Stetson Dr Ste 227",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.927
+   },
+   "description": "Concrete contractor in Scottsdale, Arizona.",
+   "website": "https://concretecontractorsscottsdale.com/",
+   "phone": "(480) 697-6161",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJOb2_h2oLK4cRtFzDvCLSfP4",
+    "cid": "18337762829383457972",
+    "category": "Concrete contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "supreme-concrete-company",
+   "name": "Supreme Concrete Company",
+   "categories": [
+    "concrete-and-foundation-repair"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4200 N Marshall Way #7",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.929
+   },
+   "description": "Concrete contractor in Scottsdale, Arizona. Its Google profile also lists asphalt contractor and masonry contractor.",
+   "website": "https://supremeconcretecompany.com/",
+   "phone": "(520) 597-7670",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJX30PT5ULK4cRF8JguXIPM3s",
+    "cid": "8877456275888194071",
+    "category": "Concrete contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

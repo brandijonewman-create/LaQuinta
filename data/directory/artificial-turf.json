@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "waterloo-turf-scottsdale-artificial-grass",
+   "name": "Waterloo Turf Scottsdale Artificial Grass",
+   "categories": [
+    "artificial-turf"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4343 N Scottsdale Rd #150",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.924
+   },
+   "description": "Turf supplier in Scottsdale, Arizona. Its Google profile also lists artificial plant supplier and flooring contractor.",
+   "website": "https://waterlooturf.com/scottsdale/",
+   "phone": "(928) 232-4070",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ1YKmEnIyCocRHEPmd0GxLHU",
+    "cid": "8443318296155407132",
+    "category": "Turf supplier"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "plumbing-priority-one-of-scottsdale",
+   "name": "Plumbing Priority One Of Scottsdale",
+   "categories": [
+    "plumbers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4150 N Drinkwater Blvd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.922
+   },
+   "description": "Plumber in Scottsdale, Arizona.",
+   "website": "https://plumbingpriorityone.com/scottsdale",
+   "phone": "(480) 741-2586",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJy1V8QZR4cwQRdZYlnVpi-uE",
+    "cid": "16283435544034514549",
+    "category": "Plumber"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

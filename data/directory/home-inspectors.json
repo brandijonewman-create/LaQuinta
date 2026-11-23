@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "carefree-building-inspections",
+   "name": "Carefree Building Inspections",
+   "categories": [
+    "home-inspectors"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "8 E Sundial Cir",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.825,
+    "lng": -111.921
+   },
+   "description": "Home inspector in Carefree, Arizona.",
+   "website": "",
+   "phone": "(480) 488-1471",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJnU1PCcZ-K4cRn95hPryaItc",
+    "cid": "15502123000653799071",
+    "category": "Home inspector"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

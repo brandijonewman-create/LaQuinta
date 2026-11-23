@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "mojo-global",
+   "name": "Mojo Global",
+   "categories": [
+    "marketing-and-web-design"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4343 N Scottsdale Rd #150",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.925
+   },
+   "description": "Internet marketing service in Scottsdale, Arizona. Its Google profile also lists business development service and business management consultant.",
+   "website": "http://mojoglobal.com/",
+   "phone": "(480) 339-4300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJgThijgsLK4cRNQ6h3lVQXJI",
+    "cid": "10546392757132398133",
+    "category": "Internet marketing service"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tech-4-life-custom-websites-and-digital-marketing",
+   "name": "Tech 4 Life Custom Websites & Digital Marketing",
+   "categories": [
+    "marketing-and-web-design"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "748 Easy St #6",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.924
+   },
+   "description": "Website designer in Carefree, Arizona. Its Google profile also lists graphic designer and marketing consultant.",
+   "website": "https://cavecreekwebsites.com/",
+   "phone": "(480) 488-0773",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJrRFG-zR_K4cRvAFSKcA-HRo",
+    "cid": "1881729214358618556",
+    "category": "Website designer"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

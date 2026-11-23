@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "artfactory-com",
+   "name": "ArtFactory.com",
+   "categories": [
+    "art-framing-installation-and-shipping"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7407 E Greenway Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.625,
+    "lng": -111.919
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architectural designer and art restoration service.",
+   "website": "https://artfactory.com/",
+   "phone": "(480) 483-0170",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJfcpVpzl0K4cRSUmHg4h5qUg",
+    "cid": "5235849669024106825",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

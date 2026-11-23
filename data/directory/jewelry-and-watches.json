@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "sunrise-trading-post",
+   "name": "Sunrise Trading Post",
+   "categories": [
+    "jewelry-and-watches"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7254 E Main St Suite 101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.925
+   },
+   "description": "Jewelry store in Scottsdale, Arizona. Its Google profile also lists art gallery and bead store.",
+   "website": "https://www.sunrisejewelryusa.com/",
+   "phone": "(480) 425-9944",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJc_cyeb8LK4cRFEfX-kUlAcg",
+    "cid": "14411841265053681428",
+    "category": "Jewelry store"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

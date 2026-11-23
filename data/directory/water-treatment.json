@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "phoenix-water-softeners",
+   "name": "Phoenix Water Softeners",
+   "categories": [
+    "water-treatment"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7272 E Indian School Rd Ste 20642",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.924
+   },
+   "description": "Water softening equipment supplier in Scottsdale, Arizona. Its Google profile also lists water damage restoration service.",
+   "website": "https://bestphoenixplumberrepair.com/scottsdale-plumbing-draining-water-heater-repair/",
+   "phone": "(623) 283-1473",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJD6X7azLnDYgRDrOe50NLwn8",
+    "cid": "9206003343319544590",
+    "category": "Water softening equipment supplier"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

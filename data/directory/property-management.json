@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "desert-vista-luxury-homes",
+   "name": "Desert Vista Luxury Homes",
+   "categories": [
+    "property-management"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6929 Hayden Rd c4600",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.537,
+    "lng": -111.906
+   },
+   "description": "Vacation home rental agency in Scottsdale, Arizona. Its Google profile also lists property management company.",
+   "website": "http://dvluxury.com/",
+   "phone": "(480) 200-5093",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ818Yux8LK4cRJ5eDFHrsB8Q",
+    "cid": "14125518765345183527",
+    "category": "Vacation home rental agency"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "five-diamond-vacation-properties",
+   "name": "Five Diamond Vacation Properties",
+   "categories": [
+    "property-management"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7077 E 5th Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.929
+   },
+   "description": "Vacation home rental agency in Scottsdale, Arizona. Its Google profile also lists interior designer and real estate agency.",
+   "website": "http://www.fivediamond.co/",
+   "phone": "(602) 566-9611",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBRz-BHALK4cRBZWBstk2bkU",
+    "cid": "5002996544685839621",
+    "category": "Vacation home rental agency"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "cave-creek-welding",
+   "name": "Cave Creek Welding",
+   "categories": [
+    "iron-gates-railings-and-stairs"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "37424 N Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.826,
+    "lng": -111.955
+   },
+   "description": "Welder in Cave Creek, Arizona. Its Google profile also lists metal fabricator and metal supplier.",
+   "website": "https://cavecreekwelding.com/",
+   "phone": "(480) 488-3677",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJrZHDBx98K4cRvzP5QFT_6CQ",
+    "cid": "2659656317294687167",
+    "category": "Welder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "spark-n-grind-custom-welding-studio",
+   "name": "Spark n' Grind Custom Welding Studio",
+   "categories": [
+    "iron-gates-railings-and-stairs"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17030 E Enterprise Dr A",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.596,
+    "lng": -111.713
+   },
+   "description": "Welder in Fountain Hills, Arizona.",
+   "website": "",
+   "phone": "(623) 262-0907",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJGQkh4_GjK4cRBh372lDm_uI",
+    "cid": "16356764131601882374",
+    "category": "Welder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "toms-custom-wrought-iron",
+   "name": "Tom's Custom Wrought Iron",
+   "categories": [
+    "iron-gates-railings-and-stairs"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17252 E Falcon Dr #2",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.595,
+    "lng": -111.71
+   },
+   "description": "Iron works in Fountain Hills, Arizona. Its Google profile also lists metal fabricator.",
+   "website": "",
+   "phone": "(480) 837-7716",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ73vyvIGiK4cRXjky8Z2PCOE",
+    "cid": "16215368366866708830",
+    "category": "Iron works"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

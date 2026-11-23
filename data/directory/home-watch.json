@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "carefree-home",
+   "name": "Carefree Home",
+   "categories": [
+    "home-watch"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "34207 N Black Mountain Pkwy Ste 100",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.796,
+    "lng": -111.978
+   },
+   "description": "Property management company in Cave Creek, Arizona. Its Google profile also lists handyman/handywoman/handyperson and home help.",
+   "website": "http://carefreehomeaz.com/",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ_2tmRbt7K4cRhtmA-Hl2_eg",
+    "cid": "16788705252139391366",
+    "category": "Property management company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "escape-az-home-watch-and-services",
+   "name": "ESCAPE AZ Home Watch and Services",
+   "categories": [
+    "home-watch"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6095 E Grapevine Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.835,
+    "lng": -111.949
+   },
+   "description": "Real estate agency in Cave Creek, Arizona.",
+   "website": "https://escapeazpm.com/",
+   "phone": "(480) 567-9755",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJsaeu3nNj_2oRl4LCM120UQg",
+    "cid": "599458537810330263",
+    "category": "Real estate agency"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

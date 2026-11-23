@@ -1,0 +1,786 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "Builder communities from the custom home builders DataForSEO pull, 5 cities",
+ "businesses": [
+  {
+   "slug": "adero-villas-by-camelot-homes",
+   "name": "Adero Villas by Camelot Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13609 N Prospect Trl",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.61,
+    "lng": -111.768
+   },
+   "description": "Home builder in Fountain Hills, Arizona.",
+   "website": "https://www.camelothomes.com/community/adero-villas/",
+   "phone": "(480) 389-1447",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJU99XsTWfK4cRvDchn07juWw",
+    "cid": "7834542953604396988",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "ascent-at-the-phoenician",
+   "name": "Ascent at the Phoenician",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6390 E Phoenician Blvd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.509,
+    "lng": -111.945
+   },
+   "description": "Gated community in Scottsdale, Arizona. Its Google profile also lists housing development.",
+   "website": "https://www.ascentatthephoenician.com/",
+   "phone": "(480) 534-4086",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJJ94xHwALK4cRinZPcuDs1QE",
+    "cid": "132272212811937418",
+    "category": "Gated community"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cameldale-estates",
+   "name": "Cameldale Estates",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "6439 Luke Ave",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.518,
+    "lng": -111.941
+   },
+   "description": "Housing development in Paradise Valley, Arizona.",
+   "website": "https://bedbrock.com/cameldale-estates",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJa25BKskLK4cRywMFK3Bxchg",
+    "cid": "1761595130827310027",
+    "category": "Housing development"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "continental-mountain-estates",
+   "name": "Continental Mountain Estates",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7344 E Continental Mountain Estates Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.863,
+    "lng": -111.922
+   },
+   "description": "Housing development in Cave Creek, Arizona.",
+   "website": "https://continentalmountainestates.com/",
+   "phone": "(602) 692-3745",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQXg-Rjx_K4cRDTd57uopaM0",
+    "cid": "14801126264353142541",
+    "category": "Housing development"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "crown-canyon",
+   "name": "Crown Canyon",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "7134 N 40th St",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.542,
+    "lng": -111.996
+   },
+   "description": "Housing development in Paradise Valley, Arizona.",
+   "website": "https://www.crowncanyon.com/",
+   "phone": "(480) 864-6484",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJt2BTvM8NK4cRvrZE6hXU4As",
+    "cid": "855917119790167742",
+    "category": "Housing development"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "eastwood-by-keystone-homes",
+   "name": "Eastwood by Keystone Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "8696 E. Eastwood Circle",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.817,
+    "lng": -111.894
+   },
+   "description": "Home builder in Carefree, Arizona.",
+   "website": "",
+   "phone": "(480) 422-0655",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJgYLyr9J4K4cRZrvkmiWg67s",
+    "cid": "13541092787992443750",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fox-haven-by-cachet-homes",
+   "name": "Fox Haven by Cachet Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "10300 N 79th Way",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.579,
+    "lng": -111.91
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://cachethomes.net/",
+   "phone": "(480) 556-7038",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJs6oBb950K4cROFoeSrV5IvE",
+    "cid": "17375584131888339512",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hidden-rock-at-cave-creek",
+   "name": "Hidden Rock at Cave Creek",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6525 E Cave Creek Rd #201",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.94
+   },
+   "description": "Real estate developer in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi5OQhJd-K4cR_sghzJ5WKfc",
+    "cid": "17809861441442924798",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mummy-view-estates",
+   "name": "Mummy View Estates",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "4808 E Horseshoe Rd",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.567,
+    "lng": -111.976
+   },
+   "description": "Housing development in Paradise Valley, Arizona.",
+   "website": "https://mummyviewestates.com/",
+   "phone": "(602) 692-3745",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ8f-XHl1zK4cR0s_L3mLSKzs",
+    "cid": "4263732794322833362",
+    "category": "Housing development"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "nextgen-builders-model-homes",
+   "name": "NEXTGEN Builders Model Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7195 E Rancho Del Oro Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.768,
+    "lng": -111.927
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "http://www.nextgenbuildersaz.com/",
+   "phone": "(602) 675-0881",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJWZr-9s55K4cRqVFIQ5RQO9g",
+    "cid": "15581135933532557737",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "rancho-north-homes-by-towne",
+   "name": "Rancho North - Homes by Towne",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5100 E Rancho Paloma Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.784,
+    "lng": -111.97
+   },
+   "description": "Construction company in Cave Creek, Arizona.",
+   "website": "http://homesbytowne.com/states/arizona/rancho-north.html",
+   "phone": "(480) 621-5700",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJoaCUUXN7K4cRFEXXBT0CO1U",
+    "cid": "6141504977964057876",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sereno-canyon",
+   "name": "Sereno Canyon",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "12558 E Chama Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.712,
+    "lng": -111.81
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists real estate agent.",
+   "website": "https://www.tollbrothers.com/luxury-homes-for-sale/Arizona/Sereno-Canyon",
+   "phone": "(480) 908-5355",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ5ZQoaHqdK4cR4EzjgEMhB18",
+    "cid": "6847478332249033952",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sereno-canyon-villa-collection",
+   "name": "Sereno Canyon - Villa Collection",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "23774 N 127th St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.7,
+    "lng": -111.806
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists real estate agent.",
+   "website": "https://www.tollbrothers.com/luxury-homes-for-sale/Arizona/Sereno-Canyon/Villa-Collection",
+   "phone": "(480) 508-4300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJC0_cM9adK4cRH4b2-zSI9XA",
+    "cid": "8139561662688953887",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "seven-desert-mountain-gatehouse",
+   "name": "Seven Desert Mountain Gatehouse",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "37080 N Cave Creek Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85262"
+   },
+   "geo": {
+    "lat": 33.822,
+    "lng": -111.884
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder and real estate developer.",
+   "website": "https://www.desertmountain.com/golf/seven-desert-mountain/",
+   "phone": "(602) 708-7300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlaPhAfuBK4cRYmO3gkZNz_4",
+    "cid": "18360979171048907618",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "signature-at-black-mountain-shea-homes",
+   "name": "Signature at Black Mountain | Shea Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8326 E Tecolote Cir",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.811,
+    "lng": -111.901
+   },
+   "description": "Housing development in Scottsdale, Arizona.",
+   "website": "https://www.sheahomes.com/new-homes/arizona/phoenix-area/scottsdale/signature-at-black-mountain",
+   "phone": "(480) 646-4691",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlQqDVwB5K4cRCCyXT8sFnlo",
+    "cid": "6529662880505605128",
+    "category": "Housing development"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "signature-at-storyrock-shea-homes",
+   "name": "Signature at Storyrock | Shea Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "13004 E Harper Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.715,
+    "lng": -111.801
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists construction company and contractor.",
+   "website": "https://www.sheahomes.com/new-homes/arizona/phoenix-area/scottsdale/signature-at-storyrock",
+   "phone": "(480) 690-3903",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQRAF2PadK4cR_eLPzi71RfM",
+    "cid": "17529686705996555005",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "storyrock-david-weekley-homes",
+   "name": "Storyrock - David Weekley Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "12942 E Buckskin Trail",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.714,
+    "lng": -111.801
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://www.davidweekleyhomes.com/new-homes/az/phoenix/scottsdale/storyrock",
+   "phone": "(480) 516-0407",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJc-iTwJKdK4cR7jcETcy1eZE",
+    "cid": "10482609496751618030",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-edge-at-joy-ranch-by-camelot-homes",
+   "name": "The Edge at Joy Ranch by Camelot Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "11425 E Sundance Trail",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85262"
+   },
+   "geo": {
+    "lat": 33.83,
+    "lng": -111.838
+   },
+   "description": "Housing development in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJLxH4IgCBK4cRHprL3SE1IVY",
+    "cid": "6206300181064555038",
+    "category": "Housing development"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-overlook-at-firerock",
+   "name": "The Overlook at FireRock",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13300 N Eagle Ridge Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.765
+   },
+   "description": "Home builder in Fountain Hills, Arizona. Its Google profile also lists real estate agent.",
+   "website": "https://www.tollbrothers.com/luxury-homes-for-sale/Arizona/The-Overlook-at-FireRock",
+   "phone": "(844) 836-5263",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJG8_1V26iK4cRFOKvM-q8wag",
+    "cid": "12160208182952583700",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-reserve-scottsdale",
+   "name": "The Reserve Scottsdale",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "11673 N 136th St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85259"
+   },
+   "geo": {
+    "lat": 33.593,
+    "lng": -111.786
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists home builder and real estate developer.",
+   "website": "",
+   "phone": "(602) 321-8959",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq_hplfefK4cRHWyg6sMNB5c",
+    "cid": "10882682159670258717",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-reserves-at-storyrock-shea-homes",
+   "name": "The Reserves at Storyrock | Shea Homes",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "13141 E Buckskin Trail",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.713,
+    "lng": -111.798
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists construction company and contractor.",
+   "website": "https://www.sheahomes.com/new-homes/arizona/phoenix-area/scottsdale/the-reserves-at-storyrock",
+   "phone": "(480) 690-3129",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCwMOMiadK4cRdjEOl-uh5Vc",
+    "cid": "6333646484190146934",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-ritz-carlton-residences-paradise-valley",
+   "name": "The Ritz Carlton Residences, Paradise Valley",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "6587 N Palmeraie Blvd",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.534,
+    "lng": -111.93
+   },
+   "description": "Condominium complex in Paradise Valley, Arizona.",
+   "website": "http://rcpvluxury.com/",
+   "phone": "(602) 922-2992",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJM5oYBc0LK4cRy2oi2qiJZ3g",
+    "cid": "8676054565459749579",
+    "category": "Condominium complex"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-view-carefree",
+   "name": "The View Carefree",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "1 Easy St",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.922
+   },
+   "description": "Home builder in Carefree, Arizona.",
+   "website": "http://www.theviewcarefree.net/",
+   "phone": "(480) 868-7060",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ82yMHZV_K4cRWyFwf1kx3JY",
+    "cid": "10870617861025440091",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "toll-brothers-at-adero-canyon",
+   "name": "Toll Brothers at Adero Canyon",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "14218 Harmony Ln",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.614,
+    "lng": -111.774
+   },
+   "description": "Home builder in Fountain Hills, Arizona. Its Google profile also lists real estate agent.",
+   "website": "https://www.tollbrothers.com/luxury-homes-for-sale/Arizona/Toll-Brothers-at-Adero-Canyon",
+   "phone": "(480) 292-7977",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJo5k_JSWfK4cRV1wYkMSGlLU",
+    "cid": "13084230996207361111",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "toll-brothers-at-adero-canyon-avery-collection",
+   "name": "Toll Brothers at Adero Canyon - Avery Collection",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "14236 E Highland Ave",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.614,
+    "lng": -111.774
+   },
+   "description": "Home builder in Fountain Hills, Arizona. Its Google profile also lists real estate agent.",
+   "website": "https://www.tollbrothers.com/luxury-homes-for-sale/Arizona/Toll-Brothers-at-Adero-Canyon/Avery-Collection",
+   "phone": "(480) 542-0103",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJXdSZ_fOfK4cR9hEgpRHDgWE",
+    "cid": "7026111374226887158",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "toll-brothers-at-storyrock",
+   "name": "Toll Brothers at Storyrock",
+   "categories": [
+    "new-home-communities"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "12835 Black Rock Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85255"
+   },
+   "geo": {
+    "lat": 33.699,
+    "lng": -111.803
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists real estate agent.",
+   "website": "https://www.tollbrothers.com/luxury-homes-for-sale/Arizona/Toll-Brothers-at-Storyrock",
+   "phone": "(480) 596-5800",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ88kC5FCcK4cRWRGA9ZGUxDc",
+    "cid": "4018500122131304793",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

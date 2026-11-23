@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "carefree-coffee-roastery",
+   "name": "Carefree Coffee Roastery",
+   "categories": [
+    "coffee-shops"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7171 E Cave Creek Rd Ste T",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.828,
+    "lng": -111.924
+   },
+   "description": "Coffee shop in Carefree, Arizona. Its Google profile also lists bakery and breakfast restaurant.",
+   "website": "http://www.carefreecoffeeroastery.com/",
+   "phone": "(480) 595-5050",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ8zNaxsZ-K4cRvXMoQhidzHk",
+    "cid": "8776562501352977341",
+    "category": "Coffee shop"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

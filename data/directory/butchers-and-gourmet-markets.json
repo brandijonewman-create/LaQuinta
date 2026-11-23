@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "seared-living",
+   "name": "Seared Living",
+   "categories": [
+    "butchers-and-gourmet-markets"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "100 Easy St #2050",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.923
+   },
+   "description": "Gourmet grocery store in Carefree, Arizona. Its Google profile also lists cooking class and gift basket store.",
+   "website": "https://searedliving.com/",
+   "phone": "(602) 903-0777",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCfguA-9z1oYRFHz-g9XHwKI",
+    "cid": "11727593149529226260",
+    "category": "Gourmet grocery store"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

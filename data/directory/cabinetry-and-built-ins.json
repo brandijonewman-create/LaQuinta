@@ -1,0 +1,216 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "cabinets-emi-llc",
+   "name": "Cabinets EMI LLC",
+   "categories": [
+    "cabinetry-and-built-ins"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6554 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.834,
+    "lng": -111.939
+   },
+   "description": "Cabinet store in Cave Creek, Arizona. Its Google profile also lists cabinet maker.",
+   "website": "http://cabinetscavecreek.com/",
+   "phone": "(602) 465-6584",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJvUjqvip_K4cRfB8vQLb0K94",
+    "cid": "16009158364016615292",
+    "category": "Cabinet store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "eterno-cabinets",
+   "name": "Eterno Cabinets",
+   "categories": [
+    "cabinetry-and-built-ins"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "37555 N Hum Rd Ste 106",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.826,
+    "lng": -111.923
+   },
+   "description": "Cabinet store in Carefree, Arizona. Its Google profile also lists bathroom remodeler and cabinet maker.",
+   "website": "http://eternocabinets.com/",
+   "phone": "(480) 721-9999",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ81-Dn3JVtU8Rf1v9Gz7NF_4",
+    "cid": "18309328476739296127",
+    "category": "Cabinet store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "maricopa-cabinets",
+   "name": "Maricopa Cabinets",
+   "categories": [
+    "cabinetry-and-built-ins"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8165 E Indian Bend Rd #103",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.537,
+    "lng": -111.905
+   },
+   "description": "Cabinet store in Scottsdale, Arizona.",
+   "website": "https://maricopacabinets.com/",
+   "phone": "(602) 529-4205",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJHdVizId1K4cRHHzXB29UCV0",
+    "cid": "6703982356167359516",
+    "category": "Cabinet store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "pheago-millwork-and-design",
+   "name": "Pheago Millwork and Design",
+   "categories": [
+    "cabinetry-and-built-ins"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Cabinet maker in Carefree, Arizona. Its Google profile also lists cabinet store and furniture maker.",
+   "website": "https://pheago.com/",
+   "phone": "(623) 401-3192",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJKw7UVW15K4cR88zR0HNjMaU",
+    "cid": "11903404639192730867",
+    "category": "Cabinet maker"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sawdust-studios-creative-woodworks",
+   "name": "Sawdust Studios Creative Woodworks",
+   "categories": [
+    "cabinetry-and-built-ins"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "37416 N Kohuana Pl",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.825,
+    "lng": -111.954
+   },
+   "description": "Woodworker in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 334-6252",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJp-szdaB9K4cRbasMXAPliVs",
+    "cid": "6596054931852798829",
+    "category": "Woodworker"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-kueffner-company",
+   "name": "The Kueffner Company",
+   "categories": [
+    "cabinetry-and-built-ins"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6207 N Cattletrack Rd #1",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.527,
+    "lng": -111.917
+   },
+   "description": "Cabinet maker in Scottsdale, Arizona.",
+   "website": "http://kueffnerco.com/",
+   "phone": "(480) 948-6758",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxxRjCBALK4cRatm36w3buM8",
+    "cid": "14967954214401595754",
+    "category": "Cabinet maker"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "woodland-custom-beam-company",
+   "name": "Woodland Custom Beam Company",
+   "categories": [
+    "cabinetry-and-built-ins"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "4107 Ashler Hills Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.777,
+    "lng": -111.993
+   },
+   "description": "Woodworker in Cave Creek, Arizona.",
+   "website": "http://www.woodlandbeam.com/",
+   "phone": "(480) 231-4287",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJMUxvF6J7K4cR5GRJQWf-NuU",
+    "cid": "16516668402858288356",
+    "category": "Woodworker"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

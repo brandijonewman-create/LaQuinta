@@ -1,0 +1,126 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "four-peaks-apartments",
+   "name": "Four Peaks Apartments",
+   "categories": [
+    "luxury-rentals"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13700 N Fountain Hills Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.61,
+    "lng": -111.731
+   },
+   "description": "Apartment rental agency in Fountain Hills, Arizona.",
+   "website": "https://www.liveatfourpeaks.com/",
+   "phone": "(480) 520-2847",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJL7O7i5OYK4cR30y4DqWYK0M",
+    "cid": "4840130059223715039",
+    "category": "Apartment rental agency"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "luna-at-fountain-hills",
+   "name": "Luna at Fountain Hills",
+   "categories": [
+    "luxury-rentals"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13225 N Fountain Hills Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.605,
+    "lng": -111.731
+   },
+   "description": "Apartment complex in Fountain Hills, Arizona.",
+   "website": "https://www.mark-taylor.com/apartments/az/fountain-hills/luna-at-fountain-hills/",
+   "phone": "(480) 741-2665",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0_YK6ZCYK4cRg4HPeNosZXM",
+    "cid": "8315101603850846595",
+    "category": "Apartment complex"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "park-place-at-fountain-hills",
+   "name": "Park Place at Fountain Hills",
+   "categories": [
+    "luxury-rentals"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16725 E Ave of the Fountains",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.604,
+    "lng": -111.719
+   },
+   "description": "Apartment complex in Fountain Hills, Arizona.",
+   "website": "https://www.mark-taylor.com/apartments/az/fountain-hills/park-place-at-fountain-hills/",
+   "phone": "(602) 671-0122",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0YhsdoaYK4cRTtnIw5WLz9c",
+    "cid": "15550801513684719950",
+    "category": "Apartment complex"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "pillar-at-fountain-hills",
+   "name": "Pillar at Fountain Hills",
+   "categories": [
+    "luxury-rentals"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16550 E Ave of the Fountains",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.723
+   },
+   "description": "Apartment complex in Fountain Hills, Arizona.",
+   "website": "https://www.pillaratfountainhills.com/",
+   "phone": "(855) 545-1737",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJrdsn0DCZK4cRrebvKcaFVKU",
+    "cid": "11913294000455411373",
+    "category": "Apartment complex"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

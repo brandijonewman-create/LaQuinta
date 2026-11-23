@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "carefree-consignment",
+   "name": "Carefree Consignment",
+   "categories": [
+    "luxury-consignment"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "post office building, 100 Easy St Inside",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.923
+   },
+   "description": "Consignment shop in Carefree, Arizona.",
+   "website": "https://www.easystreetgalleria.com/",
+   "phone": "(623) 888-4452",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ__8_CcZ-K4cRvAtnv-FlREM",
+    "cid": "4847111119210744764",
+    "category": "Consignment shop"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

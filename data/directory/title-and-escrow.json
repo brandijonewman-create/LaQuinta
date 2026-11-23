@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "first-american-title-insurance-company-homebuilder-services",
+   "name": "First American Title Insurance Company - Homebuilder Services",
+   "categories": [
+    "title-and-escrow"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8601 N Scottsdale Rd Ste 135",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.562,
+    "lng": -111.926
+   },
+   "description": "Title company in Scottsdale, Arizona. Its Google profile also lists escrow service.",
+   "website": "https://www.firstam.com/title/homebuilder/",
+   "phone": "(480) 612-9000",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ6bX5ecl0K4cRj5GJJVFuF7M",
+    "cid": "12904904552054624655",
+    "category": "Title company"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

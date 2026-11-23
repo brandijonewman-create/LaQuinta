@@ -1,0 +1,156 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "azul-verde-design-group-inc",
+   "name": "Azul Verde Design Group, Inc",
+   "categories": [
+    "pool-builders-and-remodeling"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7020 E Bella Vista Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.829,
+    "lng": -111.93
+   },
+   "description": "Swimming pool contractor in Cave Creek, Arizona. Its Google profile also lists landscape architect and landscape designer.",
+   "website": "http://azulverde.com/",
+   "phone": "(480) 595-0611",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ3y70BQB_K4cRqhcJ1xuye_U",
+    "cid": "17688927794069313450",
+    "category": "Swimming pool contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "casa-blanca-pools",
+   "name": "Casa Blanca Pools",
+   "categories": [
+    "pool-builders-and-remodeling"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17225 E Shea Blvd Ste 102",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.569,
+    "lng": -111.711
+   },
+   "description": "Swimming pool contractor in Fountain Hills, Arizona.",
+   "website": "https://casablancapoolsllc.com/",
+   "phone": "(480) 806-0059",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJRUJEwuuvK4cRCSA6GEiVUPg",
+    "cid": "17892965456419627017",
+    "category": "Swimming pool contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "ecoblu-pools",
+   "name": "EcoBlu Pools",
+   "categories": [
+    "pool-builders-and-remodeling"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36889 N Tom Darlington Dr",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.924
+   },
+   "description": "Swimming pool contractor in Carefree, Arizona. Its Google profile also lists pool cleaning service and swimming pool repair service.",
+   "website": "http://ecoblupools.com/",
+   "phone": "(480) 626-8200",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCRMzvsh-K4cR8Cku0VIXnoI",
+    "cid": "9411985915715135984",
+    "category": "Swimming pool contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "klassy-pools-inc",
+   "name": "Klassy Pools Inc",
+   "categories": [
+    "pool-builders-and-remodeling"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17010 E De Anza Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.613,
+    "lng": -111.712
+   },
+   "description": "Swimming pool contractor in Fountain Hills, Arizona.",
+   "website": "",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQ4uaOIaYK4cRNnEHQEi4VJ8",
+    "cid": "11481003970525622582",
+    "category": "Swimming pool contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "pool-star-enterprise-llc",
+   "name": "Pool Star Enterprise, LLC",
+   "categories": [
+    "pool-builders-and-remodeling"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17100 E Shea Blvd Ste 250",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.573,
+    "lng": -111.712
+   },
+   "description": "Swimming pool contractor in Fountain Hills, Arizona.",
+   "website": "https://poolstaraz.com/",
+   "phone": "(480) 213-2419",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJcXszw_SYK4cRpc3-PFssLTI",
+    "cid": "3615594846225354149",
+    "category": "Swimming pool contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

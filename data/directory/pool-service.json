@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "scottsdale-pools",
+   "name": "Scottsdale Pools",
+   "categories": [
+    "pool-service"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "8901 E Lazywood Pl",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.817,
+    "lng": -111.889
+   },
+   "description": "Pool cleaning service in Carefree, Arizona. Its Google profile also lists swimming pool contractor and swimming pool repair service.",
+   "website": "https://scottsdalepools.com/services/",
+   "phone": "(480) 739-3963",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJW1bdIwt3K4cRj_ZsbNH6fsg",
+    "cid": "14447260432025319055",
+    "category": "Pool cleaning service"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

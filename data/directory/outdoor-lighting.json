@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "let-there-be-light-of-arizona",
+   "name": "Let There Be Light of Arizona",
+   "categories": [
+    "outdoor-lighting"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36800 Sidewinder Rd Unit 12B",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.922
+   },
+   "description": "Landscape lighting designer in Carefree, Arizona. Its Google profile also lists landscape designer and landscaper.",
+   "website": "https://www.lettherebelightllc.com/",
+   "phone": "(480) 575-3204",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJbSXv2MB-K4cRu7GMse_w_2I",
+    "cid": "7133685247044792763",
+    "category": "Landscape lighting designer"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

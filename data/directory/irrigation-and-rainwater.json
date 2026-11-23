@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "conserva-irrigation-of-greater-scottsdale",
+   "name": "Conserva Irrigation of Greater Scottsdale",
+   "categories": [
+    "irrigation-and-rainwater"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7150 E Camelback Rd UNIT 444",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.503,
+    "lng": -111.926
+   },
+   "description": "Lawn sprinkler system contractor in Scottsdale, Arizona. Its Google profile also lists garden machinery supplier and irrigation equipment supplier.",
+   "website": "https://conservairrigation.com/",
+   "phone": "(480) 771-6195",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi50C_8yKq2QRMRScbNkAwMc",
+    "cid": "14393505342906176561",
+    "category": "Lawn sprinkler system contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

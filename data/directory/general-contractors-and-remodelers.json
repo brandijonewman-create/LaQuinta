@@ -1,0 +1,2556 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "alisano-construction",
+   "name": "Alisano Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7137 E Rancho Vista Dr Ste B13",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.506,
+    "lng": -111.928
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists general contractor.",
+   "website": "https://alisano.com/",
+   "phone": "(480) 843-4233",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJfSP1CaYGK4cR_jvymyVkqVI",
+    "cid": "5956402094867102718",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "alongi-construction-az",
+   "name": "Alongi Construction AZ",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3030 N Civic Center Plaza #4",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.483,
+    "lng": -111.922
+   },
+   "description": "Remodeler in Scottsdale, Arizona.",
+   "website": "https://alcongroupllc.com/",
+   "phone": "(480) 466-6151",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-zuhuNYKK4cRhEDt4IFIcUQ",
+    "cid": "4931802789609029764",
+    "category": "Remodeler"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "american-construction-group",
+   "name": "American Construction Group",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "5635 N Scottsdale Rd Ste 170-F1",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.519,
+    "lng": -111.925
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://americanconstructiongroupaz.com/",
+   "phone": "(602) 879-6383",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJK5SX5sQLK4cRfBdlJG8JQBw",
+    "cid": "2035637404528088956",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "arc-construction-and-development",
+   "name": "ARC Construction & Development",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7084 E 2nd St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.492,
+    "lng": -111.929
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists general contractor and contractor.",
+   "website": "https://arc-az.com/",
+   "phone": "(480) 315-1108",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJv_lbjl8SK4cRveEI0pK6qMs",
+    "cid": "14675184525538550205",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "arizona-legacy-builders-llc",
+   "name": "Arizona Legacy Builders LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16930 E Palisades Blvd Suite100",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.715
+   },
+   "description": "Construction company in Fountain Hills, Arizona.",
+   "website": "https://www.azlegacybuilders.com/",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0R9PjwEMgwMRUltzhqtpphI",
+    "cid": "1343877724232702802",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "az-construction-and-renovation-llc",
+   "name": "AZ Construction & Renovation LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7107 E Thomas Rd #101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.48,
+    "lng": -111.928
+   },
+   "description": "General contractor in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and kitchen remodeler.",
+   "website": "https://azconstruct.com/",
+   "phone": "(480) 685-9234",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJFyQK8iELK4cRs-heCxj1aiA",
+    "cid": "2335948840363813043",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "az-outdoor-designs",
+   "name": "AZ Outdoor Designs",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "34401 N 52nd St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.798,
+    "lng": -111.969
+   },
+   "description": "Contractor in Cave Creek, Arizona.",
+   "website": "http://azoutdoordesigns.com/aboutus/",
+   "phone": "(480) 488-5080",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVVlRPF7K4cRiibgw4VQ6ps",
+    "cid": "11234880755876243082",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "azs-best-construction",
+   "name": "AZ’s Best Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6829 E Thomas Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.48,
+    "lng": -111.933
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and contractor.",
+   "website": "https://www.bestconstructionaz.com/",
+   "phone": "(480) 522-5887",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq-0ldpcLK4cRMkteTfY2YN4",
+    "cid": "16023867905672104754",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "barkan-construction-group",
+   "name": "Barkan Construction Group",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4414 N Civic Center Plaza #203",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.501,
+    "lng": -111.922
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "http://barkangroups.com/",
+   "phone": "(480) 273-7138",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJW_vYDr4LK4cRw2nESFubewg",
+    "cid": "611252990803995075",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bel-aire-development",
+   "name": "Bel Aire Development",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "29455 N Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.752,
+    "lng": -111.991
+   },
+   "description": "Construction company in Cave Creek, Arizona.",
+   "website": "http://belairedevelopment.com/contact/",
+   "phone": "(480) 427-4760",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJcZ5DeVF6K4cRYscJ8J4D7yM",
+    "cid": "2589292291928213346",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "caine-and-company-design-build-remodel",
+   "name": "Caine and Company, Design/Build/Remodel",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8040 E Morgan Trail #25",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.577,
+    "lng": -111.908
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and remodeler.",
+   "website": "https://caineandcompany.com/",
+   "phone": "(480) 304-9224",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi5KnJZF1K4cRkyMeuVzVBVM",
+    "cid": "5982422274251039635",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cal-wadsworth-construction",
+   "name": "Cal Wadsworth Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5734 E Rancho Manana Blvd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.955
+   },
+   "description": "Construction company in Cave Creek, Arizona.",
+   "website": "http://www.cwcut.com/",
+   "phone": "(480) 425-8772",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJacZQ1CZ8K4cRTBGJLtYvctc",
+    "cid": "15524523462449762636",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "carume-contracting-quality-construction-llc",
+   "name": "Carume Contracting Quality Construction LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13229 N Verde River Dr #200",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.717
+   },
+   "description": "General contractor in Fountain Hills, Arizona.",
+   "website": "https://www.carumequalityconstruction.com/",
+   "phone": "(480) 837-9190",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJS3zAi4iYK4cRr8a1Zz5ACfI",
+    "cid": "17440541668741072559",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "centre-construction-group",
+   "name": "Centre Construction Group",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3260 Hayden Rd Ste 102",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.485,
+    "lng": -111.909
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://www.centreconstructiongroup.com/",
+   "phone": "(312) 363-3811",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJATxPxOoLK4cRnuwOZkPItzM",
+    "cid": "3726667408472992926",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "commercial-remodeling-contractors-of-arizona",
+   "name": "Commercial Remodeling Contractors of Arizona",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "34522 N Scottsdale Rd #120",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.799,
+    "lng": -111.931
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and building firm.",
+   "website": "http://phoenixremodel.net/",
+   "phone": "(480) 757-1980",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ3yZft0d5K4cRJ9NN0b2KHHs",
+    "cid": "8871117913878024999",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "conserv",
+   "name": "Conserv",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "5733 E Thomas Rd #4",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.48,
+    "lng": -111.957
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists carpenter.",
+   "website": "http://buildconserv.com/",
+   "phone": "(480) 803-8993",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJw4HlKCUNK4cRAq_nFuUEU-o",
+    "cid": "16884844809920425730",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "copper-stone-construction",
+   "name": "Copper Stone Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.499,
+    "lng": -111.922
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "http://www.copperstoneconstruction.net/",
+   "phone": "(561) 697-8638",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ_____7sLK4cRaEK9F533PZM",
+    "cid": "10609908551234962024",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "creativ-design-build",
+   "name": "Creativ Design Build",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4400 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.926
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "https://creativdesignbuild.com/contact/",
+   "phone": "(602) 699-6331",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6qapr0LK4cRjqUgBhmxD-w",
+    "cid": "17010009038636754318",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cw-builders-llc",
+   "name": "CW Builders, LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3260 Hayden Rd #106",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.485,
+    "lng": -111.909
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(602) 840-1010",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJE7IMNbV1K4cRVcnR14ytZEA",
+    "cid": "4640024336526330197",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "desert-viking",
+   "name": "Desert Viking",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3260 Hayden Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.485,
+    "lng": -111.909
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "https://www.desert-viking.com/contact/",
+   "phone": "(480) 999-4935",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJXSGR-c0LK4cRDgS2Kq5CD88",
+    "cid": "14920217406310056974",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "eldred-construction-inc",
+   "name": "Eldred Construction Inc",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6228 Maguay Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.845,
+    "lng": -111.949
+   },
+   "description": "Construction company in Cave Creek, Arizona.",
+   "website": "http://eldredconstruction.com/",
+   "phone": "(480) 563-9556",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0yOsfYF-K4cRaBGW7X2nKQE",
+    "cid": "83782227381850472",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fairmount-development-llc",
+   "name": "Fairmount Development LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7175 E Camelback Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.501,
+    "lng": -111.928
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "http://www.fairmountdevelopment.com/contact/",
+   "phone": "(602) 697-0779",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJAQDQer0LK4cRBX524N9mFO0",
+    "cid": "17083392398252736005",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fhdc-fountain-hills-design-center",
+   "name": "FHDC - Fountain Hills Design Center",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16858 E Ave of the Fountains Ste 105",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.604,
+    "lng": -111.716
+   },
+   "description": "Construction company in Fountain Hills, Arizona. Its Google profile also lists interior designer.",
+   "website": "http://www.fhdesigncenter.com/",
+   "phone": "(480) 837-6561",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJfad_rYeYK4cRC_iAjPd2_Po",
+    "cid": "18085461009199331339",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fhp-builders",
+   "name": "FHP Builders",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7700 E Indian School Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.915
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "http://fhpbuilders.com/index.cfm/show_Contact",
+   "phone": "(480) 797-9678",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJhdDrOcQLK4cRqSMAG5AYmLc",
+    "cid": "13229350912608183209",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fina-construction-development-and-management-llc",
+   "name": "Fina Construction Development and Management, LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4300 N Miller Rd Ste 243",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.919
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists real estate developer.",
+   "website": "https://finacdm.com/",
+   "phone": "(800) 476-9129",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVXFkNEKK4cRAJMAS1oXAD8",
+    "cid": "4539654100962284288",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "first-leaf-construction",
+   "name": "First Leaf Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8232 E Indian School Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.903
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "http://firstleafconstruction.com/",
+   "phone": "(480) 234-7763",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJKxsNYMQLK4cRS6_EilFzEBA",
+    "cid": "1157551898291908427",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fortress-residential-group",
+   "name": "Fortress Residential Group",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8390 East Vía de Ventura #252",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.555,
+    "lng": -111.9
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "http://www.fortressresidentialgroup.com/",
+   "phone": "(480) 939-6319",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJH0mfx9YKK4cRgzkwDv2jxzQ",
+    "cid": "3803188717597768067",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "g-m-hunt-builders-and-remodelers",
+   "name": "G M Hunt Builders & Remodelers",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6914 E Bella Vista Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.829,
+    "lng": -111.931
+   },
+   "description": "General contractor in Cave Creek, Arizona.",
+   "website": "https://www.gmhuntbuilders.com/",
+   "phone": "(602) 264-1912",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJg8GrQ79-K4cRxMGBGUO56Ho",
+    "cid": "8856532365065961924",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "genio-renovations",
+   "name": "Genio Renovations",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6250 E Rose Cir Dr",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.485,
+    "lng": -111.946
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://www.geniorenovations.com/",
+   "phone": "(310) 617-9389",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJmWnK4sILK4cRcJ5mW0u52h0",
+    "cid": "2151235505329970800",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "handi-services",
+   "name": "Handi Services",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7014 E Camelback Rd STE B100A",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.929
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://handiservice.us/",
+   "phone": "(520) 703-5105",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJIRRm2VsNK4cRcgtnD4lBxLo",
+    "cid": "13457953643414621042",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hawk-canyon-construction-llc",
+   "name": "Hawk Canyon Construction, LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5454 E Morning Star Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.869,
+    "lng": -111.963
+   },
+   "description": "Construction company in Cave Creek, Arizona.",
+   "website": "http://hawkcanyon.com/",
+   "phone": "(480) 575-0970",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJC5Yw9-d9K4cRWAKWblU1eSk",
+    "cid": "2988478468780851800",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hayward-builders-llc",
+   "name": "Hayward Builders LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16803 E Palisades Blvd #1",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.608,
+    "lng": -111.718
+   },
+   "description": "Construction company in Fountain Hills, Arizona.",
+   "website": "",
+   "phone": "(480) 816-3350",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJRXBC54iYK4cRdtvwlOyONww",
+    "cid": "880329398936460150",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "high-desert-renovation-and-design",
+   "name": "High Desert Renovation & Design",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7202 E Carefree Dr",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.822,
+    "lng": -111.924
+   },
+   "description": "Construction company in Carefree, Arizona.",
+   "website": "",
+   "phone": "(602) 897-6099",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq-z8IB5_K4cRhAtnBGCHvWQ",
+    "cid": "7259107020851579780",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "highway-trade-company",
+   "name": "Highway Trade Company",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd Ste 100-5",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Construction company in Carefree, Arizona.",
+   "website": "https://highwaytradecompany.com/",
+   "phone": "(480) 392-9456",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJE8b9Lj55K4cRfR1by2W8b6c",
+    "cid": "12065069072138313085",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hochuli-design-and-remodeling-team",
+   "name": "Hochuli Design & Remodeling Team",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "2501 Hayden Rd Ste 102",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85257"
+   },
+   "geo": {
+    "lat": 33.475,
+    "lng": -111.908
+   },
+   "description": "Remodeler in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and guest house.",
+   "website": "https://www.designandremodelingteam.com/",
+   "phone": "(602) 451-0323",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJhyM3Qe8LK4cRN20eHTgZ7dM",
+    "cid": "15270889640280616247",
+    "category": "Remodeler"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "holmes-construction-inc",
+   "name": "Holmes Construction Inc.",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36801 Long Rifle Rd Box 841",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.82,
+    "lng": -111.91
+   },
+   "description": "General contractor in Carefree, Arizona.",
+   "website": "",
+   "phone": "(480) 488-5995",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJIZHST2Z_K4cRYnwKIBKx3lk",
+    "cid": "6475808005610437730",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "home-maintenance-solutions",
+   "name": "Home Maintenance Solutions",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "5222 E Via Buena Vista",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.564,
+    "lng": -111.968
+   },
+   "description": "Contractor in Paradise Valley, Arizona.",
+   "website": "",
+   "phone": "(712) 527-0911",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6qOO8N9lIcRcSmBD5sVxW4",
+    "cid": "7981809670308309361",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "home-services-at-the-home-depot",
+   "name": "Home Services at The Home Depot",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9170 E Talking Stick Wy",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.541,
+    "lng": -111.884
+   },
+   "description": "General contractor in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and countertop contractor.",
+   "website": "https://www.homedepot.com/l/Scottsdale/AZ/Scottsdale/85250/457/services",
+   "phone": "(844) 476-2140",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJR6GirOsKK4cRE9i_WgSaY7s",
+    "cid": "13502805451279947795",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "home-services-at-the-home-depot-cave-creek",
+   "name": "Home Services at The Home Depot",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "4925 E Carefree Hwy",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.797,
+    "lng": -111.975
+   },
+   "description": "General contractor in Cave Creek, Arizona. Its Google profile also lists bathroom remodeler and countertop contractor.",
+   "website": "https://www.homedepot.com/l/Carefree/AZ/Cave-Creek/85331/488/services",
+   "phone": "(844) 476-2140",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJh_KfXvN7K4cRFeH3Q6-FFs0",
+    "cid": "14778146215068950805",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "homecrest-contracting",
+   "name": "HomeCrest Contracting",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "4021 E Crimson Terrace",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.786,
+    "lng": -111.995
+   },
+   "description": "General contractor in Cave Creek, Arizona.",
+   "website": "https://www.homecrestcontracting.com/",
+   "phone": "(480) 589-8164",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJl0PWX5d2K4cRkT34aPibioc",
+    "cid": "9766790233121635729",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hrw-builders-llc",
+   "name": "HRW Builders, LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7141 E 6th Ave #200",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.499,
+    "lng": -111.927
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://www.hrwbuilders.com/",
+   "phone": "(480) 966-6744",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJXfX04icJK4cR6ukLKPOgOv8",
+    "cid": "18391188994530208234",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "huds-home-remodeling-and-flooring",
+   "name": "Huds Home Remodeling and Flooring",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16729 E Palisades Blvd #100",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.608,
+    "lng": -111.719
+   },
+   "description": "General contractor in Fountain Hills, Arizona. Its Google profile also lists flooring store.",
+   "website": "https://www.flooringinaz.com/",
+   "phone": "(480) 836-0663",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJEyr5KYmYK4cRzSFVr8T0d4w",
+    "cid": "10121827813130838477",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-builders-scottsdale-remodeling-and-construction",
+   "name": "Infinity Builders - Scottsdale Remodeling & Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7236 E 1st Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.494,
+    "lng": -111.925
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://infinitybuildersaz.com/construction-and-remodeling-scottsdale/",
+   "phone": "(480) 757-0767",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCRqiDL8LK4cR1qs9kCwRjWU",
+    "cid": "7317523852643118038",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-builders-of-carefree",
+   "name": "Infinity Builders of Carefree",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd Ste 203",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.817,
+    "lng": -111.892
+   },
+   "description": "General contractor in Carefree, Arizona.",
+   "website": "https://infinitybuildersaz.com/",
+   "phone": "(602) 691-7184",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJz4Qqkzln7aER9k0Z7yCh0Zc",
+    "cid": "10939702132682083830",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-general-contractors-cave-creek",
+   "name": "Infinity General Contractors Cave Creek",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6450 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.941
+   },
+   "description": "General contractor in Cave Creek, Arizona.",
+   "website": "https://infinitygeneralcontractorsaz.com/cave-creek/",
+   "phone": "(602) 699-4244",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJjQrLyVt_K4cRfL4-DfPvaM0",
+    "cid": "14801344002531442300",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-general-contractors-fountain-hills",
+   "name": "Infinity General Contractors Fountain Hills",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16650 E Palisades Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.609,
+    "lng": -111.721
+   },
+   "description": "Construction company in Fountain Hills, Arizona. Its Google profile also lists general contractor and remodeler.",
+   "website": "https://infinitygeneralcontractorsaz.com/fountain-hills/",
+   "phone": "(602) 847-7045",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJdRzUn2mZK4cRtfTErJxXsU4",
+    "cid": "5670409736261268661",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-general-contractors-scottsdale",
+   "name": "Infinity General Contractors Scottsdale",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6969 E Shea Blvd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85254"
+   },
+   "geo": {
+    "lat": 33.582,
+    "lng": -111.931
+   },
+   "description": "Home builder in Scottsdale, Arizona. Its Google profile also lists general contractor and remodeler.",
+   "website": "https://infinitygeneralcontractorsaz.com/",
+   "phone": "(602) 858-6539",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ4UC6QT51K4cR46z8XR0IAuw",
+    "cid": "17006164065128328419",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "ionic-builders-llc",
+   "name": "Ionic Builders LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16810 E Ave of the Fountains #205",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.605,
+    "lng": -111.718
+   },
+   "description": "General contractor in Fountain Hills, Arizona.",
+   "website": "https://ionicbuilders.com/",
+   "phone": "(480) 620-6040",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJl7sdeuCZK4cRYQHRuYGKJZs",
+    "cid": "11179493939790020961",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "luxury-remodels-company",
+   "name": "Luxury Remodels Company",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "9096 E Bahia Dr Ste 103",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.637,
+    "lng": -111.886
+   },
+   "description": "General contractor in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and home improvement store.",
+   "website": "https://www.luxremodels.com/",
+   "phone": "(480) 550-8774",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ9VBJS7J1K4cRpXNah8Pk8F4",
+    "cid": "6841219362416391077",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "luxury-renovations",
+   "name": "Luxury Renovations",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4385 N 75th St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.501,
+    "lng": -111.92
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://lux-reno.com/",
+   "phone": "(602) 622-2361",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJNTaCCbcLK4cRG2uShM4ggGE",
+    "cid": "7025651490057513755",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "m-d-merrett-inc",
+   "name": "M D Merrett Inc",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.915
+   },
+   "description": "Construction company in Carefree, Arizona.",
+   "website": "http://mdmerrett.com/",
+   "phone": "(480) 575-0915",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJuVdbCcZ-K4cRRMfBSJCdKHI",
+    "cid": "8225997962413721412",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mc-construction-management-inc",
+   "name": "Mc Construction Management, Inc.",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "38012 N Linda Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.831,
+    "lng": -111.945
+   },
+   "description": "General contractor in Cave Creek, Arizona.",
+   "website": "http://www.mcbuilders.net/about.htm",
+   "phone": "(480) 367-8600",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq2Jfo5h-K4cRXIUFLMqIyaA",
+    "cid": "11585941918290642268",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mccoy-construction-co",
+   "name": "McCoy Construction Co.",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5522 N Fairway Trail",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.834,
+    "lng": -111.962
+   },
+   "description": "Construction company in Cave Creek, Arizona. Its Google profile also lists contractor.",
+   "website": "",
+   "phone": "(480) 577-1642",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJny467yR8K4cRMjwW35pCyO4",
+    "cid": "17206075609304153138",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mdf-development",
+   "name": "MDF Development",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6710 N Scottsdale Rd #180",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.534,
+    "lng": -111.926
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "http://www.mdfdev.com/",
+   "phone": "(602) 469-2554",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVWVujkLK4cRPuqOpxSA43I",
+    "cid": "8278601366235966014",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mfc-enterprises",
+   "name": "MFC Enterprises",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5742 E Paseo Dulce",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.829,
+    "lng": -111.957
+   },
+   "description": "Contractor in Cave Creek, Arizona.",
+   "website": "",
+   "phone": "(480) 861-1003",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJs0iLvVV9K4cRq8uqs23LTl8",
+    "cid": "6867650153812773803",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "minimal-living-concepts",
+   "name": "Minimal Living Concepts",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8280 E Gelding Dr Ste 104",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.902
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists general contractor and guest house.",
+   "website": "https://minimallivingconcepts.com/",
+   "phone": "(623) 343-0024",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJG3B0WFN1K4cRixQqyscz_d0",
+    "cid": "15995998384673133707",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "moon-design",
+   "name": "Moon Design",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "36608 N 51st St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.819,
+    "lng": -111.971
+   },
+   "description": "Contractor in Cave Creek, Arizona.",
+   "website": "https://www.moonconstruction.net/contact",
+   "phone": "(541) 450-0394",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVWp5RN8K4cRySnNS7I8ifI",
+    "cid": "17476566565461502409",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "n-and-m-construction",
+   "name": "N & M Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7100 E Cave Creek Rd Ste 107",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.831,
+    "lng": -111.929
+   },
+   "description": "General contractor in Cave Creek, Arizona.",
+   "website": "https://www.nm-construction.com/",
+   "phone": "(480) 356-7700",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCciJjt0iy4URW1UvToq-hR0",
+    "cid": "2127315900228916571",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "n-and-m-home-services",
+   "name": "N&M Home Services",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7100 E Cave Creek Rd Ste 107",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.831,
+    "lng": -111.929
+   },
+   "description": "General contractor in Cave Creek, Arizona. Its Google profile also lists handyman/handywoman/handyperson and property management company.",
+   "website": "https://nm-homeservices.com/home-services",
+   "phone": "(480) 409-3925",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJZSr8mxp_K4cRet9oWSmWNF0",
+    "cid": "6716158048654122874",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "nitti-builders",
+   "name": "Nitti Builders",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4248 N Craftsman Ct #100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.928
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "https://nittibldrs.com/",
+   "phone": "(480) 459-2110",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ___P5JULK4cRuNYu9IUpGGk",
+    "cid": "7572848428727588536",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "nucleus-construction",
+   "name": "Nucleus Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "100 Easy St",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.923
+   },
+   "description": "General contractor in Carefree, Arizona.",
+   "website": "https://nucleusconstruction.com/",
+   "phone": "(480) 490-1400",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJJYv1qodlK4cRsYsoao6IXzM",
+    "cid": "3701827563969612721",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "paxton-construction",
+   "name": "Paxton Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7340 E Main St #107",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.923
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "http://www.paxtonaz.com/",
+   "phone": "(480) 947-1117",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ6wIE9QrD4xQRmeJI5uFGTFQ",
+    "cid": "6074307933461078681",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "q-pro-services",
+   "name": "Q Pro Services",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17252 E Falcon Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.595,
+    "lng": -111.71
+   },
+   "description": "General contractor in Fountain Hills, Arizona.",
+   "website": "https://qproservices.com/",
+   "phone": "(480) 410-0014",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJpXHelX-jK4cRa4UaeMjD6Xk",
+    "cid": "8784767813938742635",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "r-h-design-and-build",
+   "name": "R H Design and Build",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7025 E Via Soleri Dr Unit 4040",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.93
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "https://rafichokayem.com/",
+   "phone": "(602) 568-7596",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJIaARHgYLK4cRMvPCbpMJ6Kg",
+    "cid": "12170988521791877938",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "renovations-by-design-general-contractor-scottsdale",
+   "name": "Renovations By Design | General Contractor Scottsdale",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7150 E Camelback Rd Ste 107",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.503,
+    "lng": -111.927
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and cabinet maker.",
+   "website": "https://renovationsbydesign.com/",
+   "phone": "(480) 235-1147",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJASe8U055K4cRm5PkjhqY-5k",
+    "cid": "11095629346791265179",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "roberts-contracting-inc",
+   "name": "Robert's Contracting, Inc",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7349 N Vía Paseo Del Sur #515",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.544,
+    "lng": -111.906
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "http://robertscontractingaz.com/",
+   "phone": "(602) 818-0846",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCyp1uSALK4cRjsrSnowezKI",
+    "cid": "11730784718702168718",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "southern-arizona-structures",
+   "name": "Southern Arizona Structures",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7202 E Carefree Dr",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.924
+   },
+   "description": "Construction company in Carefree, Arizona.",
+   "website": "",
+   "phone": "(480) 652-6698",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxz_5mMh-K4cRC3PdUW8EtKA",
+    "cid": "11579885418037736203",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "story-renovations",
+   "name": "Story Renovations",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6380 E Thomas Rd #100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.481,
+    "lng": -111.944
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and building designer.",
+   "website": "http://www.storyrenovations.com/",
+   "phone": "(480) 773-6481",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-WBivbkLK4cR0EtgIvzNR1Q",
+    "cid": "6073049105324592080",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sunslave-design-builders-llc",
+   "name": "SunSlave Design Builders LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8126 E Clarendon Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.491,
+    "lng": -111.905
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://www.sunslavedesignbuilders.com/contact",
+   "phone": "(602) 323-7056",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJryQsWssLK4cRZRH1KQwoH2Q",
+    "cid": "7214529160779469157",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "ts-construction-and-development",
+   "name": "T's Construction & Development",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7406 E Nonchalant Ave",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.921
+   },
+   "description": "General contractor in Carefree, Arizona.",
+   "website": "https://www.ts-constructiondev.com/",
+   "phone": "(480) 488-3596",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJp2SbX89-K4cRgX69gb7i4mc",
+    "cid": "7485794838491528833",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tdlc-development-inc",
+   "name": "TDLC Development Inc",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7400 E McCormick Pkwy c102",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85258"
+   },
+   "geo": {
+    "lat": 33.552,
+    "lng": -111.923
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "http://www.tdlcdev.com/",
+   "phone": "(480) 315-6724",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJqZkEFncMK4cR3veFFQLoNlY",
+    "cid": "6212407831652857822",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-lighting-plan",
+   "name": "The Lighting Plan",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "37234 N Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.955
+   },
+   "description": "Contractor in Cave Creek, Arizona.",
+   "website": "https://thelightingplan.com/contact-us/",
+   "phone": "(480) 215-7995",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6r6YB58K4cRKSOILJMjTrI",
+    "cid": "12848245901948887849",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "twin-brothers-development",
+   "name": "Twin Brothers Development",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6423 E Thomas Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.478,
+    "lng": -111.94
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://www.twinbrosdevelopment.com/contact",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJq6paMOULK4cR3rTLyqJMuDM",
+    "cid": "3726812953719846110",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "us-development-and-construction-inc",
+   "name": "US Development and Construction Inc",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7272 E Indian School Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.925
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://usdevcon.com/contact-us",
+   "phone": "(480) 207-5190",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ46JlDr8LK4cRqZz-exx71sY",
+    "cid": "14327774626795396265",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "valenza-development-corporation",
+   "name": "Valenza Development Corporation",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7708 E Horizon Dr",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.834,
+    "lng": -111.914
+   },
+   "description": "General contractor in Carefree, Arizona.",
+   "website": "https://valenzadevelopment.com/",
+   "phone": "(480) 488-1178",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ7yAEF91-K4cRsF-X2-gXhN0",
+    "cid": "15961909268191862704",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "vra-construction",
+   "name": "VRA Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7202 E Carefree Dr Ste 1B",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.924
+   },
+   "description": "Construction company in Carefree, Arizona.",
+   "website": "https://www.vraconstruction.com/",
+   "phone": "(858) 230-0334",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJFXtiRCF_K4cRFRZ2U_i0QuA",
+    "cid": "16159677391603897877",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "wjp-renovation-llc",
+   "name": "WJP Renovation LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "37555 N Hum Rd Ste 106",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.826,
+    "lng": -111.923
+   },
+   "description": "Construction company in Carefree, Arizona. Its Google profile also lists bathroom remodeler and carpenter.",
+   "website": "http://www.wjprenovation.com/",
+   "phone": "(512) 718-8185",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJjdLx4d_TRIYRKivWFm9BHes",
+    "cid": "16941769318617983786",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "woodcrest-design-build",
+   "name": "Woodcrest Design + Build",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4237 N Craftsman Ct",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.928
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists bathroom remodeler and remodeler.",
+   "website": "https://woodcrestdesign.com/",
+   "phone": "(480) 367-8510",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJvx2tRrR1K4cRntLCMAUV3WY",
+    "cid": "7412103673758798494",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "yother-construction-management",
+   "name": "Yother Construction Management",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36800 Sidewinder Rd",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.922
+   },
+   "description": "General contractor in Carefree, Arizona.",
+   "website": "",
+   "phone": "(480) 488-0378",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJj6f53s5-K4cRZwr_QTKJOKI",
+    "cid": "11689243681788725863",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "a-r-mays-construction",
+   "name": "A.R. Mays Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6900 E Indian School Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.933
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists general contractor.",
+   "website": "https://www.armays.com/",
+   "phone": "(480) 850-6900",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJKQMsQZQLK4cRCzH5BxYHlKc",
+    "cid": "12075284292091588875",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "advocate-residential-construction-advisors",
+   "name": "ADVOCATE - Residential Construction Advisors",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6720 N Scottsdale Rd #305",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.534,
+    "lng": -111.927
+   },
+   "description": "Building consultant in Scottsdale, Arizona.",
+   "website": "https://advocate-rca.com/",
+   "phone": "(602) 714-3952",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBxEITWwNK4cRDvMjzY_v9Qc",
+    "cid": "573627928460653326",
+    "category": "Building consultant"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "arizona-retail-construction-llc",
+   "name": "Arizona Retail Construction LLC",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7527 E 1st St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.492,
+    "lng": -111.919
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(480) 991-0067",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCR9qsMcLK4cRluBefWNkQ-Y",
+    "cid": "16592215830630949014",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "brinkmann-constructors",
+   "name": "Brinkmann Constructors",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6991 E Camelback Rd Ste b 210",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.501,
+    "lng": -111.932
+   },
+   "description": "General contractor in Scottsdale, Arizona.",
+   "website": "https://brinkmannconstructors.com/",
+   "phone": "(480) 908-7930",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ22wrPDkLK4cRHDMyu7s8WqM",
+    "cid": "11770787353083392796",
+    "category": "General contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "maydall-construction",
+   "name": "MayDall Construction",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6900 E Indian School Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.932
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "http://www.maydall.com/contact/",
+   "phone": "(480) 850-6951",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJy6X4TpQLK4cRelMB4OPJA7c",
+    "cid": "13187606114423886714",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "n-b-construction-inc",
+   "name": "N B Construction Inc",
+   "categories": [
+    "general-contractors-and-remodelers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.499,
+    "lng": -111.922
+   },
+   "description": "Construction company in Scottsdale, Arizona.",
+   "website": "http://www.nbctelecom.com/",
+   "phone": "(480) 947-3599",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ_____7sLK4cRsMJDxJ_-8Jc",
+    "cid": "10948530656283706032",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

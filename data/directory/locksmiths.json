@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "unlocked-locksmiths-fountain-hills",
+   "name": "Unlocked Locksmiths Fountain Hills",
+   "categories": [
+    "locksmiths"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "11883 N Saguaro Blvd #100b",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.595,
+    "lng": -111.715
+   },
+   "description": "Emergency locksmith service in Fountain Hills, Arizona. Its Google profile also lists key duplication service and locks supplier.",
+   "website": "https://unlockedlocksmithsaz.com/locksmith-fountain-hills/",
+   "phone": "(520) 525-6034",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ42ILLC2jK4cRu8jbjk2W9nI",
+    "cid": "8283973824448022715",
+    "category": "Emergency locksmith service"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

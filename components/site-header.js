@@ -1,107 +1,136 @@
 'use client';
-
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { NAV_PRIMARY, site } from '@/lib/site-config';
-import { Button } from '@/components/ui/button';
+import { MapPin, Menu, X } from 'lucide-react';
 
-const DESKTOP_NAV = NAV_PRIMARY.filter((i) => !i.secondary).slice(0, 6);
+const NAV_LINKS = [
+  { href: '/communities',                 label: 'Communities' },
+  { href: '/community-quiz',              label: 'Community Quiz' },
+  { href: '/architects',                  label: 'Architects' },
+  { href: '/scottsdale-home-value',       label: 'Home Value' },
+  { href: '/guide',                       label: 'The Guide' },
+  { href: '/blog',                        label: 'Journal' },
+  { href: '/about',                       label: 'About' }
+];
 
-// Solid deep-navy header (#062840 via `bg-palm` token). Provides strong
-// contrast against the cream page background AND remains legible above image
-// hero sections. Mirrors the Golf Lifestyle network primary brand color.
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
+  // Lock body scroll while drawer is open
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-shadow duration-300 bg-palm text-sand-50 border-b border-gold/20 ${
-        scrolled ? 'shadow-lg shadow-palm/20' : ''
-      }`}
-    >
-      <div className="container flex items-center justify-between h-16 lg:h-20 gap-8 lg:gap-10">
-        <Link
-          href="/"
-          className="flex items-center gap-2 group shrink-0"
-          aria-label={site.name}
-        >
-          <Wordmark />
-        </Link>
-
-        <nav className="hidden xl:flex items-center gap-5 2xl:gap-7">
-          {DESKTOP_NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-[12px] uppercase tracking-[0.14em] whitespace-nowrap text-sand-50/85 hover:text-gold transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden xl:flex items-center gap-3 shrink-0">
-          <Button
-            asChild
-            size="sm"
-            className="rounded-none whitespace-nowrap bg-gold text-palm font-semibold hover:bg-gold/90"
-          >
-            <Link href="/community-quiz">Find Your Community</Link>
-          </Button>
+    <>
+      <header className="sticky top-0 z-50 w-full border-b border-emerald-900/20 bg-[#062840]/95 backdrop-blur supports-[backdrop-filter]:bg-[#062840]/85">
+        <div className="hidden md:flex items-center justify-end gap-6 px-6 py-1.5 text-[11px] text-emerald-50/70 border-b border-emerald-50/10">
+          <span className="flex items-center gap-1.5"><MapPin className="h-3 w-3" /> Scottsdale, Arizona</span>
         </div>
+        <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+          <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center text-[#062840] font-serif font-bold text-lg">S</div>
+            <div className="leading-tight">
+              <div className="font-serif text-lg text-amber-50 tracking-wide">Scottsdale</div>
+              <div className="text-[10px] uppercase tracking-[0.25em] text-emerald-200/70">Golf Lifestyle</div>
+            </div>
+          </Link>
 
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="xl:hidden p-2 -mr-2 text-sand-50"
-          aria-label="Toggle menu"
+          {/* Desktop nav */}
+          <nav className="hidden lg:flex items-center gap-7 text-sm text-emerald-50/90">
+            {NAV_LINKS.map(n => (
+              <Link key={n.href} href={n.href} className="hover:text-amber-300 transition">{n.label}</Link>
+            ))}
+          </nav>
+
+          {/* Right side actions */}
+          <div className="flex items-center gap-2">
+            {/* Hamburger (mobile + tablet) */}
+            <button
+              onClick={() => setOpen(true)}
+              aria-label="Open menu"
+              aria-expanded={open}
+              className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-amber-300/30 text-amber-100 hover:bg-amber-300 hover:text-[#062840] transition"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile drawer */}
+      <div
+        className={`fixed inset-0 z-[60] lg:hidden transition-opacity duration-200 ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        aria-hidden={!open}
+      >
+        {/* Backdrop */}
+        <div
+          className="absolute inset-0 bg-[#062840]/80 backdrop-blur-sm"
+          onClick={() => setOpen(false)}
+        />
+        {/* Panel */}
+        <aside
+          className={`absolute right-0 top-0 h-full w-[88%] max-w-sm bg-[#062840] text-amber-50 shadow-2xl flex flex-col overflow-y-auto transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'}`}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
-      </div>
+          <div className="flex items-center justify-between px-6 py-5 border-b border-amber-300/10">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center text-[#062840] font-serif font-bold text-lg">S</div>
+              <div className="leading-tight">
+                <div className="font-serif text-lg text-amber-50">Scottsdale</div>
+                <div className="text-[10px] uppercase tracking-[0.25em] text-emerald-200/70">Golf Lifestyle</div>
+              </div>
+            </div>
+            <button
+              onClick={() => setOpen(false)}
+              aria-label="Close menu"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-amber-300/30 text-amber-100 hover:bg-amber-300 hover:text-[#062840] transition"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
 
-      {open && (
-        <div className="xl:hidden bg-palm border-t border-gold/20">
-          <nav className="container py-4 flex flex-col gap-1">
-            {NAV_PRIMARY.map((item) => (
+          <nav className="flex flex-col px-6 py-4 text-base">
+            {NAV_LINKS.map(n => (
               <Link
-                key={item.href}
-                href={item.href}
+                key={n.href}
+                href={n.href}
                 onClick={() => setOpen(false)}
-                className="py-3 text-sm uppercase tracking-[0.16em] text-sand-50/85 hover:text-gold border-b border-gold/15"
+                className="py-3.5 border-b border-amber-300/10 text-amber-50 hover:text-amber-300 font-serif text-lg transition"
               >
-                {item.label}
+                {n.label}
               </Link>
             ))}
-            <Button asChild className="mt-4 rounded-none bg-gold text-palm font-semibold hover:bg-gold/90">
-              <Link href="/community-quiz" onClick={() => setOpen(false)}>
-                Find Your Community
-              </Link>
-            </Button>
+            <Link
+              href="/map"
+              onClick={() => setOpen(false)}
+              className="py-3.5 border-b border-amber-300/10 text-emerald-50/75 hover:text-amber-300 text-sm transition"
+            >
+              Interactive Map
+            </Link>
+            <Link
+              href="/market-reports/scottsdale-q2-2026"
+              onClick={() => setOpen(false)}
+              className="py-3.5 border-b border-amber-300/10 text-emerald-50/75 hover:text-amber-300 text-sm transition"
+            >
+              Market Report
+            </Link>
+            <Link
+              href="/guides/scottsdale-buyers-guide-2026"
+              onClick={() => setOpen(false)}
+              className="py-3.5 text-emerald-50/75 hover:text-amber-300 text-sm transition"
+            >
+              Buyer Guide
+            </Link>
           </nav>
-        </div>
-      )}
-    </header>
-  );
-}
 
-function Wordmark() {
-  return (
-    <div className="flex flex-col leading-none text-sand-50 pr-2 lg:pr-4">
-      <span className="font-serif text-[22px] md:text-[26px] tracking-[0.02em] leading-[0.95]">
-        La&nbsp;Quinta
-      </span>
-      <span className="mt-1.5 text-[9px] md:text-[10px] uppercase tracking-[0.42em] text-gold opacity-95">
-        Golf&nbsp;&middot;&nbsp;Lifestyle
-      </span>
-    </div>
+          <div className="mt-auto p-6 border-t border-amber-300/10 space-y-3">
+            <div className="pt-2 text-center text-[11px] text-emerald-50/40 flex items-center justify-center gap-1.5">
+              <MapPin className="h-3 w-3" /> Scottsdale, Arizona
+            </div>
+          </div>
+        </aside>
+      </div>
+    </>
   );
 }

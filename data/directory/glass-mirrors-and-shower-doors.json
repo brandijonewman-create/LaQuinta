@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "above-and-beyond-glass",
+   "name": "Above & Beyond Glass",
+   "categories": [
+    "glass-mirrors-and-shower-doors"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6552 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.834,
+    "lng": -111.939
+   },
+   "description": "Glass & mirror shop in Cave Creek, Arizona. Its Google profile also lists bathroom remodeler and contractor.",
+   "website": "http://www.aboveandbeyondglass.com/",
+   "phone": "(480) 235-6101",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJn8VecJd-K4cRcD13mKvfC7s",
+    "cid": "13478112237926694256",
+    "category": "Glass & mirror shop"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "higginbotham-glass-corporation",
+   "name": "Higginbotham Glass Corporation",
+   "categories": [
+    "glass-mirrors-and-shower-doors"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "36424 N 27th St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.816,
+    "lng": -112.024
+   },
+   "description": "Glass shop in Cave Creek, Arizona. Its Google profile also lists mirror shop and shower door shop.",
+   "website": "http://yourshowerdooraz.com/",
+   "phone": "(602) 803-9893",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxyk8GMB8K4cRjGtLGLrsybg",
+    "cid": "13315434057313250188",
+    "category": "Glass shop"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

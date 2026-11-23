@@ -1,72 +1,56 @@
-// Modernized /downloads/[slug]. Now serves the 7 community-guide PDFs from the
-// lead-magnet registry, gates them with the new /api/leads/magnet endpoint,
-// auto-triggers the PDF download, and fires both Resend emails (owner +
-// confirmation). Replaces the old generic lead form.
-
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import PageHero from '@/components/shared/page-hero';
-import Breadcrumbs from '@/components/shared/breadcrumbs';
-import DownloadGate from '@/components/forms/download-gate';
-import { LEAD_MAGNETS, getMagnet } from '@/lib/lead-magnets';
-import { communities } from '@/lib/site-config';
-import { FileText } from 'lucide-react';
+import PageShell from '@/components/page-shell';
+import LeadGateForm from '@/components/lead/LeadGateForm';
+import { getMagnet, listMagnets } from '@/lib/lead-magnets';
+import { SITE } from '@/lib/data';
+import { ArrowLeft } from 'lucide-react';
 
 export function generateStaticParams() {
-  return Object.keys(LEAD_MAGNETS).map((slug) => ({ slug }));
+  return listMagnets().map(m => ({ slug: m.slug }));
 }
 
 export function generateMetadata({ params }) {
   const m = getMagnet(params.slug);
-  if (!m) return { robots: { index: false, follow: false } };
+  if (!m) return { title: 'Download not found' };
   return {
-    title: m.label,
-    description: `Download the ${m.label} — a printable guide from La Quinta Golf Lifestyle.`,
-    robots: { index: false, follow: false },
-    alternates: { canonical: `/downloads/${params.slug}` },
+    title: `${m.title}: Download`,
+    description: m.subtitle,
+    alternates: { canonical: `${SITE.url}/downloads/${m.slug}` },
+    // Gate pages must NOT be indexed. The companion long-form page on the site
+    // (e.g. /guides/<slug>) is the SEO-canonical entry point. The gate page is
+    // a conversion landing, not editorial content.
+    robots: { index: false, follow: true, googleBot: { index: false, follow: true } }
   };
 }
 
-export default function DownloadPage({ params }) {
+export default function Page({ params }) {
   const m = getMagnet(params.slug);
   if (!m) notFound();
-  const community = communities.find((c) => c.slug === m.community);
+
   return (
-    <>
-      <PageHero
-        eyebrow="Download"
-        title={m.label}
-        subtitle={`A printable, ${m.requirePhone ? '8-section' : '8-section'} guide covering the course, the club, the real-estate character, and the questions to ask before you commit.`}
-      />
-      <section className="container py-16 lg:py-24">
-        <Breadcrumbs items={[{ label: 'Downloads' }, { label: m.label }]} />
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-10">
-          <div className="lg:col-span-7 space-y-6">
-            <div className="flex items-start gap-4 border-b border-border pb-6">
-              <FileText size={36} className="text-terracotta flex-shrink-0" />
-              <div>
-                <div className="font-serif text-2xl text-palm">{m.label}</div>
-                <div className="text-[11px] uppercase tracking-[0.22em] text-foreground/55 mt-1">
-                  PDF · La Quinta, California
-                </div>
-              </div>
-            </div>
-            <p className="text-foreground/80 leading-relaxed text-lg">
-              An honest walkthrough of {community?.name || m.label.replace(' Guide','')}— the course, the membership structure, the real-estate character, and the practical questions to ask before you commit.
-            </p>
-            <p className="text-foreground/65 italic text-sm">
-              How it works: complete the form, the guide is delivered on submission, and we email you a copy for your records.
-            </p>
-          </div>
-          <div className="lg:col-span-5">
-            <DownloadGate
-              slug={params.slug}
-              label={m.label}
-              community={community?.name || ''}
-              requirePhone={!!m.requirePhone}
-            />
-          </div>
+    <PageShell>
+      <section className="relative bg-[#062840] text-amber-50">
+        <div className="max-w-3xl mx-auto px-6 py-20 md:py-28 text-center">
+          <Link
+            href="/guides"
+            className="inline-flex items-center gap-1 text-sm text-amber-200 hover:text-amber-100 mb-6"
+          >
+            <ArrowLeft className="h-4 w-4" /> Back to all guides
+          </Link>
+          <div className="text-xs uppercase tracking-[0.4em] text-amber-300 mb-4">Free download</div>
+          <h1 className="font-serif text-4xl md:text-6xl text-amber-50 tracking-tight leading-[1.05]">{m.title}</h1>
+          <p className="text-amber-50/85 mt-5 text-lg leading-relaxed">{m.subtitle}</p>
         </div>
       </section>
-    </>
+
+      <section className="max-w-2xl mx-auto px-6 py-16">
+        <LeadGateForm magnet={m} />
+        <p className="mt-6 text-center text-xs text-[#062840]/60 leading-relaxed">
+          After you submit, your download will start automatically.
+          The file is hosted on this site: we do not email it.
+        </p>
+      </section>
+    </PageShell>
   );
 }

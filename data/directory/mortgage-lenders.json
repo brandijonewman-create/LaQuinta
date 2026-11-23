@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "tri-pointe-connect-corporate-office",
+   "name": "Tri Pointe Connect Corporate Office",
+   "categories": [
+    "mortgage-lenders"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4800 N Scottsdale Rd Ste 3800",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.508,
+    "lng": -111.927
+   },
+   "description": "Home builder in Scottsdale, Arizona.",
+   "website": "https://www.tripointeconnect.com/",
+   "phone": "(844) 760-5626",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ_3-FMvkLK4cRyOBYJ9boB0o",
+    "cid": "5334488290124423368",
+    "category": "Home builder"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "g-and-t-consulting",
+   "name": "G&T Consulting",
+   "categories": [
+    "smart-home-audio-and-home-theater"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7518 Elbow Bend Rd",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.92
+   },
+   "description": "Audio visual consultant in Carefree, Arizona. Its Google profile also lists home automation company and home cinema installation.",
+   "website": "https://personaltechconsulting.com/",
+   "phone": "(480) 463-4703",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJYwTHZWt_K4cR7MZtvdwY7H0",
+    "cid": "9073654685594666732",
+    "category": "Audio visual consultant"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "integrated-automation",
+   "name": "Integrated Automation",
+   "categories": [
+    "smart-home-audio-and-home-theater"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "14018 N Shiloh Way",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.614,
+    "lng": -111.705
+   },
+   "description": "Home automation company in Fountain Hills, Arizona. Its Google profile also lists audio visual consultant and audio visual equipment repair service.",
+   "website": "https://www.integratedautomationllc.com/",
+   "phone": "(602) 622-2206",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBU1ORrCZK4cRgJkNhoay3cY",
+    "cid": "14329805880207186304",
+    "category": "Home automation company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "integrated-io-llc",
+   "name": "Integrated IO, LLC",
+   "categories": [
+    "smart-home-audio-and-home-theater"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16930 E Palisades Blvd #100",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.715
+   },
+   "description": "Home theater store in Fountain Hills, Arizona. Its Google profile also lists audio visual consultant and audio visual equipment supplier.",
+   "website": "",
+   "phone": "(480) 836-1446",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ26WwF4iYK4cRfUtPA5OzYTQ",
+    "cid": "3774495406710279037",
+    "category": "Home theater store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tech-4-life-computers-websites-and-digital-marketing",
+   "name": "Tech 4 Life Computers, Websites & Digital Marketing",
+   "categories": [
+    "smart-home-audio-and-home-theater"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "748 Easy St Ste 12",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.924
+   },
+   "description": "Computer support and services in Carefree, Arizona. Its Google profile also lists computer repair service and computer security service.",
+   "website": "https://techfourlife.com/",
+   "phone": "(480) 488-0773",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJM91gP8Z-K4cRa8Xx2yxmE60",
+    "cid": "12471424135973684587",
+    "category": "Computer support and services"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

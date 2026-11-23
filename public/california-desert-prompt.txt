@@ -1,0 +1,204 @@
+Build a Next.js 14 (App Router) SEO-first editorial website for golf real estate in the California Desert (Coachella Valley). This is a fully independent project — not a fork of any existing site.
+
+═══════════════════════════════════════════
+BRAND
+═══════════════════════════════════════════
+• Site name: California Desert Golf Lifestyle
+• Domain: CaliforniaDesertGolfLifestyle.com
+• Tagline: "The editorial guide to golf homes, private clubs, and the desert lifestyle of the Coachella Valley"
+• Owner reference: Brandi Jo Newman — refer to her STRICTLY and ONLY as "owner and creator." Never agent, broker, realtor, advisor.
+
+═══════════════════════════════════════════
+MARKET SCOPE (Coachella Valley, Riverside County, CA)
+═══════════════════════════════════════════
+Primary markets (the cities and ZIP codes the editorial focuses on):
+• Indian Wells (92210)
+• La Quinta (92253)
+• Rancho Mirage (92270)
+• Palm Desert (92211, 92260)
+• Palm Springs (92262, 92264)
+• Indio (92201, 92203)
+• Bermuda Dunes (92203)
+
+Signature private golf communities to feature (verify each independently before publishing):
+• The Madison Club (La Quinta) — Tom Fazio
+• The Hideaway (La Quinta) — Pete Dye + Clive Clark
+• PGA West (La Quinta) — Pete Dye, Nicklaus, Norman, Weiskopf courses
+• The Tradition Golf Club (La Quinta) — Arnold Palmer
+• Andalusia Country Club (La Quinta) — Rees Jones
+• The Quarry at La Quinta — Tom Fazio
+• La Quinta Country Club
+• The Vintage Club (Indian Wells)
+• The Reserve Club (Indian Wells) — Tom Weiskopf
+• Eldorado Country Club (Indian Wells)
+• Toscana Country Club (Indian Wells)
+• Indian Wells Country Club
+• BIGHORN Golf Club (Palm Desert) — Tom Fazio + Arthur Hills
+• Stone Eagle (Palm Desert) — Tom Doak
+• Ironwood Country Club (Palm Desert)
+• Marrakesh Country Club (Palm Desert)
+• Thunderbird Country Club (Rancho Mirage)
+• Mission Hills Country Club (Rancho Mirage)
+• Morningside Club (Rancho Mirage) — Jack Nicklaus
+• Tamarisk Country Club (Rancho Mirage)
+• The Springs Country Club (Rancho Mirage)
+• Sunnylands (Rancho Mirage) — historic context only
+
+Notable architects featured on the site:
+• Pete Dye (PGA West Stadium, The Hideaway)
+• Tom Fazio (Madison Club, BIGHORN, The Quarry)
+• Jack Nicklaus (Morningside, PGA West Nicklaus)
+• Greg Norman (PGA West Norman Course)
+• Arnold Palmer (The Tradition)
+• Tom Doak (Stone Eagle)
+• Tom Weiskopf (The Reserve)
+• Rees Jones (Andalusia)
+• Arthur Hills (BIGHORN Mountains)
+• Ted Robinson Sr. (historic Mission Hills / Dinah Shore)
+
+═══════════════════════════════════════════
+HARD RULES — ABSOLUTE NO-EXCEPTIONS POLICY
+═══════════════════════════════════════════
+1. NO fake listings. The listings page exists but the dataset is empty until I provide a real CARETS/CRMLS IDX feed. Show an honest "Listings coming soon" state.
+2. NO fake testimonials or reviews — period. Do not invent quotes from "Sarah K., La Quinta buyer." If we have no real reviews, the section doesn't exist.
+3. NO fake contact info — no fake phone, no fake email, no fake mailing address. Use ONLY contact info I provide. Until I do, use a single placeholder like "contact@californiadesertgolflifestyle.com" and clearly mark it as a placeholder in code comments.
+4. NO defamatory or unverified celebrity/owner claims about specific homes. Do NOT name specific PGA Tour or LPGA pros' Coachella Valley addresses. Do NOT name specific entertainment-industry homeowners. The Coachella Valley has a long history of celebrity ownership but their addresses are not editorial subjects.
+5. NO hallucinated market statistics. Median prices, YoY %, days-on-market figures, club initiation amounts — every figure must be presented as a range with "Editorial estimate — verify with a licensed California real-estate professional before transacting" disclaimer.
+6. NO copy that conflates Coachella Valley golf with the Coachella Music Festival or Stagecoach Festival as buyer motivators. Those events exist; they are not the editorial story.
+7. Owner name "Brandi Jo Newman" appears ONLY with the title "owner and creator."
+
+═══════════════════════════════════════════
+TECH STACK (use template defaults)
+═══════════════════════════════════════════
+• Next.js 14 App Router
+• Tailwind CSS + shadcn/ui
+• MongoDB (use env MONGO_URL — never modify .env)
+• MDX for blog content (filesystem-based at /content/blog/*.mdx)
+• YAML frontmatter for FAQs and TLDR arrays (NOT inline JSX inside MDX body — array parsing breaks)
+• patch-package to suppress Next.js auto-emitted <meta name="twitter:*"> tags
+• Mapbox via next/dynamic for lazy loading (requires user-provided API key)
+• Google Analytics 4 (requires user-provided Measurement ID)
+• Google AdSense (requires user-provided publisher ID)
+• Hosted lead-magnet system (NO third-party CRM, NO email sending — leads stored in MongoDB with passphrase-gated retrieval endpoint)
+• Dynamic OpenGraph image via /app/opengraph-image.js (NO static og-default.jpg)
+• Honest SPA page_view tracker for GA4 (every client-side route change fires page_view; gtag config uses send_page_view: false to avoid duplicates)
+
+═══════════════════════════════════════════
+PAGES & ARCHITECTURE
+═══════════════════════════════════════════
+Core pages:
+• / (homepage — hero, featured communities, quiz CTA, lifestyle preview, latest blog)
+• /about (owner and creator bio — keep factual)
+• /communities (index)
+• /communities/[slug] (~22 community pages — one per signature club above, plus FAQPage schema)
+• /architects (index)
+• /architects/[slug] (~10 architect pages)
+• /homes-for-sale (filter index — empty until IDX feed)
+• /homes-for-sale/[filter] (programmatic SEO slugs: gated, golf-membership-included, mountain-view, new-construction, by-price-band, by-city, etc.)
+• /golf-clubs (index of public + private clubs)
+• /market-reports (quarterly editorial — honest ranges with disclaimers)
+• /market-reports/[zip] (~8 ZIP-level editorial pages)
+• /desert-lifestyle-map (Mapbox interactive)
+• /community-quiz (lead funnel)
+• /home-valuation (lead funnel)
+• /compare (community vs community comparison tool)
+• /guides + /guides/[slug] (long-form pillar pages — start with "California Desert Golf Buyers Guide 2026")
+• /downloads/[slug] (gated lead-magnet pages, noindex)
+• /blog + /blog/[slug] (MDX articles — minimum 19 launch articles)
+• /glossary (golf + real estate terminology)
+• /privacy, /terms
+
+SEO infrastructure:
+• /app/sitemap.js — list ALL final URLs (no redirects)
+• /app/robots.js
+• JSON-LD schemas: Organization, WebSite, BreadcrumbList, Article (on blog), FAQPage (on communities + blog), Place (for communities)
+• Open Graph + suppressed Twitter tags
+• Canonical URLs on every page
+• Dynamic /app/opengraph-image.js (no static og-default.jpg)
+
+Editorial infrastructure:
+• /lib/site-config.js — central brand config (name, domain, market, ZIPs)
+• /lib/seo-content.js — editorial paragraph store for filter/ZIP pages (prevents thin-content warnings)
+• /lib/blog.js — MDX loader
+• /lib/analytics.js — GA4 event wrapper
+• /lib/lead-magnets.js — registry for gated downloads
+
+Blog launch standards (do this from day one, not as a later cleanup):
+• Community deep-dives: 2,500+ words
+• Comparison pieces: 1,500+ words
+• Lifestyle / relocation: 1,500+ words
+• Supporting articles: 1,000+ words
+• Every cover image must be unique across all posts (no duplicate covers between articles)
+• Every post must have an FAQ in YAML frontmatter — for FAQPage schema eligibility
+• Every post must have a TLDR in YAML frontmatter
+
+═══════════════════════════════════════════
+INTEGRATIONS — ASK ME FOR KEYS BEFORE WIRING
+═══════════════════════════════════════════
+The following 3rd-party integrations will be needed. DO NOT mock data or proceed without asking me first:
+1. Mapbox API key (for lifestyle map)
+2. Google Analytics 4 measurement ID
+3. Google AdSense publisher ID
+4. (Future) IDX/MLS feed credentials — California uses CARETS/CRMLS (Combined LA/Westside Regional/Desert), distinct from Arizona's ARMLS. Blocked until I have a California licensed agent partner.
+
+Use integration_playbook_expert_v2 for each before coding.
+
+═══════════════════════════════════════════
+BUILD APPROACH — PHASED
+═══════════════════════════════════════════
+Phase 1 — Foundation (do this first, get my approval)
+• Site skeleton: layout, header, footer, homepage shell
+• /lib/site-config.js with all brand constants
+• Tailwind theme: desert-luxury palette (warm sand, terracotta, deep palm green, gold accent — NOT Scottsdale's Sonoran-Desert palette; California desert is softer, more oasis-feel)
+• shadcn components installed
+
+Phase 2 — Content scaffolding
+• All community page templates with placeholder structure
+• Architect page templates
+• Guide + blog MDX scaffolding
+
+Phase 3 — SEO + JSON-LD
+• Sitemap, robots, canonical, all schemas (Organization, WebSite, BreadcrumbList, Article, FAQPage, Place)
+• OG/Twitter tag handling (with patch-package for Next.js core)
+• Dynamic opengraph-image.js (no static JPG)
+• SPA page_view tracker
+
+Phase 4 — Funnels
+• Hosted lead-magnet system (MongoDB-only, no third-party CRM)
+• Community quiz + valuation forms (MongoDB-only)
+• GA4 custom events
+
+Phase 5 — Editorial fill
+• Write real long-form content for top 6 communities (PGA West, Madison Club, BIGHORN, Stone Eagle, Indian Wells CC, Mission Hills), top 4 architects (Pete Dye, Tom Fazio, Jack Nicklaus, Tom Doak), 8 blog posts hitting the word-count standards above
+• Honest market reports with ranges + disclaimers
+
+After each phase: STOP, summarize, ask for my approval before continuing.
+
+═══════════════════════════════════════════
+DESIGN DIRECTION
+═══════════════════════════════════════════
+• Desert-luxury but distinctly CALIFORNIA — softer than Scottsdale's Sonoran palette. Think: warm sand, terracotta, dusty rose, deep palm green, gold accent. Date palms and fan palms, not saguaros. Oasis aesthetic. Mid-century modern California influence (Palm Springs is the birthplace of desert modernism).
+• Editorial / magazine feel (like Mansion Global or Robb Report) — large photography, generous whitespace, serif headings (e.g., Playfair Display) paired with clean sans (Inter).
+• Mobile-first, fast LCP.
+• Use vision_expert_agent for all imagery — search keywords like "palm desert luxury home," "la quinta golf course mountains," "indian wells country club fairway," "coachella valley oasis," "palm springs midcentury modern."
+
+═══════════════════════════════════════════
+CALIFORNIA-SPECIFIC EDITORIAL CONSIDERATIONS
+═══════════════════════════════════════════
+1. California has materially higher state income tax than Arizona. Many Coachella Valley golf-community buyers are California residents trading down from coastal-California pricing; they are NOT typically seeking a tax-residency move. The editorial angle should reflect this — Coachella Valley is a lifestyle play, not a tax play.
+2. California prop-tax structure (Prop 13) is unusual and worth a dedicated editorial guide. Newer purchasers face higher effective tax than long-time owners due to base-year value assessments.
+3. The Coachella Valley is genuinely seasonal — many private clubs close or reduce operations in summer. Acknowledge this honestly.
+4. Water-rights and drought considerations are legitimate ongoing news in Coachella Valley. Address them editorially without alarmism.
+5. The aging-in-place demographic is meaningful — Sun City Palm Desert, The Springs, and several other communities target the 55+ buyer specifically.
+
+═══════════════════════════════════════════
+FIRST STEPS FOR YOU (NEW AGENT)
+═══════════════════════════════════════════
+1. Read this prompt carefully and confirm understanding.
+2. Ask me for the integration keys listed above (Mapbox, GA4, AdSense).
+3. Confirm the brand color palette + font choices with me.
+4. Propose your Phase 1 implementation plan and wait for my approval before building.
+5. Do NOT generate any fake testimonials, listings, market figures, or contact information at any point.
+6. From day one, every blog post you author must meet the word-count standards listed above.
+
+Respond in English only.

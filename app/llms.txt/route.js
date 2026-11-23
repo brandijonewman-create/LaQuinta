@@ -1,191 +1,40 @@
-// Dynamic /llms.txt for AI crawlers (ChatGPT, Perplexity, Claude, etc.).
-//
-// Follows the llms.txt convention (https://llmstxt.org): a markdown-formatted
-// plain-text index of the site's most important resources, one URL per line
-// with a short human-readable description.
-//
-// TRUTH RULE (do not violate): every link in this file MUST resolve to a real
-// page on this site. The content is generated from the same registries the
-// sitemap uses — `lib/site-config` (communities, architects), `lib/blog`
-// (blog posts + guides), and `lib/collaborators` — so it stays in sync as
-// content is added. We deliberately DO NOT list gated downloads, lead-gated
-// PDFs, or `/api/*` routes.
-//
-// Served with Content-Type text/plain per the llms.txt spec. Some crawlers
-// also accept text/markdown; text/plain is the safest interoperable choice.
+// /llms.txt — a plain-text index of the site for LLM crawlers (Fix Round A
+// item 10). Regenerates from the same data sources as the sitemap.
+import { SITE, COMMUNITIES, ARCHITECTS, MARKET_REPORTS, LEAD_MAGNETS } from '@/lib/data';
+import { BLOG_POSTS as ALL_POSTS } from '@/lib/blog';
 
-import { site, owner, communities, architects, market } from '@/lib/site-config';
-import { getAllPosts, getAllGuides } from '@/lib/blog';
-import { collaborators, getCollaboratorPageSlugs, getCollaborator } from '@/lib/collaborators';
-
-// Force this route to be rendered on every request so newly-added posts,
-// guides and collaborators appear in /llms.txt immediately.
-export const dynamic = 'force-dynamic';
-export const runtime = 'nodejs';
-
-// Homes-for-sale filter landing pages that actually resolve today. Kept in
-// lock-step with the FILTERS array in app/sitemap.js.
-const HOMES_FILTERS = [
-  { slug: 'gated', label: 'Gated communities' },
-  { slug: 'golf-membership-included', label: 'Homes with golf membership included' },
-  { slug: 'mountain-view', label: 'Mountain-view homes' },
-  { slug: 'new-construction', label: 'New-construction homes' },
-  { slug: 'pga-west', label: 'PGA West homes' },
-  { slug: 'the-madison-club', label: 'The Madison Club homes' },
-  { slug: 'under-2-million', label: 'Homes under $2M' },
-  { slug: '2-to-5-million', label: 'Homes from $2M to $5M' },
-  { slug: 'over-5-million', label: 'Homes over $5M' },
-];
-
-// Market-report ZIP pages that resolve today.
-const MARKET_ZIPS = ['92253'];
-
-function line(url, label, note) {
-  const path = url.startsWith('http') ? url : `${site.url}${url}`;
-  return note ? `- [${label}](${path}): ${note}` : `- [${label}](${path})`;
-}
-
-function build() {
-  const posts = getAllPosts();
-  const guides = getAllGuides();
-
-  const out = [];
-  out.push(`# ${site.name}`);
-  out.push('');
-  out.push(`> ${site.seoDescription}`);
-  out.push('');
-  out.push(
-    `${site.name} is a lifestyle guide to La Quinta, California ` +
-      `(${market.county}). It covers the private golf communities, the ` +
-      `architects who built them, and the desert life around them. The ` +
-      `site is owned and operated by ${owner.name}. Listings, private ` +
-      `showings, and buyer representation are provided by our ` +
-      `California-licensed Exclusive Market Partner.`
-  );
-  out.push('');
-
-  // ---- Start here ---------------------------------------------------------
-  out.push('## Start Here');
-  out.push('');
-  out.push(line('/', `${site.name} — homepage`, 'Site overview, featured communities, and latest editorial.'));
-  out.push(line('/about', 'About', 'Editorial standards, ownership, and how leads are routed.'));
-  out.push(line('/glossary', 'Glossary', 'Definitions of terms used across the site (equity club, HOA, CC&R, etc.).'));
-  out.push('');
-
-  // ---- Golf communities ---------------------------------------------------
-  out.push('## Golf Communities in La Quinta');
-  out.push('');
-  out.push(line('/communities', 'All La Quinta golf communities', 'Directory of private clubs and gated golf communities in La Quinta.'));
-  for (const c of communities) {
-    const note = c.architect ? `Designed by ${c.architect}.` : undefined;
-    out.push(line(`/communities/${c.slug}`, c.name, note));
-  }
-  out.push('');
-
-  // ---- Architects ---------------------------------------------------------
-  out.push('## Golf Course Architects');
-  out.push('');
-  out.push(line('/architects', 'All architects', 'Profiles of the golf-course architects who shaped La Quinta.'));
-  for (const a of architects) {
-    const note = a.signatureCourses && a.signatureCourses.length
-      ? `Signature courses: ${a.signatureCourses.join(', ')}.`
-      : undefined;
-    out.push(line(`/architects/${a.slug}`, a.name, note));
-  }
-  out.push('');
-
-  // ---- Editorial: blog ----------------------------------------------------
-  out.push('## Editorial — Blog');
-  out.push('');
-  out.push(line('/blog', 'All articles', 'Long-form coverage of La Quinta communities, clubs, architects, and market context.'));
-  for (const p of posts) {
-    out.push(line(`/blog/${p.slug}`, p.frontmatter.title, p.frontmatter.excerpt));
-  }
-  out.push('');
-
-  // ---- Guides -------------------------------------------------------------
-  if (guides.length > 0) {
-    out.push('## Guides');
-    out.push('');
-    out.push(line('/guides', 'All guides', 'In-depth reference guides for La Quinta buyers.'));
-    for (const g of guides) {
-      out.push(line(`/guides/${g.slug}`, g.frontmatter.title, g.frontmatter.excerpt));
-    }
-    out.push('');
-  }
-
-  // ---- Market reports -----------------------------------------------------
-  out.push('## Market Reports');
-  out.push('');
-  out.push(line('/market-reports', 'Market reports index', 'Quarterly context for La Quinta ZIP-level real estate.'));
-  for (const zip of MARKET_ZIPS) {
-    out.push(line(`/market-reports/${zip}`, `La Quinta ${zip} market report`));
-  }
-  out.push('');
-
-  // ---- Homes for sale + tools --------------------------------------------
-  out.push('## Homes for Sale & Buyer Tools');
-  out.push('');
-  out.push(line('/homes-for-sale', 'Homes for sale in La Quinta', 'Directory of active La Quinta listings by category.'));
-  for (const f of HOMES_FILTERS) {
-    out.push(line(`/homes-for-sale/${f.slug}`, f.label));
-  }
-  out.push(line('/community-quiz', 'Community-fit quiz', 'Five-question quiz that recommends the three La Quinta clubs that best match a buyer profile.'));
-  out.push(line('/home-valuation', 'La Quinta home valuation request', 'Editorial valuation request routed to a licensed California real-estate professional.'));
-  out.push(line('/compare', 'Compare communities', 'Side-by-side comparison of La Quinta golf communities.'));
-  out.push(line('/desert-lifestyle-map', 'La Quinta desert lifestyle map', 'Interactive map of clubs, landmarks, trailheads, and Old Town La Quinta.'));
-  out.push(line('/golf-clubs', 'Golf clubs directory', 'Directory of La Quinta private golf clubs.'));
-  out.push('');
-
-  // ---- Exclusive Market Partner slot ------------------------------------
-  out.push('## Exclusive Market Partner slot');
-  out.push('');
-  out.push(line('/#become-our-partner', 'La Quinta Exclusive Market Partner \u2014 by invitation', 'The Exclusive Market Partner slot for La Quinta is filled by invitation. One California-licensed realtor per city site. No fee is charged; the invited partner provides their active listings for on-site home search and, where possible, introductions to home builders and other tier-one operators. Every buyer inquiry on this site routes to the signed partner.'));
-  out.push('');
-
-  // ---- Legal --------------------------------------------------------------
-  out.push('## Legal');
-  out.push('');
-  out.push(line('/privacy', 'Privacy policy'));
-  out.push(line('/terms', 'Terms of use'));
-  out.push('');
-
-  // ---- Machine-readable feeds --------------------------------------------
-  out.push('## Feeds');
-  out.push('');
-  out.push(line('/sitemap.xml', 'XML sitemap', 'Complete machine-readable index of every canonical URL on the site.'));
-  out.push(line('/robots.txt', 'Robots policy'));
-  out.push('');
-
-  // ---- Editorial policy note ---------------------------------------------
-  out.push('## Editorial policy');
-  out.push('');
-  out.push(
-    '- No fabricated listings, testimonials, market statistics, or celebrity endorsements.'
-  );
-  out.push(
-    '- All real-estate transactions are routed to a California-licensed real estate professional.'
-  );
-  out.push(
-    `- The site is owned and operated by ${owner.name}. No individual name is published as author or agent.`
-  );
-  out.push(
-    '- Content covers La Quinta, California only. Palm Desert, Rancho Mirage, Indian Wells, and Palm Springs each have their own dedicated sites in the network.'
-  );
-  out.push('');
-
-  return out.join('\n');
-}
+export const dynamic = 'force-static';
 
 export async function GET() {
-  const body = build();
-  return new Response(body, {
-    status: 200,
-    headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-      // Cache for one hour at the CDN edge; content updates when we add posts,
-      // guides, communities, architects, or collaborators.
-      'Cache-Control': 'public, max-age=300, s-maxage=3600',
-    },
+  const line = (title, url, desc) => `- [${title}](${SITE.url}${url}): ${desc}`;
+  const oneLine = (s = '') => s.replace(/\s+/g, ' ').trim().slice(0, 180);
+
+  const parts = [];
+  parts.push('# Scottsdale Golf Lifestyle');
+  parts.push('');
+  parts.push(
+    'Scottsdale Golf Lifestyle is an editorial guide to luxury golf-course real estate in Scottsdale, Arizona, operated by 7671 Enterprises, LLC DBA Golf Lifestyle Network. It covers 40+ golf communities across Scottsdale, Paradise Valley, Carefree, Cave Creek, Fountain Hills, Rio Verde, north Phoenix and Peoria, plus the course architects, private-club membership economics, Arizona tax considerations, and snowbird seasonality that shape the market. It publishes original research and long-form journalism. It is not a real estate brokerage and hosts no live MLS listings; market figures are illustrative ranges that should be verified with a licensed Arizona real estate professional.'
+  );
+
+  parts.push('', '## Golf Communities');
+  for (const c of COMMUNITIES) parts.push(line(c.name, `/communities/${c.slug}`, oneLine(c.tagline || c.description)));
+
+  parts.push('', '## Course Architects');
+  for (const a of ARCHITECTS) parts.push(line(a.name, `/architects/${a.slug}`, oneLine(a.summary || a.tagline)));
+
+  parts.push('', '## Guides');
+  for (const g of LEAD_MAGNETS) parts.push(line(g.title, `/guides/${g.slug}`, oneLine(g.description)));
+  parts.push(line('Scottsdale Club Membership Costs 2026', '/scottsdale-club-membership-costs-2026', 'Initiation and dues bands for Scottsdale private golf clubs, with equity vs non-equity explained.'));
+  parts.push(line('The 2026 Scottsdale Golf Community Index', '/scottsdale-golf-community-index-2026', 'Editorial tier ranking of every named Scottsdale-area golf community.'));
+  parts.push(line('Scottsdale Snowbird Guide', '/scottsdale-snowbird-guide', 'Seasonal ownership playbook for October-to-April residents.'));
+
+  parts.push('', '## Market Reports');
+  for (const r of MARKET_REPORTS) parts.push(line(r.title, `/market-reports/${r.slug}`, oneLine(r.summary)));
+
+  parts.push('', '## Journal');
+  for (const p of ALL_POSTS) parts.push(line(p.title, `/blog/${p.slug}`, oneLine(p.excerpt || p.description)));
+
+  return new Response(parts.join('\n') + '\n', {
+    headers: { 'Content-Type': 'text/plain; charset=utf-8' }
   });
 }

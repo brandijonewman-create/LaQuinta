@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "larson-excavating",
+   "name": "Larson Excavating",
+   "categories": [
+    "demolition-and-excavation"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "38425 N Spur Cross Rd Ste 2",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.834,
+    "lng": -111.951
+   },
+   "description": "Excavating contractor in Cave Creek, Arizona.",
+   "website": "https://www.larsonexcavating.com/",
+   "phone": "(480) 488-3157",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0QWih-R_K4cR9h60G4K4dNs",
+    "cid": "15813467060554702582",
+    "category": "Excavating contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "steadfast-construction",
+   "name": "Steadfast Construction",
+   "categories": [
+    "demolition-and-excavation"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16623 E Laser Dr #1",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.573,
+    "lng": -111.721
+   },
+   "description": "Excavating contractor in Fountain Hills, Arizona.",
+   "website": "http://www.steadfast-construction.com/sfc_contact.htm",
+   "phone": "(480) 816-9004",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJgd3BjF2iK4cRnloi1pbKUDI",
+    "cid": "3625620449219730078",
+    "category": "Excavating contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

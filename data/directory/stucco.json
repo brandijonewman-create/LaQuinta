@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "american-eagle-stucco-llc",
+   "name": "American Eagle Stucco, LLC",
+   "categories": [
+    "stucco"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16719 E Palisades Blvd Ste 102",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.608,
+    "lng": -111.72
+   },
+   "description": "Stucco contractor in Fountain Hills, Arizona.",
+   "website": "https://www.americaneaglestucco.com/",
+   "phone": "(480) 837-5997",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJv-M3lo6YK4cRO-pstDfTuHk",
+    "cid": "8770992510507739707",
+    "category": "Stucco contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

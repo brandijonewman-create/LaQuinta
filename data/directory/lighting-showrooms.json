@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "canterra-lighting",
+   "name": "Canterra Lighting",
+   "categories": [
+    "lighting-showrooms"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4020 N Scottsdale Rd #2008",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.494,
+    "lng": -111.927
+   },
+   "description": "Lighting products wholesaler in Scottsdale, Arizona. Its Google profile also lists electric vehicle charging station contractor and electrical equipment supplier.",
+   "website": "http://www.canterralighting.com/",
+   "phone": "(480) 222-8300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJF0il29EKK4cR7M2BQ8ICasg",
+    "cid": "14441358188496408044",
+    "category": "Lighting products wholesaler"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "elite-house-cleaning-scottsdale",
+   "name": "Elite House Cleaning Scottsdale",
+   "categories": [
+    "house-cleaning"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7020 E 1st Ave Ste C",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.494,
+    "lng": -111.93
+   },
+   "description": "House cleaning service in Scottsdale, Arizona. Its Google profile also lists carpet cleaning service and cleaners.",
+   "website": "https://elitemaidshousecleaning.com/scottsdale",
+   "phone": "(623) 400-1514",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJy_LXhya12IcRb_TiSCzVvgU",
+    "cid": "414002601942774895",
+    "category": "House cleaning service"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "neat-n-tidy-house-cleaning-of-scottsdale",
+   "name": "Neat N Tidy House Cleaning of Scottsdale",
+   "categories": [
+    "house-cleaning"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3260 Hayden Rd #210",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.485,
+    "lng": -111.91
+   },
+   "description": "House cleaning service in Scottsdale, Arizona.",
+   "website": "https://phxhousecleaning.com/",
+   "phone": "(623) 400-6123",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJP35WxxYLK4cRuGj0Gh0EV90",
+    "cid": "15949221128408688824",
+    "category": "House cleaning service"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "scottsdale-house-cleaning",
+   "name": "Scottsdale House Cleaning",
+   "categories": [
+    "house-cleaning"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6991 E Camelback Rd #D300",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.931
+   },
+   "description": "House cleaning service in Scottsdale, Arizona. Its Google profile also lists carpet cleaning service and cleaners.",
+   "website": "https://www.sunvalleycleaners.com/",
+   "phone": "(623) 295-0506",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlflDpQ_5vi4RUTfM6CcDgbE",
+    "cid": "12790507886653224785",
+    "category": "House cleaning service"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

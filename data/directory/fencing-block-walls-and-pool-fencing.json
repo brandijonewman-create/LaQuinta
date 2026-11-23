@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "curt-boyd-fencing",
+   "name": "Curt Boyd Fencing",
+   "categories": [
+    "fencing-block-walls-and-pool-fencing"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "2834 N Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.83,
+    "lng": -111.955
+   },
+   "description": "Fence contractor in Cave Creek, Arizona.",
+   "website": "http://azhorsebarnbuilders.com/",
+   "phone": "(602) 525-4564",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ50SMVyB8K4cRM7w_lCWEgHU",
+    "cid": "8466912596392393779",
+    "category": "Fence contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fence-builders-scottsdale",
+   "name": "Fence Builders Scottsdale",
+   "categories": [
+    "fencing-block-walls-and-pool-fencing"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "34522 N Scottsdale Rd #120",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.799,
+    "lng": -111.931
+   },
+   "description": "Fence contractor in Scottsdale, Arizona. Its Google profile also lists contractor and iron works.",
+   "website": "http://fencebuildersaz.com/",
+   "phone": "(480) 568-1300",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ3yZft0d5K4cRBafxAkAQ7DE",
+    "cid": "3597268069475526405",
+    "category": "Fence contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

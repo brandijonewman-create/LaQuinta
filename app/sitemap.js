@@ -1,247 +1,80 @@
-// SEO sitemap.
-//
-// Rules (see /app/test_result.md for background):
-//   1. Every URL has a real `lastModified` — either the frontmatter date of
-//      the underlying MDX, or a hand-maintained entry in PAGE_LAST_MODIFIED
-//      below. We deliberately DO NOT use fs.statSync(mtime) — on a fresh CI
-//      clone every file's mtime is the build time, which would stamp every
-//      URL "today" on every deploy.
-//   2. Index / hub pages (/blog, /guides, /communities, /architects,
-//      /homes-for-sale, /market-reports) compute lastmod as the newest date
-//      among their child pages, so publishing a post automatically bumps the
-//      parent listing. If a hub has no children, it falls back to the
-//      PAGE_LAST_MODIFIED entry.
-//   3. `changeFrequency` and `priority` are intentionally omitted — Google
-//      ignores them and they were previously giving false signal.
-//   4. If a route in STATIC_PAGES is missing from PAGE_LAST_MODIFIED, we
-//      throw at build/render time so a new page cannot be silently deployed
-//      with the wrong lastmod.
+import { SITE, COMMUNITIES, ZIP_PAGES, COMPARISON_PAIRS, GOLF_CLUBS, ARCHITECTS } from '@/lib/data';
+import { BLOG_POSTS as ALL_POSTS } from '@/lib/blog';
+import { LANDING_TOPICS } from '@/lib/landing-topics';
+import contentDates from '@/lib/content-dates.json';
+import { IMPORTED_BUSINESSES, IMPORTED_AT } from '@/lib/directory/imported';
+import { CATEGORIES, CITIES, categoryCitySlug } from '@/lib/directory';
 
-import { site, communities, architects, market } from '@/lib/site-config';
-import { getAllPosts, getAllGuides } from '@/lib/blog';
-import { getLifestyleSlugs } from '@/lib/content/lifestyle-content';
-
-// Homes-for-sale filter landing pages that resolve today. Kept in lock-step
-// with the FILTERS object in app/homes-for-sale/[filter]/page.js.
-const FILTERS = [
-  'gated',
-  'golf-membership-included',
-  'mountain-view',
-  'new-construction',
-  'pga-west',
-  'the-madison-club',
-  'under-2-million',
-  '2-to-5-million',
-  'over-5-million',
-];
-
-// Static pages served from this site. Every entry must appear in
-// PAGE_LAST_MODIFIED below.
-const STATIC_PAGES = [
-  '/',
-  '/about',
-  '/communities',
-  '/architects',
-  '/homes-for-sale',
-  '/golf-clubs',
-  '/market-reports',
-  '/desert-lifestyle-map',
-  '/community-quiz',
-  '/home-valuation',
-  '/compare',
-  '/guides',
-  '/blog',
-  '/lifestyle',
-  '/glossary',
-  '/privacy',
-  '/terms',
-];
-
-// Filter landing pages (all currently share a single last-content-edit date
-// because the copy is templated from the same source).
-const HOMES_FILTER_LASTMOD = '2026-06-08';
-
-// Market-report ZIP pages that resolve today.
-const MARKET_ZIP_LASTMOD = {
-  '92253': '2026-06-08',
-};
-
-// Hand-maintained last-modified index for static / hub pages.
-// Update the date for a route when you meaningfully change that page's copy.
-// Hub pages listed here are used as a *fallback* only — the sitemap will
-// prefer the newest child date when the hub is a listing page.
-//
-// Format: ISO date (YYYY-MM-DD). Dates should be truthful — do not bump a
-// page's date without an actual content change.
-const PAGE_LAST_MODIFIED = {
-  '/':                     '2026-06-08',
-  '/about':                '2026-06-08',
-  '/communities':          '2026-06-08',
-  '/architects':           '2026-06-08',
-  '/homes-for-sale':       '2026-06-08',
-  '/golf-clubs':           '2026-06-08',
-  '/market-reports':       '2026-06-08',
-  '/desert-lifestyle-map': '2026-06-08',
-  '/community-quiz':       '2026-06-08',
-  '/home-valuation':       '2026-06-08',
-  '/compare':              '2026-06-08',
-  '/guides':               '2026-06-08',
-  '/blog':                  '2026-06-08',
-  '/lifestyle':             '2026-06-08',
-  '/glossary':              '2026-06-08',
-  '/privacy':              '2026-06-08',
-  '/terms':                '2026-06-08',
-};
-
-// Per-slug overrides for detail pages whose underlying source isn't a dated
-// MDX file. Community and architect pages read from lib/content/* and don't
-// carry a publish date, so we track their last content edits here.
-const COMMUNITY_LASTMOD_DEFAULT = '2026-06-08';
-const COMMUNITY_LASTMOD_OVERRIDES = {};
-
-const ARCHITECT_LASTMOD_DEFAULT = '2026-06-08';
-const ARCHITECT_LASTMOD_OVERRIDES = {};
-
-function parseDate(iso) {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) {
-    throw new Error(`[sitemap] Invalid ISO date "${iso}"`);
-  }
-  return d;
-}
-
-function newestDate(dates) {
-  if (!dates.length) return null;
-  return dates.reduce((max, d) => (d > max ? d : max), dates[0]);
-}
-
-function abs(path) {
-  return path === '/' ? site.url : `${site.url}${path}`;
-}
+// lastmod policy (Fix Round A item 9): every <lastmod> comes from a REAL
+// content date — MDX frontmatter for blog posts, git-derived last-change dates
+// (lib/content-dates.json, regenerated via scripts/generate-content-dates.mjs)
+// for everything else. changefreq / priority are intentionally omitted —
+// Google ignores them and they added noise.
+const FALLBACK = contentDates.routes['/'] || '2026-06-12';
+const routeDate = (route) => new Date(contentDates.routes[route] || FALLBACK);
+const familyDate = (family) => new Date(contentDates.families[family] || FALLBACK);
 
 export default function sitemap() {
-  const entries = [];
+  const staticRoutes = [
+    '',
+    '/communities',
+    '/scottsdale-golf-courses',
+    '/blog',
+    '/golf-clubs',
+    '/architects',
+    '/scottsdale-golf-community-index-2026',
+    '/community-quiz',
+    '/scottsdale-club-membership-costs-2026',
+    '/scottsdale-snowbird-guide',
+    '/scottsdale-lifestyle-map',
+    '/collaborators',
+    '/partner-with-us',
+    '/about',
+    '/glossary',
+    '/compare',
+    '/contact',
+    '/privacy',
+    '/terms',
+    '/disclosure'
+  ].map(p => ({ url: `${SITE.url}${p}`, lastModified: routeDate(p === '' ? '/' : p) }));
 
-  // ---- Detail pages (compute first so hubs can aggregate) -----------------
+  // NOTE (AdSense quality pass): the following programmatic route families are
+  // intentionally EXCLUDED from the sitemap and carry robots noindex until they
+  // have substantive unique content / live listing data:
+  //   - /homes-for-sale/* (empty until IDX feed)  - /market-reports/* (placeholder)
+  //   - /relocating-to-scottsdale/* (thin)        - /guides/* (lead magnets)
+  //   - /map, /scottsdale-home-value (utility/lead tools)
+  const communityRoutes    = COMMUNITIES.map(c =>      ({ url: `${SITE.url}/communities/${c.slug}`,            lastModified: routeDate(`/communities/${c.slug}`) }));
+  const blogRoutes         = ALL_POSTS.map(p =>       ({ url: `${SITE.url}/blog/${p.slug}`,                   lastModified: new Date(p.date) }));
+  const zipRoutes          = ZIP_PAGES.map(z =>        ({ url: `${SITE.url}/scottsdale/${z.zip}`,              lastModified: familyDate('zips') }));
+  const compareRoutes      = COMPARISON_PAIRS.map(p => ({ url: `${SITE.url}/compare/${p.slug}`,                lastModified: familyDate('compare') }));
+  const golfClubRoutes     = GOLF_CLUBS.map(c =>       ({ url: `${SITE.url}/golf-clubs/${c.slug}`,             lastModified: familyDate('golf-clubs') }));
+  const architectRoutes    = ARCHITECTS.map(a =>       ({ url: `${SITE.url}/architects/${a.slug}`,             lastModified: familyDate('architects') }));
+  const landingTopicRoutes = LANDING_TOPICS.map(t =>   ({ url: `${SITE.url}/scottsdale-communities/${t.slug}`, lastModified: familyDate('landing-topics') }));
+  const landingTopicIndex  = [{ url: `${SITE.url}/scottsdale-communities`,        lastModified: routeDate('/scottsdale-communities') }];
 
-  // Blog posts (frontmatter.date)
-  const posts = getAllPosts();
-  const postDates = [];
-  for (const p of posts) {
-    const d = parseDate(p.frontmatter.date);
-    postDates.push(d);
-    entries.push({
-      url: `${site.url}/blog/${p.slug}`,
-      lastModified: d,
-    });
-  }
-
-  // Guides (frontmatter.date)
-  const guides = getAllGuides();
-  const guideDates = [];
-  for (const g of guides) {
-    const d = parseDate(g.frontmatter.date);
-    guideDates.push(d);
-    entries.push({
-      url: `${site.url}/guides/${g.slug}`,
-      lastModified: d,
-    });
-  }
-
-  // Community detail pages
-  const communityDates = [];
-  for (const c of communities) {
-    const iso = COMMUNITY_LASTMOD_OVERRIDES[c.slug] || COMMUNITY_LASTMOD_DEFAULT;
-    const d = parseDate(iso);
-    communityDates.push(d);
-    entries.push({
-      url: `${site.url}/communities/${c.slug}`,
-      lastModified: d,
-    });
-  }
-
-  // Lifestyle detail pages (neighborhoods, parks, trails, districts).
-  const lifestyleDates = [];
-  for (const slug of getLifestyleSlugs()) {
-    const d = parseDate('2026-06-08');
-    lifestyleDates.push(d);
-    entries.push({
-      url: `${site.url}/lifestyle/${slug}`,
-      lastModified: d,
-    });
-  }
-
-  // Architect detail pages
-  const architectDates = [];
-  for (const a of architects) {
-    const iso = ARCHITECT_LASTMOD_OVERRIDES[a.slug] || ARCHITECT_LASTMOD_DEFAULT;
-    const d = parseDate(iso);
-    architectDates.push(d);
-    entries.push({
-      url: `${site.url}/architects/${a.slug}`,
-      lastModified: d,
-    });
-  }
-
-  // Homes-for-sale filter pages
-  const homesFilterDates = [];
-  const homesFilterDate = parseDate(HOMES_FILTER_LASTMOD);
-  for (const f of FILTERS) {
-    homesFilterDates.push(homesFilterDate);
-    entries.push({
-      url: `${site.url}/homes-for-sale/${f}`,
-      lastModified: homesFilterDate,
-    });
-  }
-
-  // Market-report ZIP pages
-  const marketZipDates = [];
-  for (const zip of market.cities.flatMap((c) => c.zips)) {
-    const iso = MARKET_ZIP_LASTMOD[zip];
-    if (!iso) {
-      throw new Error(`[sitemap] Missing MARKET_ZIP_LASTMOD entry for ZIP ${zip}`);
-    }
-    const d = parseDate(iso);
-    marketZipDates.push(d);
-    entries.push({
-      url: `${site.url}/market-reports/${zip}`,
-      lastModified: d,
-    });
-  }
-
-  // ---- Hub-page lastmod resolution ---------------------------------------
-  // For hubs that list children, prefer the newest child date. Fall back to
-  // the manual PAGE_LAST_MODIFIED entry when a hub has no children.
-
-  const HUB_AGGREGATE = {
-    '/blog':           postDates,
-    '/guides':         guideDates,
-    '/communities':    communityDates,
-    '/architects':     architectDates,
-    '/homes-for-sale': homesFilterDates,
-    '/market-reports': marketZipDates,
-    '/lifestyle':      lifestyleDates,
-  };
-
-  // ---- Static pages -------------------------------------------------------
-  for (const path of STATIC_PAGES) {
-    const iso = PAGE_LAST_MODIFIED[path];
-    if (!iso) {
-      throw new Error(
-        `[sitemap] Missing PAGE_LAST_MODIFIED entry for ${path}. ` +
-          `Add it to /app/app/sitemap.js before deploying.`
-      );
-    }
-    const fallback = parseDate(iso);
-    const childDates = HUB_AGGREGATE[path] || [];
-    const lastModified = newestDate(childDates) || fallback;
-    entries.push({
-      url: abs(path),
-      lastModified,
-    });
-  }
-
-  // /downloads/* intentionally omitted — noindex/lead-gated.
-
-  return entries;
+  // Directory (/guide): the hub, then only category, category-city and business
+  // pages that have real listings. Empty category pages stay out until filled.
+  const guideDate = new Date(IMPORTED_AT);
+  const withListings = new Set();
+  for (const b of IMPORTED_BUSINESSES) for (const c of b.categories) { withListings.add(c); withListings.add(categoryCitySlug(c, b.city)); }
+  const guideRoutes = [
+    { url: `${SITE.url}/guide`, lastModified: guideDate },
+    ...CATEGORIES.filter((c) => withListings.has(c.slug)).map((c) => ({ url: `${SITE.url}/guide/${c.slug}`, lastModified: guideDate })),
+    ...CATEGORIES.flatMap((c) => CITIES.map((city) => categoryCitySlug(c.slug, city.slug)))
+      .filter((slug) => withListings.has(slug)).map((slug) => ({ url: `${SITE.url}/guide/${slug}`, lastModified: guideDate })),
+    ...IMPORTED_BUSINESSES.map((b) => ({ url: `${SITE.url}/guide/${b.slug}`, lastModified: guideDate })),
+  ];
+  return [
+    ...staticRoutes,
+    ...communityRoutes,
+    ...blogRoutes,
+    ...zipRoutes,
+    ...compareRoutes,
+    ...golfClubRoutes,
+    ...architectRoutes,
+    ...landingTopicRoutes,
+    ...landingTopicIndex,
+    ...guideRoutes
+  ];
 }

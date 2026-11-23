@@ -1,0 +1,186 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "a-savings-air-llc",
+   "name": "A Savings Air, LLC",
+   "categories": [
+    "ac-and-heating"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "13771 N Fountain Hills Blvd Ste 114-141",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.61,
+    "lng": -111.728
+   },
+   "description": "Air conditioning contractor in Fountain Hills, Arizona.",
+   "website": "https://www.asavingsair.com/",
+   "phone": "(480) 206-0480",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJfxh6zxgjb6sRU_4S19dPanY",
+    "cid": "8532720232451735123",
+    "category": "Air conditioning contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "az-home-services-group-ac-repair-and-plumbing-services-of-fountain-hills",
+   "name": "AZ Home Services Group AC Repair & Plumbing Services of Fountain Hills",
+   "categories": [
+    "ac-and-heating"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16930 E Palisades Blvd #100",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.715
+   },
+   "description": "HVAC contractor in Fountain Hills, Arizona. Its Google profile also lists air conditioning contractor and air conditioning repair service.",
+   "website": "https://azhomeservices.group/service-areas/fountain-hills-arizona-air-conditioner-plumbing-services/",
+   "phone": "(480) 493-1352",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0xkh7R-ZK4cRItNn3QLT-oI",
+    "cid": "9438087978366260002",
+    "category": "HVAC contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cave-creek-cooling-company",
+   "name": "Cave Creek Cooling Company",
+   "categories": [
+    "ac-and-heating"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6616 E Mesquite Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.843,
+    "lng": -111.938
+   },
+   "description": "Air conditioning repair service in Cave Creek, Arizona. Its Google profile also lists air conditioning contractor and heating contractor.",
+   "website": "https://cavecreekcooling.com/",
+   "phone": "(480) 440-6261",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJTegKFDV_K4cRqENJbwEI1vQ",
+    "cid": "17642297392525558696",
+    "category": "Air conditioning repair service"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "four-seasons-home-services-cave-creek-az",
+   "name": "Four Seasons Home Services - Cave Creek, AZ",
+   "categories": [
+    "ac-and-heating"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6121 E Milton Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.761,
+    "lng": -111.949
+   },
+   "description": "Air conditioning contractor in Cave Creek, Arizona. Its Google profile also lists air conditioning repair service and furnace repair service.",
+   "website": "https://fourseasonshs.com/",
+   "phone": "(480) 489-3210",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJLTPFcp5-K4cRDCl0Q050gJ4",
+    "cid": "11421256534499535116",
+    "category": "Air conditioning contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mountainside-air-conditioning-repair",
+   "name": "Mountainside Air Conditioning Repair",
+   "categories": [
+    "ac-and-heating"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd #101-2",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Air conditioning repair service in Carefree, Arizona. Its Google profile also lists air conditioning contractor and furnace repair service.",
+   "website": "https://mountainsideair.com/",
+   "phone": "(602) 698-9388",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJKfK2j6d5K4cRQ1zH4Pd7mto",
+    "cid": "15752038951240031299",
+    "category": "Air conditioning repair service"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "shadrach-plumbing-and-cooling",
+   "name": "Shadrach Plumbing & Cooling",
+   "categories": [
+    "ac-and-heating"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "11803 N Saguaro Blvd Ste 12",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.594,
+    "lng": -111.71
+   },
+   "description": "HVAC contractor in Fountain Hills, Arizona. Its Google profile also lists air conditioning contractor and air conditioning repair service.",
+   "website": "https://shadrachplumbingcooling.com/",
+   "phone": "(602) 805-0161",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJZ1LXb9Gn-kIRB_Gx5jvYIYY",
+    "cid": "9665244027098886407",
+    "category": "HVAC contractor"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

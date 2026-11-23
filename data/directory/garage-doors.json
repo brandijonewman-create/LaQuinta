@@ -1,0 +1,246 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "a1-garage-door-service",
+   "name": "A1 Garage Door Service",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16929 E Enterprise Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.596,
+    "lng": -111.714
+   },
+   "description": "Garage door supplier in Fountain Hills, Arizona. Its Google profile also lists door supplier and garage builder.",
+   "website": "https://a1garage.com/areas-served/fountain-hills-az-garage-door-repair-installation/",
+   "phone": "(602) 282-4398",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJzyvpBcQ5K4cRupkh4YhJcjM",
+    "cid": "3707106295520795066",
+    "category": "Garage door supplier"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "a1-garage-door-service-carefree",
+   "name": "A1 Garage Door Service",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd #101-3",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.818,
+    "lng": -111.893
+   },
+   "description": "Garage door supplier in Carefree, Arizona. Its Google profile also lists repair service.",
+   "website": "https://a1garage.com/areas-served/carefree-az-garage-door-repair-installation/",
+   "phone": "(480) 409-7334",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJp4voBNR5K4cRRCnAZ2fAFNo",
+    "cid": "15714396550157314372",
+    "category": "Garage door supplier"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "az-garage-pros-of-fountain-hills",
+   "name": "AZ Garage Pros of Fountain Hills",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16930 E Palisades Blvd Ste 134",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.715
+   },
+   "description": "Garage builder in Fountain Hills, Arizona. Its Google profile also lists garage door supplier.",
+   "website": "https://azgaragepros.net/fountain-hills/",
+   "phone": "(480) 447-6005",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBeqjhvaZK4cR1XMEx8FL_d0",
+    "cid": "15996024747129598933",
+    "category": "Garage builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "desert-garage-doors-az",
+   "name": "Desert Garage Doors AZ",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "2700 Hayden Rd #1100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85257"
+   },
+   "geo": {
+    "lat": 33.477,
+    "lng": -111.911
+   },
+   "description": "Garage door supplier in Scottsdale, Arizona. Its Google profile also lists garage builder and repair service.",
+   "website": "https://www.desertgaragedoorsaz.com/",
+   "phone": "(602) 344-9322",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJEVAdMdQLK4cRqZiDRFjGQdw",
+    "cid": "15871184644239235241",
+    "category": "Garage door supplier"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "dynamic-door-service",
+   "name": "Dynamic Door Service",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "748 Easy St #5",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.924
+   },
+   "description": "Garage door supplier in Carefree, Arizona. Its Google profile also lists contractor and door shop.",
+   "website": "https://www.dynamicgaragedoorrepair.com/garage-door-repair-carefree-az",
+   "phone": "(480) 698-1187",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxYahb7R_K4cRRrwaVEWm2_g",
+    "cid": "17932109157999754310",
+    "category": "Garage door supplier"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "expert-garage-door-service",
+   "name": "Expert Garage Door Service",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd #501",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.817,
+    "lng": -111.893
+   },
+   "description": "Garage door supplier in Carefree, Arizona.",
+   "website": "https://expertgaragerepair.com/service-areas/maricopa-county-az/carefree/",
+   "phone": "(602) 676-7009",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJPYIJP3J5K4cRvfRKmR9ZYHg",
+    "cid": "8674030874566259901",
+    "category": "Garage door supplier"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "iconic-garage-door-services",
+   "name": "Iconic Garage Door Services",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "11050 N Saguaro Blvd #201",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.588,
+    "lng": -111.709
+   },
+   "description": "Garage door supplier in Fountain Hills, Arizona. Its Google profile also lists appliance repair service and door supplier.",
+   "website": "https://iconicgaragedoorservices.com/fountain-hills-az/",
+   "phone": "(602) 600-6471",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJV7Lo7EijK4cR4TMzO0_BArc",
+    "cid": "13187315204934022113",
+    "category": "Garage door supplier"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "nates-garage-doors-service-repair-and-installation",
+   "name": "Nate's Garage Doors - Service, Repair & Installation.",
+   "categories": [
+    "garage-doors"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8608 E Coronado Rd #1",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85257"
+   },
+   "geo": {
+    "lat": 33.468,
+    "lng": -111.898
+   },
+   "description": "Garage door supplier in Scottsdale, Arizona. Its Google profile also lists repair service.",
+   "website": "https://natedoors.com/",
+   "phone": "(480) 559-7177",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJA7A7dRN0K4cR9KjSIiTr080",
+    "cid": "14831456538296756468",
+    "category": "Garage door supplier"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

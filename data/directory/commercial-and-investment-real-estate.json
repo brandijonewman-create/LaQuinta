@@ -1,0 +1,366 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "buy-box-investor",
+   "name": "Buy Box Investor",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "34522 N Scottsdale Rd #120",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85266"
+   },
+   "geo": {
+    "lat": 33.799,
+    "lng": -111.93
+   },
+   "description": "Real estate consultant in Scottsdale, Arizona.",
+   "website": "https://buyboxinvestor.com/",
+   "phone": "(602) 820-5478",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJn7FkMe55K4cR5J1cnEdMykg",
+    "cid": "5245088586476068324",
+    "category": "Real estate consultant"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "dash-home-buyers-scottsdale",
+   "name": "Dash Home Buyers",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4151 N Marshall Way #259",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.496,
+    "lng": -111.929
+   },
+   "description": "Real estate consultant in Scottsdale, Arizona. Its Google profile also lists commercial real estate agency and estate liquidator.",
+   "website": "https://dashhomebuyers.com/sell-my-house-fast-for-cash-scottsdale-arizona/",
+   "phone": "(928) 268-8140",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJJ4x_mYoLK4cR77aNXYRTKIU",
+    "cid": "9595010834083198703",
+    "category": "Real estate consultant"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "dash-home-buyers",
+   "name": "Dash Home Buyers",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36800 Sidewinder Rd Unit B16",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.922
+   },
+   "description": "Real estate consultant in Carefree, Arizona.",
+   "website": "https://dashhomebuyers.com/sell-my-house-fast-for-cash-cave-creek-arizona/",
+   "phone": "(928) 268-8172",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJSxOU2td_K4cRmpYg-rXkQMY",
+    "cid": "14285669488255866522",
+    "category": "Real estate consultant"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "five-star-development-resort",
+   "name": "Five Star Development Resort",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6720 N Scottsdale Rd #175",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.534,
+    "lng": -111.927
+   },
+   "description": "Real estate developer in Scottsdale, Arizona. Its Google profile also lists resort hotel.",
+   "website": "http://www.fivestardevelopment.com/",
+   "phone": "(480) 214-6071",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJqY0omh4LK4cRdMb9nV17h_w",
+    "cid": "18196648461426607732",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "hope-development-partners",
+   "name": "Hope Development Partners",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7527 E 1st St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.492,
+    "lng": -111.919
+   },
+   "description": "Real estate developer in Scottsdale, Arizona.",
+   "website": "http://www.hopedevco.com/",
+   "phone": "(480) 946-2797",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJCR9qsMcLK4cRhhnyNK_ZsuI",
+    "cid": "16335358144956995974",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "simoncre",
+   "name": "SimonCRE",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6900 E 2nd St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.491,
+    "lng": -111.932
+   },
+   "description": "Real estate developer in Scottsdale, Arizona. Its Google profile also lists commercial real estate agency.",
+   "website": "https://simoncre.com/",
+   "phone": "(480) 745-1956",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJeS8KQul0K4cRg0Tr9AH_gKA",
+    "cid": "11565524226956543107",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "stardust-development",
+   "name": "Stardust Development",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "6730 N Scottsdale Rd Ste 230",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.534,
+    "lng": -111.926
+   },
+   "description": "Real estate developer in Paradise Valley, Arizona.",
+   "website": "http://www.stardustco.com/",
+   "phone": "(480) 607-5800",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJqY0omh4LK4cR5e8LfO3mbzY",
+    "cid": "3922607708125786085",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "vertical-development",
+   "name": "Vertical Development",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4215 N Winfield Scott Plaza",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.925
+   },
+   "description": "Real estate developer in Scottsdale, Arizona. Its Google profile also lists venture capital company.",
+   "website": "http://www.vertdevelopment.com/",
+   "phone": "(480) 545-5000",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJE9nx66cLK4cRUVcaxxMRVI0",
+    "cid": "10183783434033977169",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "w-m-grace-companies",
+   "name": "W.M. Grace Companies",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6925 E Indian School Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.932
+   },
+   "description": "Real estate developer in Scottsdale, Arizona.",
+   "website": "http://www.wmgraceco.com/",
+   "phone": "(602) 956-8254",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJTe26j6dyK4cRWkbOhLNVm64",
+    "cid": "12581744213505230426",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "life-rebuilders-inc",
+   "name": "Life Rebuilders Inc",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16810 E Ave of the Fountains #212",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.605,
+    "lng": -111.718
+   },
+   "description": "Real estate developer in Fountain Hills, Arizona.",
+   "website": "http://www.theliferebuildersgroup.org/",
+   "phone": "(480) 837-3000",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJAZwdP4aYK4cR0ajfOvWq2tI",
+    "cid": "15193644263119235281",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "luxestate-development-llc",
+   "name": "LuxEstate Development LLC",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7525 E Camelback Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.502,
+    "lng": -111.919
+   },
+   "description": "Real estate developer in Scottsdale, Arizona.",
+   "website": "https://www.luxestatedevelopment.com/",
+   "phone": "(480) 751-8571",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJJzqIRYobRiURXLtkZDxeSGI",
+    "cid": "7082014027515476828",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-aspen-group",
+   "name": "The Aspen Group",
+   "categories": [
+    "commercial-and-investment-real-estate"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "6730 N Scottsdale Rd #290",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.535,
+    "lng": -111.927
+   },
+   "description": "Real estate developer in Paradise Valley, Arizona. Its Google profile also lists professional services.",
+   "website": "",
+   "phone": "(602) 553-4100",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJEzPQir0LK4cRNwMiwSbPnkI",
+    "cid": "4800502018179466039",
+    "category": "Real estate developer"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

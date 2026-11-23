@@ -1,0 +1,96 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "atelier-inc",
+   "name": "Atelier Inc",
+   "categories": [
+    "kitchen-and-bath-remodeling"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4242 N Craftsman Ct",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.928
+   },
+   "description": "Kitchen remodeler in Scottsdale, Arizona. Its Google profile also lists appliance store and cabinet store.",
+   "website": "",
+   "phone": "(602) 793-2989",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJUx90B74LK4cRUzGQNc4wtpk",
+    "cid": "11076093995784352083",
+    "category": "Kitchen remodeler"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bulthaup",
+   "name": "bulthaup",
+   "categories": [
+    "kitchen-and-bath-remodeling"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4175 N Goldwater Blvd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.496,
+    "lng": -111.93
+   },
+   "description": "Kitchen remodeler in Scottsdale, Arizona.",
+   "website": "https://bulthaup.com/en/",
+   "phone": "(480) 945-5500",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJx_2m_5ULK4cRZcfGnfiXG5w",
+    "cid": "11248751588342679397",
+    "category": "Kitchen remodeler"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "eggersmann-studio-scottsdale",
+   "name": "eggersmann Studio Scottsdale",
+   "categories": [
+    "kitchen-and-bath-remodeling"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4161 N Marshall Way Ste 100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.496,
+    "lng": -111.929
+   },
+   "description": "Kitchen remodeler in Scottsdale, Arizona. Its Google profile also lists cabinet maker and cabinet store.",
+   "website": "https://eggersmannscottsdale.com/",
+   "phone": "(480) 605-2705",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJP_iU1wsLK4cRQLN8MQjLLkM",
+    "cid": "4841029885520294720",
+    "category": "Kitchen remodeler"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

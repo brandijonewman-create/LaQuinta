@@ -1,0 +1,96 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "cogir-of-fountain-hills",
+   "name": "Cogir of Fountain Hills",
+   "categories": [
+    "senior-living-and-memory-care"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16800e Paul Nordin Pkwy",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.603,
+    "lng": -111.718
+   },
+   "description": "Assisted living facility in Fountain Hills, Arizona. Its Google profile also lists retirement community.",
+   "website": "https://cogirusa.com/communities/cogir-of-fountain-hills/",
+   "phone": "(602) 833-5649",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJvzJKjYaYK4cRpHnBHDH92LA",
+    "cid": "12743213533022484900",
+    "category": "Assisted living facility"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fountain-hills-post-acute",
+   "name": "Fountain Hills Post Acute",
+   "categories": [
+    "senior-living-and-memory-care"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16300 Keith McMahan Dr",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.608,
+    "lng": -111.729
+   },
+   "description": "Nursing home in Fountain Hills, Arizona.",
+   "website": "https://fountainhillspa.com/",
+   "phone": "(480) 836-4800",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJzRz3Jy6ZK4cRh-vEwow9pB8",
+    "cid": "2280014986128714631",
+    "category": "Nursing home"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "fountain-view-village-by-cogir",
+   "name": "Fountain View Village by Cogir",
+   "categories": [
+    "senior-living-and-memory-care"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16455 E Ave of the Fountains",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.608,
+    "lng": -111.727
+   },
+   "description": "Retirement community in Fountain Hills, Arizona.",
+   "website": "https://cogirusa.com/communities/fountain-view-village/",
+   "phone": "(480) 568-5610",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJySPxxY-YK4cREgyAK-gMU6Y",
+    "cid": "11984937224664779794",
+    "category": "Retirement community"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

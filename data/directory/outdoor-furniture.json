@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "carefree-outdoor-living",
+   "name": "Carefree Outdoor Living",
+   "categories": [
+    "outdoor-furniture"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36889 N Tom Darlington Dr C5",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.923
+   },
+   "description": "Outdoor furniture store in Carefree, Arizona. Its Google profile also lists grill store.",
+   "website": "http://www.carefreeoutdoor.com/",
+   "phone": "(480) 575-3091",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJf3S_CJ5-K4cRjz_lXRjH5S0",
+    "cid": "3307268408841944975",
+    "category": "Outdoor furniture store"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

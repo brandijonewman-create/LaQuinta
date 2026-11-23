@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "craftsman-court-ceramics",
+   "name": "Craftsman Court Ceramics",
+   "categories": [
+    "tile-and-stone"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4237 N Craftsman Ct",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.928
+   },
+   "description": "Tile store in Scottsdale, Arizona. Its Google profile also lists tile contractor.",
+   "website": "http://www.craftsmancourt.com/",
+   "phone": "(480) 970-6611",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJZbXMDr4LK4cRAmLuXUY54rE",
+    "cid": "12817870463836250626",
+    "category": "Tile store"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

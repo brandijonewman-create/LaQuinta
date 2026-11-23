@@ -1,0 +1,186 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "complete-roofing-and-waterproofing",
+   "name": "Complete Roofing & Waterproofing",
+   "categories": [
+    "roofing-and-gutters"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7166 Ed Everett Way",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.827,
+    "lng": -111.926
+   },
+   "description": "Roofing contractor in Carefree, Arizona.",
+   "website": "",
+   "phone": "(602) 878-8768",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJwy7xwsZ-K4cRLMl87SNQCMs",
+    "cid": "14630031504751511852",
+    "category": "Roofing contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "desert-state-roofing",
+   "name": "Desert State Roofing",
+   "categories": [
+    "roofing-and-gutters"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "35241 N 51st St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.806,
+    "lng": -111.971
+   },
+   "description": "Roofing contractor in Cave Creek, Arizona.",
+   "website": "https://www.desertstateroofing.com/",
+   "phone": "(602) 377-0683",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJM-vPAUR9K4cRW9Mjo8Uh9dg",
+    "cid": "15633438814215852891",
+    "category": "Roofing contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "kore-roofing",
+   "name": "Kore Roofing",
+   "categories": [
+    "roofing-and-gutters"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4241 N Winfield Scott Plaza #201",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.925
+   },
+   "description": "Roofing contractor in Scottsdale, Arizona. Its Google profile also lists gutter service.",
+   "website": "https://www.koreroofing.com/",
+   "phone": "(480) 470-5848",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJxZ1rh5ePwa8R23_Qdd1n9bo",
+    "cid": "13471788061210738651",
+    "category": "Roofing contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "raving-roofs",
+   "name": "Raving Roofs",
+   "categories": [
+    "roofing-and-gutters"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "38425 N Spur Cross Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.834,
+    "lng": -111.951
+   },
+   "description": "Roofing contractor in Cave Creek, Arizona.",
+   "website": "https://www.ravingroofs.com/",
+   "phone": "(602) 900-0043",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJNYIuA2Z_K4cR1pM_a8LH79I",
+    "cid": "15199586905235624918",
+    "category": "Roofing contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "roof-king",
+   "name": "Roof King",
+   "categories": [
+    "roofing-and-gutters"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "17225 E Shea Blvd A 109",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.569,
+    "lng": -111.711
+   },
+   "description": "Roofing contractor in Fountain Hills, Arizona.",
+   "website": "https://roofkingusa.com/fountainhillsaz/",
+   "phone": "(480) 470-7124",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJSbRcOAKjK4cR2__UyoSVXGE",
+    "cid": "7015646717107568603",
+    "category": "Roofing contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tempel-roofing-llc",
+   "name": "Tempel Roofing, LLC",
+   "categories": [
+    "roofing-and-gutters"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3260 Hayden Rd Ste 210",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.485,
+    "lng": -111.909
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists building restoration service and roofing contractor.",
+   "website": "https://tempelroofingaz.com/",
+   "phone": "(623) 759-7662",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJD8kwkAULK4cRS_nd_NBwX2c",
+    "cid": "7448796351592003915",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

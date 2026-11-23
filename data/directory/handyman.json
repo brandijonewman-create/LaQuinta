@@ -1,0 +1,66 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "can-do-handyman-and-home-improvement-services",
+   "name": "Can Do Handyman and Home Improvement Services",
+   "categories": [
+    "handyman"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8348 E Weldon Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.491,
+    "lng": -111.901
+   },
+   "description": "Contractor in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJnQDs9nwLK4cRgZxM0RagLK0",
+    "cid": "12478524687397985409",
+    "category": "Contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "scottsdale-handyman-pro",
+   "name": "Scottsdale Handyman Pro",
+   "categories": [
+    "handyman"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7301 E 3rd Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.496,
+    "lng": -111.923
+   },
+   "description": "Handyman/Handywoman/Handyperson in Scottsdale, Arizona.",
+   "website": "https://www.scottsdalehandyman.pro/",
+   "phone": "(480) 788-2629",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJZ5jFPhQLK4cR3jwZZ4_2kdU",
+    "cid": "15389352497472158942",
+    "category": "Handyman/Handywoman/Handyperson"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

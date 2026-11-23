@@ -1,0 +1,126 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "carefree-floors-inc",
+   "name": "Carefree Floors, Inc.",
+   "categories": [
+    "flooring"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6718 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.833,
+    "lng": -111.936
+   },
+   "description": "Flooring store in Cave Creek, Arizona. Its Google profile also lists bathroom remodeler and carpet cleaning service.",
+   "website": "https://carefreefloors.com/",
+   "phone": "(480) 515-9999",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJd6UPf5d-K4cR_YFzSfY3mjU",
+    "cid": "3862461161357410813",
+    "category": "Flooring store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "luxury-stone-care-az",
+   "name": "Luxury Stone Care AZ",
+   "categories": [
+    "flooring"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8310 E Palm Ln",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85257"
+   },
+   "geo": {
+    "lat": 33.469,
+    "lng": -111.903
+   },
+   "description": "Floor refinishing service in Scottsdale, Arizona. Its Google profile also lists floor sanding and polishing service and marble contractor.",
+   "website": "https://luxurystonecareaz.com/",
+   "phone": "(480) 233-4356",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJXV0R2CMJK4cRGPrh8SqwzMs",
+    "cid": "14685306183441578520",
+    "category": "Floor refinishing service"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "midwest-flooring-inc",
+   "name": "Midwest Flooring Inc",
+   "categories": [
+    "flooring"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "11855 Saguaro Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.595,
+    "lng": -111.713
+   },
+   "description": "Flooring contractor in Fountain Hills, Arizona.",
+   "website": "",
+   "phone": "(480) 816-9546",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJr-L53X-YK4cRBVnm8gFTGJ4",
+    "cid": "11391946525268924677",
+    "category": "Flooring contractor"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "old-town-flooring-scottsdale",
+   "name": "Old Town Flooring Scottsdale",
+   "categories": [
+    "flooring"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7330 E Main St #100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.924
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://oldtownflooringscottsdale.com/",
+   "phone": "(480) 504-4933",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJS3nxZEkLK4cRpOvnrrb8-dI",
+    "cid": "15202459878714502052",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

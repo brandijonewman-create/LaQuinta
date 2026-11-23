@@ -1,0 +1,96 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "anticus-fine-art-books-jewelry-and-design",
+   "name": "Anticus - Fine Art, Books, Jewelry, & Design",
+   "categories": [
+    "art-galleries"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3922 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.926
+   },
+   "description": "Art gallery in Scottsdale, Arizona. Its Google profile also lists book store and interior designer.",
+   "website": "https://www.anticus.com/",
+   "phone": "(480) 483-5663",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJUXL8lRV0K4cRmCckHft0KVA",
+    "cid": "5776276618953893784",
+    "category": "Art gallery"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cosanti-originals",
+   "name": "Cosanti Originals",
+   "categories": [
+    "art-galleries"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "6433 E Doubletree Ranch Rd",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.567,
+    "lng": -111.942
+   },
+   "description": "Art gallery in Paradise Valley, Arizona. Its Google profile also lists art studio and foundry.",
+   "website": "https://cosanti.com/",
+   "phone": "(480) 948-6145",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJk7P45KR0K4cRs_4gupl2URI",
+    "cid": "1319966568421064371",
+    "category": "Art gallery"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "rare-earth-gallery",
+   "name": "Rare Earth Gallery",
+   "categories": [
+    "art-galleries"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6401 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.943
+   },
+   "description": "Rock shop in Cave Creek, Arizona. Its Google profile also lists art gallery and fountain contractor.",
+   "website": "https://www.rareearthgallerycc.com/",
+   "phone": "(480) 575-4360",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlzRS8ph-K4cRTl_NaTulh_M",
+    "cid": "17548176147669147470",
+    "category": "Rock shop"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

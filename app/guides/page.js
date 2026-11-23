@@ -1,69 +1,92 @@
 import Link from 'next/link';
-import PageHero from '@/components/shared/page-hero';
-import Breadcrumbs from '@/components/shared/breadcrumbs';
-import { getAllGuides } from '@/lib/blog';
-import { ArrowUpRight } from 'lucide-react';
+import PageShell from '@/components/page-shell';
+import { SITE, LEAD_MAGNETS } from '@/lib/data';
+import { breadcrumbSchema, JsonLd } from '@/lib/seo';
+import { ArrowRight, FileText, Download } from 'lucide-react';
 
 export const metadata = {
-  title: 'Guides',
-  description: 'Pillar guides to buying into a La Quinta private golf community — architects, membership economics, California-specific context.',
-  alternates: { canonical: '/guides' },
+  robots: { index: false, follow: true },
+  title: 'Scottsdale Golf Real Estate Guides',
+  description: 'Guides to buying luxury golf homes in Scottsdale: community deep-dives, market reports, and the 2026 Buyer\u2019s Guide. Independent, ad-supported coverage.',
+  alternates: { canonical: `${SITE.url}/guides` },
+  openGraph: {
+    url: `${SITE.url}/guides`,
+    title: 'Scottsdale Golf Real Estate Guides',
+    description: 'Independent guides to luxury golf real estate in Scottsdale.',
+    images: [{ url: `${SITE.url}/opengraph-image`, width: 1200, height: 630, alt: 'Scottsdale Golf Lifestyle' }]
+  }
 };
 
-export default function GuidesIndexPage() {
-  const guides = getAllGuides();
+export default function Page() {
   return (
-    <>
-      <PageHero
-        eyebrow="Guides"
-        title="Find Your Perfect La Quinta Golf Home."
-        subtitle="Every course, every community, every price range &mdash; covered. Start with our 60-second quiz to find your match."
-      >
-        <Link
-          href="/community-quiz"
-          className="inline-flex items-center gap-2 bg-palm text-sand-50 px-8 py-4 text-xs uppercase tracking-[0.22em] font-semibold hover:bg-terracotta transition-colors"
-        >
-          Find Your Lifestyle Profile <ArrowUpRight size={14} />
-        </Link>
-      </PageHero>
-      <section className="container py-16 lg:py-24">
-        <Breadcrumbs items={[{ label: 'Guides' }]} />
-        {guides.length === 0 ? (
-          <div className="mt-10 border border-dashed border-border bg-sand-50 p-12 text-center">
-            <div className="text-xs uppercase tracking-[0.28em] text-terracotta mb-3">Coming soon</div>
-            <p className="text-foreground/75">Pillar guides in development.</p>
+    <PageShell>
+      <JsonLd data={breadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Guides', path: '/guides' }
+      ])} />
+
+      <section className="bg-[#062840] text-amber-50">
+        <div className="max-w-5xl mx-auto px-6 py-20 md:py-24">
+          <div className="text-xs uppercase tracking-[0.35em] text-amber-300 mb-4 flex items-center gap-2">
+            <FileText className="h-3 w-3" /> Guides
           </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-            {guides.map((g) => (
-              <Link key={g.slug} href={`/guides/${g.slug}`} className="group block border border-palm/10 bg-white rounded-xl overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="relative aspect-[16/10] overflow-hidden bg-palm">
-                  {g.frontmatter.cover ? (
-                    <>
-                      <img src={g.frontmatter.cover} alt={g.frontmatter.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
-                    </>
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center p-8 bg-gradient-to-br from-palm to-palm-700">
-                      <div className="w-12 h-px bg-gold mx-auto mb-4" />
-                    </div>
-                  )}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <div className="text-[10px] uppercase tracking-[0.28em] text-gold mb-2">{g.frontmatter.category}{g.frontmatter.gated ? ' · By Request' : ''}</div>
-                    <h3 className="font-serif text-xl lg:text-2xl leading-[1.15]">{g.frontmatter.title}</h3>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-sm text-foreground/70 leading-relaxed">{g.frontmatter.excerpt}</p>
-                  <div className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.22em] text-terracotta group-hover:text-palm transition-colors">
-                    Read guide <ArrowUpRight size={13} />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        )}
+          <h1 className="font-serif text-5xl md:text-6xl tracking-tight">Scottsdale Golf Real Estate Guides</h1>
+          <p className="mt-5 text-emerald-50/85 text-lg max-w-3xl">
+            Independent, ad-supported guides to luxury golf real estate in Scottsdale.
+            We do not sell homes. We do not run an MLS feed. We write honestly about what each
+            community delivers, what each club costs, and what the relocation actually looks like
+            in 2026.
+          </p>
+        </div>
       </section>
-    </>
+
+      <section className="max-w-5xl mx-auto px-6 py-16">
+        <h2 className="font-serif text-3xl text-[#062840] mb-2">Buyer&rsquo;s guides</h2>
+        <p className="text-emerald-900/70 mb-8">Full-length PDFs you can download to read offline.</p>
+        <div className="grid md:grid-cols-2 gap-6">
+          {LEAD_MAGNETS.map(g => (
+            <Link
+              key={g.slug}
+              href={`/guides/${g.slug}`}
+              className="group rounded-2xl border border-emerald-900/10 bg-white p-6 md:p-8 hover:shadow-xl transition flex flex-col"
+            >
+              <div className="text-xs uppercase tracking-[0.3em] text-amber-700 mb-3 flex items-center gap-2">
+                <Download className="h-3 w-3" /> Direct download
+              </div>
+              <h3 className="font-serif text-2xl text-[#062840] leading-snug">{g.title}</h3>
+              <p className="mt-3 text-sm text-emerald-900/75 leading-relaxed flex-1">{g.description}</p>
+              {g.chapters && g.chapters.length > 0 && (
+                <ul className="mt-4 space-y-1 text-xs text-emerald-900/60">
+                  {g.chapters.slice(0, 4).map(ch => (
+                    <li key={ch}>&middot; {ch}</li>
+                  ))}
+                </ul>
+              )}
+              <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#062840] group-hover:text-amber-700 transition">
+                Read the guide <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-3 gap-4">
+          <Link href="/blog" className="rounded-xl border border-emerald-900/10 bg-emerald-50/30 p-6 hover:shadow-md transition">
+            <div className="text-xs uppercase tracking-[0.25em] text-emerald-700 mb-2">Journal</div>
+            <div className="font-serif text-xl text-[#062840]">Long-form journal</div>
+            <p className="text-xs text-emerald-900/65 mt-1">Community deep-dives, comparisons, and relocation analysis.</p>
+          </Link>
+          <Link href="/market-reports" className="rounded-xl border border-emerald-900/10 bg-emerald-50/30 p-6 hover:shadow-md transition">
+            <div className="text-xs uppercase tracking-[0.25em] text-emerald-700 mb-2">Quarterly</div>
+            <div className="font-serif text-xl text-[#062840]">Market reports</div>
+            <p className="text-xs text-emerald-900/65 mt-1">Price-range and inventory analysis by ZIP, with disclaimers.</p>
+          </Link>
+          <Link href="/glossary" className="rounded-xl border border-emerald-900/10 bg-emerald-50/30 p-6 hover:shadow-md transition">
+            <div className="text-xs uppercase tracking-[0.25em] text-emerald-700 mb-2">Reference</div>
+            <div className="font-serif text-xl text-[#062840]">Glossary</div>
+            <p className="text-xs text-emerald-900/65 mt-1">Golf and real-estate terminology used across the site.</p>
+          </Link>
+        </div>
+      </section>
+    </PageShell>
   );
 }

@@ -1,0 +1,36 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "heritage-vine-inc",
+   "name": "Heritage Vine Inc",
+   "categories": [
+    "wine-cellars-and-home-bars"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "16071 N 76th St #100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.632,
+    "lng": -111.916
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists cabinet maker and construction company.",
+   "website": "https://www.heritagevine.com/contact/custom-wine-cellars-scottsdale-arizona/",
+   "phone": "(480) 347-0980",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJbZX7bN0OK4cR_gRBW0UOBRU",
+    "cid": "1514632540726559998",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

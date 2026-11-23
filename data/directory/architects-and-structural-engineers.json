@@ -1,0 +1,666 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "aline-architecture-concepts",
+   "name": "Aline Architecture Concepts",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7340 E Main St #210",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.493,
+    "lng": -111.923
+   },
+   "description": "Architecture firm in Scottsdale, Arizona. Its Google profile also lists architect and architectural designer.",
+   "website": "https://www.madewithaline.com/",
+   "phone": "(480) 980-9039",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJV2Xq-EQIK4cR94bwNboVhHU",
+    "cid": "8467917088876431095",
+    "category": "Architecture firm"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "allen-and-philp-architects-p-c",
+   "name": "Allen & Philp Architects, P.C.",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7154 East Stetson Drive Fourth Floor",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.927
+   },
+   "description": "Architect in Scottsdale, Arizona. Its Google profile also lists interior designer.",
+   "website": "http://www.allenphilp.com/",
+   "phone": "(480) 990-2800",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ-3rCcpYLK4cR3HKURlngnrI",
+    "cid": "12870971459112301276",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "bedbrock-architecture",
+   "name": "BedBrock Architecture",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "paradise-valley",
+   "address": {
+    "street": "5203 E Lincoln Dr",
+    "city": "Paradise Valley",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.531,
+    "lng": -111.969
+   },
+   "description": "Architecture firm in Paradise Valley, Arizona.",
+   "website": "https://bedbrockarchitecture.com/",
+   "phone": "(480) 870-9595",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJMUutPsANK4cRuGsbaywzIVs",
+    "cid": "6566585997551430584",
+    "category": "Architecture firm"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "candelaria-design-associates",
+   "name": "Candelaria Design Associates",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6900 E Camelback Rd Suite #400",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.503,
+    "lng": -111.932
+   },
+   "description": "Architect in Scottsdale, Arizona.",
+   "website": "http://www.candelariadesign.com/",
+   "phone": "(602) 604-2001",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJqy6jnqDD4xQRCuc0ubyeFWA",
+    "cid": "6923614535550297866",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "chen-suchart-studio",
+   "name": "Chen + Suchart Studio",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7070 E 3rd Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.928
+   },
+   "description": "Architect in Scottsdale, Arizona. Its Google profile also lists interior designer.",
+   "website": "http://www.chensuchartstudio.com/",
+   "phone": "(480) 332-1704",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJGWri9ZULK4cRp1LdWAcI6_Y",
+    "cid": "17792323580505969319",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cosan-studio",
+   "name": "Cosan Studio",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4300 N Miller Rd #123",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.918
+   },
+   "description": "Architecture firm in Scottsdale, Arizona. Its Google profile also lists architect and interior designer.",
+   "website": "http://cosanstudio.com/",
+   "phone": "(480) 930-4410",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJGffb3sQLK4cRUEwXC2B3JHc",
+    "cid": "8585118044061650000",
+    "category": "Architecture firm"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "desert-ridge-design-architects",
+   "name": "Desert Ridge Design Architects",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "4008 E Creosote Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.77,
+    "lng": -111.995
+   },
+   "description": "Architect in Cave Creek, Arizona.",
+   "website": "http://www.drdarchitects.com/",
+   "phone": "(480) 215-4961",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJVVWpY6Z7K4cRwLi-Re5uTF4",
+    "cid": "6794927907446634688",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "drewett-works-architecture",
+   "name": "Drewett Works // Architecture",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4821 N Scottsdale Rd Ste 103",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.507,
+    "lng": -111.926
+   },
+   "description": "Architect in Scottsdale, Arizona. Its Google profile also lists architectural designer and architecture firm.",
+   "website": "https://www.drewettworks.com/",
+   "phone": "(855) 373-9388",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJS4Kqmr0LK4cRsVHtkb-nDvY",
+    "cid": "17730293224233062833",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "gm-zimmerman-architect",
+   "name": "GM Zimmerman Architect",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7406 E Nonchalant Ave",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.823,
+    "lng": -111.921
+   },
+   "description": "Architect in Carefree, Arizona.",
+   "website": "http://gmzimmermanarchitect.com/contact/",
+   "phone": "(480) 907-7650",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJYYFxYc9-K4cRavbj0V5aAaU",
+    "cid": "11889883854529623658",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "higgins-architects",
+   "name": "Higgins Architects",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3666 N Miller Rd # 101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.491,
+    "lng": -111.918
+   },
+   "description": "Architect in Scottsdale, Arizona.",
+   "website": "https://higginsarch.com/",
+   "phone": "(480) 990-8897",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJdY_zO8YLK4cRYxJ5svnOAec",
+    "cid": "16645813269574521443",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "j-cor-architecture",
+   "name": "J. Cor Architecture",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "8601 N Scottsdale Rd Ste 335",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.562,
+    "lng": -111.926
+   },
+   "description": "Architecture firm in Scottsdale, Arizona.",
+   "website": "https://jcor-architecture.com/",
+   "phone": "(602) 881-9360",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJKbsUbWN6lWMROxmgBH9Z208",
+    "cid": "5754291350969260347",
+    "category": "Architecture firm"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "kendle-design-collaborative",
+   "name": "Kendle Design Collaborative",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6115 N Cattletrack Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.525,
+    "lng": -111.917
+   },
+   "description": "Architect in Scottsdale, Arizona. Its Google profile also lists architecture firm and interior architect office.",
+   "website": "http://kendledesign.com/",
+   "phone": "(480) 951-8558",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJQYNhmw8LK4cRN5jB-J5Jcco",
+    "cid": "14587521615156844599",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "kilbane-architecture-inc",
+   "name": "Kilbane Architecture Inc",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36800 N Sidewinder Rd # B-15",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.922
+   },
+   "description": "Architect in Carefree, Arizona.",
+   "website": "https://kilbanearchitecture.com/",
+   "phone": "(602) 684-9851",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlVuiUMZ-K4cR0ogElI65KFo",
+    "cid": "6496646484501760210",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "newwest-design-studio-llc",
+   "name": "NewWest design studio, llc",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36600 N Pima Rd #303-1",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.817,
+    "lng": -111.892
+   },
+   "description": "Architect in Carefree, Arizona.",
+   "website": "http://www.newwestdesignstudio.com/",
+   "phone": "(480) 351-6664",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ98eMPSl5K4cRXTv0VuitgpY",
+    "cid": "10845422066064440157",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "norris-architects-llc",
+   "name": "Norris Architects LLC",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4343 N Scottsdale Rd #150",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.925
+   },
+   "description": "Architect in Scottsdale, Arizona.",
+   "website": "http://www.norrisarchitects.com/",
+   "phone": "(480) 734-7711",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi3FTZJ50K4cRhqhXXuE8_S4",
+    "cid": "3385929433500592262",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "paradigm-design",
+   "name": "Paradigm Design",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4250 N Drinkwater Blvd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.922
+   },
+   "description": "Architecture firm in Scottsdale, Arizona.",
+   "website": "http://www.paradigmae.com/",
+   "phone": "(602) 374-4066",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ3bvKKkMPK4cR7r-fkQhH_Zs",
+    "cid": "11240218347115102190",
+    "category": "Architecture firm"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "schembri-engineers-inc",
+   "name": "Schembri Engineers, Inc.",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "5952 E Montgomery Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.763,
+    "lng": -111.953
+   },
+   "description": "Engineering consultant in Cave Creek, Arizona. Its Google profile also lists architecture firm and building inspector.",
+   "website": "http://schembriengineers.com/",
+   "phone": "(602) 993-6699",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJIyJjoyp6K4cRDCNnNHOlo4I",
+    "cid": "9413549560353465100",
+    "category": "Engineering consultant"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sebastienne-nicole-brown-architecture-and-consulting",
+   "name": "Sebastienne Nicole Brown Architecture & Consulting",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "37417 N Tom Darlington Dr Ste 7",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.826,
+    "lng": -111.924
+   },
+   "description": "Architecture firm in Carefree, Arizona.",
+   "website": "https://www.sebastiennenicole.com/",
+   "phone": "(480) 250-7745",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJPcOb0Hp_K4cRanad4P8FrnE",
+    "cid": "8191491368776726122",
+    "category": "Architecture firm"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "swaback",
+   "name": "SWABACK",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7550 E McDonald Dr Ste a",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.524,
+    "lng": -111.918
+   },
+   "description": "Architect in Scottsdale, Arizona. Its Google profile also lists interior designer and landscape architect.",
+   "website": "http://www.swaback.com/",
+   "phone": "(480) 367-2100",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJnQi3lQ8LK4cRLAoEa0C_YyI",
+    "cid": "2478034503378143788",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "tate-studio-architects",
+   "name": "Tate Studio Architects",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "7100 E Cave Creek Rd Bldg 1, Suite 160",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.83,
+    "lng": -111.929
+   },
+   "description": "Architect in Cave Creek, Arizona.",
+   "website": "http://www.tate-studio.com/",
+   "phone": "(480) 948-3517",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJf4T-H8R-K4cRKrkPXlJSnvc",
+    "cid": "17842789287407368490",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "trevor-pan-architects",
+   "name": "Trevor Pan Architects",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7440 E 6th Ave #200",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.499,
+    "lng": -111.921
+   },
+   "description": "Architect in Scottsdale, Arizona. Its Google profile also lists interior designer and landscape designer.",
+   "website": "https://trevorpan.com/",
+   "phone": "(480) 277-3499",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJBTeujosIK4cR0iFTvpj5t30",
+    "cid": "9058983609902506450",
+    "category": "Architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "wl3-designs",
+   "name": "WL3 Designs",
+   "categories": [
+    "architects-and-structural-engineers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7150 E Camelback Rd Unit 444",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.503,
+    "lng": -111.927
+   },
+   "description": "Architecture firm in Scottsdale, Arizona.",
+   "website": "https://www.wl3designs.com/",
+   "phone": "(480) 431-0655",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ8-c65k4LK4cRr71-SBl9Ahw",
+    "cid": "2018313130559323567",
+    "category": "Architecture firm"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

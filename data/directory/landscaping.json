@@ -1,0 +1,426 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "altissimo-landscape-design-and-maintenance-llc",
+   "name": "Altissimo Landscape Design and Maintenance LLC",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36800 Sidewinder Rd Bldg A Suite 1",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.821,
+    "lng": -111.922
+   },
+   "description": "Landscape designer in Carefree, Arizona.",
+   "website": "https://altissimolandscapedesign.com/",
+   "phone": "(602) 574-6704",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJrSoG6xJ_K4cRchSpUuwoDIk",
+    "cid": "9875313078380860530",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "desert-foothills-landscape",
+   "name": "Desert Foothills Landscape",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "36815 N Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.82,
+    "lng": -111.954
+   },
+   "description": "Landscape designer in Cave Creek, Arizona. Its Google profile also lists landscaper and lawn care service.",
+   "website": "https://dflaz.com/",
+   "phone": "(480) 488-0128",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJy58HBh18K4cRAu5oEdiOAxM",
+    "cid": "1370095770306932226",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "dream-retreats-landscape-design-and-construction",
+   "name": "Dream Retreats Landscape Design & Construction",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3419 N Kachina Ln",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.488,
+    "lng": -111.941
+   },
+   "description": "Landscape designer in Scottsdale, Arizona. Its Google profile also lists gazebo builder and landscaper.",
+   "website": "https://dream-retreats.com/scottsdale/",
+   "phone": "(480) 507-8872",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJE3s1lSgLK4cR0z7WqU0UuSs",
+    "cid": "3150571738116800211",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "earth-care",
+   "name": "Earth Care",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "37631 N Piedra Grande Dr",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.827,
+    "lng": -111.931
+   },
+   "description": "Landscaper in Cave Creek, Arizona.",
+   "website": "https://earthcareaz.com/",
+   "phone": "(480) 488-2915",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJHSHL0rh-K4cRTjL7RxSF0Q0",
+    "cid": "995723314779075150",
+    "category": "Landscaper"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "firesky-outdoor-fka-a-couple-of-green-thumbs",
+   "name": "FireSky Outdoor FKA A Couple of Green Thumbs",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6061 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.949
+   },
+   "description": "Landscape designer in Cave Creek, Arizona. Its Google profile also lists landscape lighting designer and landscaper.",
+   "website": "https://www.fireskyoutdoor.com/",
+   "phone": "(480) 428-4803",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJgVqY-Z5-K4cR18jS-923NYM",
+    "cid": "9454665156774774999",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "foothills-granite",
+   "name": "Foothills Granite",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6774 E Viola Ln",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.831,
+    "lng": -111.935
+   },
+   "description": "Landscaping supply store in Cave Creek, Arizona. Its Google profile also lists garden center and granite supplier.",
+   "website": "http://www.foothillsgranite.com/",
+   "phone": "(480) 488-9003",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ6yNs_L1-K4cRT1Io-oP6opo",
+    "cid": "11142743872812634703",
+    "category": "Landscaping supply store"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "greey-pickett",
+   "name": "Greey Pickett",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7144 E Stetson Dr #205",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.928
+   },
+   "description": "Landscape architect in Scottsdale, Arizona.",
+   "website": "http://www.greeypickett.com/",
+   "phone": "(480) 609-0009",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJB1B8CZYLK4cRFqR6yhim7Jc",
+    "cid": "10947307419637294102",
+    "category": "Landscape architect"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-landscape-design-cave-creek",
+   "name": "Infinity Landscape Design Cave Creek",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6812 E Cave Creek Rd",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.934
+   },
+   "description": "Landscape designer in Cave Creek, Arizona. Its Google profile also lists concrete contractor and masonry contractor.",
+   "website": "https://infinitylandscapedesignaz.com/",
+   "phone": "(602) 916-1848",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ79KTT8B_K4cR1Nlq6WCZjnI",
+    "cid": "8254703808528701908",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-landscape-design-fountain-hills",
+   "name": "Infinity Landscape Design Fountain Hills",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16425 E Palisades Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.61,
+    "lng": -111.725
+   },
+   "description": "Landscape designer in Fountain Hills, Arizona. Its Google profile also lists concrete contractor and masonry contractor.",
+   "website": "https://infinitylandscapedesignaz.com/",
+   "phone": "(602) 916-1845",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJV6Nre2KZK4cRaIDneBAoCKw",
+    "cid": "12396202025550315624",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "infinity-landscape-design-south-scottsdale",
+   "name": "Infinity Landscape Design South Scottsdale",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6560 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85253"
+   },
+   "geo": {
+    "lat": 33.533,
+    "lng": -111.926
+   },
+   "description": "Landscape designer in Scottsdale, Arizona. Its Google profile also lists concrete contractor and masonry contractor.",
+   "website": "https://infinitylandscapedesignaz.com/",
+   "phone": "(602) 858-9799",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJMx3iKTALK4cRyfiN-NCdgKQ",
+    "cid": "11853647740087957705",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "murphys-landscape-and-home-management",
+   "name": "Murphy's Landscape and Home Management",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "41612 N 52nd St",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.863,
+    "lng": -111.97
+   },
+   "description": "Landscaper in Cave Creek, Arizona.",
+   "website": "https://www.murphysaz.com/",
+   "phone": "(480) 575-8073",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJLeEniix9K4cRnRKrdDWrqyo",
+    "cid": "3074739416689480349",
+    "category": "Landscaper"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "on-site-landscape",
+   "name": "On Site Landscape",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3004 N 68th St",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.482,
+    "lng": -111.935
+   },
+   "description": "Construction company in Scottsdale, Arizona. Its Google profile also lists landscape designer and landscape architect.",
+   "website": "https://onsitebuilds.com/",
+   "phone": "(480) 429-8885",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJPfMTIIsLK4cRvzzbCockhi8",
+    "cid": "3424464729083165887",
+    "category": "Construction company"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sonoran-landscape-company-llc",
+   "name": "Sonoran Landscape Company, LLC",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7014 E Camelback Rd Suite 1452",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.504,
+    "lng": -111.929
+   },
+   "description": "Landscape designer in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJIx-OZVwLK4cRo_Q5g0FCLCU",
+    "cid": "2678588727520523427",
+    "category": "Landscape designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "two-leaf-landscape",
+   "name": "Two Leaf Landscape",
+   "categories": [
+    "landscaping"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.947
+   },
+   "description": "Landscaper in Cave Creek, Arizona.",
+   "website": "https://m.facebook.com/61585910969016/",
+   "phone": "(602) 466-8378",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ0ZySYQB_K4cR389YC8-toBU",
+    "cid": "1558436575830396895",
+    "category": "Landscaper"
+   },
+   "articleSlugs": []
+  }
+ ]
+}

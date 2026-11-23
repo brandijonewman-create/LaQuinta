@@ -1,0 +1,966 @@
+{
+ "importedAt": "2026-11-21",
+ "source": "DataForSEO Google Maps pull via ChatGPT (custom home builders pull), 5 cities",
+ "businesses": [
+  {
+   "slug": "ajdesign",
+   "name": "AJDesign",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "7211 E Ho Rd Ste 18",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.826,
+    "lng": -111.923
+   },
+   "description": "Interior designer in Carefree, Arizona.",
+   "website": "https://www.alexandrajamesdesign.com/",
+   "phone": "(602) 361-1727",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJc0SLdU9_K4cRQeoeOoLBkPM",
+    "cid": "17550740512927836737",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "alisha-taylor-interiors",
+   "name": "Alisha Taylor Interiors",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7381 E 6th Ave Ste 101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.499,
+    "lng": -111.921
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "https://www.alishataylor.com/",
+   "phone": "(480) 833-7961",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJu-9_feQLK4cRhntLfm9eIYg",
+    "cid": "9809225296342907782",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "andrighetti-design-associates",
+   "name": "Andrighetti Design Associates",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16824 E Ave of the Fountains #11",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.604,
+    "lng": -111.717
+   },
+   "description": "Interior designer in Fountain Hills, Arizona.",
+   "website": "http://andrighettidesigns.com/",
+   "phone": "(480) 580-8888",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJoa_L3--YK4cR_Z0lDtciQLI",
+    "cid": "12844304444311313917",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "ashley-luxury-design",
+   "name": "Ashley Luxury Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7014 E Camelback Rd Suite B100A",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.504,
+    "lng": -111.929
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "https://www.ashleyluxurydesign.com/",
+   "phone": "(480) 606-8004",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJu4J515anK4cRpCMj48sH7zw",
+    "cid": "4390736733980009380",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "calico-old-scottsdale",
+   "name": "Calico Old Scottsdale",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6945 E Indian School Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.931
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists bedding store and blinds shop.",
+   "website": "https://www.calicocorners.com/pages/stores/176",
+   "phone": "(480) 425-7400",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJg-MpqZULK4cRMlaMqnQD9Ls",
+    "cid": "13543453779022337586",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "cdot-design-studio",
+   "name": "Cdot Design Studio",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "cave-creek",
+   "address": {
+    "street": "6061 E Cave Creek Rd #10",
+    "city": "Cave Creek",
+    "state": "AZ",
+    "zip": "85331"
+   },
+   "geo": {
+    "lat": 33.832,
+    "lng": -111.949
+   },
+   "description": "Interior designer in Cave Creek, Arizona.",
+   "website": "https://cdotds.com/contact-us/",
+   "phone": "(602) 403-0430",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJAQC9955-K4cRY9PIZjN5Tbo",
+    "cid": "13424519325936046947",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "david-michael-miller-associates",
+   "name": "David Michael Miller Associates",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7034 E 1st Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.494,
+    "lng": -111.929
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "https://davidmichaelmiller.com/",
+   "phone": "(480) 425-7545",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJi1CqS5ULK4cRqmIS_uoQxs0",
+    "cid": "14827557424634946218",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "elle-interiors-llc",
+   "name": "Elle Interiors LLC",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7025 E 5th Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.93
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists general contractor and remodeler.",
+   "website": "http://www.elleinteriorsaz.com/",
+   "phone": "(602) 638-9290",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJs5BpRSgLK4cRhjNk09bYHok",
+    "cid": "9880573049678607238",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "glenda-evers-design",
+   "name": "Glenda Evers Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6615 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.533,
+    "lng": -111.925
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists furniture accessories.",
+   "website": "http://www.glendaeversdesign.com/",
+   "phone": "(480) 420-0226",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJEXAPnkV4K4cR4VnnfP0Dzmk",
+    "cid": "7624035606441974241",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "guided-home-design",
+   "name": "Guided Home Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6611 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.532,
+    "lng": -111.924
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists interior decorator.",
+   "website": "http://www.guidedhomedesign.com/",
+   "phone": "",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJP57IrIyfK4cRTY__ywj69ZI",
+    "cid": "10589645014520794957",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "holly-wright-design",
+   "name": "Holly Wright Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4147 N Goldwater Blvd #101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.496,
+    "lng": -111.93
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://www.hollywrightdesign.com/",
+   "phone": "(602) 410-3586",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJc_McfxgLK4cReNv1NL2SkFA",
+    "cid": "5805301261015571320",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "ibd-studio",
+   "name": "IBD Studio",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4237 N Craftsman Ct #202",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.928
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(480) 833-7961",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJE7fWs06tK4cRgujg3LxX2KU",
+    "cid": "11950398079898806402",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "imi-design",
+   "name": "IMI Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7007 E 5th Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.93
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists interior architect office and interior decorator.",
+   "website": "https://www.imidesignstudio.com/",
+   "phone": "(480) 970-8979",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJc6yEiNR1K4cRnFM8OSZx_pw",
+    "cid": "11312603722984215452",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "jamie-herzlinger-interiors-design",
+   "name": "Jamie Herzlinger Interiors Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4400 N Scottsdale Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.501,
+    "lng": -111.926
+   },
+   "description": "Custom home builder in Scottsdale, Arizona. Its Google profile also lists architect and interior designer.",
+   "website": "",
+   "phone": "(602) 795-3824",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJJ6Bhp70LK4cR0MKV6ArQiyo",
+    "cid": "3065772716626133712",
+    "category": "Custom home builder"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "jason-longo-interior-design",
+   "name": "Jason Longo Interior Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6615 N Scottsdale Rd Ste 208",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85250"
+   },
+   "geo": {
+    "lat": 33.533,
+    "lng": -111.925
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists furniture store and interior decorator.",
+   "website": "http://www.jasonlongointeriordesign.com/",
+   "phone": "(480) 869-3595",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJf-FbY22jK4cReCrFOyhQthI",
+    "cid": "1348353272175733368",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "jl-coates-interior-design-studio",
+   "name": "JL Coates Interior Design Studio",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4343 N Scottsdale Rd Ste 150-#1001",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.925
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists architectural designer and building designer.",
+   "website": "https://www.jlcoates.com/az/scottsdale-interior-design-studio",
+   "phone": "(623) 396-9204",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ8Y73DxMbK4cRuMVgL5gnrPk",
+    "cid": "17990798146021672376",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "jl-coates-interior-design-studio-fountain-hills",
+   "name": "JL Coates Interior Design Studio",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "16930 E Palisades Blvd",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.607,
+    "lng": -111.715
+   },
+   "description": "Interior designer in Fountain Hills, Arizona. Its Google profile also lists architectural designer and building designer.",
+   "website": "https://www.jlcoates.com/az/fountain-hills-interior-design-studio",
+   "phone": "(623) 396-9204",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJlyb8nKSZK4cRpTKtNRW4UDw",
+    "cid": "4346176041646895781",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "joi-prater-interiors",
+   "name": "Joi Prater Interiors",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "748 Easy St #9",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.824,
+    "lng": -111.924
+   },
+   "description": "Interior designer in Carefree, Arizona.",
+   "website": "http://joipraterinteriors.com/",
+   "phone": "(602) 930-8679",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ2yry9IF_K4cRCdKlAv-bD70",
+    "cid": "13623278917382427145",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "lissa-lee-hickman-inc",
+   "name": "Lissa Lee Hickman, Inc",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "14300 N Northsight Blvd Ste 119",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85260"
+   },
+   "geo": {
+    "lat": 33.616,
+    "lng": -111.899
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://lissaleehickman.com/",
+   "phone": "(480) 912-4115",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJI3WWXdB1K4cRbsjvfZKn82c",
+    "cid": "7490514852867197038",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "mmb-studio",
+   "name": "MMB Studio",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4120 N Marshall Way #1",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.495,
+    "lng": -111.929
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://mmbstudio.com/",
+   "phone": "(480) 945-3694",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ5-H0kJULK4cRT2mxGcNAuJM",
+    "cid": "10644328925984024911",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "nelson-barnum-interiors",
+   "name": "Nelson Barnum Interiors",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7135 E 1st Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.494,
+    "lng": -111.927
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://nelsonbarnum.com/",
+   "phone": "(480) 994-8919",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJcbPewb8LK4cRRKKhk_cvbSA",
+    "cid": "2336576522055426628",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "ownby-design",
+   "name": "Ownby Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7154 E Stetson Dr suite D200",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.927
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(480) 575-8448",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJy2Yxi6V1K4cRSw27aV6WPSo",
+    "cid": "3043754255417281867",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "p-emerson-interiors",
+   "name": "P. Emerson Interiors",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4300 N Miller Rd Ste 125",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.919
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://www.p-emerson.com/",
+   "phone": "(602) 753-8708",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJv4PytuWlK4cRvMQWsDxCIH0",
+    "cid": "9016279282415486140",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "paradise-valley-interior-design-by-nicole",
+   "name": "Paradise Valley Interior Design-By Nicole",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "6895 E Camelback Rd",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.498,
+    "lng": -111.932
+   },
+   "description": "Interior designer in Scottsdale, Arizona. Its Google profile also lists interior decorator.",
+   "website": "https://paradisevalleyinteriordesign.com/",
+   "phone": "(480) 542-1050",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJFxHPHHyHxGcRMpxfIutHaBs",
+    "cid": "1974907511821540402",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "progressive-floor-coverings-inc-dba-fantasia-interiors",
+   "name": "Progressive Floor Coverings Inc dba Fantasia Interiors",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "fountain-hills",
+   "address": {
+    "street": "12605 N Saguaro Blvd #2",
+    "city": "Fountain Hills",
+    "state": "AZ",
+    "zip": "85268"
+   },
+   "geo": {
+    "lat": 33.601,
+    "lng": -111.716
+   },
+   "description": "Interior designer in Fountain Hills, Arizona. Its Google profile also lists bathroom remodeler and contractor.",
+   "website": "http://www.fantasiainteriors.com/",
+   "phone": "(480) 837-0650",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJqU0804CYK4cRiAJ_fsAVHBI",
+    "cid": "1304941908530758280",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "raven-by-design",
+   "name": "Raven by Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4250 N Drinkwater Blvd Ste 300",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.922
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "",
+   "phone": "(602) 428-1690",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ15Z0FYilK4cRzQliyLbcNzM",
+    "cid": "3690661097257437645",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sesshu-design-associates-ltd",
+   "name": "Sesshu Design Associates, Ltd.",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "3666 N Miller Rd Ste 100",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.491,
+    "lng": -111.918
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://www.sesshudesign.com/",
+   "phone": "(480) 275-2968",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJHfPuuA8LK4cRCBqL5AYTBsM",
+    "cid": "14052940607581264392",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "sue-bickerdyke-interiors",
+   "name": "Sue Bickerdyke Interiors",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "carefree",
+   "address": {
+    "street": "36889 N Tom Darlington Dr Suite C-5",
+    "city": "Carefree",
+    "state": "AZ",
+    "zip": "85377"
+   },
+   "geo": {
+    "lat": 33.822,
+    "lng": -111.924
+   },
+   "description": "Interior designer in Carefree, Arizona.",
+   "website": "http://www.suebickerdyke.com/",
+   "phone": "(480) 595-0171",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJu2hA0ch-K4cR7T2tjSe4nsU",
+    "cid": "14240021551812263405",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-design-house-interior-design",
+   "name": "The Design House Interior Design",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4160 N Craftsman Ct #101",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.497,
+    "lng": -111.928
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://www.tdhid.com/",
+   "phone": "(385) 229-4000",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJa76RaOsLK4cRwR2ktLxv2bU",
+    "cid": "13103627447086357953",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "the-luxury-look",
+   "name": "The Luxury Look",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4343 N Scottsdale Rd #150",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.5,
+    "lng": -111.925
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://www.theluxurylook.com/",
+   "phone": "(602) 578-6707",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJr5QcBFoLK4cRzH2EguHPjTY",
+    "cid": "3931026617228623308",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "vallone-design-inc",
+   "name": "Vallone Design Inc",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "7007 E 3rd Ave",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.496,
+    "lng": -111.93
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://www.vallonedesign.com/",
+   "phone": "(480) 421-2799",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJ21HJwZULK4cRrsJNOZNR5bM",
+    "cid": "12962856795219280558",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  },
+  {
+   "slug": "wiseman-and-gale-interiors",
+   "name": "Wiseman and Gale Interiors",
+   "categories": [
+    "interior-designers"
+   ],
+   "city": "scottsdale",
+   "address": {
+    "street": "4015 N Marshall Way",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "zip": "85251"
+   },
+   "geo": {
+    "lat": 33.494,
+    "lng": -111.928
+   },
+   "description": "Interior designer in Scottsdale, Arizona.",
+   "website": "http://wisemanandgale.com/",
+   "phone": "(480) 945-8447",
+   "level": "free",
+   "status": "live",
+   "source": "dataforseo",
+   "google": {
+    "placeId": "ChIJSedc178LK4cRhsFXx2Cn1aI",
+    "cid": "11733468438286811526",
+    "category": "Interior designer"
+   },
+   "articleSlugs": []
+  }
+ ]
+}
