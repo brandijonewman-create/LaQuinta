@@ -1,6 +1,6 @@
 // Reusable page hero. Two variants:
-//   simple — cream background, used for most utility/stub pages.
-//   image  — full-bleed image with overlay, used for communities, architects.
+//   simple, cream background, used for most utility/stub pages.
+//   image, full-bleed image with overlay, used for communities, architects.
 //
 // Optional `children` render below the subtitle inside the hero column and
 // are typically used for CTA buttons.

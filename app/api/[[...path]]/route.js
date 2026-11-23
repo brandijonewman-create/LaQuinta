@@ -46,7 +46,7 @@ async function clientMeta(request) {
   };
 }
 
-// ---- POST /api/leads/gate — universal per-asset lead gate ----
+// ---- POST /api/leads/gate, universal per-asset lead gate ----
 async function handleLeadsGate(request) {
   const rl = limit(request, { bucket: 'leads-gate', limit: 5, windowMs: 60 * 60 * 1000 });
   if (rl) return rl;
@@ -77,13 +77,13 @@ async function handleLeadsGate(request) {
   return json({ ok: true, id: doc.id });
 }
 
-// ---- POST /api/collaborate — realtor collaborator application ----
+// ---- POST /api/collaborate, realtor collaborator application ----
 async function handleCollaborate(request) {
   const rl = limit(request, { bucket: 'collaborate', limit: 3, windowMs: 60 * 60 * 1000 });
   if (rl) return rl;
 
   const body = await readJson(request);
-  // Honeypot: dedicated hidden field (never `website` here — that's a real
+  // Honeypot: dedicated hidden field (never `website` here, that's a real
   // broker-site field on the collaborator form).
   if (cleanString(body?._hp)) return json({ ok: true, honey: true });
 
@@ -124,7 +124,7 @@ async function handleCollaborate(request) {
   return json({ ok: true, id: doc.id });
 }
 
-// ---- POST /api/quiz/gate — gate the quiz result behind a lead capture.
+// ---- POST /api/quiz/gate, gate the quiz result behind a lead capture.
 // Called from the community-quiz flow between "last question answered" and
 // "result shown". Persists the lead into the leads collection so it lands
 // in /admin/leads, then returns the score payload so the client can reveal
@@ -169,7 +169,7 @@ async function handleQuizGate(request) {
     email,
     phone,
     subject: result?.top?.name || 'Community quiz',
-    message: `Quiz gate: matched to ${result?.top?.name || '\u2014'}. Runners-up: ${(result?.runnersUp || []).map((r) => r.name).join(', ') || '\u2014'}. ZIP: ${zip}.`,
+    message: `Quiz gate: matched to ${result?.top?.name || '-'}. Runners-up: ${(result?.runnersUp || []).map((r) => r.name).join(', ') || '-'}. ZIP: ${zip}.`,
     // Full structured record
     payload: {
       firstName, lastName, email, phone, zip,
@@ -189,7 +189,7 @@ async function handleQuizGate(request) {
   return json({ ok: true, id: submission.id, ...result });
 }
 
-// ---- POST /api/quiz/score — score-only, no persistence ----
+// ---- POST /api/quiz/score, score-only, no persistence ----
 async function handleQuizScore(request) {
   const rl = limit(request, { bucket: 'quiz-score', limit: 30, windowMs: 60 * 60 * 1000 });
   if (rl) return rl;
@@ -200,7 +200,7 @@ async function handleQuizScore(request) {
   return json({ ok: true, ...result });
 }
 
-// ---- POST /api/quiz — legacy persistence (kept for back-compat) ----
+// ---- POST /api/quiz, legacy persistence (kept for back-compat) ----
 async function handleQuiz(request) {
   const rl = limit(request, { bucket: 'quiz', limit: 10, windowMs: 60 * 60 * 1000 });
   if (rl) return rl;
@@ -241,7 +241,7 @@ async function handleValuation(request) {
   return json({ ok: true, id: submission.id });
 }
 
-// ---- POST /api/leads — legacy generic lead capture ----
+// ---- POST /api/leads, legacy generic lead capture ----
 async function handleLeadCapture(request) {
   const body = await readJson(request);
   const email = cleanString(body?.email, 200);
@@ -254,7 +254,7 @@ async function handleLeadCapture(request) {
   return json({ ok: true, id: submission.id });
 }
 
-// ---- POST /api/leads/magnet — NEW quiz-magnet funnel ----
+// ---- POST /api/leads/magnet, NEW quiz-magnet funnel ----
 async function handleLeadsMagnet(request) {
   const rl = limit(request, { bucket: 'leads-magnet', limit: 5, windowMs: 60 * 60 * 1000 });
   if (rl) return rl;
@@ -305,10 +305,10 @@ async function handleLeadsMagnet(request) {
   return json({ ok: true, downloadUrl });
 }
 
-// ---- POST /api/contact — universal contextual contact form ---------------
+// ---- POST /api/contact, universal contextual contact form ---------------
 // Fields:  name (req), email (req), phone (opt), message (opt),
-//          subject (req — page context, e.g. "The Madison Club"),
-//          page   (opt — pathname the buyer was on)
+//          subject (req, page context, e.g. "The Madison Club"),
+//          page   (opt, pathname the buyer was on)
 //          website (honeypot; MUST be empty)
 // Behavior:
 //   1) validate + honeypot
@@ -357,7 +357,7 @@ async function handleContact(request) {
 }
 
 
-// ---- GET /api/leads — admin retrieval (legacy passphrase) ----
+// ---- GET /api/leads, admin retrieval (legacy passphrase) ----
 async function handleLeadRetrieval(request) {
   const url = new URL(request.url);
   const key = url.searchParams.get('key') || '';
@@ -373,7 +373,7 @@ async function handleLeadRetrieval(request) {
   } catch { return err('Database error.', 500); }
 }
 
-// ---- GET /api/leads/export.csv — LEADS_ACCESS_KEY-gated CSV export ----
+// ---- GET /api/leads/export.csv, LEADS_ACCESS_KEY-gated CSV export ----
 async function handleLeadsExportCsv(request) {
   const url = new URL(request.url);
   const key = url.searchParams.get('key') || '';

@@ -47,7 +47,7 @@ export default function SiteFooter() {
         <div className="mt-14 pt-8 border-t border-sand-50/15">
           <p className="text-[11px] leading-relaxed text-sand-50/55 max-w-4xl">
             <span className="text-gold/90 uppercase tracking-[0.22em] mr-2">Disclosure</span>
-            {site.name} is a lifestyle guide operated by {owner.fullName}. We are not a real estate brokerage. Current listings, private showings, and buyer representation are provided by our California-licensed Exclusive Market Partner. Any community, club, or market figure referenced is informational only.{' '}
+            {site.name} is a lifestyle guide operated by {owner.fullName}. We are not a real estate brokerage. Current listings, private showings, and buyer representation are reserved for one California-licensed realtor partner, selected by invitation. Any community, club, or market figure referenced is informational only.{' '}
             {MARKET_DISCLAIMER}
           </p>
           <div className="mt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowUpRight, MapPin } from 'lucide-react';
 
 // The seven La Quinta golf communities profiled on the site. Price bands
-// are indicative MLS observation ranges only — wide brackets used
+// are indicative MLS observation ranges only, wide brackets used
 // deliberately, not guarantees.
 const communities = [
   {
@@ -20,7 +20,7 @@ const communities = [
     architect: 'Pete Dye & Clive Clark',
     priceRange: '$2M – $10M',
     image: '/images/communities/the-hideaway.jpg',
-    blurb: 'Two cohesive courses behind a single gate \u2014 one of La Quinta\u2019s tightest.',
+    blurb: 'Two cohesive courses behind a single gate, one of La Quinta\u2019s tightest.',
     zip: 'La Quinta, CA 92253',
   },
   {
@@ -29,7 +29,7 @@ const communities = [
     architect: 'Dye, Nicklaus, Norman & Weiskopf',
     priceRange: '$500K – $15M+',
     image: '/images/communities/pga-west.jpg',
-    blurb: 'Six courses, four architects, and La Quinta\u2019s widest price band \u2014 condos to estates behind one master-planned gate.',
+    blurb: 'Six courses, four architects, and La Quinta\u2019s widest price band, condos to estates behind one master-planned gate.',
     zip: 'La Quinta, CA 92253',
   },
   {
@@ -47,7 +47,7 @@ const communities = [
     architect: 'Arnold Palmer',
     priceRange: '$2M – $12M',
     image: '/images/communities/the-tradition-golf-club.jpg',
-    blurb: 'Palmer\u2019s only Coachella Valley design \u2014 mature, quiet, tightly held.',
+    blurb: 'Arnold Palmer\u2019s walkable design, mature, quiet, tightly held.',
     zip: 'La Quinta, CA 92253',
   },
   {
@@ -56,7 +56,7 @@ const communities = [
     architect: 'Lawrence Hughes (1959)',
     priceRange: '$700K – $4M',
     image: '/images/communities/la-quinta-country-club.jpg',
-    blurb: 'The original La Quinta club \u2014 walking distance to the resort and the Cove.',
+    blurb: 'The original La Quinta club, walking distance to the resort and the Cove.',
     zip: 'La Quinta, CA 92253',
   },
   {
@@ -65,7 +65,7 @@ const communities = [
     architect: 'Tom Fazio',
     priceRange: '$3M – $15M',
     image: '/images/communities/the-quarry-at-la-quinta.jpg',
-    blurb: 'A second Fazio routing on a dramatic granite-quarry site \u2014 one of the smallest memberships in the valley.',
+    blurb: 'A second Fazio routing on a dramatic granite-quarry site, private and closely held.',
     zip: 'La Quinta, CA 92253',
   },
 ];
@@ -82,7 +82,7 @@ export default function FeaturedCommunities() {
             Where La Quinta plays.
           </h2>
           <p className="text-foreground/70 mt-5 text-base md:text-lg leading-relaxed">
-            The seven flagship private clubs, profiled in full &mdash; part of the
+            The seven flagship private clubs, profiled in full, part of the
             28 gated, golf and lifestyle communities we cover across La Quinta.
             Their architects, their price bands, and the character of daily life
             inside each gate. Current listings and private tours are arranged by a

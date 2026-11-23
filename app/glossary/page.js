@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/shared/breadcrumbs';
 
 export const metadata = {
   title: 'Glossary',
-  description: 'Golf and real-estate terminology used across La Quinta Golf Lifestyle — equity membership, deeded membership, base-year value, and more.',
+  description: 'Golf and real-estate terminology used across La Quinta Golf Lifestyle, equity membership, deeded membership, base-year value, and more.',
   alternates: { canonical: '/glossary' },
 };
 
@@ -12,8 +12,8 @@ const terms = [
   { term: 'Deeded membership', def: 'A club membership tied to title on a specific property; transfers with the home at sale.' },
   { term: 'Initiation fee', def: 'The one-time entry cost to join a private club, separate from monthly dues. Varies materially club to club; verify directly.' },
   { term: 'Base-year value (Prop 13)', def: 'California-specific. The assessed value of a property at the time of purchase, which then escalates at a capped rate. Critical for new buyers to model.' },
-  { term: 'CARETS / CRMLS', def: 'The Combined LA/Westside Regional MLS (CRMLS) and CARETS data exchange — California\u2019s desert-region MLS infrastructure.' },
-  { term: 'IDX', def: 'Internet Data Exchange — the licensed feed of MLS listings to a public-facing website. Requires a licensed-agent partner in California.' },
+  { term: 'CARETS / CRMLS', def: 'The Combined LA/Westside Regional MLS (CRMLS) and CARETS data exchange, California\u2019s desert-region MLS infrastructure.' },
+  { term: 'IDX', def: 'Internet Data Exchange, the licensed feed of MLS listings to a public-facing website. Requires a licensed-agent partner in California.' },
   { term: 'Resort vs. private course', def: 'A resort course allows daily-fee public play; a private course is members-only. PGA West has both within the same community.' },
   { term: 'Days on market (DOM)', def: 'How long a listing has been active. Important quarterly indicator; we publish as a range, not a single figure.' },
 ];

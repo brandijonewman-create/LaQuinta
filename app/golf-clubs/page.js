@@ -16,7 +16,7 @@ export default function GolfClubsIndex() {
       <PageHero
         eyebrow="Golf Clubs"
         title="The seven private clubs of La Quinta."
-        subtitle="Private membership clubs are the heart of La Quinta golf. Public and resort access lives elsewhere in the city — we&rsquo;ll cover both."
+        subtitle="Private membership clubs are the heart of La Quinta golf. Public and resort access lives elsewhere in the city: we&rsquo;ll cover both."
       />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Golf Clubs' }]} />

@@ -1,4 +1,4 @@
-// Content engine — cron-triggered article generator.
+// Content engine, cron-triggered article generator.
 //
 // Pulls the next unused topic from /content/topic-queue.md, drafts a ~1,500-word
 // MDX article in the site's editorial voice via the Emergent LLM, writes it to
@@ -117,7 +117,7 @@ export async function POST(request) {
       if (lines[i].startsWith('- ')) { lines.splice(i, 1); break; }
     }
     // Append the used line at the end of the file
-    lines.push(`- ${today} — ${topic}`);
+    lines.push(`- ${today}, ${topic}`);
     fs.writeFileSync(QUEUE_PATH, lines.join('\n'), 'utf8');
 
     // Email notify
@@ -131,7 +131,7 @@ export async function POST(request) {
         html: `<p><strong>${topic}</strong> has been drafted and saved as a draft.</p>
 <p>Review the file in the repo at <code>content/blog/${path.basename(filePath)}</code>, flip <code>draft: true</code> to <code>draft: false</code>, then redeploy to publish.</p>
 <p>Preview URL once deployed: <a href="${url}">${url}</a></p>
-<p>— ${site.name} content engine</p>`,
+<p>${site.name} content engine</p>`,
       });
     }
 

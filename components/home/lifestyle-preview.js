@@ -10,13 +10,13 @@ const pillars = [
   },
   {
     eyebrow: 'The Map',
-    title: 'An interactive lifestyle map &mdash; clubs, neighborhoods, hiking, and Old Town.',
+    title: 'An interactive lifestyle map: clubs, neighborhoods, hiking, and Old Town.',
     href: '/desert-lifestyle-map',
     image: 'https://images.unsplash.com/photo-1621881806763-1b8128f374a7',
   },
   {
     eyebrow: 'The Guides',
-    title: 'Long-form guides &mdash; starting with the 2026 La Quinta Buyer&rsquo;s Guide.',
+    title: 'Long-form guides: starting with the 2026 La Quinta Buyer&rsquo;s Guide.',
     href: '/guides',
     image: 'https://images.unsplash.com/photo-1590912550141-1448da2bd5da',
   },

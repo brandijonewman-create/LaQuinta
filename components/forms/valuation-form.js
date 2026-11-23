@@ -41,7 +41,7 @@ export default function ValuationForm() {
     return (
       <div className="max-w-2xl mx-auto border border-border bg-sand-50 p-10 lg:p-14 text-center">
         <CheckCircle2 size={36} className="text-palm mx-auto" />
-        <h2 className="font-serif text-3xl text-palm mt-5">Thanks — we have your request.</h2>
+        <h2 className="font-serif text-3xl text-palm mt-5">Thanks, we have your request.</h2>
         <p className="text-foreground/75 mt-4 leading-relaxed">
           Your request is recorded. A licensed California real-estate professional will follow up with a range valuation grounded in current La Quinta comps. No automated emails, and we do not sell or share your information.
         </p>

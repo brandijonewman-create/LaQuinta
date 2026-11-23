@@ -74,7 +74,7 @@ export default function QuizFlow() {
         </h2>
         <p className="text-foreground/70 mt-4 leading-relaxed">
           These rankings come from your eight responses scored against publicly known
-          characteristics of each club. They are a starting point — not a recommendation
+          characteristics of each club. They are a starting point, not a recommendation
           to buy.
         </p>
 
@@ -124,7 +124,7 @@ export default function QuizFlow() {
         <p className="text-foreground/70 mt-3 leading-relaxed">
           Optional. Drop your name and email and we&rsquo;ll keep your top-three matches on file
           so you can revisit them. We do not sell or share your information. No automated
-          marketing emails &mdash; we&rsquo;ll follow up directly.
+          marketing emails, we&rsquo;ll follow up directly.
         </p>
 
         <div className="mt-8 space-y-4">
@@ -164,7 +164,7 @@ export default function QuizFlow() {
             variant="ghost"
             className="rounded-none text-foreground/70 hover:text-palm"
           >
-            Skip — just show me
+            Skip, just show me
           </Button>
         </div>
       </div>

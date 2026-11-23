@@ -20,7 +20,7 @@ export function generateMetadata({ params }) {
   if (!m) return { robots: { index: false, follow: false } };
   return {
     title: m.label,
-    description: `Download the ${m.label} — a printable guide from La Quinta Golf Lifestyle.`,
+    description: `Download the ${m.label}, a printable guide from La Quinta Golf Lifestyle.`,
     robots: { index: false, follow: false },
     alternates: { canonical: `/downloads/${params.slug}` },
   };
@@ -51,7 +51,7 @@ export default function DownloadPage({ params }) {
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed text-lg">
-              An honest walkthrough of {community?.name || m.label.replace(' Guide','')}— the course, the membership structure, the real-estate character, and the practical questions to ask before you commit.
+              An honest walkthrough of {community?.name || m.label.replace(' Guide','')}, the course, the membership structure, the real-estate character, and the practical questions to ask before you commit.
             </p>
             <p className="text-foreground/65 italic text-sm">
               How it works: complete the form, the guide is delivered on submission, and we email you a copy for your records.

@@ -6,7 +6,7 @@ import { market } from '@/lib/site-config';
 
 export const metadata = {
   title: 'La Quinta Market Reports',
-  description: 'Quarterly market reports for La Quinta\u2019s 92253 ZIP code. Honest ranges with disclaimers — no fabricated medians.',
+  description: 'Quarterly market reports for La Quinta\u2019s 92253 ZIP code. Honest ranges with disclaimers, no fabricated medians.',
   alternates: { canonical: '/market-reports' },
 };
 
@@ -17,7 +17,7 @@ export default function MarketReportsIndex() {
       <PageHero
         eyebrow="Market Reports"
         title="Honest market context for La Quinta."
-        subtitle="Quarterly reports for the 92253 ZIP — ranges only, with the verify-with-a-licensed-pro disclaimer."
+        subtitle="Quarterly reports for the 92253 ZIP: ranges only, with the verify-with-a-licensed-pro disclaimer."
       />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Market Reports' }]} />

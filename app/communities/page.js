@@ -7,7 +7,7 @@ import { getCommunityContent } from '@/lib/content/community-content';
 export const metadata = {
   title: 'La Quinta Golf & Gated Communities',
   description:
-    'An editorial guide to La Quinta\u2019s golf, gated and historic residential communities \u2014 the flagship private clubs (PGA West, The Madison Club, The Hideaway, The Tradition, Andalusia, The Quarry, La Quinta Country Club) plus semi-private clubs, resort residences, active-adult and gated residential HOAs across the city.',
+    'An editorial guide to La Quinta\u2019s golf, gated and historic residential communities, the flagship private clubs (PGA West, The Madison Club, The Hideaway, The Tradition, Andalusia, The Quarry, La Quinta Country Club) plus semi-private clubs, resort residences, active-adult and gated residential HOAs across the city.',
   alternates: { canonical: '/communities' },
 };
 
@@ -24,7 +24,7 @@ export default function CommunitiesIndexPage() {
       <PageHero
         eyebrow="Communities"
         title={'La Quinta\u2019s golf and gated communities.'}
-        subtitle="An editorial guide to the flagship private clubs, semi-private clubs, resort residences, active-adult and gated residential HOAs across La Quinta &mdash; with listings and private tours arranged by a licensed California real-estate professional."
+        subtitle="An editorial guide to the flagship private clubs, semi-private clubs, resort residences, active-adult and gated residential HOAs across La Quinta: with listings and private tours arranged by a licensed California real-estate professional."
       />
 
       <section className="container py-16 lg:py-24">

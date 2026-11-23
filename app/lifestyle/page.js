@@ -5,7 +5,7 @@ import { LIFESTYLE_PAGES } from '@/lib/content/lifestyle-content';
 
 export const metadata = {
   title: 'La Quinta Lifestyle Guides',
-  description: 'Editorial guides to the La Quinta neighborhoods, parks, trails and districts that anchor daily life in the city \u2014 Fritz Burns Park, Bear Creek Trail, Old Town La Quinta and more.',
+  description: 'Editorial guides to the La Quinta neighborhoods, parks, trails and districts that anchor daily life in the city, Fritz Burns Park, Bear Creek Trail, Old Town La Quinta and more.',
   alternates: { canonical: '/lifestyle' },
 };
 

@@ -15,7 +15,7 @@ function PageViewTracker() {
   const searchParams = useSearchParams();
   useEffect(() => {
     if (typeof window === 'undefined' || !window.gtag || !GA_ID) return;
-    // Skip the initial mount — gtag('config') already fired a page_view for
+    // Skip the initial mount, gtag('config') already fired a page_view for
     // the landing route. Track subsequent client-side navigations only.
     if (window.__lqgl_initial_route_logged !== true) {
       window.__lqgl_initial_route_logged = true;
@@ -37,7 +37,7 @@ export default function GAScripts() {
   if (!GA_ID) return null;
   return (
     <>
-      {/* Google tag (gtag.js) — exact recommended install. */}
+      {/* Google tag (gtag.js), exact recommended install. */}
       <Script
         id="ga-loader"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}

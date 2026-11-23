@@ -4,7 +4,7 @@ import LifestyleMap from '@/components/lifestyle-map';
 
 export const metadata = {
   title: 'La Quinta Lifestyle Map',
-  description: 'An interactive map of La Quinta — the seven private golf communities, Old Town, the Cove, the La Quinta Resort, and the foothill trailheads.',
+  description: 'An interactive map of La Quinta, the seven private golf communities, Old Town, the Cove, the La Quinta Resort, and the foothill trailheads.',
   alternates: { canonical: '/desert-lifestyle-map' },
 };
 
@@ -14,7 +14,7 @@ export default function MapPage() {
       <PageHero
         eyebrow="Lifestyle Map"
         title="La Quinta, interactive."
-        subtitle="All seven private golf communities, plus the Cove, Old Town, the La Quinta Resort, and the foothill trailheads — mapped against the Santa Rosa Mountains. Click any marker for context."
+        subtitle="All seven private golf communities, plus the Cove, Old Town, the La Quinta Resort, and the foothill trailheads: mapped against the Santa Rosa Mountains. Click any marker for context."
       />
       <section className="container py-12 lg:py-16">
         <Breadcrumbs items={[{ label: 'Lifestyle Map' }]} />

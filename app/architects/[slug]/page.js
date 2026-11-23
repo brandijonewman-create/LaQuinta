@@ -16,7 +16,7 @@ export function generateMetadata({ params }) {
   const content = getArchitectContent(params.slug);
   const description = content.hero || `Profile of course architect ${a.name} and his La Quinta work.`;
   return {
-    title: `${a.name} — course architect`,
+    title: `${a.name} | course architect`,
     description,
     alternates: { canonical: `/architects/${params.slug}` },
   };
@@ -135,7 +135,7 @@ export default function ArchitectDetailPage({ params }) {
               </div>
             )}
 
-            {/* La Quinta work — course by course */}
+            {/* La Quinta work, course by course */}
             {Array.isArray(content.laQuintaWork) && content.laQuintaWork.length > 0 && (
               <div>
                 <div className="editorial-eyebrow mb-4"><span className="editorial-rule" />La Quinta Work</div>

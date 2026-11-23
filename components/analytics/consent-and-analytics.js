@@ -6,7 +6,7 @@
 // affirmatively clicks "Accept". "Decline" (or ignoring the banner) means
 // no gtag ever installs. Consent state is persisted in localStorage.
 //
-// Storage key: 'lqgl_analytics_consent' — values 'accepted' | 'declined'.
+// Storage key: 'lqgl_analytics_consent', values 'accepted' | 'declined'.
 // A "Manage" link in the footer can rehydrate the banner by clearing the
 // key (see components/shared/footer-consent-link.js).
 
@@ -30,7 +30,7 @@ function writeConsent(value) {
   try {
     window.localStorage.setItem(STORAGE_KEY, value);
   } catch {
-    /* private-mode / disabled storage — no-op */
+    /* private-mode / disabled storage, no-op */
   }
 }
 

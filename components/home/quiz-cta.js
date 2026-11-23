@@ -16,8 +16,8 @@ export default function QuizCta() {
               Every La Quinta community. One quiz to narrow the field.
             </h2>
             <p className="text-sand-50/75 mt-6 max-w-2xl text-base md:text-lg leading-relaxed">
-              Eight questions &mdash; architecture, scale, social scene, price band,
-              and membership style &mdash; and we&rsquo;ll match you to the La Quinta
+              Eight questions, architecture, scale, social scene, price band,
+              and membership style, and we&rsquo;ll match you to the La Quinta
               communities most aligned with how you actually want to live.
             </p>
           </div>

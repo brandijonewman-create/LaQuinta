@@ -27,7 +27,7 @@ const TYPE_LABELS = {
 };
 
 function humanDate(iso) {
-  if (!iso) return '—';
+  if (!iso) return '-';
   const d = new Date(iso);
   if (Number.isNaN(d.valueOf())) return iso;
   return d.toLocaleString('en-US', { timeZone: 'America/Los_Angeles', dateStyle: 'short', timeStyle: 'short' });
@@ -177,20 +177,20 @@ export default async function AdminLeadsPage({ searchParams }) {
                       {TYPE_LABELS[doc.type] || doc.type || 'lead'}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-foreground/85">{s.name || '—'}</td>
+                  <td className="px-4 py-3 text-foreground/85">{s.name || '-'}</td>
                   <td className="px-4 py-3">
                     {s.email ? (
                       <a href={`mailto:${s.email}`} className="text-palm underline underline-offset-2 hover:text-terracotta">
                         {s.email}
                       </a>
-                    ) : '—'}
+                    ) : '-'}
                   </td>
-                  <td className="px-4 py-3 text-foreground/70 whitespace-nowrap">{s.phone || '—'}</td>
+                  <td className="px-4 py-3 text-foreground/70 whitespace-nowrap">{s.phone || '-'}</td>
                   <td className="px-4 py-3 text-foreground/70 max-w-[380px]">
-                    <div className="line-clamp-3">{s.detail || s.source || '—'}</div>
+                    <div className="line-clamp-3">{s.detail || s.source || '-'}</div>
                   </td>
                   <td className="px-4 py-3 text-[11px] text-foreground/50 whitespace-nowrap">
-                    {doc.meta?.ip || '—'}
+                    {doc.meta?.ip || '-'}
                   </td>
                 </tr>
               );

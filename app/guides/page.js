@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export const metadata = {
   title: 'Guides',
-  description: 'Pillar guides to buying into a La Quinta private golf community — architects, membership economics, California-specific context.',
+  description: 'Pillar guides to buying into a La Quinta private golf community, architects, membership economics, California-specific context.',
   alternates: { canonical: '/guides' },
 };
 
@@ -17,7 +17,7 @@ export default function GuidesIndexPage() {
       <PageHero
         eyebrow="Guides"
         title="Find Your Perfect La Quinta Golf Home."
-        subtitle="Every course, every community, every price range &mdash; covered. Start with our 60-second quiz to find your match."
+        subtitle="Every course, every community, every price range: covered. Start with our 60-second quiz to find your match."
       >
         <Link
           href="/community-quiz"

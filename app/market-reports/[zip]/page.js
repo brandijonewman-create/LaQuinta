@@ -93,7 +93,7 @@ export default function MarketReportZipPage({ params }) {
         />
       </section>
 
-      {/* Public preview intro — everyone sees this. */}
+      {/* Public preview intro, everyone sees this. */}
       <ThinPageIntro>{copy.intro}</ThinPageIntro>
 
       {/* Gated quarterly PDF + summary numbers. */}
@@ -124,10 +124,10 @@ export default function MarketReportZipPage({ params }) {
               <div>
                 <h2 className="font-serif text-3xl text-palm mb-4">What this quarter looked like</h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  Q3 2026 played out as expected for La Quinta — the summer-soft pattern that the 92253 ZIP runs through every year. Triple-digit heat clears the snowbird population, foot traffic at private clubs drops, and the higher end of the market goes effectively dormant from late June through mid-September. The transactions that did close were primarily primary-residence buyers and a handful of opportunistic second-home deals where sellers were motivated.
+                  Q3 2026 played out as expected for La Quinta, the summer-soft pattern that the 92253 ZIP runs through every year. Triple-digit heat clears the snowbird population, foot traffic at private clubs drops, and the higher end of the market goes effectively dormant from late June through mid-September. The transactions that did close were primarily primary-residence buyers and a handful of opportunistic second-home deals where sellers were motivated.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
-                  The most active segment was the $700K–$1.4M band — historic La Quinta Country Club, Trilogy at La Quinta, and Duna La Quinta. Days on market lengthened modestly versus Q2; price reductions were more common than in spring but remained moderate (typically 3–5%, not the 10%+ corrections seen in the broader Coachella Valley in 2020–2022).
+                  The most active segment was the $700K–$1.4M band, historic La Quinta Country Club, Trilogy at La Quinta, and Duna La Quinta. Days on market lengthened modestly versus Q2; price reductions were more common than in spring but remained moderate (typically 3–5%, not the 10%+ corrections seen in the broader Coachella Valley in 2020–2022).
                 </p>
               </div>
 
@@ -137,14 +137,14 @@ export default function MarketReportZipPage({ params }) {
                   <li><strong className="text-palm">PGA West:</strong> Widest range, broadest activity. Condo segment most active. Stadium and Norman-course homes held value best.</li>
                   <li><strong className="text-palm">La Quinta Country Club:</strong> Steady volume. The historic-club discount versus newer construction continues to attract heritage buyers.</li>
                   <li><strong className="text-palm">Andalusia, The Hideaway, Tradition:</strong> Slow summer typical of the upper-mid market. Listings carried into Q4.</li>
-                  <li><strong className="text-palm">The Madison Club, The Quarry:</strong> Effectively dormant — typical pattern.</li>
+                  <li><strong className="text-palm">The Madison Club, The Quarry:</strong> Effectively dormant, typical pattern.</li>
                 </ul>
               </div>
 
               <div>
                 <h2 className="font-serif text-3xl text-palm mb-4">What we expect in Q4</h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  The Q4 ramp typically begins in mid-to-late October as snowbirds return. Inventory tends to firm, days on market shorten, and the upper-mid market reactivates first. Watch the $1.5M–$3M range at PGA West, Andalusia, and Mountain View — those are typically the early indicators of how the high season will price.
+                  The Q4 ramp typically begins in mid-to-late October as snowbirds return. Inventory tends to firm, days on market shorten, and the upper-mid market reactivates first. Watch the $1.5M–$3M range at PGA West, Andalusia, and Mountain View, those are typically the early indicators of how the high season will price.
                 </p>
               </div>
 

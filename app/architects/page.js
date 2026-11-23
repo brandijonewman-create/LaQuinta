@@ -5,7 +5,7 @@ import { architects } from '@/lib/site-config';
 
 export const metadata = {
   title: 'The Architects of La Quinta Golf',
-  description: 'Profiles of the course architects whose work defines La Quinta golf — Pete Dye, Tom Fazio, Jack Nicklaus, Arnold Palmer, Greg Norman, Tom Weiskopf, and Rees Jones.',
+  description: 'Profiles of the course architects whose work defines La Quinta golf, Pete Dye, Tom Fazio, Jack Nicklaus, Arnold Palmer, Greg Norman, Tom Weiskopf, and Rees Jones.',
   alternates: { canonical: '/architects' },
 };
 
@@ -15,7 +15,7 @@ export default function ArchitectsIndexPage() {
       <PageHero
         eyebrow="The Architects"
         title="The seven names behind La Quinta golf."
-        subtitle="Pete Dye, Tom Fazio, Jack Nicklaus, Greg Norman, Arnold Palmer, Tom Weiskopf, and Rees Jones — the architects whose routings shaped the city."
+        subtitle="Pete Dye, Tom Fazio, Jack Nicklaus, Greg Norman, Arnold Palmer, Tom Weiskopf, and Rees Jones: the architects whose routings shaped the city."
       />
       <section className="container py-16 lg:py-24">
         <Breadcrumbs items={[{ label: 'Architects' }]} />

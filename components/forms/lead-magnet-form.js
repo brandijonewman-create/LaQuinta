@@ -36,7 +36,7 @@ export default function LeadMagnetForm({ magnetSlug, magnetLabel }) {
     return (
       <div className="border border-border bg-sand-50 p-10 text-center">
         <CheckCircle2 size={36} className="text-palm mx-auto" />
-        <h2 className="font-serif text-3xl text-palm mt-5">Thanks — you&rsquo;re on the list.</h2>
+        <h2 className="font-serif text-3xl text-palm mt-5">Thanks, you&rsquo;re on the list.</h2>
         <p className="text-foreground/75 mt-4 leading-relaxed max-w-md mx-auto">
           We will email <strong className="text-palm">{magnetLabel}</strong> to you directly
           once it is ready. We do not send automated marketing emails.

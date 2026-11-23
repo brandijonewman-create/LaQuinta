@@ -10,7 +10,7 @@ import { site } from '@/lib/site-config';
 //
 // While the Exclusive Market Partner slot is OPEN, submissions route via
 // Resend to OWNER_EMAIL only (see /app/lib/email.js). No partner card is
-// rendered — buyers see a single-column form.
+// rendered, buyers see a single-column form.
 
 export default function ContextualContactForm({
   subject = 'La Quinta golf real estate',
@@ -31,7 +31,7 @@ export default function ContextualContactForm({
     headline || `Interested in ${subject}?`;
   const derivedIntro =
     intro ||
-    `Send us a note. We'll reply within one business day with information tailored to your interest in ${subject}. Your note is private — no automated marketing emails and no third-party lists.`;
+    `Send us a note. We'll reply within one business day with information tailored to your interest in ${subject}. Your note is private, no automated marketing emails and no third-party lists.`;
 
   const onChange = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
@@ -136,7 +136,7 @@ export default function ContextualContactForm({
               onChange={onChange('message')}
               rows={4}
               className="mt-2 w-full border border-border bg-transparent p-3 text-palm focus:outline-none focus:border-terracotta transition-colors"
-              placeholder={questionPlaceholder || 'Timeline, budget range, must-haves, or just ask anything.'}
+              placeholder={questionPlaceholder || 'Timeline, price range, must-haves, or just ask anything.'}
             />
           </label>
 

@@ -3,7 +3,7 @@
 // next.config.js) to /api/market-report-pdf/:zip and served here.
 //
 // The PDF is generated on demand from the same summary data that appears
-// on /market-reports/:zip. No fabricated numbers — ranges only. This
+// on /market-reports/:zip. No fabricated numbers, ranges only. This
 // unblocks the "Blocked by robots.txt" -> "Not found (404)" transition
 // that Search Console was heading toward.
 
@@ -22,17 +22,17 @@ const REPORT_DATA = {
       { m: 'YoY direction',    v: 'Flat to +2%',      n: 'Median holding' },
     ],
     narrative: [
-      'Q3 2026 played out as expected for La Quinta — the summer-soft pattern that the 92253 ZIP runs through every year. Triple-digit heat clears the snowbird population, foot traffic at private clubs drops, and the higher end of the market goes effectively dormant from late June through mid-September. The transactions that did close were primarily primary-residence buyers and a handful of opportunistic second-home deals where sellers were motivated.',
-      'The most active segment was the $700K–$1.4M band — historic La Quinta Country Club, Trilogy at La Quinta, and Duna La Quinta. Days on market lengthened modestly versus Q2; price reductions were more common than in spring but remained moderate (typically 3–5%, not the 10%+ corrections seen in the broader Coachella Valley in 2020–2022).',
+      'Q3 2026 played out as expected for La Quinta, the summer-soft pattern that the 92253 ZIP runs through every year. Triple-digit heat clears the snowbird population, foot traffic at private clubs drops, and the higher end of the market goes effectively dormant from late June through mid-September. The transactions that did close were primarily primary-residence buyers and a handful of opportunistic second-home deals where sellers were motivated.',
+      'The most active segment was the $700K–$1.4M band, historic La Quinta Country Club, Trilogy at La Quinta, and Duna La Quinta. Days on market lengthened modestly versus Q2; price reductions were more common than in spring but remained moderate (typically 3–5%, not the 10%+ corrections seen in the broader Coachella Valley in 2020–2022).',
     ],
     byClub: [
       ['PGA West',                            'Widest range, broadest activity. Condo segment most active. Stadium and Norman-course homes held value best.'],
       ['La Quinta Country Club',              'Steady volume. The historic-club discount versus newer construction continues to attract heritage buyers.'],
       ['Andalusia, The Hideaway, Tradition',  'Slow summer typical of the upper-mid market. Listings carried into Q4.'],
-      ['The Madison Club, The Quarry',        'Effectively dormant — typical pattern.'],
+      ['The Madison Club, The Quarry',        'Effectively dormant, typical pattern.'],
     ],
     outlook:
-      'The Q4 ramp typically begins in mid-to-late October as snowbirds return. Inventory tends to firm, days on market shorten, and the upper-mid market reactivates first. Watch the $1.5M–$3M range at PGA West, Andalusia, and Mountain View — those are typically the early indicators of how the high season will price.',
+      'The Q4 ramp typically begins in mid-to-late October as snowbirds return. Inventory tends to firm, days on market shorten, and the upper-mid market reactivates first. Watch the $1.5M–$3M range at PGA West, Andalusia, and Mountain View, those are typically the early indicators of how the high season will price.',
     disclaimer:
       'Ranges are sourced from CARETS/CRMLS via our partner California-licensed realtor. Confirm specifics with a licensed agent before transacting. Not an appraisal.',
   },
@@ -44,7 +44,7 @@ function buildPdf(zip, data, copy) {
       size: 'LETTER',
       margins: { top: 60, bottom: 60, left: 60, right: 60 },
       info: {
-        Title: `La Quinta ${zip} Market Report — ${data.quarter}`,
+        Title: `La Quinta ${zip} Market Report, ${data.quarter}`,
         Author: 'La Quinta Golf Lifestyle',
         Subject: `La Quinta ${zip} quarterly market report`,
         Keywords: `La Quinta, ${zip}, market report, ${data.quarter}, Coachella Valley real estate`,

@@ -70,7 +70,7 @@ export default function GuidePage({ params }) {
       <section className="container pt-10 max-w-3xl">
         <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: fm.title }]} />
 
-        {/* Byline — every guide is authored by the site's publisher until
+        {/* Byline, every guide is authored by the site's publisher until
             additional strategic partners contribute. */}
         <div className="mt-8 flex items-center gap-3 text-sm text-foreground/70">
           <span className="w-9 h-9 rounded-full overflow-hidden bg-sand-100 border border-border flex-shrink-0">
@@ -98,7 +98,7 @@ export default function GuidePage({ params }) {
         </div>
       </section>
 
-      {/* Public preview intro — renders ABOVE the lead-gate form so the page
+      {/* Public preview intro, renders ABOVE the lead-gate form so the page
           has visible content for search engines and buyers browsing without
           submitting the form. */}
       {preview?.intro ? (
@@ -129,7 +129,7 @@ export default function GuidePage({ params }) {
         </LeadGate>
       </section>
 
-      {/* Public preview FAQ — renders BELOW the lead-gate form. Also the
+      {/* Public preview FAQ, renders BELOW the lead-gate form. Also the
           source of the FAQPage JSON-LD emitted at the top of the page. */}
       {preview?.faqs && preview.faqs.length > 0 ? (
         <ThinPageFaq faqs={preview.faqs} />

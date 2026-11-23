@@ -10,7 +10,7 @@ import { X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 // • On click, opens a fullscreen lightbox cycling through every slide.
 // • Each slide is either { src, caption } (real photo) or { placeholder: true, caption }
 //   so an article can mix real photography with editorial placeholders for shots
-//   that haven't been taken yet — never any fake/misleading stock.
+//   that haven't been taken yet, never any fake/misleading stock.
 // • Keyboard nav: ←  →  Esc.
 
 export default function PropertyGallery({ slides = [] }) {
@@ -79,7 +79,7 @@ export default function PropertyGallery({ slides = [] }) {
         </figcaption>
       ) : null}
 
-      {/* Thumbnail strip (desktop only — clickable shortcuts into the gallery) */}
+      {/* Thumbnail strip (desktop only, clickable shortcuts into the gallery) */}
       <div className="hidden md:grid mt-4 grid-cols-6 gap-2">
         {slides.slice(1, 7).map((s, i) => (
           <button

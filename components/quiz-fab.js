@@ -4,7 +4,7 @@
 // Fixed to the bottom-right of the viewport, appears after the user has
 // scrolled past the hero (>400px) so it doesn't crowd the initial view.
 // Hidden on the community-quiz page itself (redundant) and on admin routes.
-// md:hidden — this is a mobile-only nudge; desktop users have the hero CTA
+// md:hidden, this is a mobile-only nudge; desktop users have the hero CTA
 // and multiple in-page quiz CTAs available on scroll.
 
 import { useEffect, useState } from 'react';

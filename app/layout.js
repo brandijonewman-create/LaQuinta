@@ -52,7 +52,7 @@ export const metadata = {
         url: `${site.url}/og-image`,
         width: 1200,
         height: 630,
-        alt: `${site.name} — ${site.tagline}`,
+        alt: `${site.name}, ${site.tagline}`,
       },
     ],
   },

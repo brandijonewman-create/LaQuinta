@@ -39,7 +39,7 @@ function decodeAnswers(str) {
     const v = pair.slice(idx + 1);
     if (k && v) out[k] = v;
   }
-  // Confirm every question has been answered — otherwise the shared URL
+  // Confirm every question has been answered, otherwise the shared URL
   // is corrupt and we should fall back to the empty quiz.
   const missing = quizQuestions.find((q) => !out[q.id]);
   return missing ? null : out;
@@ -107,7 +107,7 @@ export default function QuizClient() {
         setArrivedViaLink(true);
         trackEvent('quiz_result_shared_view', { top_match: data.top.slug });
       } catch (e) {
-        // Bad URL — silently fall back to the empty quiz.
+        // Bad URL, silently fall back to the empty quiz.
         setError('');
       } finally {
         setRehydrating(false);
@@ -140,7 +140,7 @@ export default function QuizClient() {
     if (step < total - 1) {
       setStep(step + 1);
     } else {
-      // last question — surface the gate. We DON'T score here; the gate
+      // last question, surface the gate. We DON'T score here; the gate
       // POST both persists the lead and returns the score.
       setStage('gate');
     }
@@ -162,7 +162,7 @@ export default function QuizClient() {
           phone:     gatePhone, // optional
           zip:       gateZip,
           answers,
-          // honeypot — real users never fill this
+          // honeypot, real users never fill this
           website: '',
         }),
       });
@@ -292,7 +292,7 @@ export default function QuizClient() {
       trackEvent('quiz_result_share', { channel: 'copy', top_match: match?.top?.slug });
       setTimeout(() => setCopied(false), 2400);
     } catch {
-      // Older browsers — fall back to a temp textarea copy.
+      // Older browsers, fall back to a temp textarea copy.
       try {
         const t = document.createElement('textarea');
         t.value = url;
@@ -329,7 +329,7 @@ export default function QuizClient() {
       });
       trackEvent('quiz_result_share', { channel: 'native', top_match: match?.top?.slug });
     } catch {
-      /* user cancelled — no-op */
+      /* user cancelled, no-op */
     }
   }
 
@@ -351,7 +351,7 @@ export default function QuizClient() {
         <div className="border border-border bg-sand-50 p-10 lg:p-14 text-center">
           <CheckCircle2 size={42} className="text-palm mx-auto" />
           <h2 className="font-serif text-3xl text-palm mt-5">
-            {hasMagnet ? 'Your guide is downloading\u2026' : 'Thank you \u2014 we\u2019ll be in touch.'}
+            {hasMagnet ? 'Your guide is downloading\u2026' : 'Thank you, we\u2019ll be in touch.'}
           </h2>
           <p className="text-foreground/75 mt-4 leading-relaxed max-w-md mx-auto">
             {hasMagnet ? (
@@ -390,7 +390,7 @@ export default function QuizClient() {
         </h2>
         <p className="text-foreground/75 mt-4 leading-relaxed">
           Your answers are complete. Tell us who to reach and we&rsquo;ll reveal your
-          matched La Quinta community &mdash; plus two runners-up &mdash; and route
+          matched La Quinta community, plus two runners-up, and route
           you personally to a licensed California professional. No automated marketing
           emails and we do not sell or share your details.
         </p>
@@ -451,7 +451,7 @@ export default function QuizClient() {
                 onChange={(e) => setGatePhone(e.target.value)}
                 autoComplete="tel"
                 className="w-full border border-border bg-white px-4 py-3"
-                placeholder="(760) 555-0100"
+                placeholder="Mobile number"
               />
             </label>
             <label className="block">
@@ -473,7 +473,7 @@ export default function QuizClient() {
             </label>
           </div>
 
-          {/* honeypot — off-screen, real users never fill this */}
+          {/* honeypot, off-screen, real users never fill this */}
           <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: 'auto', width: 1, height: 1, overflow: 'hidden' }}>
             <label>Do not fill<input type="text" name="_hp" tabIndex={-1} autoComplete="off" /></label>
           </div>
@@ -519,7 +519,7 @@ export default function QuizClient() {
             <div>
               <div className="text-[10px] uppercase tracking-[0.28em] text-terracotta mb-1">Shared match</div>
               <p className="text-sm text-foreground/80 leading-relaxed">
-                Someone shared their La Quinta community match with you. Take your own 60-second quiz to find yours &mdash; it&rsquo;s free.
+                Someone shared their La Quinta community match with you. Take your own 60-second quiz to find yours.
               </p>
             </div>
             <Button onClick={restart} className="rounded-none bg-palm text-sand-50 hover:bg-palm-700 text-xs uppercase tracking-[0.18em] shrink-0">
@@ -618,7 +618,7 @@ export default function QuizClient() {
                 <div className="text-xs uppercase tracking-[0.22em] text-terracotta mb-3"><span className="editorial-rule" />{hasMagnet ? 'Get the printable guide' : 'Request an introduction'}</div>
                 <p className="text-foreground/75 leading-relaxed mb-5 text-sm">
                   {hasMagnet ? (
-                    <>A printable {match.top.name} guide &mdash; the course, the club, the real estate, the questions to ask.</>
+                    <>A printable {match.top.name} guide, the course, the club, the real estate, the questions to ask.</>
                   ) : (
                     <>Tell us how to reach you and we&rsquo;ll route you personally to a licensed California professional who covers {match.top.name}. No automated marketing.</>
                   )}
@@ -637,7 +637,7 @@ export default function QuizClient() {
             </label>
             <label className="block">
               <span className="block text-[11px] uppercase tracking-[0.22em] text-foreground/55 mb-2">Phone <span className="text-terracotta">*</span></span>
-              <input required type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full border border-border bg-white px-4 py-3" placeholder="(760) 555-0100" />
+              <input required type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full border border-border bg-white px-4 py-3" placeholder="Mobile number" />
             </label>
           </div>
           {error && <p className="text-sm text-destructive mt-4">{error}</p>}

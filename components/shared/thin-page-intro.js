@@ -2,7 +2,7 @@
 // /app/lib/content/thin-page-copy.js is written as one long paragraph per
 // page (buyer-friendly, single-scroll reading), so we render it as-is inside
 // an `editorial` prose column. We deliberately do not auto-split on periods
-// or blank lines — the source is authored as continuous prose.
+// or blank lines, the source is authored as continuous prose.
 
 export default function ThinPageIntro({ children }) {
   return (

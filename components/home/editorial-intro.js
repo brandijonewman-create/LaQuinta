@@ -16,10 +16,10 @@ export default function IntroBlock() {
             A lifestyle guide to the La Quinta golf communities.
           </h2>
           <p className="text-foreground/75 text-base md:text-lg leading-relaxed mt-6">
-            From the Fazio routings of The Madison Club and The Quarry to the Pete Dye course at The Hideaway and Arnold Palmer&rsquo;s only Coachella Valley design at The Tradition, La Quinta holds one of the deepest concentrations of championship private golf on the West Coast. We cover each community &mdash; its architect, its membership, its daily character &mdash; so you can decide where you belong before you tour.
+            From the Fazio routings of The Madison Club and The Quarry to the Pete Dye course at The Hideaway and Arnold Palmer&rsquo;s walkable design at The Tradition, La Quinta holds a rare collection of championship private golf inside one city. We cover each community, its architect, its membership, its daily character, so you can decide where you belong before you tour.
           </p>
           <p className="text-foreground/75 text-base md:text-lg leading-relaxed mt-5">
-            We&rsquo;re a lifestyle guide, not a brokerage. Current listings, private showings, and buyer representation are handled by a licensed California real-estate professional. The La Quinta Exclusive Market Partner slot is by invitation &mdash; see the <a href="/#become-our-partner" className="underline decoration-terracotta underline-offset-4 hover:text-terracotta">For Realtors</a> section.
+            We&rsquo;re a lifestyle guide, not a brokerage. Current listings, private showings, and buyer representation are handled by a licensed California real-estate professional. The La Quinta Exclusive Market Partner slot is by invitation, see the <a href="/#become-our-partner" className="underline decoration-terracotta underline-offset-4 hover:text-terracotta">For Realtors</a> section.
           </p>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function IntroBlock() {
   );
 }
 
-// Architects preview row — text intro + 8 architect chips. Mirrors the
+// Architects preview row, text intro + 8 architect chips. Mirrors the
 // "The Architects" pattern from sister sites in the network.
 export function ArchitectsPreview() {
   return (

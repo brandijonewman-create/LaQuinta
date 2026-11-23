@@ -4,17 +4,17 @@ import { useState } from 'react';
 import { Lock, Download, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-// LeadGate — universal per-asset lead capture.
+// LeadGate, universal per-asset lead capture.
 // Renders the gate form on top of a hidden body of content. On successful
 // submission, the gate unmounts and the children become visible. The unlock
-// is *per asset, per session* — navigating to another gated page requires a
+// is *per asset, per session*, navigating to another gated page requires a
 // fresh submission. (Owner spec.)
 //
 // Props:
-//   assetSlug  — unique slug of the gated asset ("buyers-guide", "q3-2026-zip", etc.)
-//   assetTitle — human title shown in the gate ("the 2026 La Quinta Buyer's Guide")
-//   downloadUrl — optional. If set, the success state shows a Download button.
-//   children   — the actual page content, only revealed after gate clears.
+//   assetSlug, unique slug of the gated asset ("buyers-guide", "q3-2026-zip", etc.)
+//   assetTitle, human title shown in the gate ("the 2026 La Quinta Buyer's Guide")
+//   downloadUrl, optional. If set, the success state shows a Download button.
+//   children, the actual page content, only revealed after gate clears.
 export default function LeadGate({ assetSlug, assetTitle, downloadUrl, children }) {
   const [unlocked, setUnlocked] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', phone: '' });
@@ -76,7 +76,7 @@ export default function LeadGate({ assetSlug, assetTitle, downloadUrl, children 
         Continue to {assetTitle}.
       </h2>
       <p className="text-sm text-foreground/70 leading-relaxed mb-6">
-        Please share your name, email, and phone number to continue{downloadUrl ? '. We will email you a PDF copy of the document' : ''}. Your details are used only for this request &mdash; no automated marketing emails, no third-party lists.
+        Please share your name, email, and phone number to continue{downloadUrl ? '. We will email you a PDF copy of the document' : ''}. Your details are used only for this request, no automated marketing emails, no third-party lists.
       </p>
 
       <form onSubmit={onSubmit} className="space-y-4">

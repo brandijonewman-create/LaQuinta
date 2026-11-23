@@ -2,29 +2,9 @@ import PageHero from '@/components/shared/page-hero';
 import Breadcrumbs from '@/components/shared/breadcrumbs';
 import { owner, site } from '@/lib/site-config';
 
-// Golf Lifestyle network markets — 14 single-city publications operated by
-// 7671 Enterprises LLC. Status values: 'Active' (live and indexing) or
-// 'Confirmed' (domain secured, build on schedule).
-const NETWORK_MARKETS = [
-  { market: 'Scottsdale, AZ',     domain: 'ScottsdaleGolfLifestyle.com',   status: 'Active' },
-  { market: 'La Quinta, CA',      domain: 'LaQuintaGolfLifestyle.com',     status: 'Active' },
-  { market: 'Rancho Mirage, CA',  domain: 'RanchoMirageGolfLifestyle.com', status: 'Confirmed' },
-  { market: 'Palm Desert, CA',    domain: 'PalmDesertGolfLifestyle.com',   status: 'Confirmed' },
-  { market: 'Indian Wells, CA',   domain: 'IndianWellsGolfLifestyle.com',  status: 'Confirmed' },
-  { market: 'Carlsbad, CA',       domain: 'CarlsbadGolfLifestyle.com',     status: 'Confirmed' },
-  { market: 'Naples, FL',         domain: 'NaplesGolfLifestyle.com',       status: 'Confirmed' },
-  { market: 'Palm Beach, FL',     domain: 'PalmBeachGolfLifestyle.com',    status: 'Active' },
-  { market: 'Ponte Vedra, FL',    domain: 'PonteVedraGolfLifestyle.com',   status: 'Confirmed' },
-  { market: 'Boca Raton, FL',     domain: 'BocaRatonGolfLifestyle.com',    status: 'Confirmed' },
-  { market: 'Destin, FL',         domain: 'DestinGolfLifestyle.com',       status: 'Confirmed' },
-  { market: 'Hilton Head, SC',    domain: 'HiltonHeadGolfLifestyle.com',   status: 'Confirmed' },
-  { market: 'Kiawah Island, SC',  domain: 'KiawahIslandGolfLifestyle.com', status: 'Confirmed' },
-  { market: 'Las Vegas, NV',      domain: 'LasVegasGolfLifestyle.com',     status: 'Confirmed' },
-];
-
 export const metadata = {
   title: 'About',
-  description: `About ${site.name} — a lifestyle guide to La Quinta’s private golf communities. Owned and operated by ${owner.name}.`,
+  description: `About ${site.name}, a lifestyle guide to La Quinta’s private golf communities. Owned and operated by ${owner.name}.`,
   alternates: { canonical: '/about' },
 };
 
@@ -34,7 +14,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="A lifestyle guide to La Quinta."
-        subtitle={`${site.name} covers La Quinta’s private golf communities, the architects who built them, and the desert life around them. Listings and representation are provided by our California-licensed Exclusive Market Partner.`}
+        subtitle={`${site.name} covers La Quinta’s private golf communities, the architects who built them, and the desert life around them. Listings and buyer representation are reserved for one California-licensed realtor partner, selected by invitation.`}
       />
 
       <section className="container py-16 lg:py-24">
@@ -44,25 +24,25 @@ export default function AboutPage() {
           <div className="lg:col-span-7 space-y-6 text-foreground/80 leading-relaxed">
             <h2 className="font-serif text-3xl text-palm">Owned and operated by {owner.fullName}</h2>
             <p>
-              {site.name} is owned and operated by <strong className="text-palm">{owner.fullName}</strong>. The site is part of a small network of single-city desert publications &mdash; each one focused on a single Coachella Valley municipality, each written for the buyer who wants a clear picture of the communities before a showing is arranged.
+              {site.name} is owned and operated by <strong className="text-palm">{owner.fullName}</strong>. The site is part of the Golf Lifestyle Network, a group of single-city publications, each written for the buyer who wants a clear picture of the communities before a showing is arranged.
             </p>
             <p>
-              The network exists because most online coverage of desert golf real estate is either listing-portal noise or thinly veiled promotion for a single brokerage. We publish lifestyle context &mdash; architecture, membership, daily character &mdash; in partnership with the local realtor who actually works each market. The listings, the tours, and the representation come from them.
+              We publish lifestyle context: architecture, membership, and daily character. Listings, tours, and representation are reserved for one invited local realtor partner in each market.
             </p>
 
-            <h2 className="font-serif text-3xl text-palm pt-6">Meet the publisher</h2>
+            <h2 className="font-serif text-3xl text-palm pt-6">Meet the owner and creator</h2>
             <div className="flex flex-col sm:flex-row gap-6 items-start pt-1">
               <img
                 src="/images/brandi-jo-newman.jpg"
-                alt="Brandi Jo Newman, Publisher"
+                alt="Brandi Jo Newman, owner and creator"
                 className="w-32 h-32 rounded-full object-cover border border-border flex-shrink-0"
               />
               <div className="space-y-4">
                 <p>
-                  {site.name} is published by <strong className="text-palm">Brandi Jo Newman</strong>. Golf has been the throughline of her life: between 1994 and 2003 she competed as a touring professional on the LPGA Futures Tour, the Ladies European Tour, and the Asian Tour, playing across six continents.
+                  <strong className="text-palm">Brandi Jo Newman</strong> is the owner and creator of {site.name}. Golf has been the throughline of her life: from 1994 to 2003 she competed as a touring professional, playing across six continents.
                 </p>
                 <p>
-                  She went on to build, scale, and exit companies over the two decades that followed, and founded the Golf Lifestyle Network to give serious buyers something the listing portals don&rsquo;t: an honest, community-by-community read on the places golfers actually want to live &mdash; written before a single showing is arranged. La Quinta is one of the network&rsquo;s live markets, alongside Scottsdale and Palm Beach.
+                  She has spent three decades building financial services and marketing businesses, and created the Golf Lifestyle Network to give serious buyers an honest, community-by-community read on the places golfers want to live, written before a single showing is arranged. La Quinta is one of the network&rsquo;s live markets, alongside Scottsdale and Palm Beach.
                 </p>
                 <p>
                   Brandi Jo is the author of the guides and journal on this site until additional strategic partners contribute. The aim is simple: the clearest, most trustworthy picture of desert golf communities anywhere online.
@@ -72,73 +52,16 @@ export default function AboutPage() {
 
             <h2 className="font-serif text-3xl text-palm pt-6">What we publish</h2>
             <p>
-              Profiles of La Quinta&rsquo;s private golf communities. Dedicated pages for the architects whose work defines them. Long-form buyer guides &mdash; starting with the 2026 La Quinta Golf Buyer&rsquo;s Guide. A market-context report for the 92253 ZIP. An interactive lifestyle map. And a regular journal on the questions buyers actually ask.
+              Profiles of La Quinta&rsquo;s private golf communities. Dedicated pages for the architects whose work defines them. Long-form buyer guides, starting with the 2026 La Quinta Golf Buyer&rsquo;s Guide. A market-context report for the 92253 ZIP. An interactive lifestyle map. And a regular journal on the questions buyers actually ask.
             </p>
 
-            <h2 className="font-serif text-3xl text-palm pt-6">What we don&rsquo;t do</h2>
+            <h2 className="font-serif text-3xl text-palm pt-6">Our standards</h2>
             <ul className="list-disc pl-5 space-y-2">
-              <li>We do not publish fabricated testimonials or quotes.</li>
-              <li>We do not publish unverified market figures.</li>
-              <li>We do not publish celebrity or homeowner addresses.</li>
+              <li>Every quote and testimonial we publish is real and attributed.</li>
+              <li>Market figures are sourced, shown as ranges, and paired with a verify-with-a-licensed-professional note.</li>
+              <li>Homeowner and celebrity addresses stay private.</li>
             </ul>
 
-            <h2 className="font-serif text-3xl text-palm pt-10">The Golf Lifestyle network</h2>
-            <p>
-              {site.name} is one of fourteen single-city golf-market publications owned and operated by {owner.name}. Three sites are live and indexing today; the remaining eleven domains are confirmed and on the build calendar.
-            </p>
-
-            <div className="mt-6 overflow-hidden border border-border rounded-lg bg-white">
-              <table className="w-full text-sm">
-                <thead className="bg-sand-50 border-b border-border">
-                  <tr className="text-left">
-                    <th className="px-4 py-3 font-medium text-[11px] uppercase tracking-[0.2em] text-foreground/65">Market</th>
-                    <th className="px-4 py-3 font-medium text-[11px] uppercase tracking-[0.2em] text-foreground/65">Domain</th>
-                    <th className="px-4 py-3 font-medium text-[11px] uppercase tracking-[0.2em] text-foreground/65 whitespace-nowrap">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {NETWORK_MARKETS.map((m) => (
-                    <tr
-                      key={m.domain}
-                      className={`border-b border-border/60 last:border-0 ${m.market === 'La Quinta, CA' ? 'bg-gold/10' : ''}`}
-                    >
-                      <td className="px-4 py-3 text-palm font-medium whitespace-nowrap">{m.market}</td>
-                      <td className="px-4 py-3 text-foreground/75 font-mono text-[12.5px]">
-                        {m.status === 'Active' ? (
-                          <a
-                            href={`https://${m.domain}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-palm hover:text-terracotta underline-offset-2 hover:underline"
-                          >
-                            {m.domain}
-                          </a>
-                        ) : (
-                          <span>{m.domain}</span>
-                        )}
-                      </td>
-                      <td className="px-4 py-3 whitespace-nowrap">
-                        <span
-                          className={`inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.16em] font-medium ${
-                            m.status === 'Active' ? 'text-palm' : 'text-foreground/55'
-                          }`}
-                        >
-                          <span
-                            className={`w-1.5 h-1.5 rounded-full ${
-                              m.status === 'Active' ? 'bg-palm' : 'bg-gold-dark/60'
-                            }`}
-                          />
-                          {m.status}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-[11px] uppercase tracking-[0.2em] text-foreground/45 mt-3">
-              Status &middot; Active: live and indexing &middot; Confirmed: domain secured, build on schedule
-            </p>
           </div>
 
           <aside className="lg:col-span-5">
@@ -154,7 +77,7 @@ export default function AboutPage() {
             <div className="bg-palm text-sand-50 p-6 lg:p-8 mt-6">
               <div className="text-xs uppercase tracking-[0.28em] text-gold mb-3">The Network</div>
               <p className="text-sm text-sand-50/85 leading-relaxed">
-                {site.name} is one of fourteen single-city golf-market publications operated by {owner.name} &mdash; from Coachella Valley through Florida, the Carolinas, and Las Vegas. See the full network table below.
+                {site.name} is part of the Golf Lifestyle Network, operated by {owner.name}.
               </p>
             </div>
           </aside>

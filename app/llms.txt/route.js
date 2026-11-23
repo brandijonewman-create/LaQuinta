@@ -6,8 +6,8 @@
 //
 // TRUTH RULE (do not violate): every link in this file MUST resolve to a real
 // page on this site. The content is generated from the same registries the
-// sitemap uses — `lib/site-config` (communities, architects), `lib/blog`
-// (blog posts + guides), and `lib/collaborators` — so it stays in sync as
+// sitemap uses, `lib/site-config` (communities, architects), `lib/blog`
+// (blog posts + guides), and `lib/collaborators`, so it stays in sync as
 // content is added. We deliberately DO NOT list gated downloads, lead-gated
 // PDFs, or `/api/*` routes.
 //
@@ -59,15 +59,15 @@ function build() {
       `(${market.county}). It covers the private golf communities, the ` +
       `architects who built them, and the desert life around them. The ` +
       `site is owned and operated by ${owner.name}. Listings, private ` +
-      `showings, and buyer representation are provided by our ` +
-      `California-licensed Exclusive Market Partner.`
+      `showings, and buyer representation are reserved for one ` +
+      `California-licensed realtor partner, selected by invitation.`
   );
   out.push('');
 
   // ---- Start here ---------------------------------------------------------
   out.push('## Start Here');
   out.push('');
-  out.push(line('/', `${site.name} — homepage`, 'Site overview, featured communities, and latest editorial.'));
+  out.push(line('/', `${site.name}, homepage`, 'Site overview, featured communities, and latest editorial.'));
   out.push(line('/about', 'About', 'Editorial standards, ownership, and how leads are routed.'));
   out.push(line('/glossary', 'Glossary', 'Definitions of terms used across the site (equity club, HOA, CC&R, etc.).'));
   out.push('');
@@ -95,7 +95,7 @@ function build() {
   out.push('');
 
   // ---- Editorial: blog ----------------------------------------------------
-  out.push('## Editorial — Blog');
+  out.push('## Editorial, Blog');
   out.push('');
   out.push(line('/blog', 'All articles', 'Long-form coverage of La Quinta communities, clubs, architects, and market context.'));
   for (const p of posts) {
@@ -140,7 +140,7 @@ function build() {
   // ---- Exclusive Market Partner slot ------------------------------------
   out.push('## Exclusive Market Partner slot');
   out.push('');
-  out.push(line('/#become-our-partner', 'La Quinta Exclusive Market Partner \u2014 by invitation', 'The Exclusive Market Partner slot for La Quinta is filled by invitation. One California-licensed realtor per city site. No fee is charged; the invited partner provides their active listings for on-site home search and, where possible, introductions to home builders and other tier-one operators. Every buyer inquiry on this site routes to the signed partner.'));
+  out.push(line('/#become-our-partner', 'La Quinta Exclusive Market Partner, by invitation', 'The Exclusive Market Partner slot for La Quinta is filled by invitation. One California-licensed realtor per city site. The invited partner provides their active listings for on-site home search and, where possible, introductions to home builders and other tier-one operators. Every buyer inquiry on this site routes to the signed partner.'));
   out.push('');
 
   // ---- Legal --------------------------------------------------------------

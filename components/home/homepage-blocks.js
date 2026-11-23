@@ -11,19 +11,19 @@ const stats = [
 const resources = [
   {
     title: 'The La Quinta Community Index',
-    blurb: 'A comparative lifestyle guide to every La Quinta community — the flagship private clubs plus the semi-private, resort, gated, and active-adult neighborhoods around them.',
+    blurb: 'A comparative lifestyle guide to every La Quinta community, the flagship private clubs plus the semi-private, resort, gated, and active-adult neighborhoods around them.',
     href: '/communities',
     cta: 'Read the index',
   },
   {
     title: 'The Course Architects',
-    blurb: 'Dye, Fazio, Nicklaus, Palmer, Norman, Weiskopf, Rees Jones. Meet the designers behind every great La Quinta course — and where they built.',
+    blurb: 'Dye, Fazio, Nicklaus, Palmer, Norman, Weiskopf, Rees Jones. Meet the designers behind every great La Quinta course, and where they built.',
     href: '/architects',
     cta: 'Meet the architects',
   },
   {
     title: 'Find Your Match (2-min quiz)',
-    blurb: 'Five questions about your budget, golf style, and lifestyle. We match you to your top three La Quinta communities.',
+    blurb: 'Five questions about your price range, golf style, and lifestyle. We match you to your top three La Quinta communities.',
     href: '/community-quiz',
     cta: 'Find Your Lifestyle Profile',
   },
@@ -70,7 +70,7 @@ export function ResourcesRow() {
 
 export function FeaturedRealtorSlot() {
   // While the La Quinta partner slot is OPEN, this section is a
-  // recruitment pitch to prospective realtors — not a buyer-facing
+  // recruitment pitch to prospective realtors, not a buyer-facing
   // partner card. When a partner is signed (partner.status === 'signed'),
   // this component can be extended to render the partner card variant
   // sourced from partner.signed.
@@ -130,7 +130,7 @@ export function FeaturedRealtorSlot() {
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Segment</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  All 28 gated, golf and lifestyle communities in La Quinta — the seven flagship private clubs plus the semi-private, resort-residence, gated-residential and active-adult neighborhoods around them. Buyers range from $450K condos to $30M+ estates.
+                  All 28 gated, golf and lifestyle communities in La Quinta, the seven flagship private clubs plus the semi-private, resort-residence, gated-residential and active-adult neighborhoods around them. Residences range from condominiums to estate properties.
                 </dd>
               </div>
               <div>
@@ -138,27 +138,27 @@ export function FeaturedRealtorSlot() {
                 <dd className="text-sm text-sand-50 mt-1">
                   <span className="inline-flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-                    Open &mdash; by invitation
+                    Open, by invitation
                   </span>
                 </dd>
               </div>
               <div>
-                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Cost to the partner</dt>
+                <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">Terms</dt>
                 <dd className="mt-1">
-                  <span className="font-serif text-xl text-sand-50 block">No fee</span>
-                  <span className="text-xs text-sand-50/65 block mt-0.5">No commission split, no referral fee, no monthly retainer.</span>
+                  <span className="font-serif text-xl text-sand-50 block">Exclusive strategic partnership</span>
+                  <span className="text-xs text-sand-50/65 block mt-0.5">Shared in a private conversation with the invited partner.</span>
                 </dd>
               </div>
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">What the partner provides</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Their active listings — every photo and all the detail — for the on-site home search, plus — where the opportunity arises — warm introductions to home builders, developers, and other tier-one operators who fit the same buyer profile.
+                  Their active listings, every photo and all the detail, for the on-site home search, plus, where the opportunity arises, warm introductions to home builders, developers, and other tier-one operators who fit the same buyer profile.
                 </dd>
               </div>
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.22em] text-gold/70">What the partner receives</dt>
                 <dd className="text-sm text-sand-50/85 leading-relaxed mt-1">
-                  Every buyer inquiry from the site, featured placement across the guide, and their active listings surfaced on the homepage, on community pages, and inside the editorial articles.
+                  Every buyer inquiry from the site, a featured presence across the guide, and their active listings surfaced on the homepage, on community pages, and inside the editorial articles.
                 </dd>
               </div>
               <div>

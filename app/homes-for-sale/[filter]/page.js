@@ -63,7 +63,7 @@ export default function HomesForSaleFilterPage({ params }) {
             Current La Quinta listings, private showings, and buyer
             representation are provided by a licensed California real-estate
             professional. Tell us what you&rsquo;re looking for and we&rsquo;ll
-            connect you. Estimate only &mdash; verify with a licensed California
+            connect you. Estimate only, verify with a licensed California
             real-estate professional before transacting.
           </Disclaimer>
           <div className="mt-8">

@@ -1,9 +1,9 @@
 // SEO sitemap.
 //
 // Rules (see /app/test_result.md for background):
-//   1. Every URL has a real `lastModified` — either the frontmatter date of
+//   1. Every URL has a real `lastModified`, either the frontmatter date of
 //      the underlying MDX, or a hand-maintained entry in PAGE_LAST_MODIFIED
-//      below. We deliberately DO NOT use fs.statSync(mtime) — on a fresh CI
+//      below. We deliberately DO NOT use fs.statSync(mtime), on a fresh CI
 //      clone every file's mtime is the build time, which would stamp every
 //      URL "today" on every deploy.
 //   2. Index / hub pages (/blog, /guides, /communities, /architects,
@@ -11,7 +11,7 @@
 //      among their child pages, so publishing a post automatically bumps the
 //      parent listing. If a hub has no children, it falls back to the
 //      PAGE_LAST_MODIFIED entry.
-//   3. `changeFrequency` and `priority` are intentionally omitted — Google
+//   3. `changeFrequency` and `priority` are intentionally omitted, Google
 //      ignores them and they were previously giving false signal.
 //   4. If a route in STATIC_PAGES is missing from PAGE_LAST_MODIFIED, we
 //      throw at build/render time so a new page cannot be silently deployed
@@ -68,10 +68,10 @@ const MARKET_ZIP_LASTMOD = {
 
 // Hand-maintained last-modified index for static / hub pages.
 // Update the date for a route when you meaningfully change that page's copy.
-// Hub pages listed here are used as a *fallback* only — the sitemap will
+// Hub pages listed here are used as a *fallback* only, the sitemap will
 // prefer the newest child date when the hub is a listing page.
 //
-// Format: ISO date (YYYY-MM-DD). Dates should be truthful — do not bump a
+// Format: ISO date (YYYY-MM-DD). Dates should be truthful, do not bump a
 // page's date without an actual content change.
 const PAGE_LAST_MODIFIED = {
   '/':                     '2026-06-08',
@@ -241,7 +241,7 @@ export default function sitemap() {
     });
   }
 
-  // /downloads/* intentionally omitted — noindex/lead-gated.
+  // /downloads/* intentionally omitted, noindex/lead-gated.
 
   return entries;
 }

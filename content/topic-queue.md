@@ -1,4 +1,4 @@
-# Content engine — topic queue
+# Content engine, topic queue
 
 Each line beginning with `- ` is one unused topic. The content engine pulls
 the first unused topic on every cron run, drafts an article from it, and then
@@ -15,7 +15,7 @@ Add new topics at the bottom of "Queue" any time. Reorder freely.
 - Andalusia Country Club: A Buyer's Field Guide
 - The Cove at La Quinta: The Last Walkable Neighborhood in the Valley
 - Inside Trilogy at La Quinta: 55+ Living Done Right
-- The Tradition Golf Club: Palmer's Only Coachella Valley Design
+- The Tradition Golf Club: Palmer's Walkable Desert Design
 - Duna La Quinta: The Most Affordable Inside-the-Rope Address
 - Coral Mountain Club: Nicklaus, Quiet, and Worth Watching
 - What Initiation Deposits Actually Look Like at La Quinta Private Clubs
@@ -38,8 +38,8 @@ Add new topics at the bottom of "Queue" any time. Reorder freely.
 
 ## Used
 
-<!-- The engine appends published topics here, format: "- 2026-06-09 — Topic Title" -->
+<!-- The engine appends published topics here, format: "- 2026-06-09, Topic Title" -->
 
-- 2026-06-08 — PGA West vs The Hideaway: Which Private Club Fits Your Game
+- 2026-06-08, PGA West vs The Hideaway: Which Private Club Fits Your Game
 
-- 2026-06-08 — Equity vs Non-Equity Club Membership in La Quinta: A Practical Breakdown
+- 2026-06-08, Equity vs Non-Equity Club Membership in La Quinta: A Practical Breakdown
